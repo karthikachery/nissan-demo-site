@@ -1,0 +1,9921 @@
+@charset "utf-8";
+
+/* Bulma Replacement Utilities - Tailwind CSS */
+
+/* Layout Classes */
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1088px
+}
+
+@media print, screen and (min-width: 768px) {
+  .columns:not(.is-desktop) {
+    display: flex
+  }
+}
+
+.column{
+  flex: 1 1 0%;
+  display: block;
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding: .75rem;
+  flex-basis: 0
+}
+
+.column:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+a{
+  cursor: pointer
+}
+
+/* Bulma base column row gutters (removed with Bulma; dev/prod still rely on these) */
+
+/* .columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+}
+
+.columns:last-child {
+    margin-bottom: -0.75rem;
+}
+
+.columns:not(:last-child) {
+    margin-bottom: 0.75rem;
+}
+
+.columns.is-variable {
+    --columnGap: 0.75rem;
+    margin-left: calc(var(--columnGap) * -1);
+    margin-right: calc(var(--columnGap) * -1);
+}
+
+.columns.is-variable .column {
+    padding-left: var(--columnGap);
+    padding-right: var(--columnGap);
+}
+
+.columns.is-variable.is-0-mobile {
+    --columnGap: 0rem;
+} */
+
+.columns.is-multiline{
+  flex-wrap: wrap
+}
+
+.dropdown{
+  position: relative;
+  display: inline-flex;
+  vertical-align: top
+}
+
+.dropdown-menu{
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: 20;
+  display: none;
+  min-width: 12rem;
+  padding-top: 0.25rem
+}
+
+.dropdown-divider{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  height: 1px;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 219 219 / var(--tw-bg-opacity))
+}
+
+.dropdown-divider:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.tabs{
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap
+}
+
+.tabs ul{
+  margin: 0px;
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 1;
+  list-style: none
+}
+
+/* Spacing Utilities */
+
+.is-marginless{
+  margin: 0px !important
+}
+
+@media (max-width: 767px) {
+  .is-marginless-mobile {
+    margin: 0;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .is-marginless-tablet {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .is-marginless-tablet{
+    margin: 0px
+  }
+}
+
+.is-paddingless{
+  padding: 0px !important
+}
+
+@media (max-width: 767px) {
+  .is-paddingless-mobile {
+    padding: 0;
+    padding: 0px;
+  }
+
+  .is-paddingless-mobille {
+    padding: 0;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .is-paddingless-tablet {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .is-paddingless-tablet{
+    padding: 0px
+  }
+}
+
+/* Display Utilities */
+
+.is-hidden{
+  display: none
+}
+
+/* Hides the offer popup panels, which carry a more specific display rule than .is-hidden */
+
+.is-popup-hidden{
+  display: none !important
+}
+
+.is-hidden-mobile{
+  display: none
+}
+
+@media (min-width: 769px){
+  .is-hidden-mobile{
+    display: block
+  }
+
+  .is-hidden-tablet{
+    display: none !important
+  }
+}
+
+@media (min-width: 1024px){
+  .is-hidden-desktop{
+    display: none
+  }
+}
+
+.is-hidden-touch{
+  display: none
+}
+
+@media (min-width: 769px){
+  .is-hidden-touch{
+    display: block
+  }
+}
+
+.is-block{
+  display: block
+}
+
+.is-block:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.is-block-mobile{
+  display: block
+}
+
+.is-block-mobile:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+@media (min-width: 769px){
+  .is-block-mobile{
+    display: inline-block
+  }
+}
+
+.is-inline-block{
+  display: inline-block !important
+}
+
+.is-inline-flex{
+  display: inline-flex !important
+}
+
+.is-flex{
+  display: flex !important
+}
+
+.is-invisible{
+  visibility: hidden !important
+}
+
+.help{
+  margin-top: 1rem;
+  display: block
+}
+
+.help:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.help {
+  font-size: .75rem;
+}
+
+/* Positioning Utilities */
+
+.is-pulled-left{
+  float: left
+}
+
+.is-pulled-right{
+  float: right;
+  margin-left: auto
+}
+
+.is-clearfix{
+  clear: both
+}
+
+.is-clearfix::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
+.is-vcentered{
+  align-items: center
+}
+
+.is-centered{
+  justify-content: center
+}
+
+/* Sizing Utilities */
+
+.is-fullwidth{
+  width: 100%
+}
+
+.is-half{
+  width: 50%
+}
+
+.is-two-thirds{
+  width: 66.666667%
+}
+
+@media (max-width: 767px) {
+  .is-half-mobile {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .is-one-third-tablet {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .is-one-third-tablet{
+    width: 33.333333%
+  }
+}
+
+@media (max-width: 767px) {
+  .is-full-mobile {
+    width: 100%;
+  }
+}
+
+/* Typography Utilities */
+
+.is-uppercase{
+  text-transform: uppercase !important
+}
+
+.is-lowercase{
+  text-transform: lowercase
+}
+
+.is-bold{
+  font-family: NissanBrand-Bold;
+  font-weight: 700
+}
+
+.is-light{
+  font-family: NissanBrand-light;
+  font-weight: 300
+}
+
+.is-normal{
+  font-weight: 400
+}
+
+.has-text-centered{
+  text-align: center
+}
+
+.has-text-left{
+  text-align: left
+}
+
+.has-text-right{
+  text-align: right
+}
+
+.has-text-white {
+  color: #fff !important;
+}
+
+.has-text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.is-size-4{
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.is-size-5{
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.is-size-6{
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+.is-size-7{
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+@media print, screen and (min-width: 768px) {
+  .column.is-half-tablet{
+    width: 50%;
+    flex: none
+  }
+
+  .column.is-one-third{
+    width: 33.3333%;
+    flex: none
+  }
+
+  .column.is-one-quarter{
+    width: 25%;
+    flex: none
+  }
+}
+
+@media print, screen and (min-width: 769px) {
+  .column.is-6,  .column.is-6-tablet{
+    width: 50%;
+    flex: none
+  }
+}
+
+/* Button Utilities */
+
+.button{
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500
+}
+
+.is-radiusless{
+  border-radius: 0px
+}
+
+/* Form Utilities */
+
+.input{
+  display: block;
+  width: 100%;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(102 102 102 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.input:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.input:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity))
+}
+
+.field{
+  margin-bottom: 1rem
+}
+
+.has-addons{
+  display: flex
+}
+
+/* Component Utilities */
+
+.current-loc{
+  cursor: pointer
+}
+
+.modal,  .modal-background{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0
+}
+
+.modal{
+  position: fixed;
+  z-index: 40;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden
+}
+
+.modal.is-active{
+  display: flex
+}
+
+.modal-background{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  background-color: hsla(0, 0%, 4%, .86)
+}
+
+.modal-card{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.navbar,  .navbar-menu,  .navbar-start{
+  display: flex;
+  align-items: stretch
+}
+
+.navbar{
+  min-height: 3.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.navbar-burger{
+  display: none
+}
+
+.navbar-item,  .navbar-link{
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: block;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(74 74 74 / var(--tw-text-opacity))
+}
+
+.navbar-item:not(:last-child),   .navbar-link:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.navbar-item{
+  display: flex
+}
+
+.navbar-item.has-dropdown{
+  align-items: stretch;
+  padding: 0px
+}
+
+.navbar-item.is-active .navbar-dropdown,  .navbar-item.is-hoverable:hover .navbar-dropdown{
+  display: block
+}
+
+.navbar-item.is-active .navbar-dropdown:not(:last-child),   .navbar-item.is-hoverable:hover .navbar-dropdown:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.navbar-menu{
+  flex-shrink: 0;
+  flex-grow: 1
+}
+
+.navbar-start{
+  margin-right: auto;
+  justify-content: flex-start
+}
+
+.navbar-dropdown{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 20;
+  display: none;
+  min-width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-size: .875rem
+}
+
+/* Mobile Responsive Utilities */
+
+@media (max-width: 767px) {
+  .mobile\:m-0 {
+    margin: 0;
+  }
+
+  .mobile\:p-0 {
+    padding: 0;
+  }
+
+  .mobile\:w-1\/2 {
+    width: 50%;
+  }
+
+  .mobile\:w-full {
+    width: 100%;
+  }
+}
+
+/* Tablet Responsive Utilities */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet\:m-0 {
+    margin: 0;
+  }
+
+  .tablet\:p-0 {
+    padding: 0;
+  }
+
+  .tablet\:w-1\/3 {
+    width: 33.333333%;
+  }
+}
+
+/* =====================================================================
+   Bulma parity restore (after Bulma removal).
+   These classes are used in markup but lost their styling when Bulma was
+   removed. Values mirror production (NNA-Releases) Bulma output exactly.
+   Breakpoints match Bulma: tablet >= 769px, desktop >= 1088px, mobile <= 768px.
+   ===================================================================== */
+
+/* ---- Grid: numbered column widths (Bulma applies these from tablet up) ---- */
+
+@media print, screen and (min-width: 769px) {
+  .column.is-1 {
+    flex: none;
+    width: 8.3333333333%;
+  }
+
+  .column.is-2 {
+    flex: none;
+    width: 16.6666666667%;
+  }
+
+  .column.is-9 {
+    flex: none;
+    width: 75%;
+  }
+
+  .column.is-full {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* is-mobile parent keeps numbered widths at every width (matches prod) */
+
+.columns.is-mobile > .column.is-1 {
+  flex: none;
+  width: 8.3333333333%;
+}
+
+.columns.is-mobile > .column.is-2 {
+  flex: none;
+  width: 16.6666666667%;
+}
+
+.columns.is-mobile > .column.is-9 {
+  flex: none;
+  width: 75%;
+}
+
+.columns.is-mobile > .column.is-full {
+  flex: none;
+  width: 100%;
+}
+
+/* -desktop column widths (Bulma $desktop = 1088px in this project) */
+
+@media screen and (min-width: 1088px) {
+  .column.is-6-desktop {
+    flex: none;
+    width: 50%;
+  }
+
+  .column.is-10-desktop {
+    flex: none;
+    width: 83.3333333333%;
+  }
+
+  .column.is-half-desktop {
+    flex: none;
+    width: 50%;
+  }
+
+  .column.is-two-thirds-desktop {
+    flex: none;
+    width: 66.6666%;
+  }
+
+  .column.is-one-fifth-desktop {
+    flex: none;
+    width: 20%;
+  }
+}
+
+/* ---- Helper utilities ---- */
+
+.is-capitalized {
+  text-transform: capitalize !important;
+}
+
+.is-inline {
+  display: inline !important;
+}
+
+.has-background-white {
+  background-color: #fff !important;
+}
+
+.has-background-grey {
+  background-color: #7a7a7a !important;
+}
+
+.has-text-weight-normal {
+  font-weight: 400 !important;
+}
+
+/* Responsive text/display helpers */
+
+@media screen and (max-width: 768px) {
+  .has-text-right-mobile {
+    text-align: right !important;
+  }
+
+  .is-inline-block-mobile {
+    display: inline-block !important;
+  }
+}
+
+@media print, screen and (min-width: 769px) {
+  .has-text-centered-tablet {
+    text-align: center !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .has-text-centered-desktop {
+    text-align: center !important;
+  }
+}
+
+/* ---- Image / icon fixed sizes ---- */
+
+.image.is-16x16 {
+  height: 16px;
+  width: 16px;
+}
+
+.image.is-24x24 {
+  height: 24px;
+  width: 24px;
+}
+
+.icon.is-small {
+  height: 1rem;
+  width: 1rem;
+}
+
+/* ---- Level component ---- */
+
+.level {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.level:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media print, screen and (min-width: 769px) {
+  .level {
+    display: flex;
+  }
+}
+
+/* ---- Tabs: is-toggle modifier ---- */
+
+.tabs.is-toggle a {
+  border: 1px solid #dbdbdb;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.tabs.is-toggle a:hover {
+  background-color: #f5f5f5;
+  border-color: #b5b5b5;
+  z-index: 2;
+}
+
+.tabs.is-toggle li + li {
+  margin-left: -1px;
+}
+
+.tabs.is-toggle li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+
+.tabs.is-toggle li:last-child a {
+  border-radius: 0 4px 4px 0;
+}
+
+.tabs.is-toggle li.is-active a {
+  background-color: #3273dc;
+  border-color: #3273dc;
+  color: #fff;
+  z-index: 1;
+}
+
+.tabs.is-toggle ul {
+  border-bottom: none;
+}
+
+/* Refine-search filter: checkbox + multi-line label alignment */
+
+.refine-search-container .checkbox-container {
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 1280px) {
+  .refine-search-container .checkbox-container > .column.is-6,
+    .refine-search-container .checkbox-container > .refine-search-filters {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: auto;
+  }
+}
+
+.refine-search-container .custom-control.filter-checkbox .custom-control-label {
+  margin-top: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  
+}
+
+.container{
+  width: 100%
+}
+
+.\!container{
+  width: 100% !important
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px
+  }
+
+  .\!container{
+    max-width: 640px !important
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px
+  }
+
+  .\!container{
+    max-width: 768px !important
+  }
+}
+
+@media (min-width: 769px){
+  .container{
+    max-width: 769px
+  }
+
+  .\!container{
+    max-width: 769px !important
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px
+  }
+
+  .\!container{
+    max-width: 1024px !important
+  }
+}
+
+@media (min-width: 1088px){
+  .container{
+    max-width: 1088px
+  }
+
+  .\!container{
+    max-width: 1088px !important
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px
+  }
+
+  .\!container{
+    max-width: 1280px !important
+  }
+}
+
+@media (min-width: 1472px){
+  .container{
+    max-width: 1472px
+  }
+
+  .\!container{
+    max-width: 1472px !important
+  }
+}
+
+@media (min-width: 1920px){
+  .container{
+    max-width: 1920px
+  }
+
+  .\!container{
+    max-width: 1920px !important
+  }
+}
+
+.container{
+  max-width: 100%;
+  margin: auto;
+}
+
+.\!container{
+  max-width: 100% !important;
+  margin: auto !important;
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1320px
+  }
+
+  .\!container{
+    max-width: 1320px !important
+  }
+}
+
+.column-custom-container{
+  max-width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 1280px){
+  .column-custom-container{
+    max-width: 1170px
+  }
+}
+
+.legal-text{
+  font-size: 3.75vw;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .legal-text{
+    font-size: .7rem
+  }
+}
+
+@media (min-width: 769px){
+  .legal-text{
+    font-size: .9vw
+  }
+}
+
+@media (min-width: 1088px){
+  .legal-text{
+    font-size: .6rem
+  }
+}
+
+@media (min-width: 1280px){
+  .legal-text{
+    font-size: .7rem
+  }
+}
+
+@media (min-width: 1472px){
+  .legal-text{
+    font-size: .75rem
+  }
+}
+
+.popup-link{
+  font-family: NissanBrand-Regular;
+  font-size: 4.2vw;
+  display: block;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .popup-link{
+    font-size: .95rem
+  }
+}
+
+@media (min-width: 769px){
+  .popup-link{
+    font-size: 1.25vw
+  }
+}
+
+@media (min-width: 1088px){
+  .popup-link{
+    font-size: .7rem
+  }
+}
+
+@media (min-width: 1280px){
+  .popup-link{
+    font-size: .85rem
+  }
+}
+
+@media (min-width: 1472px){
+  .popup-link{
+    font-size: .95rem
+  }
+}
+
+@media (max-width: 767px){
+  body.dealer-list-map-view-active, 
+    body:has(#dealerList.dealer-list-withmap){
+    height: 100dvh;
+    overflow: hidden
+  }
+
+  body.dealer-list-map-view-active > .container, 
+    body:has(#dealerList.dealer-list-withmap) > .container{
+    display: flex;
+    height: 100%;
+    min-height: 100dvh;
+    flex-direction: column
+  }
+
+  body.dealer-list-map-view-active > .\!container, 
+    body:has(#dealerList.dealer-list-withmap) > .\!container{
+    display: flex;
+    height: 100%;
+    min-height: 100dvh;
+    flex-direction: column
+  }
+
+  body.dealer-list-map-view-active > footer, 
+    body:has(#dealerList.dealer-list-withmap) > footer{
+    display: none !important
+  }
+
+  body.dealer-list-map-view-active .dealer-list-safety-recall, 
+    body:has(#dealerList.dealer-list-withmap) .dealer-list-safety-recall{
+    display: none !important
+  }
+
+  body.dealer-list-map-view-active main, 
+    body:has(#dealerList.dealer-list-withmap) main{
+    display: flex;
+    min-height: 0px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    overflow: hidden
+  }
+
+  body.dealer-list-map-view-active main > .container, 
+    body:has(#dealerList.dealer-list-withmap) main > .container{
+    display: flex;
+    min-height: 0px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    overflow: hidden
+  }
+
+  body.dealer-list-map-view-active main > .\!container, 
+    body:has(#dealerList.dealer-list-withmap) main > .\!container{
+    display: flex;
+    min-height: 0px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    overflow: hidden
+  }
+
+  body.map-view-footer-overlay-open{
+    overflow: hidden
+  }
+
+  .dealer-list-withmap{
+    display: flex;
+    min-height: 0px;
+    flex: 1 1 0%;
+    flex-direction: column;
+    overflow: hidden
+  }
+
+  .dealer-list-withmap .result-container{
+    display: flex;
+    min-height: 0px;
+    flex: 1 1 0%;
+    flex-direction: column
+  }
+
+  .dealer-list-withmap .dealer-list-container{
+    display: none !important
+  }
+
+  .dealer-list-withmap .map-wrapper {
+    position: relative;
+    display: flex;
+    min-height: 0px;
+    width: 100%;
+    flex: 1 1 0%;
+    flex-direction: column;
+  }
+
+  .dealer-list-withmap .g-map{
+    height: auto;
+    min-height: 0px;
+    flex: 1 1 0%
+  }
+
+  .dealer-list-withoutmap .map-view-footer-trigger, 
+    .dealer-list-withoutmap .map-indicators{
+    display: none !important
+  }
+
+  .dealer-list-withmap .map-view-footer-trigger:not([hidden]){
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    display: block
+  }
+
+  .dealer-list-withmap .map-view-footer-trigger__button{
+    cursor: pointer;
+    border-width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-top: 9px;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.24px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+  }
+
+  .map-view-footer-overlay{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 30 30 / var(--tw-bg-opacity))
+  }
+
+  .map-view-footer-overlay.is-active{
+    display: flex
+  }
+
+  .map-view-footer-overlay__header{
+    display: flex;
+    height: 50px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+    padding-right: 5px
+  }
+
+  .map-view-footer-overlay__close {
+    padding: 0;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.375rem;
+    border-width: 0px;
+    background-color: transparent;
+    padding: 0px;
+    font-family: NissanBrand-light;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .map-view-footer-overlay__close img{
+    height: 35px;
+    width: 35px
+  }
+
+  .map-view-footer-overlay__content{
+    min-height: 0px;
+    flex: 1 1 0%;
+    overflow-y: auto
+  }
+}
+
+.map-view-footer-overlay__content {
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767px){
+  .map-view-footer-overlay__content > section{
+    padding-top: 30px;
+    padding-bottom: 30px
+  }
+
+  .map-view-footer-overlay__content footer{
+    display: block !important
+  }
+
+  .map-view-footer-overlay__content footer .container {
+    margin: 0;
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map-view-footer-overlay__content footer .\!container {
+    margin: 0;
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.pointer-events-none{
+  pointer-events: none
+}
+
+.pointer-events-auto{
+  pointer-events: auto
+}
+
+.visible{
+  visibility: visible
+}
+
+.\!invisible{
+  visibility: hidden !important
+}
+
+.invisible{
+  visibility: hidden
+}
+
+.static{
+  position: static
+}
+
+.fixed{
+  position: fixed
+}
+
+.absolute{
+  position: absolute
+}
+
+.relative{
+  position: relative
+}
+
+.\!relative{
+  position: relative !important
+}
+
+.sticky{
+  position: sticky
+}
+
+.inset-0{
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px
+}
+
+.inset-x-5{
+  left: 1.25rem;
+  right: 1.25rem
+}
+
+.inset-x-0{
+  left: 0px;
+  right: 0px
+}
+
+.left-0{
+  left: 0px
+}
+
+.top-full{
+  top: 100%
+}
+
+.bottom-\[0\]{
+  bottom: 0
+}
+
+.left-\[0\]{
+  left: 0
+}
+
+.right-\[0\]{
+  right: 0
+}
+
+.top-\[0\]{
+  top: 0
+}
+
+.left-2\/4{
+  left: 50%
+}
+
+.top-2\/4{
+  top: 50%
+}
+
+.right-0{
+  right: 0px
+}
+
+.bottom-0{
+  bottom: 0px
+}
+
+.top-\[147px\]{
+  top: 147px
+}
+
+.top-\[67px\]{
+  top: 67px
+}
+
+.top-0{
+  top: 0px
+}
+
+.right-6{
+  right: 1.5rem
+}
+
+.top-12{
+  top: 3rem
+}
+
+.-right-20{
+  right: -5rem
+}
+
+.bottom-auto{
+  bottom: auto
+}
+
+.top-\[calc\(100vw-90px\)\]{
+  top: calc(100vw - 90px)
+}
+
+.bottom-5{
+  bottom: 1.25rem
+}
+
+.right-\[10px\]{
+  right: 10px
+}
+
+.top-\[10px\]{
+  top: 10px
+}
+
+.right-4{
+  right: 1rem
+}
+
+.bottom-6{
+  bottom: 1.5rem
+}
+
+.left-8{
+  left: 2rem
+}
+
+.left-4{
+  left: 1rem
+}
+
+.bottom-12{
+  bottom: 3rem
+}
+
+.bottom-\[2em\]{
+  bottom: 2em
+}
+
+.top-\[calc\(40\/601\*100\%\)\]{
+  top: calc(40 / 601 * 100%)
+}
+
+.bottom-\[-0\.5em\]{
+  bottom: -0.5em
+}
+
+.left-\[5px\]{
+  left: 5px
+}
+
+.top-\[5px\]{
+  top: 5px
+}
+
+.z-20{
+  z-index: 20
+}
+
+.z-40{
+  z-index: 40
+}
+
+.z-\[34\]{
+  z-index: 34
+}
+
+.z-10{
+  z-index: 10
+}
+
+.z-\[9\]{
+  z-index: 9
+}
+
+.float-right{
+  float: right
+}
+
+.m-0{
+  margin: 0px
+}
+
+.\!m-0{
+  margin: 0px !important
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto
+}
+
+.mx-\[22px\]{
+  margin-left: 22px;
+  margin-right: 22px
+}
+
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem
+}
+
+.my-\[10px\]{
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
+
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem
+}
+
+.my-\[30px\]{
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.-mx-6{
+  margin-left: -1.5rem;
+  margin-right: -1.5rem
+}
+
+.\!mx-\[15px\]{
+  margin-left: 15px !important;
+  margin-right: 15px !important
+}
+
+.mx-\[15px\]{
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem
+}
+
+.\!my-0{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important
+}
+
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem
+}
+
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem
+}
+
+.\!-ml-\[2px\]{
+  margin-left: -2px !important
+}
+
+.\!mt-0{
+  margin-top: 0px !important
+}
+
+.\!mr-0{
+  margin-right: 0px !important
+}
+
+.\!mb-0{
+  margin-bottom: 0px !important
+}
+
+.mb-2\.5{
+  margin-bottom: 0.625rem
+}
+
+.mb-2{
+  margin-bottom: 0.5rem
+}
+
+.mb-\[\.75rem\]{
+  margin-bottom: .75rem
+}
+
+.mb-\[1\.5rem\]{
+  margin-bottom: 1.5rem
+}
+
+.mt-\[-0\.4375em\]{
+  margin-top: -0.4375em
+}
+
+.mt-4{
+  margin-top: 1rem
+}
+
+.\!-mt-2{
+  margin-top: -0.5rem !important
+}
+
+.mb-0{
+  margin-bottom: 0px
+}
+
+.mb-4{
+  margin-bottom: 1rem
+}
+
+.mb-\[30px\]{
+  margin-bottom: 30px
+}
+
+.mb-\[28px\]{
+  margin-bottom: 28px
+}
+
+.ml-\[50px\]{
+  margin-left: 50px
+}
+
+.ml-3{
+  margin-left: 0.75rem
+}
+
+.mr-\[5px\]{
+  margin-right: 5px
+}
+
+.mb-\[5px\]{
+  margin-bottom: 5px
+}
+
+.-mt-\[45px\]{
+  margin-top: -45px
+}
+
+.mr-2{
+  margin-right: 0.5rem
+}
+
+.mr-\[30px\]{
+  margin-right: 30px
+}
+
+.mt-0{
+  margin-top: 0px
+}
+
+.mb-3{
+  margin-bottom: 0.75rem
+}
+
+.mt-11{
+  margin-top: 2.75rem
+}
+
+.mt-8{
+  margin-top: 2rem
+}
+
+.mt-6{
+  margin-top: 1.5rem
+}
+
+.mb-8{
+  margin-bottom: 2rem
+}
+
+.mt-\[10px\]{
+  margin-top: 10px
+}
+
+.ml-2\.5{
+  margin-left: 0.625rem
+}
+
+.mt-\[3px\]{
+  margin-top: 3px
+}
+
+.ml-2{
+  margin-left: 0.5rem
+}
+
+.mt-1{
+  margin-top: 0.25rem
+}
+
+.\!ml-0{
+  margin-left: 0px !important
+}
+
+.\!mt-\[18px\]{
+  margin-top: 18px !important
+}
+
+.mb-1{
+  margin-bottom: 0.25rem
+}
+
+.mt-10{
+  margin-top: 2.5rem
+}
+
+.mb-5{
+  margin-bottom: 1.25rem
+}
+
+.mb-10{
+  margin-bottom: 2.5rem
+}
+
+.mb-6{
+  margin-bottom: 1.5rem
+}
+
+.mr-\[10px\]{
+  margin-right: 10px
+}
+
+.mt-2{
+  margin-top: 0.5rem
+}
+
+.mb-\[3\.25rem\]{
+  margin-bottom: 3.25rem
+}
+
+.mt-7{
+  margin-top: 1.75rem
+}
+
+.mt-3{
+  margin-top: 0.75rem
+}
+
+.mb-9{
+  margin-bottom: 2.25rem
+}
+
+.mb-\[9px\]{
+  margin-bottom: 9px
+}
+
+.mb-\[40px\]{
+  margin-bottom: 40px
+}
+
+.\!mb-1{
+  margin-bottom: 0.25rem !important
+}
+
+.mb-16{
+  margin-bottom: 4rem
+}
+
+.mt-5{
+  margin-top: 1.25rem
+}
+
+.mb-20{
+  margin-bottom: 5rem
+}
+
+.mr-5{
+  margin-right: 1.25rem
+}
+
+.-mt-\[1px\]{
+  margin-top: -1px
+}
+
+.mr-8{
+  margin-right: 2rem
+}
+
+.mr-4{
+  margin-right: 1rem
+}
+
+.-ml-1{
+  margin-left: -0.25rem
+}
+
+.-mt-\[3px\]{
+  margin-top: -3px
+}
+
+.mb-\[2\.5rem\]{
+  margin-bottom: 2.5rem
+}
+
+.\!ml-4{
+  margin-left: 1rem !important
+}
+
+.mt-12{
+  margin-top: 3rem
+}
+
+.\!ml-8{
+  margin-left: 2rem !important
+}
+
+.ml-6{
+  margin-left: 1.5rem
+}
+
+.mt-auto{
+  margin-top: auto
+}
+
+.mt-2\.5{
+  margin-top: 0.625rem
+}
+
+.mt-\[30px\]{
+  margin-top: 30px
+}
+
+.mb-\[35px\]{
+  margin-bottom: 35px
+}
+
+.\!mb-\[10px\]{
+  margin-bottom: 10px !important
+}
+
+.mr-6{
+  margin-right: 1.5rem
+}
+
+.ml-4{
+  margin-left: 1rem
+}
+
+.\!ml-2{
+  margin-left: 0.5rem !important
+}
+
+.mb-3\.5{
+  margin-bottom: 0.875rem
+}
+
+.mb-7{
+  margin-bottom: 1.75rem
+}
+
+.mb-\[2em\]{
+  margin-bottom: 2em
+}
+
+.mr-1{
+  margin-right: 0.25rem
+}
+
+.\!mb-5{
+  margin-bottom: 1.25rem !important
+}
+
+.mt-\[20px\]{
+  margin-top: 20px
+}
+
+.\!ml-16{
+  margin-left: 4rem !important
+}
+
+.\!ml-24{
+  margin-left: 6rem !important
+}
+
+.ml-5{
+  margin-left: 1.25rem
+}
+
+.mb-24{
+  margin-bottom: 6rem
+}
+
+.mb-\[10px\]{
+  margin-bottom: 10px
+}
+
+.mb-\[60px\]{
+  margin-bottom: 60px
+}
+
+.\!mb-3{
+  margin-bottom: 0.75rem !important
+}
+
+.ml-auto{
+  margin-left: auto
+}
+
+.mr-auto{
+  margin-right: auto
+}
+
+.mb-1\.5{
+  margin-bottom: 0.375rem
+}
+
+.mb-\[55px\]{
+  margin-bottom: 55px
+}
+
+.-mt-4{
+  margin-top: -1rem
+}
+
+.-mb-6{
+  margin-bottom: -1.5rem
+}
+
+.mr-\[15px\]{
+  margin-right: 15px
+}
+
+.\!mb-10{
+  margin-bottom: 2.5rem !important
+}
+
+.box-border{
+  box-sizing: border-box
+}
+
+.block{
+  display: block
+}
+
+.inline-block{
+  display: inline-block
+}
+
+.inline{
+  display: inline
+}
+
+.flex{
+  display: flex
+}
+
+.\!flex{
+  display: flex !important
+}
+
+.inline-flex{
+  display: inline-flex
+}
+
+.table{
+  display: table
+}
+
+.grid{
+  display: grid
+}
+
+.contents{
+  display: contents
+}
+
+.hidden{
+  display: none
+}
+
+.\!hidden{
+  display: none !important
+}
+
+.h-\[1px\]{
+  height: 1px
+}
+
+.h-\[20px\]{
+  height: 20px
+}
+
+.h-\[2px\]{
+  height: 2px
+}
+
+.h-1\/2{
+  height: 50%
+}
+
+.h-\[0\.625em\]{
+  height: 0.625em
+}
+
+.h-6{
+  height: 1.5rem
+}
+
+.\!h-\[11px\]{
+  height: 11px !important
+}
+
+.\!h-\[35px\]{
+  height: 35px !important
+}
+
+.\!h-\[16px\]{
+  height: 16px !important
+}
+
+.h-\[16px\]{
+  height: 16px
+}
+
+.h-screen{
+  height: 100vh
+}
+
+.h-full{
+  height: 100%
+}
+
+.h-1{
+  height: 0.25rem
+}
+
+.h-10{
+  height: 2.5rem
+}
+
+.h-\[35px\]{
+  height: 35px
+}
+
+.h-\[9px\]{
+  height: 9px
+}
+
+.h-3{
+  height: 0.75rem
+}
+
+.h-\[48px\]{
+  height: 48px
+}
+
+.h-\[25px\]{
+  height: 25px
+}
+
+.h-\[225px\]{
+  height: 225px
+}
+
+.h-\[10px\]{
+  height: 10px
+}
+
+.h-\[400px\]{
+  height: 400px
+}
+
+.\!h-\[33px\]{
+  height: 33px !important
+}
+
+.\!h-\[19\.36px\]{
+  height: 19.36px !important
+}
+
+.\!h-\[288px\]{
+  height: 288px !important
+}
+
+.h-\[375px\]{
+  height: 375px
+}
+
+.h-auto{
+  height: auto
+}
+
+.max-h-\[20px\]{
+  max-height: 20px
+}
+
+.max-h-\[calc\(100vh-160px\)\]{
+  max-height: calc(100vh - 160px)
+}
+
+.max-h-\[calc\(100vh-40px\)\]{
+  max-height: calc(100vh - 40px)
+}
+
+.max-h-\[100px\]{
+  max-height: 100px
+}
+
+.max-h-\[90px\]{
+  max-height: 90px
+}
+
+.min-h-\[3\.25rem\]{
+  min-height: 3.25rem
+}
+
+.min-h-\[20px\]{
+  min-height: 20px
+}
+
+.min-h-\[92vh\]{
+  min-height: 92vh
+}
+
+.w-\[33\.3333\%\]{
+  width: 33.3333%
+}
+
+.w-full{
+  width: 100%
+}
+
+.w-1{
+  width: 0.25rem
+}
+
+.w-\[20px\]{
+  width: 20px
+}
+
+.w-\[2px\]{
+  width: 2px
+}
+
+.w-\[0\.625em\]{
+  width: 0.625em
+}
+
+.w-4{
+  width: 1rem
+}
+
+.\!w-full{
+  width: 100% !important
+}
+
+.\!w-\[11px\]{
+  width: 11px !important
+}
+
+.\!w-\[35px\]{
+  width: 35px !important
+}
+
+.\!w-\[26px\]{
+  width: 26px !important
+}
+
+.w-\[26px\]{
+  width: 26px
+}
+
+.w-auto{
+  width: auto
+}
+
+.w-0{
+  width: 0px
+}
+
+.w-7\/12{
+  width: 58.333333%
+}
+
+.w-6{
+  width: 1.5rem
+}
+
+.w-screen{
+  width: 100vw
+}
+
+.w-11{
+  width: 2.75rem
+}
+
+.w-\[35px\]{
+  width: 35px
+}
+
+.w-\[9px\]{
+  width: 9px
+}
+
+.w-3{
+  width: 0.75rem
+}
+
+.w-\[163px\]{
+  width: 163px
+}
+
+.\!w-\[200px\]{
+  width: 200px !important
+}
+
+.w-2\/4{
+  width: 50%
+}
+
+.w-\[25px\]{
+  width: 25px
+}
+
+.w-\[296px\]{
+  width: 296px
+}
+
+.w-10{
+  width: 2.5rem
+}
+
+.w-\[45rem\]{
+  width: 45rem
+}
+
+.w-\[94\%\]{
+  width: 94%
+}
+
+.w-\[50px\]{
+  width: 50px
+}
+
+.w-3\/4{
+  width: 75%
+}
+
+.w-\[33px\]{
+  width: 33px
+}
+
+.w-\[12\.16px\]{
+  width: 12.16px
+}
+
+.w-\[13px\]{
+  width: 13px
+}
+
+.w-\[31\.75\%\]{
+  width: 31.75%
+}
+
+.w-\[68\.25\%\]{
+  width: 68.25%
+}
+
+.\!w-\[375px\]{
+  width: 375px !important
+}
+
+.w-\[46px\]{
+  width: 46px
+}
+
+.w-\[85\%\]{
+  width: 85%
+}
+
+.w-14{
+  width: 3.5rem
+}
+
+.min-w-\[12rem\]{
+  min-width: 12rem
+}
+
+.min-w-full{
+  min-width: 100%
+}
+
+.min-w-\[20px\]{
+  min-width: 20px
+}
+
+.min-w-0{
+  min-width: 0px
+}
+
+.min-w-\[296px\]{
+  min-width: 296px
+}
+
+.min-w-\[133px\]{
+  min-width: 133px
+}
+
+.min-w-\[62px\]{
+  min-width: 62px
+}
+
+.min-w-\[238px\]{
+  min-width: 238px
+}
+
+.max-w-screen-xl{
+  max-width: 1088px
+}
+
+.max-w-none{
+  max-width: none
+}
+
+.max-w-\[20px\]{
+  max-width: 20px
+}
+
+.max-w-screen-sm{
+  max-width: 640px
+}
+
+.max-w-full{
+  max-width: 100%
+}
+
+.max-w-\[296px\]{
+  max-width: 296px
+}
+
+.max-w-\[133px\]{
+  max-width: 133px
+}
+
+.max-w-\[62px\]{
+  max-width: 62px
+}
+
+.max-w-\[200px\]{
+  max-width: 200px
+}
+
+.\!max-w-\[unset\]{
+  max-width: unset !important
+}
+
+.max-w-\[238px\]{
+  max-width: 238px
+}
+
+.max-w-\[345px\]{
+  max-width: 345px
+}
+
+.flex-none{
+  flex: none
+}
+
+.flex-\[2\]{
+  flex: 2
+}
+
+.flex-1{
+  flex: 1 1 0%
+}
+
+.flex-shrink{
+  flex-shrink: 1
+}
+
+.flex-shrink-0{
+  flex-shrink: 0
+}
+
+.shrink-0{
+  flex-shrink: 0
+}
+
+.flex-grow{
+  flex-grow: 1
+}
+
+.flex-grow-0{
+  flex-grow: 0
+}
+
+.grow{
+  flex-grow: 1
+}
+
+.origin-\[center_center\]{
+  transform-origin: center center
+}
+
+.origin-center{
+  transform-origin: center
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.-translate-x-full{
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.-rotate-45{
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.\!transform-none{
+  transform: none !important
+}
+
+.transform-none{
+  transform: none
+}
+
+.cursor-pointer{
+  cursor: pointer
+}
+
+.cursor-grab{
+  cursor: grab
+}
+
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none
+}
+
+.resize{
+  resize: both
+}
+
+.list-disc{
+  list-style-type: disc
+}
+
+.list-decimal{
+  list-style-type: decimal
+}
+
+.list-none{
+  list-style-type: none
+}
+
+.appearance-none{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.flex-row{
+  flex-direction: row
+}
+
+.flex-row-reverse{
+  flex-direction: row-reverse
+}
+
+.\!flex-row-reverse{
+  flex-direction: row-reverse !important
+}
+
+.flex-col{
+  flex-direction: column
+}
+
+.flex-wrap{
+  flex-wrap: wrap
+}
+
+.flex-nowrap{
+  flex-wrap: nowrap
+}
+
+.place-content-center{
+  place-content: center
+}
+
+.place-content-start{
+  place-content: start
+}
+
+.content-center{
+  align-content: center
+}
+
+.items-start{
+  align-items: flex-start
+}
+
+.items-end{
+  align-items: flex-end
+}
+
+.items-center{
+  align-items: center
+}
+
+.items-stretch{
+  align-items: stretch
+}
+
+.justify-start{
+  justify-content: flex-start
+}
+
+.justify-end{
+  justify-content: flex-end
+}
+
+.justify-center{
+  justify-content: center
+}
+
+.justify-between{
+  justify-content: space-between
+}
+
+.gap-4{
+  gap: 1rem
+}
+
+.gap-\[30px\]{
+  gap: 30px
+}
+
+.gap-6{
+  gap: 1.5rem
+}
+
+.gap-3\.5{
+  gap: 0.875rem
+}
+
+.gap-3{
+  gap: 0.75rem
+}
+
+.gap-2\.5{
+  gap: 0.625rem
+}
+
+.gap-2{
+  gap: 0.5rem
+}
+
+.gap-\[8px\]{
+  gap: 8px
+}
+
+.gap-\[10px\]{
+  gap: 10px
+}
+
+.gap-\[15px\]{
+  gap: 15px
+}
+
+.gap-10{
+  gap: 2.5rem
+}
+
+.gap-5{
+  gap: 1.25rem
+}
+
+.self-start{
+  align-self: flex-start
+}
+
+.self-end{
+  align-self: flex-end
+}
+
+.self-center{
+  align-self: center
+}
+
+.self-stretch{
+  align-self: stretch
+}
+
+.overflow-auto{
+  overflow: auto
+}
+
+.overflow-hidden{
+  overflow: hidden
+}
+
+.overflow-x-auto{
+  overflow-x: auto
+}
+
+.overflow-y-auto{
+  overflow-y: auto
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll
+}
+
+.whitespace-normal{
+  white-space: normal
+}
+
+.whitespace-nowrap{
+  white-space: nowrap
+}
+
+.break-words{
+  overflow-wrap: break-word
+}
+
+.rounded-md{
+  border-radius: 0.375rem
+}
+
+.rounded-full{
+  border-radius: 9999px
+}
+
+.rounded-sm{
+  border-radius: 0.125rem
+}
+
+.rounded-\[40px\]{
+  border-radius: 40px
+}
+
+.rounded-\[24px\]{
+  border-radius: 24px
+}
+
+.rounded{
+  border-radius: 0.25rem
+}
+
+.rounded-none{
+  border-radius: 0px
+}
+
+.rounded-xl{
+  border-radius: 0.75rem
+}
+
+.rounded-r-xl{
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem
+}
+
+.border{
+  border-width: 1px
+}
+
+.border-\[3px\]{
+  border-width: 3px
+}
+
+.\!border{
+  border-width: 1px !important
+}
+
+.border-0{
+  border-width: 0px
+}
+
+.\!border-2{
+  border-width: 2px !important
+}
+
+.border-4{
+  border-width: 4px
+}
+
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px
+}
+
+.border-r-0{
+  border-right-width: 0px
+}
+
+.border-t-0{
+  border-top-width: 0px
+}
+
+.border-b-2{
+  border-bottom-width: 2px
+}
+
+.\!border-t-0{
+  border-top-width: 0px !important
+}
+
+.\!border-r-0{
+  border-right-width: 0px !important
+}
+
+.border-t{
+  border-top-width: 1px
+}
+
+.border-b{
+  border-bottom-width: 1px
+}
+
+.border-t-2{
+  border-top-width: 2px
+}
+
+.border-solid{
+  border-style: solid
+}
+
+.border-none{
+  border-style: none
+}
+
+.border-transparent{
+  border-color: transparent
+}
+
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(102 102 102 / var(--tw-border-opacity))
+}
+
+.border-nissan-red{
+  --tw-border-opacity: 1;
+  border-color: rgb(195 0 47 / var(--tw-border-opacity))
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity))
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity))
+}
+
+.\!border-white{
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(52 52 52 / var(--tw-border-opacity))
+}
+
+.border-gray-550{
+  --tw-border-opacity: 1;
+  border-color: rgb(217 217 217 / var(--tw-border-opacity))
+}
+
+.border-gray-20{
+  --tw-border-opacity: 1;
+  border-color: rgb(210 210 210 / var(--tw-border-opacity))
+}
+
+.border-gray-150{
+  --tw-border-opacity: 1;
+  border-color: rgb(186 186 186 / var(--tw-border-opacity))
+}
+
+.border-gray-25{
+  --tw-border-opacity: 1;
+  border-color: rgb(241 241 241 / var(--tw-border-opacity))
+}
+
+.border-gray-50{
+  --tw-border-opacity: 1;
+  border-color: rgb(243 243 243 / var(--tw-border-opacity))
+}
+
+.bg-\[\#dbdbdb\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 219 219 / var(--tw-bg-opacity))
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.bg-\[\#fff\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.bg-transparent{
+  background-color: transparent
+}
+
+.bg-\[\#c3002f\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity))
+}
+
+.bg-\[rgba\(10\2c 10\2c 10\2c 0\.86\)\]{
+  background-color: rgba(10,10,10,0.86)
+}
+
+.bg-nissan-red{
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity))
+}
+
+.\!bg-transparent{
+  background-color: transparent !important
+}
+
+.\!bg-black-50{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity)) !important
+}
+
+.bg-silver{
+  --tw-bg-opacity: 1;
+  background-color: rgb(193 193 193 / var(--tw-bg-opacity))
+}
+
+.bg-\[\#fafafa\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity))
+}
+
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 52 52 / var(--tw-bg-opacity))
+}
+
+.bg-gray-99{
+  background-color: #999;
+}
+
+.bg-beige-10{
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 236 232 / var(--tw-bg-opacity))
+}
+
+.bg-gray-20{
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 210 210 / var(--tw-bg-opacity))
+}
+
+.bg-gray-25{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity))
+}
+
+.bg-black-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity))
+}
+
+.\!bg-gray-5{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity)) !important
+}
+
+.bg-beige-20{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 236 232 / var(--tw-bg-opacity))
+}
+
+.bg-gray-5{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity))
+}
+
+.bg-white-arrow{
+  background-image: url('../../images/nissan/icons/right-arrow.svg')
+}
+
+.\!bg-up-white-arrow{
+  background-image: url('../../images/nissan/icons/up-arrow.svg') !important
+}
+
+.bg-red-arrow{
+  background-image: url('../../images/nissan/icons/right-arrow-red.svg')
+}
+
+.\!bg-up-red-arrow{
+  background-image: url('../../images/nissan/icons/up-arrow-red.svg') !important
+}
+
+.bg-black-arrow{
+  background-image: url('../../images/nissan/icons/right-arrow-black.svg')
+}
+
+.\!bg-close{
+  background-image: url('../../images/nissan/icons/popup-close.svg') !important
+}
+
+.\!bg-white-arrow{
+  background-image: url('../../images/nissan/icons/right-arrow.svg') !important
+}
+
+.bg-contain{
+  background-size: contain
+}
+
+.bg-\[right_20px_center\]{
+  background-position: right 20px center
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat
+}
+
+.\!bg-no-repeat{
+  background-repeat: no-repeat !important
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover
+}
+
+.object-left{
+  -o-object-position: left;
+     object-position: left
+}
+
+.p-\[\.75rem\]{
+  padding: .75rem
+}
+
+.p-0{
+  padding: 0px
+}
+
+.\!p-0{
+  padding: 0px !important
+}
+
+.p-3{
+  padding: 0.75rem
+}
+
+.p-1\.5{
+  padding: 0.375rem
+}
+
+.p-1{
+  padding: 0.25rem
+}
+
+.p-\[15px\]{
+  padding: 15px
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem
+}
+
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.py-\[10px\]{
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+.px-\[0\.75em\]{
+  padding-left: 0.75em;
+  padding-right: 0.75em
+}
+
+.py-\[0\.375em\]{
+  padding-top: 0.375em;
+  padding-bottom: 0.375em
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
+.\!py-10{
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important
+}
+
+.px-\[10px\]{
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem
+}
+
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem
+}
+
+.py-\[4\.5px\]{
+  padding-top: 4.5px;
+  padding-bottom: 4.5px
+}
+
+.px-\[9px\]{
+  padding-left: 9px;
+  padding-right: 9px
+}
+
+.px-\[0px\]{
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.py-\[2em\]{
+  padding-top: 2em;
+  padding-bottom: 2em
+}
+
+.py-\[30px\]{
+  padding-top: 30px;
+  padding-bottom: 30px
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem
+}
+
+.\!px-\[20px\]{
+  padding-left: 20px !important;
+  padding-right: 20px !important
+}
+
+.\!py-2{
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important
+}
+
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
+
+.px-\[1em\]{
+  padding-left: 1em;
+  padding-right: 1em
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
+}
+
+.py-\[26px\]{
+  padding-top: 26px;
+  padding-bottom: 26px
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem
+}
+
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px
+}
+
+.py-\[50px\]{
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem
+}
+
+.pt-1{
+  padding-top: 0.25rem
+}
+
+.pl-5{
+  padding-left: 1.25rem
+}
+
+.pr-\[50px\]{
+  padding-right: 50px
+}
+
+.pt-\[60px\]{
+  padding-top: 60px
+}
+
+.pt-\[15px\]{
+  padding-top: 15px
+}
+
+.pb-\[10px\]{
+  padding-bottom: 10px
+}
+
+.pb-2\.5{
+  padding-bottom: 0.625rem
+}
+
+.pb-2{
+  padding-bottom: 0.5rem
+}
+
+.pt-4{
+  padding-top: 1rem
+}
+
+.pl-4{
+  padding-left: 1rem
+}
+
+.pr-7{
+  padding-right: 1.75rem
+}
+
+.pb-0{
+  padding-bottom: 0px
+}
+
+.pb-6{
+  padding-bottom: 1.5rem
+}
+
+.pt-6{
+  padding-top: 1.5rem
+}
+
+.pb-4{
+  padding-bottom: 1rem
+}
+
+.pt-0{
+  padding-top: 0px
+}
+
+.pt-2{
+  padding-top: 0.5rem
+}
+
+.pb-8{
+  padding-bottom: 2rem
+}
+
+.pl-3{
+  padding-left: 0.75rem
+}
+
+.\!pl-0{
+  padding-left: 0px !important
+}
+
+.pt-5{
+  padding-top: 1.25rem
+}
+
+.pt-\[30px\]{
+  padding-top: 30px
+}
+
+.pb-3{
+  padding-bottom: 0.75rem
+}
+
+.pt-20{
+  padding-top: 5rem
+}
+
+.pr-4{
+  padding-right: 1rem
+}
+
+.pt-9{
+  padding-top: 2.25rem
+}
+
+.pb-\[40px\]{
+  padding-bottom: 40px
+}
+
+.pt-8{
+  padding-top: 2rem
+}
+
+.pt-3{
+  padding-top: 0.75rem
+}
+
+.pb-12{
+  padding-bottom: 3rem
+}
+
+.pt-\[6em\]{
+  padding-top: 6em
+}
+
+.\!pr-0{
+  padding-right: 0px !important
+}
+
+.pb-\[30px\]{
+  padding-bottom: 30px
+}
+
+.pl-8{
+  padding-left: 2rem
+}
+
+.pr-16{
+  padding-right: 4rem
+}
+
+.pb-\[20px\]{
+  padding-bottom: 20px
+}
+
+.\!pb-10{
+  padding-bottom: 2.5rem !important
+}
+
+.pb-\[13px\]{
+  padding-bottom: 13px
+}
+
+.pb-\[8px\]{
+  padding-bottom: 8px
+}
+
+.pl-\[15px\]{
+  padding-left: 15px
+}
+
+.pr-\[15px\]{
+  padding-right: 15px
+}
+
+.pb-7{
+  padding-bottom: 1.75rem
+}
+
+.pt-10{
+  padding-top: 2.5rem
+}
+
+.pb-16{
+  padding-bottom: 4rem
+}
+
+.\!pr-\[14px\]{
+  padding-right: 14px !important
+}
+
+.pb-24{
+  padding-bottom: 6rem
+}
+
+.\!pr-\[50px\]{
+  padding-right: 50px !important
+}
+
+.pr-8{
+  padding-right: 2rem
+}
+
+.pb-5{
+  padding-bottom: 1.25rem
+}
+
+.pr-\[10rem\]{
+  padding-right: 10rem
+}
+
+.pl-6{
+  padding-left: 1.5rem
+}
+
+.pl-2{
+  padding-left: 0.5rem
+}
+
+.pt-\[3\.8em\]{
+  padding-top: 3.8em
+}
+
+.pb-\[60px\]{
+  padding-bottom: 60px
+}
+
+.pr-5{
+  padding-right: 1.25rem
+}
+
+.text-left{
+  text-align: left
+}
+
+.\!text-left{
+  text-align: left !important
+}
+
+.text-center{
+  text-align: center
+}
+
+.text-right{
+  text-align: right
+}
+
+.align-top{
+  vertical-align: top
+}
+
+.align-middle{
+  vertical-align: middle
+}
+
+.align-bottom{
+  vertical-align: bottom
+}
+
+.font-bold{
+  font-family: NissanBrand-Bold
+}
+
+.font-regular{
+  font-family: NissanBrand-Regular
+}
+
+.\!font-regular{
+  font-family: NissanBrand-Regular !important
+}
+
+.font-light{
+  font-family: NissanBrand-light
+}
+
+.\!font-light{
+  font-family: NissanBrand-light !important
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.text-\[\.875rem\]{
+  font-size: .875rem
+}
+
+.text-\[0\]{
+  font-size: 0
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+.\!text-\[13px\]{
+  font-size: 13px !important
+}
+
+.\!text-sm{
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important
+}
+
+.text-\[13px\]{
+  font-size: 13px
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+
+.text-\[16px\]{
+  font-size: 16px
+}
+
+.text-\[8px\]{
+  font-size: 8px
+}
+
+.text-\[15px\]{
+  font-size: 15px
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem
+}
+
+.text-\[32px\]{
+  font-size: 32px
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.text-\[40px\]{
+  font-size: 40px
+}
+
+.text-\[24px\]{
+  font-size: 24px
+}
+
+.text-\[46px\]{
+  font-size: 46px
+}
+
+.\!text-base{
+  font-size: 1rem !important;
+  line-height: 1.5rem !important
+}
+
+.\!text-\[12px\]{
+  font-size: 12px !important
+}
+
+.\!text-\[32px\]{
+  font-size: 32px !important
+}
+
+.text-\[12px\]{
+  font-size: 12px
+}
+
+.text-\[14px\]{
+  font-size: 14px
+}
+
+.text-\[20px\]{
+  font-size: 20px
+}
+
+.text-\[64px\]{
+  font-size: 64px
+}
+
+.text-\[18px\]{
+  font-size: 18px
+}
+
+.\!text-\[16px\]{
+  font-size: 16px !important
+}
+
+.text-\[30px\]{
+  font-size: 30px
+}
+
+.text-\[33px\]{
+  font-size: 33px
+}
+
+.font-medium{
+  font-weight: 500
+}
+
+.font-bold{
+  font-weight: 700
+}
+
+.font-normal{
+  font-weight: 400
+}
+
+.\!font-normal{
+  font-weight: 400 !important
+}
+
+.font-light{
+  font-weight: 300
+}
+
+.\!font-light{
+  font-weight: 300 !important
+}
+
+.uppercase{
+  text-transform: uppercase
+}
+
+.lowercase{
+  text-transform: lowercase
+}
+
+.capitalize{
+  text-transform: capitalize
+}
+
+.\!normal-case{
+  text-transform: none !important
+}
+
+.normal-case{
+  text-transform: none
+}
+
+.leading-normal{
+  line-height: 1.5
+}
+
+.leading-\[0\]{
+  line-height: 0
+}
+
+.leading-6{
+  line-height: 1.5rem
+}
+
+.leading-\[21px\]{
+  line-height: 21px
+}
+
+.\!leading-6{
+  line-height: 1.5rem !important
+}
+
+.leading-10{
+  line-height: 2.5rem
+}
+
+.leading-8{
+  line-height: 2rem
+}
+
+.leading-\[19px\]{
+  line-height: 19px
+}
+
+.leading-\[10px\]{
+  line-height: 10px
+}
+
+.leading-\[22px\]{
+  line-height: 22px
+}
+
+.leading-\[48px\]{
+  line-height: 48px
+}
+
+.leading-\[17px\]{
+  line-height: 17px
+}
+
+.leading-\[45px\]{
+  line-height: 45px
+}
+
+.leading-9{
+  line-height: 2.25rem
+}
+
+.leading-\[40px\]{
+  line-height: 40px
+}
+
+.\!leading-\[20px\]{
+  line-height: 20px !important
+}
+
+.leading-none{
+  line-height: 1
+}
+
+.\!leading-10{
+  line-height: 2.5rem !important
+}
+
+.leading-\[normal\]{
+  line-height: normal
+}
+
+.leading-7{
+  line-height: 1.75rem
+}
+
+.leading-tight{
+  line-height: 1.25
+}
+
+.\!leading-8{
+  line-height: 2rem !important
+}
+
+.leading-\[80px\]{
+  line-height: 80px
+}
+
+.leading-\[27px\]{
+  line-height: 27px
+}
+
+.leading-\[22\.5px\]{
+  line-height: 22.5px
+}
+
+.\!leading-\[40px\]{
+  line-height: 40px !important
+}
+
+.\!leading-\[normal\]{
+  line-height: normal !important
+}
+
+.\!leading-\[38px\]{
+  line-height: 38px !important
+}
+
+.\!leading-\[15px\]{
+  line-height: 15px !important
+}
+
+.\!leading-\[22\.4px\]{
+  line-height: 22.4px !important
+}
+
+.leading-\[36px\]{
+  line-height: 36px
+}
+
+.leading-\[16px\]{
+  line-height: 16px
+}
+
+.leading-\[29px\]{
+  line-height: 29px
+}
+
+.leading-\[15px\]{
+  line-height: 15px
+}
+
+.\!leading-\[22px\]{
+  line-height: 22px !important
+}
+
+.leading-5{
+  line-height: 1.25rem
+}
+
+.tracking-\[0\.18px\]{
+  letter-spacing: 0.18px
+}
+
+.tracking-\[0\.16px\]{
+  letter-spacing: 0.16px
+}
+
+.tracking-\[2\.6px\]{
+  letter-spacing: 2.6px
+}
+
+.tracking-\[1\.4px\]{
+  letter-spacing: 1.4px
+}
+
+.tracking-\[0\.5px\]{
+  letter-spacing: 0.5px
+}
+
+.tracking-\[2\.5px\]{
+  letter-spacing: 2.5px
+}
+
+.tracking-\[0\.02em\]{
+  letter-spacing: 0.02em
+}
+
+.tracking-\[0\.01em\]{
+  letter-spacing: 0.01em
+}
+
+.tracking-\[0\.2px\]{
+  letter-spacing: 0.2px
+}
+
+.tracking-\[0\.24px\]{
+  letter-spacing: 0.24px
+}
+
+.tracking-\[0\.3px\]{
+  letter-spacing: 0.3px
+}
+
+.tracking-\[0\.28px\]{
+  letter-spacing: 0.28px
+}
+
+.tracking-\[2\.4px\]{
+  letter-spacing: 2.4px
+}
+
+.tracking-\[0\.1px\]{
+  letter-spacing: 0.1px
+}
+
+.tracking-\[0\.6px\]{
+  letter-spacing: 0.6px
+}
+
+.\!tracking-\[2\.6px\]{
+  letter-spacing: 2.6px !important
+}
+
+.tracking-\[0\.32px\]{
+  letter-spacing: 0.32px
+}
+
+.tracking-2{
+  letter-spacing: .02em
+}
+
+.\!tracking-\[0\.4px\]{
+  letter-spacing: 0.4px !important
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em
+}
+
+.tracking-\[2px\]{
+  letter-spacing: 2px
+}
+
+.tracking-\[0\.4px\]{
+  letter-spacing: 0.4px
+}
+
+.tracking-\[0\.02px\]{
+  letter-spacing: 0.02px
+}
+
+.tracking-\[1px\]{
+  letter-spacing: 1px
+}
+
+.tracking-\[0\.03em\]{
+  letter-spacing: 0.03em
+}
+
+.tracking-\[0\.2em\]{
+  letter-spacing: 0.2em
+}
+
+.-tracking-1{
+  letter-spacing: -.01em
+}
+
+.tracking-\[0\.04em\]{
+  letter-spacing: 0.04em
+}
+
+.tracking-\[1\.28px\]{
+  letter-spacing: 1.28px
+}
+
+.\!tracking-\[3\.6px\]{
+  letter-spacing: 3.6px !important
+}
+
+.tracking-\[3px\]{
+  letter-spacing: 3px
+}
+
+.\!tracking-\[0\.96px\]{
+  letter-spacing: 0.96px !important
+}
+
+.\!tracking-\[0\.64px\]{
+  letter-spacing: 0.64px !important
+}
+
+.\!tracking-\[0\.32px\]{
+  letter-spacing: 0.32px !important
+}
+
+.tracking-\[0\.06em\]{
+  letter-spacing: 0.06em
+}
+
+.tracking-\[0\.64px\]{
+  letter-spacing: 0.64px
+}
+
+.tracking-\[0\.15px\]{
+  letter-spacing: 0.15px
+}
+
+.\!tracking-\[0\.1px\]{
+  letter-spacing: 0.1px !important
+}
+
+.\!tracking-\[0\.2px\]{
+  letter-spacing: 0.2px !important
+}
+
+.tracking-\[2\.60px\]{
+  letter-spacing: 2.60px
+}
+
+.\!tracking-\[0\.02em\]{
+  letter-spacing: 0.02em !important
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em
+}
+
+.tracking-\[20\%\]{
+  letter-spacing: 20%
+}
+
+.text-\[\#4a4a4a\]{
+  --tw-text-opacity: 1;
+  color: rgb(74 74 74 / var(--tw-text-opacity))
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.\!text-gray-5{
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 239 239 / var(--tw-text-opacity)) !important
+}
+
+.\!text-gray-15{
+  --tw-text-opacity: 1 !important;
+  color: rgb(118 118 118 / var(--tw-text-opacity)) !important
+}
+
+.text-gray-30{
+  --tw-text-opacity: 1;
+  color: rgb(92 92 92 / var(--tw-text-opacity))
+}
+
+.text-\[\#444444\]{
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity))
+}
+
+.\!text-nissan-red{
+  --tw-text-opacity: 1 !important;
+  color: rgb(195 0 47 / var(--tw-text-opacity)) !important
+}
+
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(116 116 116 / var(--tw-text-opacity))
+}
+
+.\!text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+}
+
+.text-gray-150{
+  --tw-text-opacity: 1;
+  color: rgb(186 186 186 / var(--tw-text-opacity))
+}
+
+.text-gray-350{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity))
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(52 52 52 / var(--tw-text-opacity))
+}
+
+.text-black-80{
+  --tw-text-opacity: 1;
+  color: rgb(26 26 26 / var(--tw-text-opacity))
+}
+
+.text-black-50{
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity))
+}
+
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity))
+}
+
+.text-nissan-red{
+  --tw-text-opacity: 1;
+  color: rgb(195 0 47 / var(--tw-text-opacity))
+}
+
+.text-gray-100{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity))
+}
+
+.text-gray-250{
+  --tw-text-opacity: 1;
+  color: rgb(136 136 136 / var(--tw-text-opacity))
+}
+
+.text-\[\#F1F3F2\]{
+  --tw-text-opacity: 1;
+  color: rgb(241 243 242 / var(--tw-text-opacity))
+}
+
+.text-gray-25{
+  --tw-text-opacity: 1;
+  color: rgb(241 241 241 / var(--tw-text-opacity))
+}
+
+.underline{
+  text-decoration-line: underline
+}
+
+.opacity-100{
+  opacity: 1
+}
+
+.opacity-60{
+  opacity: 0.6
+}
+
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.outline{
+  outline-style: solid
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.\!filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.transition-opacity{
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.transition-\[max-height\]{
+  transition-property: max-height;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.duration-1000{
+  transition-duration: 1000ms
+}
+
+.duration-300{
+  transition-duration: 300ms
+}
+
+.duration-200{
+  transition-duration: 200ms
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.ease-out{
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+}
+
+.content-\[\"\"\]{
+  --tw-content: "";
+  content: var(--tw-content)
+}
+
+.\[flex-basis\:0\]{
+  flex-basis: 0
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html:has(body.quantum-chat-open),
+body.quantum-chat-open {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body.quantum-chat-open {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* Close the white hairline between the header and the Mobile Service hero.
+   Do not @apply block — it pulls in .block:not(:last-child) { margin-bottom: 1.5rem }. */
+
+.mob-service-banner.banner-container, 
+.banner-container:has(.mob-service-hero){
+  overflow: hidden;
+  background-color: transparent;
+  line-height: 0
+}
+
+.mob-service-banner.banner-container > video,
+.banner-container:has(.mob-service-hero) > video {
+  display: block;
+  transform: none;
+  margin-left: -2px !important;
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  max-width: none;
+  background-color: transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  vertical-align: top;
+  width: calc(100% + 40px) !important;
+}
+
+.mob-service-banner.banner-container .mob-service-hero, 
+.banner-container:has(.mob-service-hero) .mob-service-hero{
+  background-color: transparent !important;
+  line-height: 1.5
+}
+
+.input::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+  opacity: 1;
+}
+
+.input::placeholder {
+  color: rgba(54, 54, 54, 0.3);
+  opacity: 1;
+}
+
+.heading {
+  display: block;
+  letter-spacing: 1px;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  .is-hidden-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1087px) {
+  .is-hidden-tablet-only {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1087px) {
+  .is-hidden-touch {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1088px) {
+  .is-hidden-desktop {
+    display: none !important;
+  }
+}
+
+/* DELETE ICON STYLES */
+
+.delete{
+  pointer-events: auto;
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 9999px;
+  border-style: none;
+  padding: 0px;
+  vertical-align: top;
+  font-size: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background-color: hsla(0, 0%, 4%, 0.2)
+}
+
+.delete:before{
+  height: 2px;
+  width: 50%
+}
+
+.delete:after{
+  height: 50%;
+  width: 2px
+}
+
+.delete:after,  .delete:before{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform-origin: center center;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content)
+}
+
+.delete:after:not(:last-child),   .delete:before:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.error-strip .delete {
+  float: none;
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background: transparent url('../../images/nissan/Error/error-close.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.error-strip .delete::before,
+.error-strip .delete::after {
+  content: none !important;
+  background: none !important;
+}
+
+.error-strip.ms-empty-banner{
+  display: none
+}
+
+.refine-search-dealerlist .ms-empty-intro {
+  display: flex !important;
+  visibility: visible !important;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff !important;
+  background-color: #1e1e1e;
+  padding: 28px 15px 8px;
+}
+
+.refine-search-dealerlist .ms-empty-intro__icon {
+  display: inline-block !important;
+  width: 55px;
+  height: 55px;
+}
+
+.refine-search-dealerlist .ms-empty-intro__title,
+.refine-search-dealerlist .ms-empty-intro__copy {
+  display: block !important;
+  color: #fff !important;
+}
+
+.refine-search-dealerlist .ms-empty-intro__title {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  margin: 0;
+}
+
+.refine-search-dealerlist .ms-empty-intro__copy {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  margin: 0 0 12px;
+  max-width: 345px;
+}
+
+.refine-search-dealerlist .ms-empty-wrap, 
+.refine-search-dealerlist .accordion-body .ms-empty-wrap{
+  display: block;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity))
+}
+
+.refine-search-dealerlist .ms-empty-wrap:not(:last-child),  
+.refine-search-dealerlist .accordion-body .ms-empty-wrap:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.refine-search-dealerlist .ms-empty-wrap .search-container,
+.refine-search-dealerlist .accordion-body .ms-empty-wrap .search-container,
+.refine-search-dealerlist .accordion-body .search-fields .ms-empty-wrap .search-container {
+  display: flex;
+  background: transparent !important;
+  min-height: 0 !important;
+  padding: 0 15px;
+  justify-content: flex-start;
+}
+
+.refine-search-dealerlist .ms-empty-wrap .search-container .search-box,
+.refine-search-dealerlist .accordion-body .ms-empty-wrap .search-container .search-box {
+  margin: 0;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.refine-search-dealerlist .ms-empty-wrap .search-container .search-box.columns.is-centered,
+.refine-search-dealerlist .accordion-body .ms-empty-wrap .search-container .search-box.columns.is-centered {
+  justify-content: flex-start;
+}
+
+.refine-search-dealerlist .ms-empty-wrap .search-container .search-box .column.is-paddingless,
+.refine-search-dealerlist .accordion-body .ms-empty-wrap .search-container .search-box .column.is-paddingless {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .refine-search-dealerlist .ms-empty-wrap .search-container,
+    .refine-search-dealerlist .accordion-body .ms-empty-wrap .search-container,
+    .refine-search-dealerlist .accordion-body .search-fields .ms-empty-wrap .search-container {
+    padding: 15px 15px 0;
+  }
+
+  .refine-search-dealerlist .accordion-body .search-fields .ms-empty-wrap .search-container {
+    padding-top: 0;
+  }
+
+  .refine-search-dealerlist .search-fields:has(.ms-empty-wrap) .current-loc-cont {
+    display: block !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+    padding: 1em 15px !important;
+    width: 100%;
+  }
+}
+
+.refine-search-dealerlist .ms-empty-banner{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity));
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.refine-search-dealerlist .ms-empty-banner:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.refine-search-dealerlist .ms-empty-banner .heading{
+  margin: 0px;
+  margin-bottom: 0.625rem;
+  width: 100%;
+  font-family: NissanBrand-Bold;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.18px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.refine-search-dealerlist .ms-empty-banner .error-message{
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.16px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+/* Bulma column gutters — scoped to dealer search UI (global rule caused horizontal scroll) */
+
+.dealer-detail-info-container .dealer-detail-left-panel .dealer-info-left-panel{
+  margin-bottom: .75rem !important
+}
+
+.block:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+#dealerList .content:not(:last-child), 
+.content:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+@media (max-width: 767px){
+  .search-container.search-bar-container:not(:last-child), 
+.is-block-mobile:not(:last-child){
+    margin-bottom: 0px !important
+  }
+}
+
+.is-block-mobile{
+  display: block !important
+}
+
+.is-block-mobile:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+/* Dealer card address row should not inherit Bulma column gutter offsets */
+
+#dealerList .dealer-address .columns {
+  margin: 0 !important;
+}
+
+a:hover {
+  color: #363636;
+}
+
+a.has-text-white:focus,
+a.has-text-white:hover {
+  color: #e6e6e6 !important;
+}
+
+.map-over a:hover,
+.map-over-mobile a:hover {
+  color: inherit;
+}
+
+.navbar-link:not(.is-arrowless):after,
+.select:not(.is-multiple):not(.is-loading):after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4375em;
+  display: block;
+  height: 0.625em;
+  width: 0.625em;
+  transform-origin: center;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 0.125rem;
+  border-width: 3px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.navbar-link:not(.is-arrowless):after:not(:last-child),  
+.select:not(.is-multiple):not(.is-loading):after:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+@media (max-width: 767px){
+  .navbar-link:not(.is-arrowless){
+    padding-right: 1.4em !important
+  }
+}
+
+/*
+    Dealer list page styles
+*/
+
+.columns.is-mobile{
+  display: flex
+}
+
+.columns.is-multiline{
+  flex-wrap: wrap
+}
+
+/* --- Tabs (List.cshtml) --- */
+
+#dealerList .tabs li{
+  display: block
+}
+
+#dealerList .tabs li:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+/* for mobile */
+
+@media screen and (max-width: 767px) {
+  #dealerListContainer #dealerListFlexContainer .column:not(:last-child), 
+    #dealerList .tabs li:not(:last-child){
+    margin-bottom: 0px
+  }
+}
+
+#dealerList .tabs li a{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center
+}
+
+#dealerList .tabs.is-right ul{
+  justify-content: flex-end
+}
+
+.column.is-half-mobile {
+  flex: none;
+  width: 50%;
+}
+
+/* --- Icon (List.cshtml) --- */
+
+.icon{
+  display: inline-flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center
+}
+
+#dealerList .icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center
+}
+
+#dealerList .icon.is-small{
+  height: 1rem;
+  width: 1rem
+}
+
+.dropdown.is-active .dropdown-menu,  .dropdown.is-hoverable:hover .dropdown-menu{
+  display: block
+}
+
+.dropdown.is-active .dropdown-menu:not(:last-child),   .dropdown.is-hoverable:hover .dropdown-menu:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.service-offers .offer-modal > .column.modal {
+  position: static;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: auto;
+  display: block;
+  overflow: visible;
+  background-color: #fff;
+}
+
+.service-offers .offer-modal {
+  align-items: stretch;
+}
+
+/*
+  Declined Service featured offer ONLY — .declined-service [id="offers decline-service"]
+  Width: match staging Bulma gutters (columns -0.75rem) + is-9-desktop 75% / remaining offer-form.
+*/
+
+.declined-service .column-custom-container.service-offers-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1280px) {
+  /* staging nissan-tw: .column-custom-container { width/max-width: 1170px !important } */
+
+  .declined-service .column-custom-container.service-offers-container {
+    width: 1170px !important;
+    max-width: 1170px !important;
+  }
+}
+
+.declined-service [id="offers decline-service"] > .modal.has-background-white {
+  position: static !important;
+  z-index: auto;
+  display: flex !important;
+  flex-direction: column;
+  overflow: visible;
+  background-color: #fff !important;
+  margin-bottom: 0 !important;
+  align-self: stretch !important;
+  /* staging computed: 12px TB, 70px LR */
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+  box-sizing: border-box !important;
+}
+
+.declined-service [id="offers decline-service"] > .modal.has-background-white > .offer-coupon-dropdown.offer-details-container,
+.declined-service [id="offers decline-service"] > .offer-form > .inner-offer-toggle {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 100%;
+}
+
+.declined-service [id="offers decline-service"] > .offer-form > .inner-offer-toggle {
+  background-color: #343434;
+}
+
+.declined-service [id="offers decline-service"] .offer-coupon-dropdown .offers-head .price-container .offer-price.price-sub-container {
+  padding-top: 10px;
+}
+
+@media (min-width: 769px) {
+  /* staging Bulma .column.is-9-desktop / .is-8-tablet */
+
+  .declined-service [id="offers decline-service"] > .modal.has-background-white {
+    flex: none !important;
+    width: 75% !important;
+    max-width: 75% !important;
+    min-width: 0 !important;
+  }
+
+  .declined-service [id="offers decline-service"] > .fullscreen-mobile {
+    display: contents !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1087px) {
+  .declined-service [id="offers decline-service"] > .modal.has-background-white {
+    width: 66.6666666667% !important;
+    max-width: 66.6666666667% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .declined-service [id="offers decline-service"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .declined-service [id="offers decline-service"] > .modal.has-background-white {
+    padding: 30px 15px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.service-offers .columns.is-mobile.is-multiline,
+.service-offers .coupon.column {
+  overflow: visible;
+}
+
+.service-offers-container .body.service-offers.nna-mobile-wallet .offer-coupon.brand.active {
+  z-index: 3;
+}
+
+.service-offers-container .body.service-offers.nna-mobile-wallet .offer-coupon.brand.active::after {
+  z-index: 3;
+}
+
+.service-offers-container .body.service-offers.nna-mobile-wallet .offer-modal {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nna-mobile-wallet .inf-offer-modal-box .offer-coupon-dropdown.send-offer-container,
+.nna-mobile-wallet .inf-offer-modal-box .offer-coupon-dropdown.email-offer-container,
+.nna-mobile-wallet .inf-offer-modal-box .offer-coupon-dropdown.sent-successfully-container {
+  height: auto;
+  min-height: 390px;
+}
+
+.service-offers .offer-modal .offer-form{
+  flex: none;
+  padding: 0px
+}
+
+@media (min-width: 769px) {
+  .service-offers .offer-modal .fullscreen-mobile {
+    display: contents;
+  }
+
+  .service-offers .inf-offer-modal-box {
+    min-height: 390px;
+  }
+
+  .service-offers .offer-modal .column.offer-form {
+    flex: none;
+    max-width: 320px;
+    min-width: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-offers .offer-modal .offer-form.is-hidden-mobile {
+    display: none !important;
+  }
+}
+
+/* --- Modal (DealerOverView) --- */
+
+#dealerList .modal{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  justify-content: center
+}
+
+#dealerList .modal.open-modal{
+  display: flex
+}
+
+#dealerList .modal-background{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(10,10,10,0.86)
+}
+
+#dealerList .modal-card{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  max-width: 640px;
+  overflow: auto
+}
+
+#dealerList .modal-card-body{
+  padding: 1.25rem
+}
+
+/* --- Helpers (DealerOverView, _MobileListSearch) --- */
+
+.has-background-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+/* --- _MobileListSearch columns --- */
+
+/* #dealerList .search-fields .columns {
+@apply flex flex-wrap;
+} */
+
+#dealerList .search-fields .columns.is-centered{
+  justify-content: center
+}
+
+#dealerList .search-fields .ms-empty-wrap .columns.is-centered {
+  justify-content: flex-start;
+}
+
+#dealerList .search-fields .column{
+  flex: 1 1 0%
+}
+
+#dealerList .search-fields .column.is-paddingless{
+  padding: 0px
+}
+
+/* --- Button base (used in _MobileListSearch refine search) --- */
+
+#dealerList .dropdown-trigger .button{
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.375em;
+  padding-bottom: 0.375em;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  line-height: 1.5
+}
+
+/* Bulma Replacement Utilities - Tailwind CSS ends here */
+
+/* Font Settings */
+
+@font-face {
+  font-family: 'NissanBrand-Regular';
+
+  src: url('../../fonts/Nissan/NissanBrand-Regular.woff') format('woff'), url('../../fonts/Nissan/NissanBrand-Regular.woff2') format('woff2');
+
+  font-weight: 400;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NissanBrand-Bold';
+
+  src: url('../../fonts/Nissan/NissanBrand-Bold.woff') format('woff'), url('../../fonts/Nissan/NissanBrand-Bold.woff2') format('woff2');
+
+  font-weight: 700;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NissanBrand-light';
+
+  src: url('../../fonts/Nissan/NissanBrand-light.woff2') format('woff2'), url('../../fonts/Nissan/NissanBrand-light.woff') format('woff');
+
+  font-weight: 300;
+
+  font-display: swap;
+}
+
+/* Rebranding styles starts here */
+
+body{
+  font-family: NissanBrand-light !important;
+  font-weight: 300 !important
+}
+
+/* Layout properties */
+
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  .column-custom-container {
+    width: 97%;
+  }
+}
+
+@media (min-width: 1280px){
+  .column-custom-container{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 1170px !important;
+    max-width: 1170px !important
+  }
+}
+
+.container{
+  width: 100% !important;
+  max-width: 100%
+}
+
+@media (min-width: 1920px){
+  .container{
+    width: 1920px !important;
+    max-width: 1920px
+  }
+}
+
+/***** Home page *****/
+
+/* Current offers styles */
+
+.promo-tile-container.three-promo-tile-container{
+  background-color: transparent !important
+}
+
+@media all and (min-width: 1280px) {
+  .home-panel {
+    margin-left: calc((100% - 1170px)/ 2) !important;
+  }
+
+  .nav-container{
+    position: relative !important
+  }
+}
+
+/* Override global .sticky (max-width: 1500px) so header CTAs stay on the right when scrolled */
+
+#navbar.sticky{
+  left: 0px;
+  right: 0px;
+  z-index: 34;
+  width: 100%;
+  max-width: none
+}
+
+/* temp styles */
+
+@media (min-width: 769px){
+  .promo-tile-container.three-promo-tile-container img{
+    height: 400px !important;
+    width: 400px !important
+  }
+}
+
+/* Button styles */
+
+.primary-btn{
+  display: inline-block;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(195 0 47 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity));
+  background-image: url('../../images/nissan/icons/right-arrow.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 50px;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media (max-width: 767px){
+  .primary-btn{
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+  }
+}
+
+@media all and (min-width: 768px) {
+  .primary-btn:hover{
+    background-color: transparent;
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg');
+    --tw-text-opacity: 1;
+    color: rgb(195 0 47 / var(--tw-text-opacity))
+  }
+}
+
+.ext-primary-btn{
+  background-image: url('../../images/nissan/icons/up-arrow.svg') !important
+}
+
+@media all and (min-width: 768px) {
+  .ext-primary-btn:hover{
+    background-color: transparent;
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg');
+    --tw-text-opacity: 1;
+    color: rgb(195 0 47 / var(--tw-text-opacity))
+  }
+
+  .hero-caption .ext-primary-btn:hover{
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+  }
+}
+
+.ext-primary-btn{
+  display: inline-block;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(195 0 47 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity));
+  background-image: url('../../images/nissan/icons/right-arrow.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 50px;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media (max-width: 767px){
+  .ext-primary-btn{
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+  }
+}
+
+@media all and (min-width: 768px) {
+  .hero-caption .primary-btn:hover{
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+  }
+
+  .secondary-btn:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg');
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+  }
+
+  .hero-caption .ext-primary-btn:hover{
+    border-width: 1px !important;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-image: url('../../images/nissan/icons/up-arrow-red.svg') !important
+  }
+
+  .ext-primary-btn:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-image: url('../../images/nissan/icons/up-arrow-red.svg') !important
+  }
+
+  .secondary-white-btn:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity))
+  }
+}
+
+.secondary-btn{
+  display: inline-block;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  background-color: transparent;
+  background-image: url('../../images/nissan/icons/right-arrow-black.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 50px;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.secondary-white-btn{
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media (max-width: 767px){
+  .secondary-white-btn{
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+  }
+}
+
+@media all and (min-width: 768px) {
+  .ext-secondary-btn:hover{
+    background-image: url('../../images/nissan/icons/up-arrow-red.svg') !important
+  }
+
+  .teritiary-btn:hover{
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg');
+    font-family: NissanBrand-Bold;
+    font-weight: 700
+  }
+}
+
+.ext-secondary-btn{
+  background-image: url('../../images/nissan/icons/up-arrow-black.svg') !important
+}
+
+@media all and (min-width: 768px) {
+  .ext-secondary-btn:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg');
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+  }
+}
+
+.ext-secondary-btn{
+  display: inline-block;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  background-color: transparent;
+  background-image: url('../../images/nissan/icons/right-arrow-black.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 50px;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.teritiary-btn{
+  display: inline-block;
+  background-color: transparent;
+  background-image: url('../../images/nissan/icons/right-arrow-black.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 50px;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.ext-teritiary-btn{
+  background-image: url('../../images/nissan/icons/up-arrow-black.svg') !important
+}
+
+@media all and (min-width: 768px) {
+  .ext-teritiary-btn:hover{
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg');
+    font-family: NissanBrand-Bold;
+    font-weight: 700
+  }
+}
+
+.ext-teritiary-btn{
+  display: inline-block;
+  background-color: transparent;
+  background-image: url('../../images/nissan/icons/right-arrow-black.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 50px;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.link-btn{
+  display: inline-block;
+  cursor: pointer;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.link-btn:hover{
+  font-family: NissanBrand-Bold;
+  font-weight: 700
+}
+
+.link-btn-white{
+  display: inline-block;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.link-btn-white:hover{
+  font-family: NissanBrand-Bold;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.quick-guide-btn:hover{
+  font-family: NissanBrand-Bold;
+  font-weight: 700;
+  text-decoration-line: none !important;
+  background-image: url(../../images/nissan/icons/up-arrow-red.svg)
+}
+
+.primary-menu{
+  font-family: NissanBrand-Regular;
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+.underlined-link{
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.underlined-link:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(195 0 47 / var(--tw-border-opacity));
+  font-family: NissanBrand-Bold;
+  font-weight: 700
+}
+
+/* Footer styles begins */
+
+.navbar-dropdown{
+  position: absolute;
+  top: 100%;
+  z-index: 20;
+  display: none;
+  min-width: 100%
+}
+
+.navbar-item.is-active .navbar-dropdown{
+  display: block
+}
+
+.navbar-item.is-active .navbar-dropdown:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+footer .container{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity)) !important
+}
+
+footer .copyright-container{
+  border-top-width: 0px !important;
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important
+}
+
+@media (min-width: 769px){
+  footer .copyright-container{
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important
+  }
+}
+
+footer .footer-legal-links__link{
+  min-width: 0px;
+  white-space: nowrap;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  line-height: 1.5rem !important;
+  letter-spacing: 2.6px;
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 239 239 / var(--tw-text-opacity)) !important
+}
+
+footer .footer-legal-links__link:hover{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+}
+
+@media (max-width: 767px){
+  footer .footer-legal-links__link{
+    white-space: normal
+  }
+}
+
+footer .footer-legal-links__privacy {
+  /* line-height: 16px */
+}
+
+@media (max-width: 767px){
+  footer .footer-legal-links__privacy{
+    line-height: 1rem !important
+  }
+}
+
+footer .footer-legal-links__recall{
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem
+}
+
+@media (max-width: 767px){
+  footer .footer-legal-links__recall{
+    white-space: normal
+  }
+}
+
+footer .footer-legal-links__copyright{
+  margin-top: 1rem;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.5rem !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(118 118 118 / var(--tw-text-opacity)) !important
+}
+
+@media (max-width: 767px){
+  footer .footer-legal-links__copyright{
+    margin-top: 2rem
+  }
+}
+
+footer .footer-legal-links__item{
+  display: inline-flex;
+  max-width: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 1rem
+}
+
+@media (max-width: 767px){
+  footer .footer-legal-links__item{
+    display: block;
+    max-width: 100%
+  }
+}
+
+footer .footer-legal-links__separator{
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: 1.4px;
+  --tw-text-opacity: 1;
+  color: rgb(92 92 92 / var(--tw-text-opacity))
+}
+
+@media (max-width: 767px){
+  footer .footer-legal-links__separator{
+    display: none !important
+  }
+}
+
+.spanish-content footer .footer-legal-links__link, 
+    .spanish-content footer .footer-legal-links__recall{
+  white-space: normal;
+  overflow-wrap: break-word
+}
+
+footer .footer-social-row .social-icons{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px
+}
+
+footer .footer-social-row .social-icons img{
+  padding-right: 0px !important
+}
+
+footer .copyright-container p span a{
+  font-family: NissanBrand-light !important;
+  font-weight: 300 !important
+}
+
+footer .container .bd-footer-links .bd-footer-link a{
+  font-size: 0.875rem !important;
+  line-height: 1.5rem !important;
+  letter-spacing: 0.5px;
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 239 239 / var(--tw-text-opacity)) !important
+}
+
+footer .container .bd-footer-links .bd-footer-link-title{
+  font-family: NissanBrand-Regular !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.5rem !important;
+  letter-spacing: 2.6px
+}
+
+@media (max-width: 767px){
+  footer .container .bd-footer-links .bd-footer-link-title{
+    padding-left: 0px
+  }
+}
+
+footer .container .bd-footer-links .bd-footer-link:not(.social-icons){
+  padding-top: 0px
+}
+
+.navbar-item.has-dropdown:hover .navbar-link{
+  background-color: transparent !important
+}
+
+footer .navbar-item.has-dropdown.is-active .navbar-link {
+  background-color: transparent;
+}
+
+footer .active.accordion-header{
+  background-color: transparent !important
+}
+
+footer .lang-select .navbar-dropdown{
+  border-width: 0px;
+  background-color: transparent !important
+}
+
+@media (max-width: 767px){
+  footer .lang-select .navbar-dropdown{
+    position: relative
+  }
+}
+
+footer .lang-select .navbar-dropdown a{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+footer .lang-select .navbar-dropdown a:hover{
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+footer .lang-dropdown .navbar-link{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 1.5rem;
+  font-family: NissanBrand-light;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+footer .lang-dropdown .navbar-link:hover{
+  background-color: transparent
+}
+
+@media (max-width: 767px){
+  footer .lang-dropdown .navbar-link{
+    padding-left: 0px
+  }
+}
+
+footer .lang-dropdown .navbar-link::after{
+  right: 0px;
+  margin-top: -0.5rem !important;
+  height: 11px !important;
+  width: 11px !important;
+  border-width: 2px !important;
+  border-right-width: 0px !important;
+  border-top-width: 0px !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important
+}
+
+@media (max-width: 767px){
+  footer .container .bd-footer-links img{
+    padding-right: 0px !important
+  }
+}
+
+footer .container .copyright-container{
+  margin-bottom: 0px
+}
+
+@media (max-width: 767px){
+  footer .container .copyright-container{
+    margin-bottom: 0px !important
+  }
+}
+
+footer .accordion-header::after {
+  content: url("../../images/nissan/icons/plus-icon.svg") !important;
+  transform: none !important;
+}
+
+@media (max-width: 767px){
+  footer .accordion-header::after{
+    top: 40% !important
+  }
+}
+
+footer .accordion-header.active::after {
+  content: url("../../images/nissan/icons/minus-icon.svg") !important;
+  transform: none !important;
+}
+
+@media (max-width: 767px){
+  footer .accordion-header.active::after{
+    top: 35% !important
+  }
+
+  footer .accordion-header{
+    border-top-width: 1px;
+    border-bottom-width: 0px !important;
+    --tw-border-opacity: 1;
+    border-color: rgb(52 52 52 / var(--tw-border-opacity));
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important
+  }
+}
+
+footer .bd-footer-link.social-icons{
+  --tw-border-opacity: 1;
+  border-color: rgb(52 52 52 / var(--tw-border-opacity))
+}
+
+@media (max-width: 767px){
+  footer .bd-footer-link.social-icons{
+    display: flex;
+    justify-content: space-between;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2rem;
+    padding-bottom: 2rem
+  }
+}
+
+footer .accordion-body{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+@media (min-width: 769px){
+  footer .accordion-body{
+    max-height: 100% !important
+  }
+}
+
+/* 2 column grid layout */
+
+.grid-tile-content .sub-title{
+  margin-bottom: 1rem;
+  font-family: NissanBrand-Regular;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: 2.5px
+}
+
+@media (min-width: 769px){
+  .grid-tile-content .sub-title{
+    margin-bottom: 0.5rem
+  }
+}
+
+.grid-tile-content .description{
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em
+}
+
+.search-container.search-bar-container{
+  display: block
+}
+
+.search-container.search-bar-container:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+@media (min-width: 769px){
+  .search-container.search-bar-container{
+    display: none !important
+  }
+}
+
+.banner-container .hero-caption{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.banner-container .hero-caption h2{
+  font-family: NissanBrand-light;
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 2.5rem
+}
+
+@media (min-width: 1280px){
+  .banner-container .hero-caption h2{
+    font-size: 40px;
+    line-height: 48px
+  }
+}
+
+.close-btn{
+  display: inline-block !important;
+  height: 35px !important;
+  width: 35px !important;
+  background-image: url('../../images/nissan/icons/popup-close.svg') !important;
+  background-repeat: no-repeat !important
+}
+
+/** Navigation styles **/
+
+.mega-menu{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  top: 147px;
+  z-index: 9;
+  display: none;
+  width: 100%;
+  overflow-y: scroll;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(217 217 217 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 35px 100px 100px 60px
+}
+
+.mega-menu h3{
+  margin-bottom: 30px;
+  font-family: NissanBrand-Regular;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.menu-overlay{
+  display: none
+}
+
+@media (min-width: 769px){
+  .menu-overlay{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    opacity: 0.7
+  }
+}
+
+@media all and (min-width: 769px) {
+  .menu-overlay.overlay-active{
+    z-index: 10;
+    display: block
+  }
+
+  .menu-overlay.overlay-active:not(:last-child){
+    margin-bottom: 1.5rem;
+    margin-bottom: 0px
+  }
+}
+
+.white-logo{
+  display: none
+}
+
+@media (max-width: 767px){
+  .white-logo{
+    display: none !important
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .white-logo{
+    display: none !important
+  }
+}
+
+@media (min-width: 1024px){
+  .white-logo.is-active{
+    position: relative;
+    z-index: 99;
+    display: block
+  }
+
+  .black-logo.inactive{
+    display: none
+  }
+}
+
+.mega-menu li{
+  margin-bottom: 28px
+}
+
+.mega-menu a{
+  padding-right: 2rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.01em;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  background: url(../../images/nissan/icons/right-nav-icon.svg) right 10px center no-repeat
+}
+
+.mega-menu a.ext-menu-item {
+  background: url(../../images/nissan/icons/up-arrow-red-navigation.svg) right 10px center no-repeat;
+}
+
+.navbar-burger {
+  background: url(../../images/nissan/icons/mob-menu.svg) center center no-repeat;
+  height: 16px !important;
+  width: 26px !important;
+  align-self: center;
+  background-size: contain;
+}
+
+.navbar-burger:hover{
+  background-color: transparent !important
+}
+
+.open .navbar-burger {
+  background: url(../../images/nissan/icons/menu-close-icon.svg) center center no-repeat;
+  height: 16px;
+  width: 26px;
+}
+
+@media all and (min-width: 1920px) {
+  .side-nav {
+    border-right: 1px solid #efefef;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .side-nav{
+    z-index: 50;
+    height: 100vh;
+    width: 100% !important
+  }
+
+  .menu-close-btn-container, 
+        .hide-main-navigation{
+    pointer-events: none;
+    visibility: hidden
+  }
+
+  #site-nav li.menu-list-item {
+    border-bottom: 1px solid #d2d2d2;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #site-nav li.menu-list-item:not(:last-child){
+    margin-bottom: 1.5rem
+  }
+
+  #site-nav li.menu-list-item{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: left
+  }
+
+  #site-nav li.menu-list-item:not(:last-child){
+    margin-bottom: 1.5rem
+  }
+
+  @media (max-width: 767px){
+    #site-nav li.menu-list-item:not(:last-child){
+      margin-bottom: 0px
+    }
+  }
+
+  .site-nav ul li {
+    background: url(../../images/nissan/icons/main-menu-icon.svg) right center no-repeat;
+    background-size: 13px;
+  }
+
+  .main-navigation{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 67px;
+    z-index: 10;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+  }
+
+  .main-navigation li{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(210 210 210 / var(--tw-border-opacity));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: url(../../images/nissan/icons/right-nav-icon.svg) right center no-repeat
+  }
+
+  .mega-menu{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: auto;
+    overflow: auto;
+    padding: 0px 25px 10px 25px
+  }
+
+  .menu-toggle .navbar-burger {
+    display: block;
+  }
+}
+
+.mega-menu.active{
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(210 210 210 / var(--tw-border-opacity))
+}
+
+.promo-tile-container.three-promo-tile-container.tile-container{
+  min-width: 296px;
+  max-width: 296px
+}
+
+@media (min-width: 769px){
+  .promo-tile-container.three-promo-tile-container.tile-container{
+    min-width: 400px;
+    max-width: 400px
+  }
+}
+
+.vertical-slider-parent-container,  .vertical-slider-parent-container-mpi,  .vertical-slider-parent-container-ev-care{
+  margin-left: 0px;
+  overflow: hidden
+}
+
+.vertical-slider-parent-container .vertical-slider-container,
+        .vertical-slider-parent-container-mpi .vertical-slider-container-mpi,
+        .vertical-slider-parent-container-ev-care .vertical-slider-container-ev-care {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.5,0.25,0,1);
+  transition-delay: 0s;
+  display: flex;
+  gap: 0.875rem;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition-duration: 1000ms;
+}
+
+@media (min-width: 769px){
+  .vertical-slider-parent-container .vertical-slider-container, 
+        .vertical-slider-parent-container-mpi .vertical-slider-container-mpi, 
+        .vertical-slider-parent-container-ev-care .vertical-slider-container-ev-care{
+    gap: 1.5rem;
+    padding-left: 0px;
+    padding-right: 0px
+  }
+}
+
+.vertical-slider-parent-container .vertical-slider-container .vertical-slider,
+            .vertical-slider-parent-container-mpi .vertical-slider-container-mpi .vertical-slider-mpi,
+            .vertical-slider-parent-container-ev-care .vertical-slider-container-ev-care .vertical-slider-ev-care {
+  flex-shrink: 0;
+}
+
+.vertical-slider-parent-container .vertical-slider-container .vertical-slider .card, 
+                .vertical-slider-parent-container-mpi .vertical-slider-container-mpi .vertical-slider-mpi .card, 
+                .vertical-slider-parent-container-ev-care .vertical-slider-container-ev-care .vertical-slider-ev-care .card{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.vertical-slider-parent-container .vertical-slider-indicator-tile,
+        .vertical-slider-parent-container-mpi .vertical-slider-indicator-mpi-tile,
+        .vertical-slider-parent-container-ev-care .vertical-slider-indicator-ev-care-tile {
+  border-color: #c1c1c1;
+  margin-top: 1rem;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+
+@media (max-width: 767px){
+  .vertical-slider-parent-container .vertical-slider-indicator-tile, 
+        .vertical-slider-parent-container-mpi .vertical-slider-indicator-mpi-tile, 
+        .vertical-slider-parent-container-ev-care .vertical-slider-indicator-ev-care-tile{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 93%
+  }
+}
+
+.vertical-slider-parent-container .vertical-slider-indicator-tile .vertical-slider-indicator,
+            .vertical-slider-parent-container-mpi .vertical-slider-indicator-mpi-tile .vertical-slider-indicator-mpi,
+            .vertical-slider-parent-container-ev-care .vertical-slider-indicator-ev-care-tile .vertical-slider-indicator-ev-care {
+  border-color: #C3002F;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.5,0.25,0,1);
+  transition-delay: 0s;
+  width: 10rem;
+  border-width: 1px;
+  border-style: solid;
+  transition-duration: 1000ms;
+}
+
+.sidenav {
+  transition: 1s;
+  pointer-events: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 20;
+  height: 100%;
+  width: 0px;
+  overflow-x: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .sidenav ,  #main {
+    transition: none;
+  }
+}
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 0px;
+  right: 1.5rem;
+  margin-left: 50px;
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 1rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav{
+    padding-top: 15px
+  }
+
+  .sidenav a{
+    font-size: 1.125rem;
+    line-height: 1.75rem
+  }
+}
+
+.main-navigation{
+  position: fixed;
+  top: 3rem;
+  right: -5rem;
+  z-index: 50
+}
+
+@media (max-width: 767px){
+  .main-navigation{
+    top: 4rem
+  }
+}
+
+.side-nav{
+  height: 100vh;
+  width: 58.333333%
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .side-nav {
+    width: 100% !important;
+  }
+
+  .menu-close-btn-container {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1366px) and (max-width: 1500px) {
+  .side-nav{
+    width: 60%
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1094px) {
+  .two-column-tile .grid-tile-content,
+        .two-column-tile .grid-tile-image {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .two-column-tile .grid-tile-image:first-child figure,
+            .two-column-tile .grid-tile-content:first-child {
+    margin-right: 1rem;
+  }
+}
+
+.menu-close-btn-container{
+  visibility: visible
+}
+
+#site-nav ul{
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-bottom: 2.5rem;
+  padding: 0px
+}
+
+@media (min-width: 1024px){
+  #site-nav ul{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+.site-nav {
+  -webkit-clip-path: circle(0px at bottom);
+          clip-path: circle(0px at bottom);
+  /* transition: clip-path ease-in-out 750ms; */
+  position: absolute;
+  top: 3rem;
+  right: 0px;
+  z-index: 10;
+  height: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .site-nav{
+    z-index: 30;
+    background-color: transparent
+  }
+}
+
+.site-nav--open {
+  -webkit-clip-path: circle(200% at top right);
+          clip-path: circle(200% at top right);
+}
+
+@media (max-width: 767px){
+  .site-nav--open{
+    z-index: 50;
+    padding-bottom: 11%
+  }
+
+  body.lock-scroll .dealer-list-withmap .map-view-footer-trigger, 
+    body:has(.site-nav--open) .dealer-list-withmap .map-view-footer-trigger, 
+    body.side-menu-active .dealer-list-withmap .map-view-footer-trigger{
+    pointer-events: none;
+    visibility: hidden
+  }
+}
+
+@media (min-width: 768px) {
+  .dealer-list-withmap .dealer-list-container > form {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 auto;
+  }
+
+  .dealer-list-withmap .dealer-list-container .refine-search-dealerlist{
+    position: relative;
+    z-index: 5;
+    flex-shrink: 0
+  }
+
+  .dealer-list-withmap .dealer-list-container .dealer-list {
+    padding-top: 0;
+  }
+
+  .dealer-list-withmap .dealer-list .columns > .column:first-child {
+    padding-top: 0 !important;
+  }
+
+  #dealer-details-filter-desktop.accordion {
+    height: auto;
+  }
+
+  .dealer-list-withmap .dealer-list-container .refine-search-dealerlist .accordion-header:not(.active) + .accordion-body {
+    position: static;
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .dealer-list-withmap .dealer-list-container .refine-search-dealerlist .accordion-header.active + .accordion-body{
+    position: static;
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+    height: auto;
+    max-height: none;
+    overflow: visible
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container {
+    overflow: hidden;
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container > form,
+    .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .refine-search-dealerlist {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .dealer-list {
+    flex: 0 0 0;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .accordion-header.active + .accordion-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+    padding-bottom: 16px;
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .accordion-header.active + .accordion-body::-webkit-scrollbar{
+    width: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(193 193 193 / var(--tw-bg-opacity))
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .accordion-header.active + .accordion-body::-webkit-scrollbar-track{
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 250 250 / var(--tw-bg-opacity))
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .accordion-header.active + .accordion-body::-webkit-scrollbar-thumb{
+    border-radius: 24px;
+    border-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: rgb(193 193 193 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(193 193 193 / var(--tw-bg-opacity))
+  }
+
+  .dealer-list-withmap.filters-expanded:not(.ms-empty) .dealer-list-container .accordion-header.active + .accordion-body::-webkit-scrollbar-button{
+    display: none
+  }
+
+  /* Mobile service empty: filters open in flow and grow the map section. */
+
+  .dealer-list-withmap.ms-empty .result-container {
+    display: grid;
+    grid-template-columns: minmax(280px, 400px) 1fr;
+    overflow: visible;
+    height: auto;
+  }
+
+  .dealer-list-withmap.ms-empty .map-wrapper {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .dealer-list-withmap.ms-empty .g-map {
+    height: 100% !important;
+    min-height: calc(100vh - 60px);
+  }
+
+  .dealer-list-withmap.ms-empty .dealer-list-container {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative !important;
+    top: 0 !important;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .dealer-list-withmap.ms-empty .dealer-list-container > form,
+    .dealer-list-withmap.ms-empty .dealer-list-container .refine-search-dealerlist {
+    flex: 0 0 auto;
+    min-height: auto;
+  }
+
+  .dealer-list-withmap.ms-empty .dealer-list-container .dealer-list {
+    display: none;
+  }
+
+  .dealer-list-withmap.ms-empty .dealer-list-container .accordion-header.active + .accordion-body {
+    flex: 0 0 auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .dealer-list-withmap .dealer-list-container .search-radius .search-radius-select{
+    width: 100%;
+    max-width: 100%
+  }
+}
+
+@media all and (max-width: 767px) and (min-height:700px) {
+  .site-nav--open{
+    padding-bottom: 7rem
+  }
+}
+
+@media (max-width: 1023px) {
+  .site-nav--open {
+    -webkit-clip-path: none;
+            clip-path: none;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 80px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle{
+    display: none
+  }
+
+  .site-nav {
+    height: auto;
+    -webkit-clip-path: initial;
+            clip-path: initial;
+  }
+
+  .menu-list-item button:hover, 
+        .menu-list-item a:hover, 
+        .mega-menu a.sub-menu-item:hover, 
+        .mega-menu a.ext-menu-item:hover{
+    font-family: NissanBrand-Bold;
+    font-weight: 700
+  }
+}
+
+.menu-toggle{
+  display: flex;
+  height: 100%
+}
+
+.hamburger,
+    .hamburger::before,
+    .hamburger::after {
+  content: "";
+  transition: 0.3s ease-in-out;
+  display: block;
+  height: 0.25rem;
+  width: 1.5rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hamburger:not(:last-child),  
+    .hamburger::before:not(:last-child),  
+    .hamburger::after:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+.hamburger{
+  width: 1rem
+}
+
+.hamburger::before {
+  transform: translate(0, -5px);
+  position: relative;
+  bottom: 0.125rem;
+}
+
+.hamburger::after {
+  transform: translate(0, 2px);
+  width: 0.5rem;
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+  width: 1.5rem;
+}
+
+.open .hamburger::before{
+  opacity: 0
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+  width: 1.5rem;
+}
+
+@media (min-width: 1024px){
+  .highlightNav{
+    font-family: NissanBrand-Bold;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity))
+  }
+}
+
+#modal-why-nissan-service .modal-card > div, 
+    #modal-oil-change .modal-card > div, 
+    #modal-batteries .modal-card > div{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 30
+}
+
+#modal-why-nissan-service .modal-card .modal-card-body, 
+    #modal-oil-change .modal-card .modal-card-body, 
+    #modal-batteries .modal-card .modal-card-body{
+  position: absolute;
+  padding: 0px
+}
+
+#modal-why-nissan-service .modal-card .modal-card-body > div, 
+        #modal-oil-change .modal-card .modal-card-body > div, 
+        #modal-batteries .modal-card .modal-card-body > div{
+  height: 100vh;
+  place-content: start
+}
+
+#modal-why-nissan-service .carousel,
+    #modal-oil-change .carousel,
+    #modal-batteries .carousel {
+  border-radius: 5px;
+  display: flex;
+  min-height: 92vh;
+  width: 100vw;
+}
+
+#modal-why-nissan-service .carousel-right-btn,
+    #modal-oil-change .carousel-right-btn,
+    #modal-batteries .carousel-right-btn {
+  background: url("../../images/nissan/icons/slide-next.svg") no-repeat;
+}
+
+#modal-why-nissan-service .carousel-left-btn,
+    #modal-oil-change .carousel-left-btn,
+    #modal-batteries .carousel-left-btn {
+  background: url("../../images/nissan/icons/slide-next.svg") no-repeat;
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.wrapper{
+  position: relative;
+  display: flex
+}
+
+.wrapper i {
+  color: #343F4F;
+  font-size: 1.15rem;
+  line-height: 44px;
+  transition: transform 0.1s linear;
+  position: absolute;
+  height: 2.5rem;
+  width: 2.75rem;
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  text-align: center;
+}
+
+.wrapper i:hover {
+  background: #f2f2f2;
+}
+
+.wrapper i:first-child{
+  right: 4rem
+}
+
+@media all and (max-width: 768px) {
+  .modal.updated-modal .wrapper i:first-child {
+    margin-right: 6px;
+    right: 3rem;
+  }
+
+  #modal-oil-change .carousel-controls,
+        #modal-why-nissan-service .carousel-controls {
+    top: calc(100vw - 7vw);
+    width: 100% !important;
+  }
+
+  #modal-oil-change .carousel-controls .dot, 
+            #modal-why-nissan-service .carousel-controls .dot{
+    position: relative;
+    margin: 0px
+  }
+}
+
+.wrapper i:last-child{
+  right: 0px
+}
+
+.wrapper .carousel{
+  cursor: pointer;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap
+}
+
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto
+}
+
+.carousel.dragging img{
+  pointer-events: none
+}
+
+.carousel img{
+  margin-left: 0.875rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -o-object-fit: cover;
+     object-fit: cover
+}
+
+.carousel img:first-child{
+  margin-left: 0px
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%
+  }
+}
+
+.modal-delete {
+  background: url(../../images/nissan/icons/popup-close.svg) no-repeat;
+  max-width: 35px;
+  max-height: 35px;
+  -webkit-appearance: none;
+  min-height: 20px;
+  min-width: 20px;
+  outline: none;
+  pointer-events: auto;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  border-radius: 0px;
+  border-width: 0px;
+  background-size: contain;
+  vertical-align: top;
+}
+
+#carousel-controls .dot-active {
+  margin-top: 1.1em;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.carousel-controls .dot {
+  background-color: #999;
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border-radius: 0.75rem;
+  opacity: 1;
+}
+
+/* Hiding pegman and zoom controls from map */
+
+.g-map .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom .gm-svpc,
+    .google-map .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom .gm-svpc {
+  display: none;
+}
+
+.g-map .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom .gmnoprint,
+    .google-map .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom .gmnoprint {
+  display: none;
+}
+
+/* Vehicle health Report page css */
+
+.status-table-head{
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 133px;
+  max-width: 133px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 52 52 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase
+}
+
+@media (min-width: 769px){
+  .status-table-head{
+    min-width: 180px;
+    max-width: 180px
+  }
+}
+
+.status-table-cell{
+  margin-bottom: 5px;
+  min-width: 133px;
+  max-width: 133px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-family: NissanBrand-Regular;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2px
+}
+
+@media (min-width: 769px){
+  .status-table-cell{
+    margin-right: 5px;
+    min-width: 180px;
+    max-width: 180px
+  }
+}
+
+.category-icon{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  place-content: center;
+  align-items: center
+}
+
+/* PDF Report page styles */
+
+.vehicle-health-report .status-table-head{
+  margin-right: 5px;
+  min-width: 62px;
+  max-width: 62px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 9px;
+  padding-right: 9px
+}
+
+.vehicle-health-report .status-table-cell{
+  margin-right: 5px;
+  min-width: 62px;
+  max-width: 62px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 8px;
+  line-height: 10px
+}
+
+.home-carousel-preheadline{
+  font-family: NissanBrand-Regular;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: 2.6px
+}
+
+.banner-container .hero-caption.home-carousel-2.carousel-2{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity)) !important
+}
+
+/* Custom Splide Carousel Pagination Styles */
+
+/* <splide-carousel> is a custom element, so it defaults to display:inline.
+       An inline positioning ancestor gives WebKit a different containing block than Blink,
+       which throws the absolutely positioned pagination out of the hero on iOS Safari. */
+
+#splide-carousel{
+  display: block;
+  width: 100%
+}
+
+#splide-carousel:not(:last-child){
+  margin-bottom: 1.5rem
+}
+
+#splide-carousel .splide__pagination{
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+  margin-top: -45px;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem
+}
+
+@media (min-width: 769px){
+  #splide-carousel .splide__pagination{
+    gap: 0.75rem
+  }
+}
+
+#splide-carousel .splide__pagination__page{
+  height: 0.75rem;
+  width: 0.75rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  border-width: 0px;
+  background-color: #999;;
+  padding: 0px;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms
+}
+
+#splide-carousel .splide__pagination__page.is-active{
+  height: 0.75rem;
+  width: 0.75rem;
+  transform: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  opacity: 1
+}
+
+.stay-in-touch-heading{
+  font-family: NissanBrand-Regular;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.24px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+/* Firefox - pagination fix */
+
+@-moz-document url-prefix() {
+  @media (min-width: 769px){
+    #splide-carousel .splide__pagination{
+      left: 50%;
+      right: unset;
+      width: auto;
+      max-width: 100%;
+      --tw-translate-x: -50%;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      padding: 0px
+    }
+  }
+}
+
+.stay-in-touch-subheading{
+  font-family: NissanBrand-light;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.stay-in-touch-btn{
+  display: flex;
+  height: 48px;
+  width: 163px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.28px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.spanish-content .stay-in-touch-btn{
+  width: 200px !important
+}
+
+.stay-in-touch-heading{
+  font-family: NissanBrand-Regular;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.24px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.stay-in-touch-subheading{
+  font-family: NissanBrand-light;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.stay-in-touch-btn{
+  display: flex;
+  height: 48px;
+  width: 163px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 40px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: NissanBrand-Regular;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.28px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+.spanish-content .stay-in-touch-btn{
+  width: 200px !important
+}
+
+@media (min-width: 768px) {
+  #splide-carousel .splide__pagination{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    bottom: 17.5px;
+    margin-top: 0;
+    gap: 8px
+  }
+
+  #splide-carousel .splide__pagination li{
+    margin: 0px;
+    padding: 0px
+  }
+}
+
+@media (max-width: 767px) {
+  #splide-carousel .splide__pagination{
+    position: absolute;
+    bottom: auto;
+    top: calc(100vw - 90px);
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.625rem;
+    transform: none
+  }
+
+  .hero-caption{
+    min-height: 100%
+  }
+
+  .dealer-detail-page .inf-service-offer-section .service-offers-container .header .filters-offers-dropdown button {
+    padding: calc(.375em - 1px) .75em;
+  }
+}
+
+/* Firefox - pagination fix */
+
+@-moz-document url-prefix() {
+  @media (min-width: 769px){
+    #splide-carousel .splide__pagination{
+      left: 50%;
+      right: unset;
+      width: auto;
+      max-width: 100%;
+      --tw-translate-x: -50%;
+      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      padding: 0px
+    }
+  }
+}
+
+/* Firefox Mobile Fix – Splide Pagination */
+
+@-moz-document url-prefix() {
+  @media (max-width: 767px) {
+    #splide-carousel .splide__pagination{
+      position: absolute;
+      bottom: auto;
+      margin: 0px;
+      width: 100vw
+    }
+  }
+}
+
+/* Compliance Bar styles */
+
+.compliance-info{
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity))
+}
+
+.modal-card{
+  position: relative;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  display: flex;
+  max-height: calc(100vh - 160px);
+  flex-direction: column;
+  overflow: hidden
+}
+
+@media screen and (min-width: 769px) {
+  .modal-card{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: calc(100vh - 40px)
+  }
+}
+
+.modal-card-body{
+  min-height: 0px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  overflow: auto;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+@media (max-width: 767px){
+  .dropdownlistitems  .custom-control.custom-checkbox.filter-checkbox label{
+    padding-left: 12.8px
+  }
+}
+
+/* price-sub-container padding is scoped above under .declined-service [id="offers decline-service"] */
+
+.ms-retailer-badge{
+  display: flex;
+  font-family: NissanBrand-Regular
+}
+
+.ms-retailer-badge__text{
+  margin-right: 0.5rem;
+  display: inline-block;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 2.4px;
+  --tw-text-opacity: 1 !important;
+  color: rgb(195 0 47 / var(--tw-text-opacity)) !important;
+  font-family: NissanBrand-Regular
+}
+
+.hover\:border-nissan-red:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(195 0 47 / var(--tw-border-opacity))
+}
+
+.hover\:border-transparent:hover{
+  border-color: transparent
+}
+
+.hover\:bg-transparent:hover{
+  background-color: transparent
+}
+
+.hover\:bg-nissan-red:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 0 47 / var(--tw-bg-opacity))
+}
+
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.hover\:bg-red-arrow:hover{
+  background-image: url('../../images/nissan/icons/right-arrow-red.svg')
+}
+
+.hover\:bg-black-arrow:hover{
+  background-image: url('../../images/nissan/icons/right-arrow-black.svg')
+}
+
+.hover\:font-bold:hover{
+  font-family: NissanBrand-Bold;
+  font-weight: 700
+}
+
+.hover\:font-semibold:hover{
+  font-weight: 600
+}
+
+.hover\:\!text-white:hover{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline
+}
+
+.hover\:no-underline:hover{
+  text-decoration-line: none
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+.focus\:ring-red-500:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity))
+}
+
+@media (min-width: 769px){
+  .md\:fixed{
+    position: fixed
+  }
+
+  .md\:inset-0{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px
+  }
+
+  .md\:left-1\/2{
+    left: 50%
+  }
+
+  .md\:right-\[unset\]{
+    right: unset
+  }
+
+  .md\:top-\[calc\(216\/734\*100\%\)\]{
+    top: calc(216 / 734 * 100%)
+  }
+
+  .md\:-mx-3{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem
+  }
+
+  .md\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem
+  }
+
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px
+  }
+
+  .md\:my-6{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem
+  }
+
+  .md\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem
+  }
+
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px
+  }
+
+  .md\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem
+  }
+
+  .md\:mb-2{
+    margin-bottom: 0.5rem
+  }
+
+  .md\:mr-\[5px\]{
+    margin-right: 5px
+  }
+
+  .md\:mb-\[60px\]{
+    margin-bottom: 60px
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem
+  }
+
+  .md\:mr-6{
+    margin-right: 1.5rem
+  }
+
+  .md\:mt-6{
+    margin-top: 1.5rem
+  }
+
+  .md\:mt-0{
+    margin-top: 0px
+  }
+
+  .md\:mt-5{
+    margin-top: 1.25rem
+  }
+
+  .md\:mr-5{
+    margin-right: 1.25rem
+  }
+
+  .md\:mt-7{
+    margin-top: 1.75rem
+  }
+
+  .md\:\!mb-0{
+    margin-bottom: 0px !important
+  }
+
+  .md\:\!mb-2\.5{
+    margin-bottom: 0.625rem !important
+  }
+
+  .md\:\!mb-2{
+    margin-bottom: 0.5rem !important
+  }
+
+  .md\:mr-2{
+    margin-right: 0.5rem
+  }
+
+  .md\:\!-mt-\[2\.5\%\]{
+    margin-top: -2.5% !important
+  }
+
+  .md\:mb-5{
+    margin-bottom: 1.25rem
+  }
+
+  .md\:mr-8{
+    margin-right: 2rem
+  }
+
+  .md\:mb-20{
+    margin-bottom: 5rem
+  }
+
+  .md\:ml-2{
+    margin-left: 0.5rem
+  }
+
+  .md\:mb-6{
+    margin-bottom: 1.5rem
+  }
+
+  .md\:mb-4{
+    margin-bottom: 1rem
+  }
+
+  .md\:mr-\[30px\]{
+    margin-right: 30px
+  }
+
+  .md\:mr-\[25px\]{
+    margin-right: 25px
+  }
+
+  .md\:mb-12{
+    margin-bottom: 3rem
+  }
+
+  .md\:mt-\[60px\]{
+    margin-top: 60px
+  }
+
+  .md\:ml-6{
+    margin-left: 1.5rem
+  }
+
+  .md\:mt-16{
+    margin-top: 4rem
+  }
+
+  .md\:mb-8{
+    margin-bottom: 2rem
+  }
+
+  .md\:ml-4{
+    margin-left: 1rem
+  }
+
+  .md\:mb-16{
+    margin-bottom: 4rem
+  }
+
+  .md\:mr-12{
+    margin-right: 3rem
+  }
+
+  .md\:ml-10{
+    margin-left: 2.5rem
+  }
+
+  .md\:mb-3{
+    margin-bottom: 0.75rem
+  }
+
+  .md\:mt-\[35px\]{
+    margin-top: 35px
+  }
+
+  .md\:\!mb-5{
+    margin-bottom: 1.25rem !important
+  }
+
+  .md\:mt-\[80px\]{
+    margin-top: 80px
+  }
+
+  .md\:mb-\[35px\]{
+    margin-bottom: 35px
+  }
+
+  .md\:mt-12{
+    margin-top: 3rem
+  }
+
+  .md\:mr-4{
+    margin-right: 1rem
+  }
+
+  .md\:mr-0{
+    margin-right: 0px
+  }
+
+  .md\:block{
+    display: block
+  }
+
+  .md\:\!block{
+    display: block !important
+  }
+
+  .md\:inline-block{
+    display: inline-block
+  }
+
+  .md\:flex{
+    display: flex
+  }
+
+  .md\:\!flex{
+    display: flex !important
+  }
+
+  .md\:\!hidden{
+    display: none !important
+  }
+
+  .md\:hidden{
+    display: none
+  }
+
+  .md\:\!h-\[400px\]{
+    height: 400px !important
+  }
+
+  .md\:h-\[170px\]{
+    height: 170px
+  }
+
+  .md\:h-\[150px\]{
+    height: 150px
+  }
+
+  .md\:h-full{
+    height: 100%
+  }
+
+  .md\:max-h-\[600px\]{
+    max-height: 600px
+  }
+
+  .md\:\!w-\[400px\]{
+    width: 400px !important
+  }
+
+  .md\:w-auto{
+    width: auto
+  }
+
+  .md\:w-1\/2{
+    width: 50%
+  }
+
+  .md\:w-\[400px\]{
+    width: 400px
+  }
+
+  .md\:w-\[600px\]{
+    width: 600px
+  }
+
+  .md\:w-\[70\%\]{
+    width: 70%
+  }
+
+  .md\:w-\[370px\]{
+    width: 370px
+  }
+
+  .md\:w-\[240px\]{
+    width: 240px
+  }
+
+  .md\:w-\[98\%\]{
+    width: 98%
+  }
+
+  .md\:w-\[88\%\]{
+    width: 88%
+  }
+
+  .md\:w-\[99\.7\%\]{
+    width: 99.7%
+  }
+
+  .md\:w-\[calc\(655\/1680\*100\%\)\]{
+    width: calc(655 / 1680 * 100%)
+  }
+
+  .md\:w-\[336px\]{
+    width: 336px
+  }
+
+  .md\:w-\[95\%\]{
+    width: 95%
+  }
+
+  .md\:w-\[90\%\]{
+    width: 90%
+  }
+
+  .md\:w-\[245px\]{
+    width: 245px
+  }
+
+  .md\:w-4\/5{
+    width: 80%
+  }
+
+  .md\:min-w-\[400px\]{
+    min-width: 400px
+  }
+
+  .md\:min-w-\[180px\]{
+    min-width: 180px
+  }
+
+  .md\:max-w-\[400px\]{
+    max-width: 400px
+  }
+
+  .md\:max-w-\[180px\]{
+    max-width: 180px
+  }
+
+  .md\:max-w-full{
+    max-width: 100%
+  }
+
+  .md\:max-w-\[600px\]{
+    max-width: 600px
+  }
+
+  .md\:max-w-\[585px\]{
+    max-width: 585px
+  }
+
+  .md\:max-w-\[336px\]{
+    max-width: 336px
+  }
+
+  .md\:max-w-none{
+    max-width: none
+  }
+
+  .md\:\!max-w-\[339px\]{
+    max-width: 339px !important
+  }
+
+  .md\:basis-\[270px\]{
+    flex-basis: 270px
+  }
+
+  .md\:list-decimal{
+    list-style-type: decimal
+  }
+
+  .md\:flex-row{
+    flex-direction: row
+  }
+
+  .md\:flex-col{
+    flex-direction: column
+  }
+
+  .md\:place-content-center{
+    place-content: center
+  }
+
+  .md\:place-items-center{
+    place-items: center
+  }
+
+  .md\:items-center{
+    align-items: center
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end
+  }
+
+  .md\:justify-center{
+    justify-content: center
+  }
+
+  .md\:justify-between{
+    justify-content: space-between
+  }
+
+  .md\:gap-6{
+    gap: 1.5rem
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem
+  }
+
+  .md\:gap-\[129px\]{
+    gap: 129px
+  }
+
+  .md\:gap-\[35px\]{
+    gap: 35px
+  }
+
+  .md\:self-center{
+    align-self: center
+  }
+
+  .md\:bg-black{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+  }
+
+  .md\:bg-beige-10{
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 236 232 / var(--tw-bg-opacity))
+  }
+
+  .md\:p-0{
+    padding: 0px
+  }
+
+  .md\:\!p-\[30px\]{
+    padding: 30px !important
+  }
+
+  .md\:\!py-0{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important
+  }
+
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem
+  }
+
+  .md\:\!py-8{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important
+  }
+
+  .md\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px
+  }
+
+  .md\:px-\[8\.036\%\]{
+    padding-left: 8.036%;
+    padding-right: 8.036%
+  }
+
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem
+  }
+
+  .md\:pt-8{
+    padding-top: 2rem
+  }
+
+  .md\:\!pb-0{
+    padding-bottom: 0px !important
+  }
+
+  .md\:pt-\[30px\]{
+    padding-top: 30px
+  }
+
+  .md\:pl-\[30px\]{
+    padding-left: 30px
+  }
+
+  .md\:pr-5{
+    padding-right: 1.25rem
+  }
+
+  .md\:pr-0{
+    padding-right: 0px
+  }
+
+  .md\:\!pl-0{
+    padding-left: 0px !important
+  }
+
+  .md\:pt-4{
+    padding-top: 1rem
+  }
+
+  .md\:pt-6{
+    padding-top: 1.5rem
+  }
+
+  .md\:\!pl-4{
+    padding-left: 1rem !important
+  }
+
+  .md\:\!pb-8{
+    padding-bottom: 2rem !important
+  }
+
+  .md\:pb-12{
+    padding-bottom: 3rem
+  }
+
+  .md\:pl-0{
+    padding-left: 0px
+  }
+
+  .md\:pr-4{
+    padding-right: 1rem
+  }
+
+  .md\:pb-8{
+    padding-bottom: 2rem
+  }
+
+  .md\:pt-0{
+    padding-top: 0px
+  }
+
+  .md\:pb-3{
+    padding-bottom: 0.75rem
+  }
+
+  .md\:pt-12{
+    padding-top: 3rem
+  }
+
+  .md\:pr-6{
+    padding-right: 1.5rem
+  }
+
+  .md\:pt-10{
+    padding-top: 2.5rem
+  }
+
+  .md\:pl-8{
+    padding-left: 2rem
+  }
+
+  .md\:pb-\[40px\]{
+    padding-bottom: 40px
+  }
+
+  .md\:text-center{
+    text-align: center
+  }
+
+  .md\:\!text-lg{
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important
+  }
+
+  .md\:text-\[56px\]{
+    font-size: 56px
+  }
+
+  .md\:text-\[40px\]{
+    font-size: 40px
+  }
+
+  .md\:\!text-\[40px\]{
+    font-size: 40px !important
+  }
+
+  .md\:text-\[32px\]{
+    font-size: 32px
+  }
+
+  .md\:text-\[38px\]{
+    font-size: 38px
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem
+  }
+
+  .md\:text-\[30px\]{
+    font-size: 30px
+  }
+
+  .md\:text-\[28px\]{
+    font-size: 28px
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem
+  }
+
+  .md\:text-\[21px\]{
+    font-size: 21px
+  }
+
+  .md\:\!text-\[28px\]{
+    font-size: 28px !important
+  }
+
+  .md\:\!text-\[54px\]{
+    font-size: 54px !important
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
+  .md\:text-\[24px\]{
+    font-size: 24px
+  }
+
+  .md\:\!leading-8{
+    line-height: 2rem !important
+  }
+
+  .md\:leading-\[64px\]{
+    line-height: 64px
+  }
+
+  .md\:leading-\[48px\]{
+    line-height: 48px
+  }
+
+  .md\:\!leading-\[40px\]{
+    line-height: 40px !important
+  }
+
+  .md\:leading-\[40px\]{
+    line-height: 40px
+  }
+
+  .md\:leading-10{
+    line-height: 2.5rem
+  }
+
+  .md\:leading-7{
+    line-height: 1.75rem
+  }
+
+  .md\:leading-8{
+    line-height: 2rem
+  }
+
+  .md\:\!leading-\[32px\]{
+    line-height: 32px !important
+  }
+
+  .md\:\!leading-\[65px\]{
+    line-height: 65px !important
+  }
+
+  .md\:leading-\[22\.4px\]{
+    line-height: 22.4px
+  }
+
+  .md\:\!tracking-\[3\.6px\]{
+    letter-spacing: 3.6px !important
+  }
+
+  .md\:tracking-\[2px\]{
+    letter-spacing: 2px
+  }
+
+  .md\:-tracking-1{
+    letter-spacing: -.01em
+  }
+
+  .md\:tracking-\[3\.6px\]{
+    letter-spacing: 3.6px
+  }
+
+  .md\:\!tracking-\[1\.08px\]{
+    letter-spacing: 1.08px !important
+  }
+
+  .md\:\!tracking-\[0\.02em\]{
+    letter-spacing: 0.02em !important
+  }
+
+  .md\:text-gray-100{
+    --tw-text-opacity: 1;
+    color: rgb(238 238 238 / var(--tw-text-opacity))
+  }
+
+  .md\:opacity-\[0\.7\]{
+    opacity: 0.7
+  }
+
+  .md\:hover\:\!bg-red-arrow:hover{
+    background-image: url('../../images/nissan/icons/right-arrow-red.svg') !important
+  }
+
+  .md\:hover\:text-gray-100:hover{
+    --tw-text-opacity: 1;
+    color: rgb(238 238 238 / var(--tw-text-opacity))
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:relative{
+    position: relative
+  }
+
+  .lg\:z-\[99\]{
+    z-index: 99
+  }
+
+  .lg\:z-30{
+    z-index: 30
+  }
+
+  .lg\:m-\[25px\]{
+    margin: 25px
+  }
+
+  .lg\:mx-6{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
+  }
+
+  .lg\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem
+  }
+
+  .lg\:\!mb-\[60px\]{
+    margin-bottom: 60px !important
+  }
+
+  .lg\:mb-0{
+    margin-bottom: 0px
+  }
+
+  .lg\:mr-8{
+    margin-right: 2rem
+  }
+
+  .lg\:mb-5{
+    margin-bottom: 1.25rem
+  }
+
+  .lg\:\!mb-5{
+    margin-bottom: 1.25rem !important
+  }
+
+  .lg\:mb-\[60px\]{
+    margin-bottom: 60px
+  }
+
+  .lg\:mb-1{
+    margin-bottom: 0.25rem
+  }
+
+  .lg\:\!mr-0{
+    margin-right: 0px !important
+  }
+
+  .lg\:mb-8{
+    margin-bottom: 2rem
+  }
+
+  .lg\:mb-9{
+    margin-bottom: 2.25rem
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem
+  }
+
+  .lg\:mb-\[45px\]{
+    margin-bottom: 45px
+  }
+
+  .lg\:mt-\[52px\]{
+    margin-top: 52px
+  }
+
+  .lg\:block{
+    display: block
+  }
+
+  .lg\:flex{
+    display: flex
+  }
+
+  .lg\:hidden{
+    display: none
+  }
+
+  .lg\:h-\[450px\]{
+    height: 450px
+  }
+
+  .lg\:h-full{
+    height: 100%
+  }
+
+  .lg\:\!h-\[358px\]{
+    height: 358px !important
+  }
+
+  .lg\:max-h-\[440px\]{
+    max-height: 440px
+  }
+
+  .lg\:max-h-\[470px\]{
+    max-height: 470px
+  }
+
+  .lg\:max-h-\[420px\]{
+    max-height: 420px
+  }
+
+  .lg\:max-h-\[480px\]{
+    max-height: 480px
+  }
+
+  .lg\:max-h-\[600px\]{
+    max-height: 600px
+  }
+
+  .lg\:min-h-\[440px\]{
+    min-height: 440px
+  }
+
+  .lg\:min-h-\[470px\]{
+    min-height: 470px
+  }
+
+  .lg\:min-h-\[420px\]{
+    min-height: 420px
+  }
+
+  .lg\:min-h-\[480px\]{
+    min-height: 480px
+  }
+
+  .lg\:w-4\/5{
+    width: 80%
+  }
+
+  .lg\:w-3\/5{
+    width: 60%
+  }
+
+  .lg\:w-\[31\.75\%\]{
+    width: 31.75%
+  }
+
+  .lg\:w-\[68\.25\%\]{
+    width: 68.25%
+  }
+
+  .lg\:w-auto{
+    width: auto
+  }
+
+  .lg\:w-\[45\%\]{
+    width: 45%
+  }
+
+  .lg\:min-w-\[370px\]{
+    min-width: 370px
+  }
+
+  .lg\:max-w-\[370px\]{
+    max-width: 370px
+  }
+
+  .lg\:max-w-\[600px\]{
+    max-width: 600px
+  }
+
+  .lg\:basis-1\/2{
+    flex-basis: 50%
+  }
+
+  .lg\:flex-row-reverse{
+    flex-direction: row-reverse
+  }
+
+  .lg\:flex-col{
+    flex-direction: column
+  }
+
+  .lg\:place-items-center{
+    place-items: center
+  }
+
+  .lg\:items-center{
+    align-items: center
+  }
+
+  .lg\:justify-end{
+    justify-content: flex-end
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between
+  }
+
+  .lg\:gap-\[30px\]{
+    gap: 30px
+  }
+
+  .lg\:gap-\[69px\]{
+    gap: 69px
+  }
+
+  .lg\:border-r-0{
+    border-right-width: 0px
+  }
+
+  .lg\:bg-transparent{
+    background-color: transparent
+  }
+
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem
+  }
+
+  .lg\:py-\[10px\]{
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
+
+  .lg\:py-\[60px\]{
+    padding-top: 60px;
+    padding-bottom: 60px
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+
+  .lg\:pb-\[80px\]{
+    padding-bottom: 80px
+  }
+
+  .lg\:pb-0{
+    padding-bottom: 0px
+  }
+
+  .lg\:pt-10{
+    padding-top: 2.5rem
+  }
+
+  .lg\:pb-\[60px\]{
+    padding-bottom: 60px
+  }
+
+  .lg\:pb-\[50px\]{
+    padding-bottom: 50px
+  }
+
+  .lg\:\!pt-\[6\.5px\]{
+    padding-top: 6.5px !important
+  }
+
+  .lg\:pt-1\.5{
+    padding-top: 0.375rem
+  }
+
+  .lg\:pt-1{
+    padding-top: 0.25rem
+  }
+
+  .lg\:pt-8{
+    padding-top: 2rem
+  }
+
+  .lg\:pr-20{
+    padding-right: 5rem
+  }
+
+  .lg\:pb-4{
+    padding-bottom: 1rem
+  }
+
+  .lg\:text-\[42px\]{
+    font-size: 42px
+  }
+
+  .lg\:text-\[40px\]{
+    font-size: 40px
+  }
+
+  .lg\:\!text-\[17px\]{
+    font-size: 17px !important
+  }
+
+  .lg\:\!text-\[32px\]{
+    font-size: 32px !important
+  }
+
+  .lg\:text-\[56px\]{
+    font-size: 56px
+  }
+
+  .lg\:leading-\[48px\]{
+    line-height: 48px
+  }
+
+  .lg\:\!leading-\[45px\]{
+    line-height: 45px !important
+  }
+
+  .lg\:leading-\[64px\]{
+    line-height: 64px
+  }
+
+  .lg\:tracking-\[0\.4px\]{
+    letter-spacing: 0.4px
+  }
+
+  .lg\:\!tracking-\[3\.6px\]{
+    letter-spacing: 3.6px !important
+  }
+
+  .lg\:tracking-\[1\.08px\]{
+    letter-spacing: 1.08px
+  }
+
+  .lg\:text-black{
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity))
+  }
+}
+
+@media (min-width: 1088px){
+  .xl\:my-\[80px\]{
+    margin-top: 80px;
+    margin-bottom: 80px
+  }
+
+  .xl\:mr-\[70px\]{
+    margin-right: 70px
+  }
+
+  .xl\:ml-\[70px\]{
+    margin-left: 70px
+  }
+
+  .xl\:mb-9{
+    margin-bottom: 2.25rem
+  }
+
+  .xl\:mt-4{
+    margin-top: 1rem
+  }
+
+  .xl\:ml-8{
+    margin-left: 2rem
+  }
+
+  .xl\:mr-10{
+    margin-right: 2.5rem
+  }
+
+  .xl\:mr-6{
+    margin-right: 1.5rem
+  }
+
+  .xl\:h-\[480px\]{
+    height: 480px
+  }
+
+  .xl\:h-\[430px\]{
+    height: 430px
+  }
+
+  .xl\:h-\[490px\]{
+    height: 490px
+  }
+
+  .xl\:h-\[600px\]{
+    height: 600px
+  }
+
+  .xl\:min-h-\[147px\]{
+    min-height: 147px
+  }
+
+  .xl\:w-\[27rem\]{
+    width: 27rem
+  }
+
+  .xl\:w-\[26\.5rem\]{
+    width: 26.5rem
+  }
+
+  .xl\:w-\[600px\]{
+    width: 600px
+  }
+
+  .xl\:basis-\[270px\]{
+    flex-basis: 270px
+  }
+
+  .xl\:\!p-0{
+    padding: 0px !important
+  }
+
+  .xl\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem
+  }
+
+  .xl\:\!py-20{
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important
+  }
+
+  .xl\:\!px-0{
+    padding-left: 0px !important;
+    padding-right: 0px !important
+  }
+
+  .xl\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem
+  }
+
+  .xl\:px-\[60px\]{
+    padding-left: 60px;
+    padding-right: 60px
+  }
+
+  .xl\:\!pr-0{
+    padding-right: 0px !important
+  }
+
+  .xl\:\!pr-\[6px\]{
+    padding-right: 6px !important
+  }
+
+  .xl\:\!pl-0{
+    padding-left: 0px !important
+  }
+
+  .xl\:\!pb-12{
+    padding-bottom: 3rem !important
+  }
+
+  .xl\:\!pt-4{
+    padding-top: 1rem !important
+  }
+
+  .xl\:\!pb-6{
+    padding-bottom: 1.5rem !important
+  }
+
+  .xl\:pb-\[1\.65rem\]{
+    padding-bottom: 1.65rem
+  }
+
+  .xl\:pr-2{
+    padding-right: 0.5rem
+  }
+
+  .xl\:\!text-\[40px\]{
+    font-size: 40px !important
+  }
+
+  .xl\:\!leading-\[48px\]{
+    line-height: 48px !important
+  }
+}
+
+@media (min-width: 1280px){
+  .\32xl\:mr-4{
+    margin-right: 1rem
+  }
+
+  .\32xl\:mr-12{
+    margin-right: 3rem
+  }
+
+  .\32xl\:ml-12{
+    margin-left: 3rem
+  }
+
+  .\32xl\:mb-3{
+    margin-bottom: 0.75rem
+  }
+
+  .\32xl\:mb-4{
+    margin-bottom: 1rem
+  }
+
+  .\32xl\:\!w-\[1170px\]{
+    width: 1170px !important
+  }
+
+  .\32xl\:w-\[62\%\]{
+    width: 62%
+  }
+
+  .\32xl\:w-1\/2{
+    width: 50%
+  }
+
+  .\32xl\:w-auto{
+    width: auto
+  }
+
+  .\32xl\:w-3\/5{
+    width: 60%
+  }
+
+  .\32xl\:w-\[28rem\]{
+    width: 28rem
+  }
+
+  .\32xl\:\!max-w-\[1170px\]{
+    max-width: 1170px !important
+  }
+
+  .\32xl\:pl-\[30px\]{
+    padding-left: 30px
+  }
+
+  .\32xl\:pr-\[30px\]{
+    padding-right: 30px
+  }
+
+  .\32xl\:text-\[40px\]{
+    font-size: 40px
+  }
+
+  .\32xl\:text-\[38px\]{
+    font-size: 38px
+  }
+
+  .\32xl\:leading-\[48px\]{
+    line-height: 48px
+  }
+
+  .\32xl\:leading-8{
+    line-height: 2rem
+  }
+}
+
+@media (min-width: 1472px){
+  .\33xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .\33xl\:mb-4{
+    margin-bottom: 1rem
+  }
+
+  .\33xl\:mr-\[5\.5rem\]{
+    margin-right: 5.5rem
+  }
+
+  .\33xl\:ml-16{
+    margin-left: 4rem
+  }
+
+  .\33xl\:ml-11{
+    margin-left: 2.75rem
+  }
+
+  .\33xl\:w-\[85\%\]{
+    width: 85%
+  }
+
+  .\33xl\:w-3\/4{
+    width: 75%
+  }
+
+  .\33xl\:w-\[70\%\]{
+    width: 70%
+  }
+
+  .\33xl\:w-\[90\%\]{
+    width: 90%
+  }
+
+  .\33xl\:w-\[86\%\]{
+    width: 86%
+  }
+
+  .\33xl\:w-\[80\%\]{
+    width: 80%
+  }
+
+  .\33xl\:w-96{
+    width: 24rem
+  }
+
+  .\33xl\:w-\[82\%\]{
+    width: 82%
+  }
+
+  .\33xl\:w-1\/2{
+    width: 50%
+  }
+
+  .\33xl\:pr-4{
+    padding-right: 1rem
+  }
+
+  .\33xl\:text-\[40px\]{
+    font-size: 40px
+  }
+
+  .\33xl\:\!leading-\[64px\]{
+    line-height: 64px !important
+  }
+
+  .\33xl\:leading-9{
+    line-height: 2.25rem
+  }
+
+  .\33xl\:leading-\[48px\]{
+    line-height: 48px
+  }
+}
+
+@media (min-width: 1920px){
+  .\34xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .\34xl\:\!w-\[1920px\]{
+    width: 1920px !important
+  }
+
+  .\34xl\:w-\[400px\]{
+    width: 400px
+  }
+
+  .\34xl\:w-4\/5{
+    width: 80%
+  }
+
+  .\34xl\:max-w-\[1920px\]{
+    max-width: 1920px
+  }
+
+  .\34xl\:\!pr-20{
+    padding-right: 5rem !important
+  }
+}
+
+@media (max-width: 767px){
+  .mobile\:invisible{
+    visibility: hidden
+  }
+
+  .mobile\:fixed{
+    position: fixed
+  }
+
+  .mobile\:absolute{
+    position: absolute
+  }
+
+  .mobile\:relative{
+    position: relative
+  }
+
+  .mobile\:inset-0{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px
+  }
+
+  .mobile\:\!top-\[40\%\]{
+    top: 40% !important
+  }
+
+  .mobile\:\!top-\[35\%\]{
+    top: 35% !important
+  }
+
+  .mobile\:top-16{
+    top: 4rem
+  }
+
+  .mobile\:bottom-\[10px\]{
+    bottom: 10px
+  }
+
+  .mobile\:left-\[10px\]{
+    left: 10px
+  }
+
+  .mobile\:bottom-5{
+    bottom: 1.25rem
+  }
+
+  .mobile\:z-\[1\]{
+    z-index: 1
+  }
+
+  .mobile\:z-\[100\]{
+    z-index: 100
+  }
+
+  .mobile\:order-first{
+    order: -9999
+  }
+
+  .mobile\:m-0{
+    margin: 0px
+  }
+
+  .mobile\:\!m-0{
+    margin: 0px !important
+  }
+
+  .mobile\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+
+  .mobile\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px
+  }
+
+  .mobile\:mx-auto{
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .mobile\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem
+  }
+
+  .mobile\:mx-3{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem
+  }
+
+  .mobile\:ml-\[15px\]{
+    margin-left: 15px
+  }
+
+  .mobile\:mr-\[15px\]{
+    margin-right: 15px
+  }
+
+  .mobile\:mt-8{
+    margin-top: 2rem
+  }
+
+  .mobile\:mb-4{
+    margin-bottom: 1rem
+  }
+
+  .mobile\:ml-4{
+    margin-left: 1rem
+  }
+
+  .mobile\:\!mb-0{
+    margin-bottom: 0px !important
+  }
+
+  .mobile\:mb-\[40px\]{
+    margin-bottom: 40px
+  }
+
+  .mobile\:mb-12{
+    margin-bottom: 3rem
+  }
+
+  .mobile\:mb-2{
+    margin-bottom: 0.5rem
+  }
+
+  .mobile\:-mt-\[1px\]{
+    margin-top: -1px
+  }
+
+  .mobile\:mb-5{
+    margin-bottom: 1.25rem
+  }
+
+  .mobile\:mb-\[10px\]{
+    margin-bottom: 10px
+  }
+
+  .mobile\:\!mt-0{
+    margin-top: 0px !important
+  }
+
+  .mobile\:mr-0{
+    margin-right: 0px
+  }
+
+  .mobile\:\!mb-2{
+    margin-bottom: 0.5rem !important
+  }
+
+  .mobile\:mt-\[15px\]{
+    margin-top: 15px
+  }
+
+  .mobile\:mr-2{
+    margin-right: 0.5rem
+  }
+
+  .mobile\:mt-6{
+    margin-top: 1.5rem
+  }
+
+  .mobile\:mt-5{
+    margin-top: 1.25rem
+  }
+
+  .mobile\:mb-\[14px\]{
+    margin-bottom: 14px
+  }
+
+  .mobile\:mt-4{
+    margin-top: 1rem
+  }
+
+  .mobile\:mb-8{
+    margin-bottom: 2rem
+  }
+
+  .mobile\:ml-2{
+    margin-left: 0.5rem
+  }
+
+  .mobile\:mb-\[30px\]{
+    margin-bottom: 30px
+  }
+
+  .mobile\:mb-7{
+    margin-bottom: 1.75rem
+  }
+
+  .mobile\:mb-6{
+    margin-bottom: 1.5rem
+  }
+
+  .mobile\:mb-10{
+    margin-bottom: 2.5rem
+  }
+
+  .mobile\:mb-9{
+    margin-bottom: 2.25rem
+  }
+
+  .mobile\:mb-3{
+    margin-bottom: 0.75rem
+  }
+
+  .mobile\:mb-0{
+    margin-bottom: 0px
+  }
+
+  .mobile\:mb-16{
+    margin-bottom: 4rem
+  }
+
+  .mobile\:ml-5{
+    margin-left: 1.25rem
+  }
+
+  .mobile\:mt-3{
+    margin-top: 0.75rem
+  }
+
+  .mobile\:mt-10{
+    margin-top: 2.5rem
+  }
+
+  .mobile\:block{
+    display: block
+  }
+
+  .mobile\:\!block{
+    display: block !important
+  }
+
+  .mobile\:inline-block{
+    display: inline-block
+  }
+
+  .mobile\:flex{
+    display: flex
+  }
+
+  .mobile\:\!hidden{
+    display: none !important
+  }
+
+  .mobile\:hidden{
+    display: none
+  }
+
+  .mobile\:h-\[100dvh\]{
+    height: 100dvh
+  }
+
+  .mobile\:h-full{
+    height: 100%
+  }
+
+  .mobile\:h-auto{
+    height: auto
+  }
+
+  .mobile\:h-\[50px\]{
+    height: 50px
+  }
+
+  .mobile\:h-\[35px\]{
+    height: 35px
+  }
+
+  .mobile\:h-\[22px\]{
+    height: 22px
+  }
+
+  .mobile\:min-h-\[100dvh\]{
+    min-height: 100dvh
+  }
+
+  .mobile\:min-h-0{
+    min-height: 0px
+  }
+
+  .mobile\:w-\[93\%\]{
+    width: 93%
+  }
+
+  .mobile\:w-full{
+    width: 100%
+  }
+
+  .mobile\:w-\[35px\]{
+    width: 35px
+  }
+
+  .mobile\:w-\[22px\]{
+    width: 22px
+  }
+
+  .mobile\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content
+  }
+
+  .mobile\:w-auto{
+    width: auto
+  }
+
+  .mobile\:w-\[90\%\]{
+    width: 90%
+  }
+
+  .mobile\:w-\[75\%\]{
+    width: 75%
+  }
+
+  .mobile\:w-11{
+    width: 2.75rem
+  }
+
+  .mobile\:max-w-\[80\%\]{
+    max-width: 80%
+  }
+
+  .mobile\:flex-1{
+    flex: 1 1 0%
+  }
+
+  .mobile\:\!flex-1{
+    flex: 1 1 0% !important
+  }
+
+  .mobile\:shrink-0{
+    flex-shrink: 0
+  }
+
+  .mobile\:flex-grow{
+    flex-grow: 1
+  }
+
+  .mobile\:cursor-pointer{
+    cursor: pointer
+  }
+
+  .mobile\:appearance-none{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none
+  }
+
+  .mobile\:flex-col{
+    flex-direction: column
+  }
+
+  .mobile\:flex-col-reverse{
+    flex-direction: column-reverse
+  }
+
+  .mobile\:items-start{
+    align-items: flex-start
+  }
+
+  .mobile\:items-center{
+    align-items: center
+  }
+
+  .mobile\:justify-end{
+    justify-content: flex-end
+  }
+
+  .mobile\:gap-1\.5{
+    gap: 0.375rem
+  }
+
+  .mobile\:gap-1{
+    gap: 0.25rem
+  }
+
+  .mobile\:self-center{
+    align-self: center
+  }
+
+  .mobile\:overflow-hidden{
+    overflow: hidden
+  }
+
+  .mobile\:border-0{
+    border-width: 0px
+  }
+
+  .mobile\:border-y-2{
+    border-top-width: 2px;
+    border-bottom-width: 2px
+  }
+
+  .mobile\:border-t{
+    border-top-width: 1px
+  }
+
+  .mobile\:border-gray-400{
+    --tw-border-opacity: 1;
+    border-color: rgb(52 52 52 / var(--tw-border-opacity))
+  }
+
+  .mobile\:bg-\[\#1e1e1e\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 30 30 / var(--tw-bg-opacity))
+  }
+
+  .mobile\:bg-transparent{
+    background-color: transparent
+  }
+
+  .mobile\:bg-beige-10{
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 236 232 / var(--tw-bg-opacity))
+  }
+
+  .mobile\:bg-black{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+  }
+
+  .mobile\:bg-gray-450{
+    --tw-bg-opacity: 1;
+    background-color: rgb(246 246 246 / var(--tw-bg-opacity))
+  }
+
+  .mobile\:bg-white-arrow{
+    background-image: url('../../images/nissan/icons/right-arrow.svg')
+  }
+
+  .mobile\:p-0{
+    padding: 0px
+  }
+
+  .mobile\:p-4{
+    padding: 1rem
+  }
+
+  .mobile\:\!py-8{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important
+  }
+
+  .mobile\:px-0{
+    padding-left: 0px;
+    padding-right: 0px
+  }
+
+  .mobile\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem
+  }
+
+  .mobile\:px-\[18px\]{
+    padding-left: 18px;
+    padding-right: 18px
+  }
+
+  .mobile\:py-\[30px\]{
+    padding-top: 30px;
+    padding-bottom: 30px
+  }
+
+  .mobile\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px
+  }
+
+  .mobile\:\!px-\[15px\]{
+    padding-left: 15px !important;
+    padding-right: 15px !important
+  }
+
+  .mobile\:px-\[1em\]{
+    padding-left: 1em;
+    padding-right: 1em
+  }
+
+  .mobile\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem
+  }
+
+  .mobile\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+  }
+
+  .mobile\:py-\[15px\]{
+    padding-top: 15px;
+    padding-bottom: 15px
+  }
+
+  .mobile\:py-\[13px\]{
+    padding-top: 13px;
+    padding-bottom: 13px
+  }
+
+  .mobile\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem
+  }
+
+  .mobile\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem
+  }
+
+  .mobile\:py-\[40px\]{
+    padding-top: 40px;
+    padding-bottom: 40px
+  }
+
+  .mobile\:\!px-6{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important
+  }
+
+  .mobile\:px-\[2px\]{
+    padding-left: 2px;
+    padding-right: 2px
+  }
+
+  .mobile\:\!px-0{
+    padding-left: 0px !important;
+    padding-right: 0px !important
+  }
+
+  .mobile\:\!pr-\[1\.4em\]{
+    padding-right: 1.4em !important
+  }
+
+  .mobile\:pl-0{
+    padding-left: 0px
+  }
+
+  .mobile\:pb-\[11\%\]{
+    padding-bottom: 11%
+  }
+
+  .mobile\:pb-\[10px\]{
+    padding-bottom: 10px
+  }
+
+  .mobile\:pt-\[9px\]{
+    padding-top: 9px
+  }
+
+  .mobile\:pr-\[5px\]{
+    padding-right: 5px
+  }
+
+  .mobile\:pl-\[12\.8px\]{
+    padding-left: 12.8px
+  }
+
+  .mobile\:pt-3{
+    padding-top: 0.75rem
+  }
+
+  .mobile\:pb-10{
+    padding-bottom: 2.5rem
+  }
+
+  .mobile\:\!pb-0{
+    padding-bottom: 0px !important
+  }
+
+  .mobile\:\!pt-\[7\.5px\]{
+    padding-top: 7.5px !important
+  }
+
+  .mobile\:\!pb-\[0\.5rem\]{
+    padding-bottom: 0.5rem !important
+  }
+
+  .mobile\:pt-10{
+    padding-top: 2.5rem
+  }
+
+  .mobile\:pb-6{
+    padding-bottom: 1.5rem
+  }
+
+  .mobile\:pr-4{
+    padding-right: 1rem
+  }
+
+  .mobile\:pt-0{
+    padding-top: 0px
+  }
+
+  .mobile\:pb-8{
+    padding-bottom: 2rem
+  }
+
+  .mobile\:pb-0{
+    padding-bottom: 0px
+  }
+
+  .mobile\:pt-9{
+    padding-top: 2.25rem
+  }
+
+  .mobile\:pt-\[2\.75rem\]{
+    padding-top: 2.75rem
+  }
+
+  .mobile\:pt-\[13px\]{
+    padding-top: 13px
+  }
+
+  .mobile\:pb-5{
+    padding-bottom: 1.25rem
+  }
+
+  .mobile\:pb-16{
+    padding-bottom: 4rem
+  }
+
+  .mobile\:pt-12{
+    padding-top: 3rem
+  }
+
+  .mobile\:pt-8{
+    padding-top: 2rem
+  }
+
+  .mobile\:pt-\[1rem\]{
+    padding-top: 1rem
+  }
+
+  .mobile\:pt-\[56px\]{
+    padding-top: 56px
+  }
+
+  .mobile\:pt-\[0\.45rem\]{
+    padding-top: 0.45rem
+  }
+
+  .mobile\:\!pt-\[30px\]{
+    padding-top: 30px !important
+  }
+
+  .mobile\:\!pb-10{
+    padding-bottom: 2.5rem !important
+  }
+
+  .mobile\:pt-\[40px\]{
+    padding-top: 40px
+  }
+
+  .mobile\:pb-4{
+    padding-bottom: 1rem
+  }
+
+  .mobile\:pl-3{
+    padding-left: 0.75rem
+  }
+
+  .mobile\:pb-\[40px\]{
+    padding-bottom: 40px
+  }
+
+  .mobile\:pr-3{
+    padding-right: 0.75rem
+  }
+
+  .mobile\:pl-2{
+    padding-left: 0.5rem
+  }
+
+  .mobile\:pt-5{
+    padding-top: 1.25rem
+  }
+
+  .mobile\:\!text-left{
+    text-align: left !important
+  }
+
+  .mobile\:text-left{
+    text-align: left
+  }
+
+  .mobile\:text-center{
+    text-align: center
+  }
+
+  .mobile\:align-baseline{
+    vertical-align: baseline
+  }
+
+  .mobile\:font-light{
+    font-family: NissanBrand-light
+  }
+
+  .mobile\:font-regular{
+    font-family: NissanBrand-Regular
+  }
+
+  .mobile\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem
+  }
+
+  .mobile\:text-\[30px\]{
+    font-size: 30px
+  }
+
+  .mobile\:\!text-\[32px\]{
+    font-size: 32px !important
+  }
+
+  .mobile\:text-\[18px\]{
+    font-size: 18px
+  }
+
+  .mobile\:text-\[32px\]{
+    font-size: 32px
+  }
+
+  .mobile\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
+  .mobile\:\!text-\[27px\]{
+    font-size: 27px !important
+  }
+
+  .mobile\:font-normal{
+    font-weight: 400
+  }
+
+  .mobile\:font-light{
+    font-weight: 300
+  }
+
+  .mobile\:leading-normal{
+    line-height: 1.5
+  }
+
+  .mobile\:leading-6{
+    line-height: 1.5rem
+  }
+
+  .mobile\:leading-\[36px\]{
+    line-height: 36px
+  }
+
+  .mobile\:\!leading-10{
+    line-height: 2.5rem !important
+  }
+
+  .mobile\:leading-8{
+    line-height: 2rem
+  }
+
+  .mobile\:leading-10{
+    line-height: 2.5rem
+  }
+
+  .mobile\:leading-\[38px\]{
+    line-height: 38px
+  }
+
+  .mobile\:leading-5{
+    line-height: 1.25rem
+  }
+
+  .mobile\:\!leading-\[32px\]{
+    line-height: 32px !important
+  }
+
+  .mobile\:tracking-\[0\.24px\]{
+    letter-spacing: 0.24px
+  }
+
+  .mobile\:tracking-\[1\.2px\]{
+    letter-spacing: 1.2px
+  }
+
+  .mobile\:tracking-\[unset\]{
+    letter-spacing: unset
+  }
+
+  .mobile\:tracking-\[3px\]{
+    letter-spacing: 3px
+  }
+
+  .mobile\:tracking-\[0\.9px\]{
+    letter-spacing: 0.9px
+  }
+
+  .mobile\:tracking-\[0\.8px\]{
+    letter-spacing: 0.8px
+  }
+
+  .mobile\:tracking-\[0\.02em\]{
+    letter-spacing: 0.02em
+  }
+
+  .mobile\:tracking-\[0\.4px\]{
+    letter-spacing: 0.4px
+  }
+
+  .mobile\:tracking-\[0\.03px\]{
+    letter-spacing: 0.03px
+  }
+
+  .mobile\:tracking-\[0\.04px\]{
+    letter-spacing: 0.04px
+  }
+
+  .mobile\:tracking-\[1px\]{
+    letter-spacing: 1px
+  }
+
+  .mobile\:tracking-\[0\.08em\]{
+    letter-spacing: 0.08em
+  }
+
+  .mobile\:tracking-\[0\.3px\]{
+    letter-spacing: 0.3px
+  }
+
+  .mobile\:tracking-\[0\.2px\]{
+    letter-spacing: 0.2px
+  }
+
+  .mobile\:tracking-\[1\.28px\]{
+    letter-spacing: 1.28px
+  }
+
+  .mobile\:\!text-white{
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px){
+  .tablet\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem
+  }
+
+  .tablet\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem
+  }
+
+  .tablet\:mb-4{
+    margin-bottom: 1rem
+  }
+
+  .tablet\:mb-3{
+    margin-bottom: 0.75rem
+  }
+
+  .tablet\:mb-1{
+    margin-bottom: 0.25rem
+  }
+
+  .tablet\:mt-3{
+    margin-top: 0.75rem
+  }
+
+  .tablet\:mr-4{
+    margin-right: 1rem
+  }
+
+  .tablet\:mb-6{
+    margin-bottom: 1.5rem
+  }
+
+  .tablet\:\!hidden{
+    display: none !important
+  }
+
+  .tablet\:hidden{
+    display: none
+  }
+
+  .tablet\:w-2\/5{
+    width: 40%
+  }
+
+  .tablet\:w-3\/5{
+    width: 60%
+  }
+
+  .tablet\:w-1\/4{
+    width: 25%
+  }
+
+  .tablet\:self-start{
+    align-self: flex-start
+  }
+
+  .tablet\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem
+  }
+
+  .tablet\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px
+  }
+
+  .tablet\:pr-4{
+    padding-right: 1rem
+  }
+
+  .tablet\:pl-4{
+    padding-left: 1rem
+  }
+
+  .tablet\:pt-4{
+    padding-top: 1rem
+  }
+
+  .tablet\:pb-\[1\.65rem\]{
+    padding-bottom: 1.65rem
+  }
+
+  .tablet\:text-\[38px\]{
+    font-size: 38px
+  }
+
+  .tablet\:text-\[40px\]{
+    font-size: 40px
+  }
+
+  .tablet\:leading-\[42px\]{
+    line-height: 42px
+  }
+
+  .tablet\:leading-\[44px\]{
+    line-height: 44px
+  }
+
+  .tablet\:-tracking-2{
+    letter-spacing: -.02em
+  }
+}

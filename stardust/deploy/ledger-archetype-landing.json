@@ -1,0 +1,11 @@
+{
+  "/parts-service": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-19T19:03:23.063Z",
+    "put": 200,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  }
+}

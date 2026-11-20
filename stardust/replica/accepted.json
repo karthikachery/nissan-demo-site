@@ -1,0 +1,88 @@
+{
+  "accepted": [
+    {
+      "kind": "MISSING CTA",
+      "text": "Purchase Today",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING CTA",
+      "text": "Shop for Tires",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING CTA",
+      "text": "*Offer Details",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING CTA",
+      "text": "Find A Dealer",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING CTA",
+      "text": "Find a Dealer",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING EYEBROW",
+      "text": "Built to last",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING EYEBROW",
+      "text": "[*]",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING HEADING",
+      "text": "Buy 3 Tires, Get the 4th for $1*",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "ROLE SWAP",
+      "text": "[*]",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING ARIA-LABEL",
+      "text": "1 of 4",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING ARIA-LABEL",
+      "text": "2 of 4",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING ARIA-LABEL",
+      "text": "3 of 4",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING ARIA-LABEL",
+      "text": "4 of 4",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    },
+    {
+      "kind": "MISSING ARIA-LABEL",
+      "text": "close",
+      "root": "main",
+      "reason": "Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and \"N of 4\" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)"
+    }
+  ]
+}

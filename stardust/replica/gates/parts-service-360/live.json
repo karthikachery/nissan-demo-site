@@ -1,0 +1,11 @@
+{
+  "writtenBy": "gate.sh --gate-against-baseline",
+  "origin": "baseline",
+  "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+  "width": 360,
+  "at": "2026-11-19T17:27:36.358Z",
+  "originBaseline": {
+    "capturedAt": "2026-11-19T17:27:36.358Z",
+    "height": 6519
+  }
+}

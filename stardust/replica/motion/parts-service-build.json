@@ -1,0 +1,714 @@
+{
+  "url": "http://localhost:8791/prototypes/parts-service-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".hero-carousel__dot:nth-child(2)",
+      "frames": [
+        {
+          "t": 19649.899999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 19860.899999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20066.299999999814,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 20271.399999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#next",
+      "frames": [
+        {
+          "t": 21283.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 21487.19999999972,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 21691.399999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 21895.399999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#participating-dealers-tc-popup-invoker",
+      "frames": [
+        {
+          "t": 22912.899999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 23117.100000000093,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 23320.600000000093,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 23525.69999999972,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#header_service_menu",
+      "frames": [
+        {
+          "t": 24548.100000000093,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 24754,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 24957.899999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 25163.799999999814,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": "#home_offer_details_cye_oil",
+      "frames": [
+        {
+          "t": 26183.69999999972,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 26387.799999999814,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 26591.399999999907,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 26797,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": "#menu-dealer-locator-btn",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(195, 0, 47)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(195, 0, 47)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#home-exp-service-panel-dealer-cta",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#home-exp-service-panel-learn-cta",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#explore-cta",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background-color 0.2s, color 0.2s, border-color 0.2s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#next",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(52, 52, 52)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(52, 52, 52)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#footer-link-build-your-nissan",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(239, 239, 239)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(239, 239, 239)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#header_coupons_menu",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "media": {
+    "videos": [
+      {
+        "src": "http://localhost:8791/current/assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-2.mp4",
+        "autoplay": true,
+        "loop": true,
+        "muted": true,
+        "paused": true,
+        "currentTime": 0,
+        "readyState": 4,
+        "inViewport": true,
+        "currentTimeAfter": 0,
+        "playing": false
+      }
+    ],
+    "idleClassMutations": [],
+    "idleClassMutationCount": 0
+  },
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "body > main.parts-service > section.hero-carousel > div.hero-carousel__dots > button.hero-carousel__dot",
+        "y": 3145,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "opacity",
+        "el": "body > main.parts-service > section.hero-carousel > div.hero-carousel__dots > button.hero-carousel__dot.is-active",
+        "y": 3145,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "transform",
+        "el": "body > main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track",
+        "y": 3145,
+        "dur": "2s"
+      },
+      {
+        "prop": "transform",
+        "el": "main.parts-service > section.offers > div.offers__rail > div.offers__progress > span.offers__progress-bar",
+        "y": 1010,
+        "dur": "1s"
+      },
+      {
+        "prop": "transform",
+        "el": "body > main.parts-service > section.offers > div.offers__rail > ul.offers__track",
+        "y": 1010,
+        "dur": "1s"
+      },
+      {
+        "prop": "width",
+        "el": "html > body.side-menu-active > div.sidenav.side-nav",
+        "y": 0,
+        "dur": "1s, 1s"
+      },
+      {
+        "prop": "height",
+        "el": "html > body.side-menu-active > div.sidenav.side-nav",
+        "y": 0,
+        "dur": "1s, 1s"
+      },
+      {
+        "prop": "opacity",
+        "el": "body.side-menu-active > main.parts-service > section.hero-carousel > div.hero-carousel__dots > button.hero-carousel__dot",
+        "y": 3737,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "transform",
+        "el": "body.side-menu-active > main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track",
+        "y": 3737,
+        "dur": "2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "body.side-menu-active > main.parts-service > section.hero-carousel > div.hero-carousel__dots > button.hero-carousel__dot.is-active",
+        "y": 3737,
+        "dur": "0.3s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "sticky"
+        ],
+        "el": "html > body > form.dealer-search.sticky",
+        "y": 2
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "body > main.parts-service > section.hero-carousel > div.hero-carousel__dots > button.hero-carousel__dot.is-active",
+        "y": 3127
+      },
+      {
+        "added": [
+          "is-prev"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-prev",
+        "y": 3127
+      },
+      {
+        "added": [
+          "is-prev"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-prev",
+        "y": 3127
+      },
+      {
+        "added": [
+          "is-prev"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-prev",
+        "y": 3127
+      },
+      {
+        "added": [
+          "is-active",
+          "is-visible"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-active.is-visible",
+        "y": 3127
+      },
+      {
+        "added": [
+          "is-visible"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-active.is-visible",
+        "y": 3127
+      },
+      {
+        "added": [
+          "is-next"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-next",
+        "y": 3127
+      },
+      {
+        "added": [
+          "sticky"
+        ],
+        "el": "html > body > form.dealer-search.sticky",
+        "y": 3
+      },
+      {
+        "added": [
+          "disable-carousel-btn"
+        ],
+        "el": "main.parts-service > section.offers > div.offers__rail > div.offers__nav > button.offers__btn.offers__btn--next.disable-carousel-btn",
+        "y": 1010
+      },
+      {
+        "added": [
+          "side-nav"
+        ],
+        "el": "html > body.side-menu-active > div.sidenav.side-nav",
+        "y": 0
+      },
+      {
+        "added": [
+          "overlay-active"
+        ],
+        "el": "html > body.side-menu-active > div.sidenav-overlay.overlay-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "main-navigation"
+        ],
+        "el": "html > body.side-menu-active > div.site-header > div.navbar > nav.site-nav.main-navigation",
+        "y": 0
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "body.side-menu-active > div.site-header > div.navbar > a.navbar__logo > img.navbar__logo-white.is-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "menu-close-btn-container"
+        ],
+        "el": "div.site-header > div.navbar > nav.site-nav.main-navigation > ul.site-nav__list > li.site-nav__close-item.menu-close-btn-container",
+        "y": 0
+      },
+      {
+        "added": [
+          "highlightNav"
+        ],
+        "el": "div.navbar > nav.site-nav.main-navigation > ul.site-nav__list > li > button.site-nav__link.highlightNav",
+        "y": 0
+      },
+      {
+        "added": [
+          "side-nav"
+        ],
+        "el": "html > body.side-menu-active > div.sidenav.side-nav",
+        "y": 0
+      },
+      {
+        "added": [
+          "overlay-active"
+        ],
+        "el": "html > body.side-menu-active > div.sidenav-overlay.overlay-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "side-menu-active"
+        ],
+        "el": "html > body.side-menu-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "main-navigation"
+        ],
+        "el": "html > body.side-menu-active > div.site-header > div.navbar > nav.site-nav.main-navigation",
+        "y": 0
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "body.side-menu-active > div.site-header > div.navbar > a.navbar__logo > img.navbar__logo-white.is-active",
+        "y": 0
+      },
+      {
+        "added": [
+          "inactive"
+        ],
+        "el": "body.side-menu-active > div.site-header > div.navbar > a.navbar__logo > picture.inactive",
+        "y": 0
+      },
+      {
+        "added": [
+          "menu-close-btn-container"
+        ],
+        "el": "div.site-header > div.navbar > nav.site-nav.main-navigation > ul.site-nav__list > li.site-nav__close-item.menu-close-btn-container",
+        "y": 0
+      },
+      {
+        "added": [
+          "highlightNav"
+        ],
+        "el": "div.navbar > nav.site-nav.main-navigation > ul.site-nav__list > li > button.site-nav__link.highlightNav",
+        "y": 0
+      },
+      {
+        "added": [
+          "sticky"
+        ],
+        "el": "html > body.side-menu-active > form.dealer-search.sticky",
+        "y": 2
+      },
+      {
+        "added": [
+          "sticky"
+        ],
+        "el": "html > body.side-menu-active > form.dealer-search.sticky",
+        "y": 2
+      },
+      {
+        "added": [
+          "is-active"
+        ],
+        "el": "body.side-menu-active > main.parts-service > section.hero-carousel > div.hero-carousel__dots > button.hero-carousel__dot.is-active",
+        "y": 3707
+      },
+      {
+        "added": [
+          "is-prev"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-prev",
+        "y": 3707
+      },
+      {
+        "added": [
+          "is-prev"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-prev",
+        "y": 3707
+      },
+      {
+        "added": [
+          "is-prev"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-prev",
+        "y": 3707
+      },
+      {
+        "added": [
+          "is-active",
+          "is-visible"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-active.is-visible",
+        "y": 3707
+      },
+      {
+        "added": [
+          "is-visible"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-active.is-visible",
+        "y": 3707
+      },
+      {
+        "added": [
+          "is-next"
+        ],
+        "el": "main.parts-service > section.hero-carousel > div.hero-carousel__viewport > ul.hero-carousel__track > li.hero-slide.is-next",
+        "y": 3707
+      }
+    ]
+  }
+}

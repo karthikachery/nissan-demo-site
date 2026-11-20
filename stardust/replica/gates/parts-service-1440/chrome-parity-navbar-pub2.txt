@@ -1,0 +1,22 @@
+[live-session] waiting to pace live navigations to staging.niss-parts-service.epsilonrms.com (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 983 ms
+[live-session] waiting to pace live navigations to main--83d9e7fd--aemcoder.aem.page (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 516 ms
+chrome-parity @ 1440px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service
+  build: https://main--83d9e7fd--aemcoder.aem.page/parts-service
+
+■ footer: 10 delta(s) — 25 paired of 29/25 texts, 6/6 icons
+  PAIR         "English"  tag <a> → <p>; paddingRight 24px → 0px; paddingLeft 12px → 0px; Δx +12px (1220→1232); Δw -36px (85→49)
+  PAIR         "Shop"  paddingBottom 48px → 0px; Δh -48px (72→24)
+  PAIR         "For Owners"  paddingBottom 48px → 0px; Δh -48px (72→24)
+  PAIR         "About"  paddingBottom 48px → 0px; Δh -48px (72→24)
+  PAIR         "Do Not Sell Or Share My Personal Informa"  lineHeight 24px → 16px; Δy +4px (5155→5159); Δh -8px (24→16)
+  MISSING      "|"  live <span> "|" has no build element with the same text
+  MISSING      "|"  live <span> "|" has no build element with the same text
+  MISSING      "|"  live <span> "|" has no build element with the same text
+  MISSING      "|"  live <span> "|" has no build element with the same text
+  ICON         icon #0: signature "tiktok-icon.svg" → "media_1d5892ce7ad89b511875853f9660ff6a03"
+
+■ header: 1 delta(s) — 5 paired of 5/5 texts, 1/1 icons
+  REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+
+✗ 11 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

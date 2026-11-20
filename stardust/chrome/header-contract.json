@@ -1,0 +1,796 @@
+{
+ "tool": "chrome-explore",
+ "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+ "at": "2026-11-19T18:25:00.402Z",
+ "shots": "stardust/.work/chrome/header-contract",
+ "widths": {
+  "390": {
+   "root": "#navbar",
+   "controls": [
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#nissan_logo_header",
+     "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+     "expanded": null,
+     "rect": [
+      15,
+      32,
+      119,
+      17
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Service & Maintenance",
+     "key": "service maintenance",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header_service_menu",
+     "expanded": null,
+     "rect": [
+      22,
+      105,
+      190,
+      24
+     ],
+     "actions": {
+      "click": null,
+      "key": {
+       "opened": true,
+       "hidden": 10,
+       "panel": {
+        "links": [
+         {
+          "text": "Why Nissan Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+         },
+         {
+          "text": "Brakes",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+         },
+         {
+          "text": "Tires",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+         },
+         {
+          "text": "Oil Change",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+         },
+         {
+          "text": "Batteries",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+         },
+         {
+          "text": "Express Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+         },
+         {
+          "text": "Mobile Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+         }
+        ],
+        "headings": [
+         "Nissan Service",
+         "Maintaining Your Nissan"
+        ],
+        "images": 4,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         25,
+         33,
+         340,
+         811
+        ]
+       },
+       "expanded": null,
+       "focus": "body",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "visibility",
+         "ms": 400,
+         "delay": 0,
+         "easing": "ease",
+         "target": "p.accordion"
+        }
+       ],
+       "shot": "390-001-Service-Maintenance-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": false,
+      "focusReturn": false,
+      "outside": null
+     },
+     "children": [
+      {
+       "name": "",
+       "key": "",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#service_menu_back",
+       "expanded": null,
+       "rect": [
+        25,
+        33,
+        9,
+        28
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [
+           {
+            "text": "Coupons & Offers",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers"
+           },
+           {
+            "text": "Filters Applied ( 0 )",
+            "href": "javascript:void(0)"
+           }
+          ],
+          "headings": [
+           "Enter Your Location"
+          ],
+          "images": 2,
+          "inputs": [
+           "search"
+          ],
+          "buttons": [
+           "Service & Maintenance",
+           "Shop",
+           "Owners"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           844
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "visibility",
+           "ms": 400,
+           "delay": 0,
+           "easing": "ease",
+           "target": "p.accordion"
+          }
+         ],
+         "shot": "390-002-toggle-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [
+           {
+            "text": "Coupons & Offers",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers"
+           },
+           {
+            "text": "Filters Applied ( 0 )",
+            "href": "javascript:void(0)"
+           }
+          ],
+          "headings": [
+           "Enter Your Location"
+          ],
+          "images": 2,
+          "inputs": [
+           "search"
+          ],
+          "buttons": [
+           "Service & Maintenance",
+           "Shop",
+           "Owners"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           844
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "visibility",
+           "ms": 400,
+           "delay": 0,
+           "easing": "ease",
+           "target": "p.accordion"
+          }
+         ],
+         "shot": "390-003-toggle-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false,
+        "toggle": false
+       },
+       "children": []
+      },
+      {
+       "name": "",
+       "key": "",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#service_menu_close",
+       "expanded": null,
+       "rect": [
+        346,
+        33,
+        19,
+        28
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [
+           {
+            "text": "Coupons & Offers",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers"
+           },
+           {
+            "text": "Filters Applied ( 0 )",
+            "href": "javascript:void(0)"
+           }
+          ],
+          "headings": [
+           "Enter Your Location"
+          ],
+          "images": 2,
+          "inputs": [
+           "search"
+          ],
+          "buttons": [
+           "Service & Maintenance",
+           "Shop",
+           "Owners"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           844
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "visibility",
+           "ms": 400,
+           "delay": 0,
+           "easing": "ease",
+           "target": "p.accordion"
+          }
+         ],
+         "shot": "390-004-toggle-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [
+           {
+            "text": "Coupons & Offers",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers"
+           },
+           {
+            "text": "Filters Applied ( 0 )",
+            "href": "javascript:void(0)"
+           }
+          ],
+          "headings": [
+           "Enter Your Location"
+          ],
+          "images": 2,
+          "inputs": [
+           "search"
+          ],
+          "buttons": [
+           "Service & Maintenance",
+           "Shop",
+           "Owners"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           844
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "visibility",
+           "ms": 400,
+           "delay": 0,
+           "easing": "ease",
+           "target": "p.accordion"
+          }
+         ],
+         "shot": "390-005-toggle-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false,
+        "toggle": false
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "Shop",
+     "key": "shop",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header_shop_menu",
+     "expanded": null,
+     "rect": [
+      22,
+      178,
+      43,
+      24
+     ],
+     "actions": {
+      "click": null,
+      "key": {
+       "opened": true,
+       "hidden": 10,
+       "panel": {
+        "links": [
+         {
+          "text": "Nissan Tire Store",
+          "href": "https://www.nissantireadvantage.com/"
+         }
+        ],
+        "headings": [
+         "Nissan Tire Advantage",
+         "Parts & Accessories Store"
+        ],
+        "images": 4,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         25,
+         33,
+         340,
+         688
+        ]
+       },
+       "expanded": null,
+       "focus": "body",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "visibility",
+         "ms": 400,
+         "delay": 0,
+         "easing": "ease",
+         "target": "p.accordion"
+        }
+       ],
+       "shot": "390-006-Shop-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": false,
+      "focusReturn": false,
+      "outside": null
+     },
+     "children": []
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 0,
+     "height": 81,
+     "position": "static",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": -1000,
+     "height": 81,
+     "position": "static",
+     "inView": false
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": -700,
+     "height": 81,
+     "position": "static",
+     "inView": false
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 0,
+     "height": 81,
+     "position": "static",
+     "inView": true
+    }
+   ],
+   "states": 6,
+   "truncated": "request-budget",
+   "loads": 9,
+   "requests": 715,
+   "maxRequests": 600,
+   "inputsSkipped": 0
+  },
+  "1440": {
+   "root": "#navbar",
+   "controls": [
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#nissan_logo_header",
+     "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+     "expanded": null,
+     "rect": [
+      25,
+      25,
+      116,
+      97
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Service & Maintenance",
+     "key": "service maintenance",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header_service_menu",
+     "expanded": null,
+     "rect": [
+      657,
+      57,
+      177,
+      24
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "Why Nissan Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+         },
+         {
+          "text": "Brakes",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+         },
+         {
+          "text": "Tires",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+         },
+         {
+          "text": "Oil Change",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+         },
+         {
+          "text": "Batteries",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+         },
+         {
+          "text": "Express Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+         },
+         {
+          "text": "Mobile Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+         },
+         {
+          "text": "Maintenance Schedules",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/maintenance-schedules"
+         },
+         {
+          "text": "Dashboard Indicator Lights",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/dashboard-warning-lights"
+         },
+         {
+          "text": "Multi-Point Inspection",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/multipoint-inspection"
+         }
+        ],
+        "headings": [
+         "Nissan Service",
+         "Maintaining Your Nissan"
+        ],
+        "images": 4,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         25,
+         25,
+         1391,
+         875
+        ]
+       },
+       "expanded": null,
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 300,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+         "target": "button.splide__pagination__page"
+        },
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 2000,
+         "delay": 0,
+         "easing": "cubic-bezier(0.25, 1, 0.5, 1)",
+         "target": "ul.splide__list"
+        }
+       ],
+       "shot": "1440-001-Service-Maintenance-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "Why Nissan Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+         },
+         {
+          "text": "Brakes",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+         },
+         {
+          "text": "Tires",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+         },
+         {
+          "text": "Oil Change",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+         },
+         {
+          "text": "Batteries",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+         },
+         {
+          "text": "Express Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+         },
+         {
+          "text": "Mobile Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+         },
+         {
+          "text": "Maintenance Schedules",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/maintenance-schedules"
+         },
+         {
+          "text": "Dashboard Indicator Lights",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/dashboard-warning-lights"
+         },
+         {
+          "text": "Multi-Point Inspection",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/multipoint-inspection"
+         }
+        ],
+        "headings": [
+         "Nissan Service",
+         "Maintaining Your Nissan"
+        ],
+        "images": 4,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         25,
+         25,
+         1391,
+         875
+        ]
+       },
+       "expanded": null,
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-002-Service-Maintenance-key.png",
+       "tabReachesPanel": false
+      }
+     },
+     "close": {
+      "escape": false,
+      "focusReturn": false,
+      "outside": null,
+      "toggle": false
+     },
+     "children": [
+      {
+       "name": "",
+       "key": "",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#main_menu_close",
+       "expanded": null,
+       "rect": [
+        1397,
+        58,
+        19,
+        18
+       ],
+       "actions": {
+        "hover": null,
+        "click": {
+         "opened": true,
+         "hidden": 17,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-003-toggle-click.png"
+        }
+       },
+       "partial": "request-budget"
+      }
+     ]
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 0,
+     "height": 147,
+     "position": "relative",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": -1000,
+     "height": 147,
+     "position": "relative",
+     "inView": false
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": -700,
+     "height": 147,
+     "position": "relative",
+     "inView": false
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 0,
+     "height": 147,
+     "position": "relative",
+     "inView": true
+    }
+   ],
+   "states": 3,
+   "truncated": "request-budget",
+   "loads": 8,
+   "requests": 601,
+   "maxRequests": 600,
+   "inputsSkipped": 0
+  }
+ },
+ "probe": null
+}

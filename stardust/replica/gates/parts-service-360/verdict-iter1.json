@@ -1,0 +1,93 @@
+{
+  "round": "iter1",
+  "width": 360,
+  "stage": "prototype",
+  "pixel": {
+    "rc": 2,
+    "diff": "stardust/replica/gates/parts-service-360/diff-iter1.png",
+    "json": "stardust/replica/gates/parts-service-360/pixel-iter1.json",
+    "pct": 10.59,
+    "alignedPct": 0.92,
+    "alignedUsed": true,
+    "totalShift": 39,
+    "steps": [
+      {
+        "y": 92,
+        "shift": 3,
+        "cumulative": 3
+      },
+      {
+        "y": 143,
+        "shift": -2,
+        "cumulative": 1
+      },
+      {
+        "y": 870,
+        "shift": -1,
+        "cumulative": 0
+      },
+      {
+        "y": 1424,
+        "shift": -1,
+        "cumulative": -1
+      },
+      {
+        "y": 1878,
+        "shift": -1,
+        "cumulative": -2
+      },
+      {
+        "y": 3904,
+        "shift": -22,
+        "cumulative": -24
+      },
+      {
+        "y": 4990,
+        "shift": 1,
+        "cumulative": -23
+      },
+      {
+        "y": 6322,
+        "shift": -6,
+        "cumulative": -29
+      },
+      {
+        "y": 6361,
+        "shift": -2,
+        "cumulative": -31
+      }
+    ],
+    "offsetBound": 8,
+    "maskedRows": 0,
+    "noiseFloor": 0,
+    "reason": "offsets: 9 step(s), 39px total — +3px at y=92, −2px at y=143, −1px at y=870, −1px at y=1424, −1px at y=1878, −22px at y=3904, … 3 more (bound 8px)"
+  },
+  "reference": {
+    "origin": "frozen",
+    "capturedAt": "2026-11-19T17:27:36.358Z",
+    "primed": true,
+    "stable": true,
+    "maskArg": ""
+  },
+  "probes": {
+    "content-diff": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/content-diff-iter1.txt"
+    },
+    "visual-diff": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/visual-diff-iter1.txt"
+    },
+    "chrome-parity": {
+      "rc": 2,
+      "evidence": "stardust/replica/gates/parts-service-360/chrome-parity-iter1.txt"
+    },
+    "clip-probe": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/clip-iter1.txt"
+    }
+  },
+  "structural": 23,
+  "nothingLost": 7,
+  "at": "2026-11-19T17:43:00.584Z"
+}

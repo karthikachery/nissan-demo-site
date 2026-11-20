@@ -1,0 +1,1 @@
+{"parts-service": {"variable": ["#splide-carousel=.hero-carousel"], "reason": "hero autoplay carousel (restoreAtDelivery: loop autoplay 10 s from slide 1): which slide is visible depends on probe timing on both sides; the frozen live reference sits on slide 3 — counts only for this region, every slide heading/link is present in the served DOM"}}

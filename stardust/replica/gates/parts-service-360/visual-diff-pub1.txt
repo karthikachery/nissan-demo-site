@@ -1,0 +1,1550 @@
+[live-session] waiting to pace live navigations to staging.niss-parts-service.epsilonrms.com (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 52 ms
+
+Visual diff @ 360px (profile "generic") — screenshots in stardust/replica/gates/parts-service-360/vdiff-pub1/
+
+build red flags (advisory): 
+  • SURFACE/GROUND MISMATCH: heading "Buy 3 Tires, Get the 4th for $1*" is rgb(255, 255, 255) in build vs rgb(0, 0, 0) in source (luminance 255 vs 0). A matched heading renders on a different ground (dark vs light) — check the section background.
+  • HEADING FACE ×14: "NissanBrand-light" → "Liberation Sans" on every differing heading (source → build). A matched heading at another size or family — match the source; a deliberate font substitution is one ×N line, justify it once.
+  • HEADING FACE: <h3> "Buy 3 Tires, Get the 4th for $1*" is 20px Liberation Sans in build vs 32px NissanBrand-light in source. A matched heading at another size or family — match the source; a deliberate font substitution is one ×N line, justify it once.
+  • HEADING FACE: <h2> "Buy 3 Tires, Get the 4th for $1*" is 28px Liberation Sans in build vs 20px NissanBrand-Regular in source. A matched heading at another size or family — match the source; a deliberate font substitution is one ×N line, justify it once.
+  • IMAGE DID NOT LOAD: media_122393969040a3a5cbf5f913b2f59ebdca670052a.webp?width=750&format=webp&optimize=medium rendered 296x296 but natural 0x0. Rendered a box but natural 0×0 — the image URL failed to load; fix the src.
+
+Full metrics JSON (compare source vs build: heading colors, eyebrow colors, image dims, full-bleed):
+{
+ "source": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 5630,
+  "textLen": 3231,
+  "images": [
+   {
+    "src": "nissan_logo_desktop.svg",
+    "natural": "116x97",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan_logo_mobile.svg",
+    "natural": "119x17",
+    "rendered": "119x17",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan_logo_white.svg",
+    "natural": "116x97",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "location-icon.svg",
+    "natural": "55x57",
+    "rendered": "33x33",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "curr-loc-pin.svg",
+    "natural": "13x20",
+    "rendered": "12x19",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "info-icon.svg",
+    "natural": "20x20",
+    "rendered": "16x16",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "refresh-icon.svg",
+    "natural": "13x16",
+    "rendered": "13x16",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_GenuineNissanService.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_GenuineNissanService-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_Mainenance.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_Mainenance-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_EV.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_EV-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerServices.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerServices-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerResources.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerResources-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_TireAdvantage.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_TireAdvantage-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_PartsAccessories.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_PartsAccessories-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Oil-Desktop.webp",
+    "natural": "800x800",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Oil-Mobile.webp",
+    "natural": "888x888",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Tire-Offer-Desktop.webp",
+    "natural": "800x800",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Tire-Offer-Mobile.webp",
+    "natural": "888x888",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "comp-module-en-rebrand.webp",
+    "natural": "800x800",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "TPM_Tile_rebrand_En.webp",
+    "natural": "800x800",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Current-Offer-Battery.webp",
+    "natural": "800x800",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Carousel_1-mobile.webp",
+    "natural": "1125x960",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "service-schedule.webp",
+    "natural": "1200x1200",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "M-ExpressService.webp",
+    "natural": "1035x1176",
+    "rendered": "330x375",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan-oilchange.webp",
+    "natural": "1200x1200",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "M-OilBottle.webp",
+    "natural": "1035x1176",
+    "rendered": "330x375",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Parts-Accessories-Module-Desktop.webp",
+    "natural": "1200x1200",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "Parts-Accessories-Module-Mobile.webp",
+    "natural": "1035x1176",
+    "rendered": "330x375",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NIS-tires.webp",
+    "natural": "1110x930",
+    "rendered": "330x276",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tiktok-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "youtube-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "instagram-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "twitter-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "facebook-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "pinterest-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-red.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Icon_Oil.svg",
+    "natural": "50x50",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-red.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "battery-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "ICON_Brake.svg",
+    "natural": "150x150",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Icon_Oil.svg",
+    "natural": "50x50",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "mpi-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan_logo_test.jpg",
+    "natural": "480x321",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "powered_by_logo.svg",
+    "natural": "568x53",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   }
+  ],
+  "headings": [
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Current Offers",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "24px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 4, Get 1 FREE Oil & Filter C",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Multi-Point Inspec",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Battery Inspection",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "What Makes your Nissan Experienc",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "30px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Service on Your Schedule",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "A Change for the Best",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Give Your Vehicle Everything it ",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [
+   {
+    "text": "Built to last",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "Built to last",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "[*]",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "NISSAN OIL CHANGE",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "PARTS & ACCESSORIES",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "Shop",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "For Owners",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "About",
+    "color": "rgb(255, 255, 255)"
+   }
+  ],
+  "flushText": [
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "left": -705
+   }
+  ],
+  "contentBoxes": [
+   {
+    "sel": "legal-text",
+    "width": 330,
+    "left": -705
+   },
+   {
+    "sel": "legal-text",
+    "width": 330,
+    "left": -345
+   },
+   {
+    "sel": "hero-caption",
+    "width": 360,
+    "left": 0
+   },
+   {
+    "sel": "hero-caption",
+    "width": 360,
+    "left": 360
+   },
+   {
+    "sel": "legal-text",
+    "width": 330,
+    "left": 735
+   },
+   {
+    "sel": "legal-text",
+    "width": 330,
+    "left": 1095
+   },
+   {
+    "sel": "hero-caption",
+    "width": 360,
+    "left": 1440
+   },
+   {
+    "sel": "hero-caption",
+    "width": 360,
+    "left": 1800
+   },
+   {
+    "sel": "column",
+    "width": 360,
+    "left": 0
+   },
+   {
+    "sel": "column",
+    "width": 296,
+    "left": 15
+   },
+   {
+    "sel": "column",
+    "width": 296,
+    "left": 325
+   },
+   {
+    "sel": "column",
+    "width": 296,
+    "left": 635
+   }
+  ]
+ },
+ "build": {
+  "viewport": 360,
+  "blankRender": false,
+  "mainHeight": 5630,
+  "textLen": 2584,
+  "images": [
+   {
+    "src": "media_1f961c35d67331cdd4e9b78221e71bb31a49c344b.svg?width=750&format=svg&optimize=medium",
+    "natural": "119x17",
+    "rendered": "119x17",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_12908d7ae261814b8cba3711458f974c12e590665.svg?width=750&format=svg&optimize=medium",
+    "natural": "116x97",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan-logo-white.svg",
+    "natural": "116x97",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1035d32cc6b1c5160cef53b96f700ee995b70de84.svg?width=750&format=svg&optimize=medium",
+    "natural": "55x57",
+    "rendered": "33x33",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1784f58c02e918371f94e40c7135e6118201c2f47.svg?width=750&format=svg&optimize=medium",
+    "natural": "20x20",
+    "rendered": "20x20",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1fc51d995b683cbebeaeac627ef8305d2653bd1ea.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_131e31412838961210a44f69fe8036d2f04cd7121.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_103e20131d177407db6fe1eb1aa56d21c3bc907a9.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_18774a98ffdf260c45d877c3e0e16979400ab7878.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1342091d6f79007d54012f40a885d333e2a8363ba.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_18e0eb4315d843169e867edf5b19663180a1eb5e0.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_18e7692e71d98ffae189da215de5df33e7c12eeb6.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_176627f9074b63a793a878c15cf6382b20da00696.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_143ddea6ec4c0a9d2bf07530c2f834c4f1b50f398.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_16d17e36d93a3be63fe9ba9e1eb20ab3b2f11ba81.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1657538172c04bd7c70644506bc677127766bb7cd.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_16c0138bdc4917b354dd982e97a6abc8e7b99b67a.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1bc3f09cd05e63ef3dce27f05ac2265bb653f2ba7.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1ae02a6beb6b5f9a8d05a7538837273a13302762b.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1f3ef9ca29459d06a25240b01ecaf0b7710f5d76a.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x273",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1a9f254f8b8fabafca6a54fe42c946a7ebd7610ab.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x640",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1b4f5b833a82a71953f58d8836d86fd305d189286.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x273",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_181914d0ae0332694121b8f3e26ef3f123b128cbc.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x640",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_12af2d724d9c619133a9a72c5cd5d069c264e0acf.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x273",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_14a03181980484c279ff29d0372da6b9def9dd7bb.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x640",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_18eaff5dcfd441ef7e3ad75c4050308d0b13a3850.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_11d53fc05758e62bd014c81d5f2add1a4aedd2882.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x750",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1876f1dc4e61e094b59b12865a56c07fcd3beab4b.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d414daf9230847dc21a7dc30becd98400339822b.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x750",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_17acaac4236cb0cbb54eec5c0ff698923bf68b669.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x750",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_148398b7e53ee43801a3afcaf80c0b65d82341ce9.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x750",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_122393969040a3a5cbf5f913b2f59ebdca670052a.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "296x296",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": true
+   },
+   {
+    "src": "media_13a892705cf5afdbca2d89150baabe51d1f09631f.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1538b89213225c7b88bf206e6118169be55652f43.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x640",
+    "rendered": "360x307",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1fd7308dc7c3a9cf283c900dd4858a378d38d1cbd.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1510e58e6f82d6ce09db71a1f640119716d03a8e0.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x852",
+    "rendered": "330x375",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_100f516bc3f4b195b5b0174a7dea09ac678d9bf5b.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8ee17e1fa94b57ab7d90d8530608ab10ef789d7.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x852",
+    "rendered": "330x375",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_16043101ae4b79d8539cb2410f31b54fb2865f0be.webp?width=750&format=webp&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_15f4092b8dd687bbf9e72c6d44af951f868a9363f.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x852",
+    "rendered": "330x375",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1adcd18925d22b6c25376b81d634a6296f961a8c2.webp?width=750&format=webply&optimize=medium",
+    "natural": "750x628",
+    "rendered": "330x276",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_110856268c5502d43a5e27dbad987f094aa181ba0.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_14e28a5f7e512c97e648095b6bfa8d3cd76205b98.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1cb65b9d633945aeec320b75d37bfb119faf637ae.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_110856268c5502d43a5e27dbad987f094aa181ba0.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_161ece4a0dab9a2832545cd61ce4d3f6c4b73eb56.svg?width=750&format=svg&optimize=medium",
+    "natural": "0x0",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1d5892ce7ad89b511875853f9660ff6a0317f40f7.svg?width=750&format=svg&optimize=medium",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1f4f74d8c31ad1db882938aeeee08886a6ae6f8e3.svg?width=750&format=svg&optimize=medium",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1086f7dcdaeda2a43495036aa41d827437fab1244.svg?width=750&format=svg&optimize=medium",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1a794b5221f63f899d176aa540d76e470ad442fd9.svg?width=750&format=svg&optimize=medium",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_1be526a80d9c4b8b8eeeacabd03a688ea7fe27823.svg?width=750&format=svg&optimize=medium",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "media_189238c4b5b1f198f25518cf8ad2c6fb9b22e8bef.svg?width=750&format=svg&optimize=medium",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   }
+  ],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Current Offers",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "24px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 4, Get 1 FREE Oil & Filter C",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Multi-Point Inspec",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Battery Inspection",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "What Makes your Nissan Experienc",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "30px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Service on Your Schedule",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "A Change for the Best",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Give Your Vehicle Everything it ",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Buy 4, Get 1 FREE Oil & Filter C",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Buy 3 Eligible Tires, Get the 4t",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Complimentary Battery Inspection",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Complimentary Brake Inspection*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "5 Oil & Filter Changes, Under $5",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Complimentary Multi-Point Inspec",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [
+   {
+    "text": "Built to last",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "[*]",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "NISSAN OIL CHANGE",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "PARTS & ACCESSORIES",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "Shop",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "For Owners",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "About",
+    "color": "rgb(255, 255, 255)"
+   }
+  ],
+  "flushText": [],
+  "contentBoxes": [
+   {
+    "sel": "media-mobile",
+    "width": 360,
+    "left": 0
+   },
+   {
+    "sel": "hero-caption-eyebrow",
+    "width": 330,
+    "left": 15
+   },
+   {
+    "sel": "hero-caption-title",
+    "width": 330,
+    "left": 15
+   },
+   {
+    "sel": "hero-caption-text",
+    "width": 330,
+    "left": 15
+   },
+   {
+    "sel": "hero-caption-ctas",
+    "width": 330,
+    "left": 15
+   },
+   {
+    "sel": "media-mobile",
+    "width": 360,
+    "left": 360
+   },
+   {
+    "sel": "hero-caption-title",
+    "width": 330,
+    "left": 375
+   },
+   {
+    "sel": "hero-caption-text",
+    "width": 330,
+    "left": 375
+   },
+   {
+    "sel": "hero-caption-validity",
+    "width": 330,
+    "left": 375
+   },
+   {
+    "sel": "hero-caption-ctas",
+    "width": 330,
+    "left": 375
+   },
+   {
+    "sel": "media-mobile",
+    "width": 360,
+    "left": 720
+   },
+   {
+    "sel": "hero-caption-title",
+    "width": 330,
+    "left": 735
+   }
+  ]
+ }
+}

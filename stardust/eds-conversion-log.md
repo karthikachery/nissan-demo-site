@@ -1,0 +1,50 @@
+# EDS conversion log — parts-service
+
+## Publish decision (2026-11-19T18:19:25Z)
+Decision: **publish** (made by the run owner, recorded once). Every delivered page, the redirects sheet and the chrome documents (nav, footer) go live on https://main--83d9e7fd--aemcoder.aem.live (deploy-batch.mjs without --no-publish).
+Target: DA org `aemcoder`, repo `83d9e7fd`, branch `main`. Site root `/` must resolve to the parts-service page.
+
+## Rollout C0 foundation — decode tiers and notes (2026-11-19)
+
+**Decode tier per chrome section** (all Template-slotted, node-slotting, EW1–EW10):
+
+| Unit | Tier | Authored source | Notes |
+|---|---|---|---|
+| header navbar (logo, nav list, Dealer Locator CTA) | template-slotted | /nav sections 1–3 | logo `<p>` moved into `.navbar-logo`; the two pictures wrapped `.navbar-logo-mobile/-desktop`; white logo is decorative code (`/icons/nissan-logo-white.svg`). Items without a link become `role=button` `li` triggers (EW7: no `<button>` hosts authored text). CTA = `<strong><a>` → `a.button.primary`. |
+| mega-menu panels (Service / Shop / Owners) | template-slotted (groups segmented on h3) | /nav sections with an h2 | panel paired to its trigger by h2 text; per group: 1st image → mobile, 2nd → desktop (≥1024), rest (h4/p/ul) → links column. |
+| phone drawer dealer search + filters | template-slotted, classified by content | /nav section with h4 + lists | `@ew-exempt`: input placeholder from the search-link text; radius `<select>` options from the authored list (list kept, visually hidden). Checkbox labels keep the authored `li` text (moved into a `label`). "*…" paragraph becomes the Mobile Service popover. |
+| sticky dealer-search bar (phone) | template-slotted | /nav last content section | label paragraph moved into the visually-hidden `<label>`; placeholder exempt as above. |
+| footer (language, 3 link columns, social, legal, copyright) | template-slotted, classified by content | /footer | linkless `<p>` opens a column; separators `|` are CSS `li + li::before`; Recall Information pill and the privacy line-height variant are href-anchored selectors (`a[href*="recalls"]`, `a[href*="data-privacy"]`). |
+
+- **Class names:** the prototype's BEM classes (`navbar__logo`, `btn--primary`, `highlightNav`) fail stylelint-config-standard's kebab pattern; mapped 1:1 to single-hyphen names (`navbar-logo`, `btn-primary`, `[aria-expanded=true]` for the highlight). Values unchanged.
+- **Buttons:** `a.button.primary`/`.accent` = canon `.btn--primary`; `.secondary` = `.btn--secondary`; the canon variant classes (`.btn`, `.btn-primary`, `.btn-ext`, `.btn-ext-up`, `.btn-ghost-white`, `.btn-tertiary`, `.link-btn`) are in styles.css for blocks to apply (#25).
+- **Fonts (R-01):** NissanBrand-light/-Regular/-Bold woff2+woff self-hosted; FONT LICENSING alert in styles.css banner, `fonts/LICENSING.md` (remove path), this log and the hand-off. Metric fallbacks computed with fontTools (size-adjust 118.03 / 130.04 / 128 %), then "Liberation Sans", Arimo, Arial.
+- **SVG chrome media:** logos, social and info/location icons uploaded as pure-vector SVG (all < 6 KB) to `media/chrome/`; the pipeline adds rasterised webp `<source>`s to SVG pictures, which the blocks drop (`preferSvg`) so vector art stays crisp.
+- **D-01 links:** Dealer Locator CTA, both "Find a Dealer" search links, "Use My Current Location" and footer "Locations" point at the source dealer search (`https://staging.niss-parts-service.epsilonrms.com/parts-service/en/dealer/Search`). E2 note: `localize-links.mjs --source-host staging.niss-parts-service.epsilonrms.com` would rewrite these to root-relative 404s — exclude them (D-01) when E2 runs. Other internal chrome links stay root-relative as captured (E2 decides).
+- **Deviation from the prototype (behaviour, toward the source):** phone mega-menu panel sits above the open drawer (z-index 60 below 768; the prototype's stacking hid it), `body.side-menu-active` locks scroll (source contract `scrollLock: true`), Escape closes the open panel/drawer.
+- **Lint:** `npm run lint` clean (eslint, stylelint, breakpoint-lint wired as `lint:breakpoints`, 14 switches all mobile-first, no target set). `stardust/` added to `.eslintignore` (tooling and prototype JS, not runtime). `content/` added to `.hlxignore`.
+- **Interim chrome-compare (build = /nav page on preview, not a gate):** 🔴 control-missing@390 Service & Maintenance / Shop (the source exposes them without opening a drawer; the build keeps them in the prototype's burger drawer); 🔴 nested back control named "Back" vs "" on the source; 🔴 panel-visual 39.6 % (crop over a non-archetype page body, sizes differ); 🟡 source animates opacity/transform on open, the prototype/build animate width; 🟡 source contract truncated at request budget. The source's phone mega-menu styling (title-case headings, chevrons) differs from the prototype's — the foundation follows the gated prototype. Re-run on the archetype page.
+
+## Rollout C-archetype landing — /parts-service decode tiers and notes (2026-11-19)
+
+**Decode tier per section** (`content/parts-service.html`; node-slotting, EW1–EW10; block CSS lifted from `stardust/prototypes/css/parts-service.css`, scoped to `.blockname`, BEM → kebab):
+
+| Section | Block | Tier | Authored model / classification |
+|---|---|---|---|
+| hero carousel | `hero-carousel` | reconstructive over slides (row = slide), each slide template-slotted | cell 1 media: desktop image then mobile image (≥ 769), or a paragraph linking the mp4 (`@ew-exempt`, kept visually hidden); cell 2 caption classified by content: lone-link paragraphs = CTAs (`<em><strong>` → accent = the source's ext-up arrow, `<strong>` = primary, plain link = ghost "*Offer Details"), "*…" paragraphs answering a `[*]` marker = disclaimer popovers, heading (else the paragraph before the text) = title, a paragraph before the title = eyebrow (lead slide), "Offer valid …" = validity (compact slide), rest = text. |
+| Current Offers rail | `offers` | reconstructive (row = card; a row without an image = rail head) | card: desktop (≥ 1024) + mobile images or one image; heading, CTAs (plain link = `.link-btn`, `<strong>` primary, `<em>` secondary; external host → `.btn-ext`), validity authored before the CTAs = under the title, after them = card foot (source card-1 layout). The trailing card's 4 px offset (source quirk) is applied by the block when the rail has > 4 cards. |
+| experience banner | `exp-banner` | template-slotted | images + heading, text, CTA. |
+| two-column tiles ×3 | `tile` | template-slotted | image cell first = media left, last = media right; eyebrow (paragraph before the heading), heading, text, CTAs (plain link = `.btn-tertiary`), `[*]` disclaimers. A `[*]` marker in the body text selects the source's tighter parts-tile spacing (`.tight`). |
+| tire price match band | `tire-price` | template-slotted | image, heading, text, CTA + "*Offer Details" link. |
+| recall strip | `recall-strip` | template-slotted (D1 🟡 justified: bespoke centred band with its own background, not prose) | text paragraph + CTA. |
+| offer-detail modals ×12 | `offer-dialogs` | reconstructive (row = dialog) | cell 1 dialog id (`@ew-exempt` text-as-metadata — the `#<id>` anchor target), cell 2 icon, heading, paragraphs/list, CTA → native `<dialog>` styled by the foundation `.offer-dialog` set; any `#<id>` link on the page opens it (document-level listener bound once). All 12 captured dialogs authored verbatim, including the 7 the page never links (hidden on the source too). |
+
+- **Media:** 28 images + 1 mp4 uploaded with `da-media-upload.mjs --scope parts-service` (manifest of the body media only; footer social icons belong to the foundation). Tablet hero renditions not authored (the 640–768 band shows the mobile image; the source's own sep-oct tablet rendition is broken). Hero video authored root-relative `/media/parts-service/sep-oct-2026-nna-carousel-2.mp4` (#161, preview + live by the uploader). Offer-rail arrow icons are decorative CSS → `icons/slide-next*.svg` (code).
+- **restoreAtDelivery:** hero loop autoplay from slide 1, 10 s interval, 2 s slide speed, reduced-motion pause; video muted loop playing only while its slide is active; sticky phone dealer-search bar (foundation) — now also shrinks the header reservation by 67 px while stuck (`body > header:has(.dealer-search.sticky)`), the source document's behaviour (fix round 1: 360 Δh −67 → 0).
+- **Links:** dealer-search CTAs point at the source dealer search (D-01 link-out, as the foundation); other internal links stay root-relative as captured (E2 decides).
+- **Metadata:** Title + Description from the capture (`stardust/current/pages/parts-service.json`); the capture has no og:* — EDS mirrors title/description into og/twitter.
+- **Local structural asserts:** `block-roundtrip.mjs --ew` whole page exit 0 (0 structural 🔴, EW editable 57/57, dead 0, duplicated 0). `qa-gate.mjs` on the harness: 29 ok, 2 known non-defects — `offer-dialogs` renders 0 px by design (closed modals) and 8 broken images that are the harness's proxied /nav chrome images (auth-gated preview.da.live), 0 broken on the delivered page. The harness is served from an untracked `qa-harness/` (git-excluded) because `.hlxignore` hides `stardust/` from `aem up`.
+- **Lint:** `npm run lint` clean; delivery-lint 0 P0/P1/P2; davids-model-lint PASS 0 🔴 (3 🟡: offers head row is a 1-cell row by design; recall-strip D1 justified above; 11 SVG icons verified pure-vector, no raster/data URIs).
+
+## Site root (2026-11-19, D-site)
+The source root (`https://staging.niss-parts-service.epsilonrms.com/`) serves its own page (200, no redirect), which is outside this run's one-page scope; the run scope requires the EDS root to resolve to /parts-service. Decision: redirects sheet `/redirects.json` (Source / Destination) with `/` and `/index.html` → `/parts-service`, no `index` document (a duplicate of the page would add an uncovered sitemap path). Previewed + published; `curl -sIL` on `/` ends 200 at /parts-service on .aem.page and .aem.live. Mirror: `stardust/redirects.tsv`.

@@ -1,0 +1,11 @@
+{
+  "_note": "PROPOSED by the hands-off migration run, NOT a decision: chrome-compare ignores entries without a site-owner `by`/`at`. To accept, the site owner copies the entries they agree with into stardust/chrome/header-decisions.json and signs each with `by` (their name) and `at` (ISO date).",
+  "decisions": [
+    { "finding": "control-missing@1440 Service & Maintenance > menu", "decision": "accept",
+      "reason": "Same control on both sides (#main_menu_close, same rect, same close behaviour). The build gives it the accessible name 'Close'; the source leaves it unnamed, so pairing by name misses it. Removing the name would be an accessibility regression." },
+    { "finding": "panel-visual@1440 Service & Maintenance*", "decision": "accept",
+      "reason": "Open-state geometry matches the source exactly (panel x 576 w 864, h3 24/32 at y 183, links 18/32 at 60 px pitch with the source chevrons). The residual crop delta is capture state: the source crop is 1391x875 at 25,25 vs 1440x900, the source shows its cookie banner, and the hero carousel behind the overlay sits on a different slide." },
+    { "finding": "scroll-state@390*", "decision": "accept",
+      "reason": "Element boundary, not layout: the phone build's <header> contains the 67 px sticky dealer-search bar, which on the source is a sibling of the header root (81 px). Scrolled states agree (81 px); page height delta at 360 is 0 and the bar sticks and shrinks as on the source." }
+  ]
+}

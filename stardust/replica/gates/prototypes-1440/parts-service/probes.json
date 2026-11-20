@@ -1,0 +1,54 @@
+{
+ "writtenBy": "gate-all.mjs",
+ "at": "2026-11-19T18:15:26.444Z",
+ "clip": {
+  "counts": {
+   "textClipped": 0,
+   "textHidden": 0,
+   "controlHidden": 0,
+   "controlClipped": 0,
+   "clamped": 0,
+   "collapsed": 0,
+   "scrollHidden": 0,
+   "horizontal": 3,
+   "offPage": 29,
+   "textNodes": 100,
+   "controls": 72,
+   "total": 0
+  },
+  "groups": [
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > h3.offer-card__title",
+    "text": "nissan tire price match + 5% credit*",
+    "cutMin": 314,
+    "cutMax": 314
+   },
+   {
+    "kind": "CONTROL X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home-promo-tireprice-shoptires",
+    "text": "shop for tires",
+    "cutMin": 133,
+    "cutMax": 133
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home-promo-tireprice-shoptires",
+    "text": "shop for tires",
+    "cutMin": 82,
+    "cutMax": 82
+   }
+  ],
+  "source": "clip-probe",
+  "tier": "chrome"
+ }
+}

@@ -1,0 +1,58 @@
+chrome-parity @ 360px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service (live side from cache stardust/replica/gates/parts-service-360/chrome-live.json, probed 2026-11-19T17:42:34.449Z — delete the file to re-probe)
+  build: https://main--83d9e7fd--aemcoder.aem.page/parts-service
+
+■ header: 37 delta(s) — 0 paired of 0/33 texts, 0/3 icons
+  REGION BOX   Δh +148px (0→148)
+  REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  EXTRA        "Service & Maintenance"  build <li> "Service & Maintenance" has no live source
+  EXTRA        "Shop"  build <li> "Shop" has no live source
+  EXTRA        "Coupons & Offers"  build <a> "Coupons & Offers" has no live source
+  EXTRA        "Owners"  build <li> "Owners" has no live source
+  EXTRA        "Enter Your Location"  build <h3> "Enter Your Location" has no live source
+  EXTRA        "To find the best offers and nearby servi"  build <p> "To find the best offers and nearby service, we n" has no live source
+  EXTRA        "Find A Dealer"  build <a> "Find A Dealer" has no live source
+  EXTRA        "Use My Current Location"  build <a> "Use My Current Location" has no live source
+  EXTRA        "Filters Applied"  build <p> "Filters Applied" has no live source
+  EXTRA        "( )"  build <span> "( )" has no live source
+  EXTRA        "0"  build <span> "0" has no live source
+  EXTRA        "Radius"  build <h4> "Radius" has no live source
+  EXTRA        "5 Miles"  build <li> "5 Miles" has no live source
+  EXTRA        "10 Miles"  build <li> "10 Miles" has no live source
+  EXTRA        "15 Miles"  build <li> "15 Miles" has no live source
+  EXTRA        "25 Miles"  build <li> "25 Miles" has no live source
+  EXTRA        "50 Miles"  build <li> "50 Miles" has no live source
+  EXTRA        "Services Available"  build <h4> "Services Available" has no live source
+  EXTRA        "Mobile Service"  build <span> "Mobile Service" has no live source
+  EXTRA        "Online Tire Store"  build <span> "Online Tire Store" has no live source
+  EXTRA        "Online Service Scheduling"  build <span> "Online Service Scheduling" has no live source
+  EXTRA        "Express Service Dealer"  build <span> "Express Service Dealer" has no live source
+  EXTRA        "Nissan Rental Car Dealer"  build <span> "Nissan Rental Car Dealer" has no live source
+  EXTRA        "MyNISSAN Rewards"  build <span> "MyNISSAN Rewards" has no live source
+  EXTRA        "Online Parts & Accessories Store"  build <span> "Online Parts & Accessories Store" has no live source
+  EXTRA        "Certifications"  build <h4> "Certifications" has no live source
+  EXTRA        "Nissan EV Certified Dealer"  build <span> "Nissan EV Certified Dealer" has no live source
+  EXTRA        "Business Certified (NCV)"  build <span> "Business Certified (NCV)" has no live source
+  EXTRA        "Nissan GT-R® Dealer"  build <span> "Nissan GT-R® Dealer" has no live source
+  EXTRA        "Collision Repair"  build <span> "Collision Repair" has no live source
+  EXTRA        "Clear Filters"  build <p> "Clear Filters" has no live source
+  EXTRA        "Dealer Locator"  build <p> "Dealer Locator" has no live source
+  EXTRA        "Find a Dealer"  build <a> "Find a Dealer" has no live source
+  ICONS        0 live vs 3 build (svg/img) — harvest the live vectors verbatim (recreation-procedure.md § Asset harvest), never approximate
+
+■ footer: 12 delta(s) — 25 paired of 25/25 texts, 6/6 icons
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  PAIR         "English"  tag <a> → <p>; paddingRight 19.6px → 0px; Δw -19px (68→49)
+  PAIR         "Shop"  paddingTop 32px → 0px; paddingRight 12px → 0px; paddingBottom 32px → 0px; Δy +33px (5846→5879); Δw -12px (330→318); Δh -65px (89→24)
+  PAIR         "For Owners"  paddingTop 32px → 0px; paddingRight 12px → 0px; paddingBottom 32px → 0px; Δy +33px (5935→5968); Δw -12px (330→318); Δh -65px (89→24)
+  PAIR         "About"  paddingTop 32px → 0px; paddingRight 12px → 0px; paddingBottom 32px → 0px; Δy +33px (6024→6057); Δw -12px (330→318); Δh -65px (89→24)
+  PAIR         "Contact Us"  Δy +3px (6260→6263); Δh -6px (24→18)
+  ICON         icon #0: signature "tiktok-icon.svg" → "media_1d5892ce7ad89b511875853f9660ff6a03"
+  ICON         icon #1: signature "youtube-icon.svg" → "media_1f4f74d8c31ad1db882938aeeee08886a6"
+  ICON         icon #2: signature "instagram-icon.svg" → "media_1086f7dcdaeda2a43495036aa41d827437"
+  ICON         icon #3: signature "twitter-icon.svg" → "media_1a794b5221f63f899d176aa540d76e470a"
+  ICON         icon #4: signature "facebook-icon.svg" → "media_1be526a80d9c4b8b8eeeacabd03a688ea7"
+  ICON         icon #5: signature "pinterest-icon.svg" → "media_189238c4b5b1f198f25518cf8ad2c6fb9b"
+
+✗ 49 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

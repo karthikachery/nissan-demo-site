@@ -1,20 +1,343 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* footer — lifted from stardust/prototypes/css/canon.css (source footer .bd-footer-links /
+   .footer-legal-links); class names kebab-cased for the boilerplate lint */
+
+footer .site-footer {
+  background: var(--color-ink);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .site-footer-inner {
+  max-width: 100%;
 }
 
-footer .footer p {
+footer .footer-lang {
+  display: flex;
+  padding: 24px 15px;
+  font-weight: 300;
+}
+
+footer .lang-select {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 22.5px;
+  color: #4a4a4a;
+}
+
+footer .lang-select-trigger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 0 19.6px 0 0;
+  font-family: var(--font-light);
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+footer .lang-select-trigger::after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -6px;
+  border: solid #fff;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+footer .lang-select-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 100%;
+  padding: 6px 0;
+  background: #343434;
+  z-index: 2;
+}
+
+footer .lang-select-menu[hidden] {
+  display: none;
+}
+
+footer .lang-select-menu a {
+  display: block;
+  padding: 4px 14px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer .footer-links {
+  padding: 0 15px 6px;
+}
+
+footer .footer-links-cols {
+  display: block;
+}
+
+footer .footer-links-title {
+  position: relative;
+  display: block;
+  width: 100%;
   margin: 0;
+  padding: 32px 12px 32px 0;
+  border-top: 1px solid #343434;
+  text-align: left;
+  font-family: var(--font-regular);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer-links-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 41px;
+  height: 29px;
+  margin-top: -10px;
+  background: url("/icons/acc-plus-icon.svg") no-repeat center;
+}
+
+footer .footer-links-title[aria-expanded="true"]::after {
+  background-image: url("/icons/acc-open-icon.svg");
+}
+
+footer .footer-links-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.2s ease-out;
+}
+
+footer .footer-links-body.is-open {
+  max-height: none;
+  padding: 0 0 15px 20px;
+  border-bottom: 1px solid #4c4c4c;
+}
+
+footer .footer-links-item {
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+footer .footer-links-item:last-child {
+  margin-bottom: 0;
+}
+
+footer .footer-links-body a {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--color-footer-link);
+}
+
+footer .footer-social {
+  padding: 32px 0;
+  border-top: 2px solid #343434;
+  border-bottom: 2px solid #343434;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--color-footer-link);
+}
+
+footer .footer-social p {
+  display: flex;
+  gap: 30px;
+}
+
+footer .footer-social a {
+  display: inline;
+}
+
+footer .footer-social picture {
+  display: inline;
+}
+
+footer .footer-social img {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  vertical-align: baseline;
+}
+
+footer .footer-legal {
+  margin: 0 16px;
+  padding: 40px 0;
+}
+
+footer .footer-legal-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+footer .footer-legal-list li {
+  display: block;
+}
+
+footer .footer-legal-list a {
+  font-family: var(--font-regular);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: var(--color-footer-link);
+  font-weight: 400;
+}
+
+footer .footer-legal-list a[href*="data-privacy"] {
+  line-height: 16px;
+}
+
+/* Recall Information pill */
+footer .footer-legal-list a[href*="recalls"] {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid #fff;
+  border-radius: var(--radius-pill);
+  line-height: 24px;
+  text-align: center;
+}
+
+footer .footer-legal-list li + li::before {
+  content: "|";
+  display: none;
+  margin-right: 14px;
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-footer-sep);
+}
+
+footer .footer-legal-copy p {
+  margin-top: 32px;
+  font-family: var(--font-regular);
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--color-footer-copy);
+  font-weight: 400;
+}
+
+@media (width >= 768px) {
+  footer .site-footer {
+    position: relative;
+  }
+
+  footer .footer-lang {
+    justify-content: flex-end;
+    padding: 24px 0 0;
+  }
+
+  footer .lang-select-trigger {
+    padding: 0 24px 0 12px;
+  }
+
+  footer .footer-links {
+    padding: 0;
+  }
+
+  footer .footer-links-cols {
+    display: flex;
+    gap: 129px;
+    padding: 32px 0 32px 16px;
+  }
+
+  footer .footer-links-col {
+    flex: 0 0 270px;
+  }
+
+  footer .footer-links-title {
+    border: 0;
+    padding: 0 0 32px;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  footer .footer-links-title::after {
+    display: none;
+  }
+
+  footer .footer-links-body,
+  footer .footer-links-body.is-open {
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    border: 0;
+    transition: none;
+  }
+
+  footer .footer-social {
+    padding: 16px 0 24px;
+    border: 0;
+  }
+
+  footer .footer-legal {
+    margin: 0;
+  }
+
+  footer .footer-legal-list ul {
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 12px 14px;
+  }
+
+  footer .footer-legal-list li {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  footer .footer-legal-list li a {
+    display: inline-block;
+    line-height: 24px;
+  }
+
+  footer .footer-social img {
+    vertical-align: middle;
+  }
+
+  footer .footer-legal-list li + li::before {
+    display: inline;
+  }
+
+  footer .footer-legal-copy p {
+    margin-top: 16px;
+  }
+}
+
+@media (width >= 1024px) {
+  footer .site-footer-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+}
+
+@media (width >= 1280px) {
+  footer .footer-lang {
+    padding: 40px 0;
+  }
+
+  footer .footer-links-cols {
+    padding: 80px 0;
+  }
+
+  footer .footer-links-title {
+    padding-bottom: 48px;
+  }
+
+  footer .footer-social {
+    padding: 16px 0 24px;
   }
 }

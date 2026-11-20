@@ -1,0 +1,97 @@
+{
+ "url": "https://main--83d9e7fd--aemcoder.aem.page/parts-service",
+ "at": "2026-11-19T19:34:38.774Z",
+ "source": "content-presence",
+ "counts": {
+  "textClipped": 0,
+  "textHidden": 0,
+  "controlHidden": 0,
+  "controlClipped": 0,
+  "clamped": 0,
+  "collapsed": 0,
+  "scrollHidden": 0,
+  "horizontal": 6,
+  "offPage": 55,
+  "textNodes": 126,
+  "controls": 82,
+  "total": 0
+ },
+ "groups": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-title > h3#buy-3-tires-get-the-4th-for-1-1",
+   "text": "buy 3 tires, get the 4th for $1*",
+   "cutMin": 244,
+   "cutMax": 244
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-validity > p",
+   "text": "offer valid november 16-30, 2026",
+   "cutMin": 159,
+   "cutMax": 159
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+   "text": "*offer details",
+   "cutMin": 54,
+   "cutMax": 54
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+   "text": "*offer details",
+   "cutMin": 54,
+   "cutMax": 54
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+   "text": "shop for tires",
+   "cutMin": 134,
+   "cutMax": 134
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+   "text": "shop for tires",
+   "cutMin": 83,
+   "cutMax": 83
+  }
+ ],
+ "origin": {
+  "counts": {
+   "textClipped": 0,
+   "textHidden": 0,
+   "controlHidden": 0,
+   "controlClipped": 0,
+   "clamped": 0,
+   "collapsed": 0,
+   "scrollHidden": 0,
+   "horizontal": 5,
+   "offPage": 58,
+   "textNodes": 143,
+   "controls": 66,
+   "total": 0
+  }
+ }
+}

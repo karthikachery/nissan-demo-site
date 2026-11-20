@@ -1,0 +1,229 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-11-19T17:22:08.244Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/pages/parts-service.json",
+      "stardust/replica/tokens.json"
+    ]
+  },
+  "name": "Nissan Parts & Service (current state)",
+  "colors": {
+    "text": "#000000",
+    "bg": "#ffffff",
+    "surface": "#efefef",
+    "primary": "#c3002f",
+    "accent": "#5c5c5c",
+    "footer-bg": "#1e1e1e",
+    "body-text": "#343434",
+    "rule": "#d2d2d2",
+    "muted": "#999999"
+  },
+  "typography": {
+    "hero-title": {
+      "360": "32px light",
+      "1440": "56px light"
+    },
+    "section-h2": {
+      "360": "32px/40px light 300",
+      "1440": "40px/48px light 300"
+    },
+    "exp-banner-h2": {
+      "360": "30px/40px",
+      "1440": "30px/36px light 300"
+    },
+    "price-match-h2": {
+      "360": "32px/40px ls 2.5px",
+      "1440": "28px/28px light 300"
+    },
+    "offers-h3": {
+      "360": "24px/32px ls .9px",
+      "1440": "32px/40px Regular 300"
+    },
+    "card-h3": "20px/32px Regular 400",
+    "body": "16px/24px light 300 (tile body 14px/24px)",
+    "offer-validity": "12px/24px light ls .2px",
+    "eyebrow": "13px/24px ls 2.6px uppercase"
+  },
+  "rounded": {
+    "mode": "40px",
+    "pill": "9999px"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg #c3002f, color #fff, 1px solid #c3002f, radius 40px, padding 8px 50px 8px 20px, 14px, right-arrow icon",
+      "secondary": "transparent, color #000, 1px solid #000, radius 40px, padding 8px 50px 8px 20px, arrow icon",
+      "secondary-white": "transparent, color #fff, 1px solid #fff, radius 40px, padding 8px 20px",
+      "footer-pill": "transparent, color #efefef, 1px solid #fff, radius 40px, padding 4px 10px"
+    }
+  },
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1920px",
+      "probeWidth": 2560,
+      "shellMaxWidth": "1920px",
+      "caps": [
+        {
+          "kind": "shell",
+          "px": 1920,
+          "via": "max-width",
+          "selector": "#Nissan > div.container",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1170,
+          "via": "max-width",
+          "selector": "main > div.container > div.home-offers.pt-9 > div.columns.column-custom-container",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 799,
+          "via": "fixed",
+          "selector": "div.tire-price-container > div.column-custom-container > div.flex.flex-row-reverse > div.flex.place-content-center",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 600,
+          "via": "fixed",
+          "selector": "section.two-column-tile.py-0 > div.column-custom-container > div.flex.text-black > div.grid-tile-image",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 500,
+          "via": "fixed",
+          "selector": "section.two-column-tile.py-0 > div.column-custom-container > div.flex.text-black > div.grid-tile-content.flex",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 444,
+          "via": "max-width",
+          "selector": "#splide-carousel-clone01 > div.banner-container > div.banner-container > div.hero-caption.leading-none",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 400,
+          "via": "fixed",
+          "selector": "div.columns.home-panel > div > div.vertical-slider-container > div.vertical-slider",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 371,
+          "via": "fixed",
+          "selector": "div.tire-price-container > div.column-custom-container > div.flex.flex-row-reverse > div.self-end.tire-price-img-wrapper",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 292,
+          "via": "fixed",
+          "selector": "div.promo-tile-container.three-promo-tile-container > div.columns.is-vcentered > div.column.promo-content > div.promo-content-child",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 252,
+          "via": "fixed",
+          "selector": "div.banner-container > div.hero-caption.leading-none > h2.text-white.font-light > span",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 0,
+          "selector": "div.container > main > div.container > div.columns.is-marginless-mobile",
+          "px": 444
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 1,
+          "selector": "div.container > main > div.container > div.home-offers.pt-9",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 2,
+          "selector": "div.container > main > div.container > section.exp-banner",
+          "px": 400
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 3,
+          "selector": "div.container > main > div.container > section.two-column-tile.py-0",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 4,
+          "selector": "div.container > main > div.container > section.two-column-tile.py-0",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 5,
+          "selector": "div.container > main > div.container > section.two-column-tile.py-0",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 6,
+          "selector": "div.container > main > div.container > section",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 7,
+          "selector": "div.container > main > div.container > section.bg-gray-20",
+          "px": 1170
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-11-19T17:21:07.668Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+        ]
+      }
+    },
+    "fonts": {
+      "light": "NissanBrand-light (400 face, rendered 300)",
+      "regular": "NissanBrand-Regular",
+      "bold": "NissanBrand-Bold",
+      "files": "stardust/current/assets/fonts/NissanBrand-{light,Regular,Bold}.woff2|woff"
+    },
+    "container": {
+      "shellMaxWidth": "1920px (#Nissan > div.container)",
+      "moduleCaps": "1170px x6, 444px, 400px"
+    }
+  }
+}

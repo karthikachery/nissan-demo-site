@@ -1,0 +1,121 @@
+{
+ "writtenBy": "gate-all.mjs",
+ "at": "2026-11-19T19:34:38.800Z",
+ "content": {
+  "totals": {
+   "missingHeadings": 1,
+   "hiddenHeadings": 0,
+   "extraHeadings": 0,
+   "missingLinks": 0,
+   "hiddenLinks": 0,
+   "movedLinks": 0,
+   "extraLinks": 8,
+   "missingButtons": 0,
+   "hiddenButtons": 0,
+   "controlState": 0,
+   "countDeltas": 0,
+   "findings": 8,
+   "structural": 1,
+   "missing": 1,
+   "hidden": 0
+  },
+  "variable": [
+   "#splide-carousel=.hero-carousel"
+  ],
+  "reason": "hero autoplay carousel (restoreAtDelivery: loop autoplay 10 s from slide 1): which slide is visible depends on probe timing on both sides; the frozen live reference sits on slide 3 — counts only for this region, every slide heading/link is present in the served DOM",
+  "tier": "chrome"
+ },
+ "clip": {
+  "counts": {
+   "textClipped": 0,
+   "textHidden": 0,
+   "controlHidden": 0,
+   "controlClipped": 0,
+   "clamped": 0,
+   "collapsed": 0,
+   "scrollHidden": 0,
+   "horizontal": 6,
+   "offPage": 55,
+   "textNodes": 126,
+   "controls": 82,
+   "total": 0
+  },
+  "groups": [
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers-rail",
+    "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-title > h3#buy-3-tires-get-the-4th-for-1-1",
+    "text": "buy 3 tires, get the 4th for $1*",
+    "cutMin": 244,
+    "cutMax": 244
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers-rail",
+    "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-validity > p",
+    "text": "offer valid november 16-30, 2026",
+    "cutMin": 159,
+    "cutMax": 159
+   },
+   {
+    "kind": "CONTROL X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers-rail",
+    "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+    "text": "*offer details",
+    "cutMin": 54,
+    "cutMax": 54
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers-rail",
+    "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+    "text": "*offer details",
+    "cutMin": 54,
+    "cutMax": 54
+   },
+   {
+    "kind": "CONTROL X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers-rail",
+    "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+    "text": "shop for tires",
+    "cutMin": 134,
+    "cutMax": 134
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers-rail",
+    "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+    "text": "shop for tires",
+    "cutMin": 83,
+    "cutMax": 83
+   }
+  ],
+  "origin": {
+   "textClipped": 0,
+   "textHidden": 0,
+   "controlHidden": 0,
+   "controlClipped": 0,
+   "clamped": 0,
+   "collapsed": 0,
+   "scrollHidden": 0,
+   "horizontal": 5,
+   "offPage": 58,
+   "textNodes": 143,
+   "controls": 66,
+   "total": 0
+  },
+  "source": "content-presence"
+ }
+}

@@ -1,0 +1,296 @@
+[live-session] waiting to pace live navigations to staging.niss-parts-service.epsilonrms.com (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 100 ms
+
+Content diff @ 1440px (profile "generic", roots: main, header, footer)
+root "main"
+  source: 96 text nodes — 13 headings, 6 eyebrows, 31 CTAs, 46 body; 21 img
+  build: 137 text nodes — 24 headings, 5 eyebrows, 39 CTAs, 69 body; 33 img
+  editable texts (outermost h*/p/ul/ol): source 22 / build 86
+  attributes (placeholder/aria-label/title): source 24 / build 68; icons: source 0 / build 11
+root "header"
+  source: 0 text nodes — 0 headings, 0 eyebrows, 0 CTAs, 0 body; 0 img
+  build: 77 text nodes — 18 headings, 0 eyebrows, 25 CTAs, 34 body; 19 img
+  editable texts (outermost h*/p/ul/ol): source 0 / build 40
+  attributes (placeholder/aria-label/title): source 0 / build 21; icons: source 0 / build 2
+root "footer"
+  source: 30 text nodes — 0 headings, 7 eyebrows, 22 CTAs, 1 body; 6 img
+  build: 26 text nodes — 0 headings, 3 eyebrows, 21 CTAs, 2 body; 6 img
+  editable texts (outermost h*/p/ul/ol): source 19 / build 22
+  attributes (placeholder/aria-label/title): source 1 / build 16; icons: source 6 / build 6
+  accepted (invisible, nothing lost): 6 SAME IMAGE — "tiktok-icon.svg ↔ media_1d5892ce7ad89b511875853f9660ff6a0317f40f7.svg", "youtube-icon.svg ↔ media_1f4f74d8c31ad1db882938aeeee08886a6ae6f8e3.svg", "instagram-icon.svg ↔ media_1086f7dcdaeda2a43495036aa41d827437fab1244.svg", "twitter-icon.svg ↔ media_1a794b5221f63f899d176aa540d76e470ad442fd9.svg" …
+
+Findings: 264 (6 structural 🔴)
+Tiers: looks-same 🔴 6 · nothing-lost 🟡 0 · accepted 🟢 16 (owner 10, auto 6) · advisory 258
+  🔴 ROLE SWAP [main]: "Winter Ready" is a body in the source but a heading in build — Same text rendered under a different role (e.g. label vs body) — check the component field mapping.
+  🔴 ROLE SWAP [footer]: "English" is a cta in the source but a body in build — Same text rendered under a different role (e.g. label vs body) — check the component field mapping.
+  🔴 MISSING EYEBROW [footer]: source eyebrow "|" has no build match. A small label present in the source is absent in the build — often a component that classifies its nodes by position rather than content.
+  🔴 MISSING EYEBROW [footer]: source eyebrow "|" has no build match. A small label present in the source is absent in the build — often a component that classifies its nodes by position rather than content.
+  🔴 MISSING EYEBROW [footer]: source eyebrow "|" has no build match. A small label present in the source is absent in the build — often a component that classifies its nodes by position rather than content.
+  🔴 MISSING EYEBROW [footer]: source eyebrow "|" has no build match. A small label present in the source is absent in the build — often a component that classifies its nodes by position rather than content.
+  🟠 EXTRA [main]: build cta "/media/parts-service/sep-oct-2026-nna-carousel-2" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Buy 3 Tires, Get the 4th for $1*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Shop for Tires" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Buy 3 Tires, Get the 4th for $1*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Shop for Tires" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Buy 4, Get 1 FREE Oil & Filter Changes*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "terms & conditions" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "https://nissan-securityplus.com/buy-4-get-1-free" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Buy 3 Tires, Get the 4th for $1*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Shop for Tires" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Buy 3 Eligible Tires, Get the 4th for $1*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Shop for Tires" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Nissan Tire Price Match + 5% Credit*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Shop for Tires" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Complimentary Battery Inspection*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Schedule Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Complimentary Brake Inspection*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "5 Oil & Filter Changes, Under $55 Each*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Claim Now" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build heading "Complimentary Multi-Point Inspection*" has no source source — Unexpected node with no source.
+  🟠 EXTRA [main]: build cta "Schedule Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Coupons & Offers" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Dealer Locator" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Enter Your Location" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Find A Dealer" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Use My Current Location" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Radius" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Services Available" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Certifications" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Service & Maintenance" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Nissan Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Why Nissan Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Brakes" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Tires" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Oil Change" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Batteries" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Express Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Mobile Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Maintaining Your Nissan" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Maintenance Schedules" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Dashboard Indicator Lights" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Multi-Point Inspection" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Electric Vehicle Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Electric Vehicle Service" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Locate Charging Stations" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Shop" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Nissan Tire Advantage" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Nissan Tire Advantage" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Nissan Tire Store" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Parts & Accessories Store" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Parts & Accessories Store" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Shop Nissan Parts & Accessories Online" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Owners" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Owner Services" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Owner Services" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "For Nissan Owners" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Nissan Owner Resources" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build heading "Nissan Owner Resources" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Dashboard Indicator Lights" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "About MyNISSAN" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "NissanConnect® Services" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Recall Information" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Nissan Security Plus®" has no source source — Unexpected node with no source.
+  🟠 EXTRA [header]: build cta "Find a Dealer" has no source source — Unexpected node with no source.
+  🟡 MISSING BODY [main]: source body "Get your Nissan ready to get the best of winter "… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "at your local dealer."… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "When cold weather hits, your battery may lose it"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "to see if it's ready to withstand the harsh cond"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Winter Ready"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Get your Nissan ready to get the best of winter "… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "at your local dealer."… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Don't Let Your Battery Catch a Winter Cold"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "When cold weather hits, your battery may lose it"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "*At participating Nissan dealers. Each dealer is"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "to see if it's ready to withstand the harsh cond"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "[*]"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "*Images shown for illustrative purposes only. Fo"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Maintained to perform"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Help keep your Nissan ready for the road ahead w"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Plus, Buy 4, Get 1 FREE Oil & Filter Changes.*"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "Savings on eligible Hankook tires."… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 MISSING BODY [main]: source body "[*]"… not found in build. Source body copy not found in the build — confirm a rewrite vs a drop.
+  🟡 EXTRA [main]: build body "Get your Nissan ready to get the best of winter " has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "When cold weather hits, your battery may lose it" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-save-100-tires" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Buy 3 eligible Hankook tires, get the 4th for $" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-enjoy-100-off-tires" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Offer valid November 16-30, 2026" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Buy 3 eligible Hankook tires, get the 4th for $" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-buy-3-eligible-tires-get-the-4th-for-1" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Offer valid November 16-30, 2026" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Buy 3 eligible Hankook tires, get the 4th for $" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-cye-buy-4-get-1-free-oil" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Offer valid through January 4, 2027. Restriction" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body ". Purchase a 5-Pack Prepaid Maintenance Agreemen" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Buy 4, Get 1 Free Offer" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "READ THE 5-PACK PMA at OR AT YOUR DEALER, AS ITS" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-save-100-tires-promo" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Offer valid November 16-30, 2026" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Buy 3 eligible Hankook tires, get the 4th for $" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-disclaimer-buy" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Offer valid February 1 - April 30, 2025" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Offer available for a limited time. Eligible on" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-disclaimer-pricematch" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Bring in an eligible competitor quote and we wil" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "* Proof of eligibility required." has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Eligible tires only. Customer must present a pr" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-disclaimer-battery" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "With this complimentary service, our highly trai" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Perform a thorough evaluation of your battery’s " has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Visually assess your cable connections" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Recommend the exact fit for your Nissan if you n" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-disclaimer-brake" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "With this special offer, the technicians at your" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Check brake fluid levels, color and signs of lea" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Evaluate rotors and brake drums" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Inspect brake pad thickness and hardware" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Available at participating Nissan dealers. Each" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-disclaimer-fivepack" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "Ask your Service Advisor for details" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Restrictions apply. Oil & Filter Change covers " has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-disclaimer-multipoint" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Available at participating Nissan dealers. Each" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "modal-generic-legal" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [main]: build body "*Cargo and load capacity limited by weight and d" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 MISSING TITLE [main]: source <video> title="Home banner" has no build <video> with that title (build <video> titles: "Home banner"). Authored text a user or assistive tech reads, dropped by the build — carry it over verbatim.
+  🟡 EXTRA TITLE [main]: build <a> title="Purchase Today" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Find a Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="/media/parts-service/sep-oct-2026-nna-carousel-2" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Find a Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Purchase Today" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Schedule Service" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Schedule Service" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="Previous offers" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="Next offers" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Learn More" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Find A Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Learn More" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Schedule Service" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Learn More" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Find a Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="*Offer Details" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Explore" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="terms & conditions" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="https://nissan-securityplus.com/buy-4-get-1-free" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Purchase Today" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Shop for Tires" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Schedule Service" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Find a Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Claim Now" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [main]: build <a> title="Schedule Service" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [main]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ICON [main]: build image media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg (50×51) at "buy 3 tires, get the 4th for $1* offer v" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg (50×51) at "buy 3 tires, get the 4th for $1* offer v" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg (50×51) at "buy 3 tires, get the 4th for $1* offer v" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_110856268c5502d43a5e27dbad987f094aa181ba0.svg (50×50) at "buy 4, get 1 free oil & filter changes* " has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg (50×51) at "buy 3 tires, get the 4th for $1* offer v" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg (50×51) at "buy 3 eligible tires, get the 4th for $1" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_1d8cc943b6e322cd2bcb7a78674dbcc615cd0b784.svg (50×51) at "nissan tire price match + 5% credit* bri" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_14e28a5f7e512c97e648095b6bfa8d3cd76205b98.svg (50×51) at "complimentary battery inspection* with t" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_1cb65b9d633945aeec320b75d37bfb119faf637ae.svg (55×55) at "complimentary brake inspection* with thi" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_110856268c5502d43a5e27dbad987f094aa181ba0.svg (50×50) at "5 oil & filter changes, under $55 each* " has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [main]: build image media_161ece4a0dab9a2832545cd61ce4d3f6c4b73eb56.svg (50×51) at "complimentary multi-point inspection* *a" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA [header]: build body "Service & Maintenance" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Shop" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Owners" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "To find the best offers and nearby service, we n" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Filters Applied" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "( )" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "0" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "5 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "10 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "15 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "25 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "50 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "5 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "10 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "15 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "25 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "50 Miles" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Mobile Service" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "*Call your local dealer to schedule Mobile Servi" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Online Tire Store" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Online Service Scheduling" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Express Service Dealer" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Nissan Rental Car Dealer" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "MyNISSAN Rewards" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Online Parts & Accessories Store" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Nissan EV Certified Dealer" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Business Certified (NCV)" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Nissan GT-R® Dealer" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Collision Repair" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Clear Filters" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Shop from a great selection of tire brands recom" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Maintain your Nissan with Genuine Nissan Parts f" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Enhance your ownership experience with MyNISSAN " has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA [header]: build body "Dealer Locator" has no source source — Build copy with no source — invented/placeholder; confirm intended.
+  🟡 EXTRA ARIA-LABEL [header]: build <nav> aria-label="Main" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [header]: build <a> title="Dealer Locator" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [header]: build <a> title="Find A Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA PLACEHOLDER [header]: build <input> placeholder="Find A Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <input> aria-label="Find A Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Search" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [header]: build <a> title="Use My Current Location" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <select> aria-label="Radius" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <span> aria-label="Mobile Service info" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Menu" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Back" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Back" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Back" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Close" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA PLACEHOLDER [header]: build <input> placeholder="Find a Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ARIA-LABEL [header]: build <button> aria-label="Search" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [header]: build <a> title="Find a Dealer" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA ICON [header]: build image media_1035d32cc6b1c5160cef53b96f700ee995b70de84.svg (55×57) at "enter your location to find the best off" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA ICON [header]: build image media_1784f58c02e918371f94e40c7135e6118201c2f47.svg (20×20) at "mobile service info" has no source source. Build-only icon — confirm it is intended.
+  🟡 EXTRA TITLE [footer]: build <a> title="Build Your Nissan" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="View Offers" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Parts and Accessories Online Store" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Tire Store" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Nissan Rental Car Program" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Accessibility" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Maintenance Schedules" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Manuals & Guides" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Owner Portal" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="MyNissan Rewards" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Collision Assistance" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Extended Protection Plans" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Locations" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="Cookie Settings" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟡 EXTRA TITLE [footer]: build <a> title="FAQs" has no source source. Build-only attribute — confirm it is intended (an unregistered change is a fidelity bug).
+  🟢 ROLE SWAP [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING EYEBROW [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING CTA [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING EYEBROW [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING CTA [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING CTA [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING ARIA-LABEL [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING ARIA-LABEL [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING ARIA-LABEL [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)
+  🟢 MISSING ARIA-LABEL [main] accepted (stardust/replica/accepted.json): Splide loop clones: the live hero track carries 4 clone slides (#splide-carousel-clone01..04) that duplicate every slide's text, CTAs, [*] popups and "N of 4" aria-labels; per recreation-procedure.md § Carousels and animated sections the replica's clones are presentational (no text nodes, no aria) and the 4 real slides are all present with this content — the finding is the clone duplicate, nothing authored is lost (hands-off decision, policy-derived; see journal 2026-11-19)

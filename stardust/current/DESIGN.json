@@ -1,0 +1,160 @@
+{
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1920px",
+      "probeWidth": 2560,
+      "shellMaxWidth": "1920px",
+      "caps": [
+        {
+          "kind": "shell",
+          "px": 1920,
+          "via": "max-width",
+          "selector": "#Nissan > div.container",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1170,
+          "via": "max-width",
+          "selector": "main > div.container > div.home-offers.pt-9 > div.columns.column-custom-container",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 799,
+          "via": "fixed",
+          "selector": "div.tire-price-container > div.column-custom-container > div.flex.flex-row-reverse > div.flex.place-content-center",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 600,
+          "via": "fixed",
+          "selector": "section.two-column-tile.py-0 > div.column-custom-container > div.flex.text-black > div.grid-tile-image",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 500,
+          "via": "fixed",
+          "selector": "section.two-column-tile.py-0 > div.column-custom-container > div.flex.text-black > div.grid-tile-content.flex",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 444,
+          "via": "max-width",
+          "selector": "#splide-carousel-clone01 > div.banner-container > div.banner-container > div.hero-caption.leading-none",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 400,
+          "via": "fixed",
+          "selector": "div.columns.home-panel > div > div.vertical-slider-container > div.vertical-slider",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 371,
+          "via": "fixed",
+          "selector": "div.tire-price-container > div.column-custom-container > div.flex.flex-row-reverse > div.self-end.tire-price-img-wrapper",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 292,
+          "via": "fixed",
+          "selector": "div.promo-tile-container.three-promo-tile-container > div.columns.is-vcentered > div.column.promo-content > div.promo-content-child",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 252,
+          "via": "fixed",
+          "selector": "div.banner-container > div.hero-caption.leading-none > h2.text-white.font-light > span",
+          "pages": [
+            "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 0,
+          "selector": "div.container > main > div.container > div.columns.is-marginless-mobile",
+          "px": 444
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 1,
+          "selector": "div.container > main > div.container > div.home-offers.pt-9",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 2,
+          "selector": "div.container > main > div.container > section.exp-banner",
+          "px": 400
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 3,
+          "selector": "div.container > main > div.container > section.two-column-tile.py-0",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 4,
+          "selector": "div.container > main > div.container > section.two-column-tile.py-0",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 5,
+          "selector": "div.container > main > div.container > section.two-column-tile.py-0",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 6,
+          "selector": "div.container > main > div.container > section",
+          "px": 1170
+        },
+        {
+          "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+          "section": 7,
+          "selector": "div.container > main > div.container > section.bg-gray-20",
+          "px": 1170
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-11-19T17:21:07.668Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+        ]
+      }
+    }
+  }
+}

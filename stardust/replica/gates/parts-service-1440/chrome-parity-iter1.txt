@@ -1,0 +1,32 @@
+[live-session] waiting to pace live navigations to staging.niss-parts-service.epsilonrms.com (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 100 ms
+chrome-parity @ 1440px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service
+  build: http://localhost:8791/prototypes/parts-service-proposed.html
+
+■ header: 9 delta(s) — 0 paired of 0/5 texts, 0/1 icons
+  REGION BOX   Δh +147px (0→147)
+  REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  EXTRA        "Service & Maintenance"  build <button> "Service & Maintenance" has no live source
+  EXTRA        "Shop"  build <button> "Shop" has no live source
+  EXTRA        "Coupons & Offers"  build <a> "Coupons & Offers" has no live source
+  EXTRA        "Owners"  build <button> "Owners" has no live source
+  EXTRA        "Dealer Locator"  build <a> "Dealer Locator" has no live source
+  ICONS        0 live vs 1 build (svg/img) — harvest the live vectors verbatim (recreation-procedure.md § Asset harvest), never approximate
+
+■ footer: 13 delta(s) — 29 paired of 29/29 texts, 6/6 icons
+  REGION BOX   Δh +7px (816→823)
+  REGION STYLE position relative → static (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  PAIR         "English"  tag <a> → <button>; paddingRight 24px → 19.6px; paddingLeft 12px → 0px; Δx +17px (1220→1237); Δw -17px (85→68)
+  PAIR         "Contact Us"  Δy +6px (5155→5161)
+  PAIR         "|"  fontWeight 400 → 300; textTransform uppercase → none; Δy +7px (5156→5163)
+  PAIR         "Do Not Sell Or Share My Personal Informa"  Δy +9px (5155→5164); Δh -6px (24→18)
+  PAIR         "|"  fontWeight 400 → 300; textTransform uppercase → none; Δy +7px (5156→5163)
+  PAIR         "Terms Of Use"  Δy +9px (5155→5164); Δh -6px (24→18)
+  PAIR         "|"  fontWeight 400 → 300; textTransform uppercase → none; Δy +7px (5156→5163)
+  PAIR         "Privacy Notice"  Δy +9px (5155→5164); Δh -6px (24→18)
+  PAIR         "|"  fontWeight 400 → 300; textTransform uppercase → none; Δy +7px (5156→5163)
+  PAIR         "Recall Information"  Δy +6px (5150→5156)
+  PAIR         "©2026 Nissan North America, Inc. All rig"  Δy +6px (5200→5206)
+
+✗ 22 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

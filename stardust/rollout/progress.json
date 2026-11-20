@@ -1,0 +1,115 @@
+{
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "parts-service"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "pixel": "0.44% Δh 0 on /parts-service (published, gate-all row)",
+          "crop": {
+            "header": "99.53% match (0.47% diff)",
+            "footer": "99.40% match (0.60% diff)"
+          },
+          "chromeParity": "header(#navbar) 34 deltas (closed off-canvas mobile menu), footer 12 deltas (accordion title paddings, icon file names)"
+        },
+        "1440": {
+          "pixel": "0.11% Δh 0 on /parts-service (published, gate-all row)",
+          "crop": {
+            "header": "99.89% match (0.11% diff)",
+            "footer": "99.99% match (0.01% diff)"
+          },
+          "chromeParity": "header(#navbar) 1 delta, footer 10 deltas (title paddings, English tag, | separators, icon file names)"
+        },
+        "note": "foundation-first gate (pixel 1440/360, crop-compare header/footer, chrome parity) pending on the archetype page — coordinator",
+        "interimChromeCompare": "build=/nav page on preview vs source contract (truncated): 4 errors (control-missing@390 Service/Shop — source nav reachable without drawer; back button named Back vs \"\"; panel-visual 39.6% crop on a non-archetype page), 6 warnings (motion opacity/transform, budget-truncated, logo link)",
+        "chromeCompare": "vs stardust/chrome/header-contract.json on the archetype page (stardust/chrome/header-build-archetype.json): 2 errors — control-missing@1440 Service & Maintenance > nested control named \"\"; panel-visual@1440 Service & Maintenance open-state crop 34.2% (source 1391×875 vs build 1440×900) — 9 warnings (motion opacity/transform, budget-truncated 390 both sides, /parts-service logo link)",
+        "archetypeFix": "blocks/header/header.css: body > header:has(.dealer-search.sticky) reservation −67 px below 768 (source doc shrink; 360 Δh −67 → 0)",
+        "measuredBy": "C-archetype subagent 2026-11-19"
+      },
+      "startedAt": "2026-11-19T18:21:17Z",
+      "endedAt": "2026-11-19T19:30:26.967Z",
+      "verdict": "PASS — gated on the published archetype page: 1440 0.11%/Δh0, 360 0.44%/Δh0; header band 0.11/0.47%, footer 0.01/0.60%; header contract 2 errors (nested mega-menu control, open-menu crop) carried to C-final",
+      "deployedAt": "2026-11-19T18:47:21Z"
+    },
+    "archetype:landing": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "parts-service"
+      ],
+      "pages": 1,
+      "blocks": 7,
+      "gates": {
+        "360": {
+          "gateAllRow": "PASS 0.44% (text 0.5%) Δh 0, clipped 0, MISSING 0 / HIDDEN 0 (with presence.json hero variable region; without it MISSING 1 = Winter Ready h2 on a non-active slide)",
+          "pub2": "pixel 0.46% Δh 0 (hero rows 148:666 masked), overflow ok, clip 0, content-presence MISSING 0",
+          "pub1": "pixel 30.27% unaligned / 1.59% aligned, Δh −67 (sticky dealer-search shrink missing) → fixed in header.css"
+        },
+        "1440": {
+          "gateAllRow": "PASS 0.11% (text 1.42%) Δh 0, clipped 0, MISSING 0 / HIDDEN 0 (runs/…-parts-service.json, presence.json: hero carousel variable region)",
+          "pub2": "pixel 0.11% Δh 0 (hero rows 147:525 masked), overflow ok, clip 0, content-presence MISSING 0 except a hero-timing miss on pub2 (Winter Ready on a non-active slide)",
+          "pub1": "pixel 5.03% unaligned / 0.20% aligned, Δh −4 (offers trailing-card offset not yet live)"
+        },
+        "crop": "header 99.89% / 99.53%, footer 99.99% / 99.40% match (1440 / 360) — all ≤ 2% diff",
+        "chrome": "chrome-parity --region header=#navbar: 1440 header 1 delta (region bg transparent→white), footer 10; 360 header 34 (closed off-canvas menu), footer 12; chrome-compare vs header contract: 2 errors (control-missing@1440 nested unnamed control; panel-visual@1440 Service & Maintenance 34.2%), 9 warnings",
+        "structural": "block-roundtrip --ew exit 0 (EW 57/57, dead 0, dup 0); qa-gate 29 ok + 2 known non-defects (offer-dialogs 0 px by design; harness-only /nav chrome images)",
+        "restoreAtDelivery": "hero autoplay advances unpoked (1→2→3→4 at 10 s steps); slide-4 video muted loop playing (currentTime 2.84→5.85 s); sticky dealer-search bar shrinks the reservation like the source",
+        "fixRounds": 1
+      },
+      "startedAt": "2026-11-19T18:49:17Z",
+      "endedAt": "2026-11-19T19:29:30Z",
+      "verdict": "archetype:landing: live y, gate 1440 0.11% Δh 0 / 360 0.44% Δh 0, clipped 0, content-presence MISSING 0 / HIDDEN 0, PASS (fix rounds 1)"
+    },
+    "cluster:landing": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "parts-service"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "gates": {},
+      "startedAt": "2026-11-19T19:31:16Z",
+      "endedAt": "2026-11-19T19:31:16Z",
+      "verdict": "cluster:landing: pages 0/0 live (no siblings — archetype parts-service is the template's only page), blocks 0, gate n/a (archetype row 1440 0.11% / 360 0.44%), requests 0",
+      "note": "no siblings — the archetype is the only landing page"
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "parts-service"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": "PASS via documented content override (overrides.json waives content only): pixel 0.44% Δh 0, clipped 0; MISSING 1 = h2 Winter Ready on a non-active autoplay hero slide (in served DOM, #winter-ready)",
+        "1440": "PASS 0.11% (text 1.42%) Δh 0, clipped 0, MISSING 0/HIDDEN 0"
+      },
+      "startedAt": "2026-11-19T19:31:26Z",
+      "endedAt": "2026-11-19T19:34:51Z",
+      "verdict": "gate-all: pages 1/1 delivered (1440 PASS 0.11%, 360 0.44% + 1 documented override), coverage fed from both summaries"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "parts-service"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "freeze": "foundation-freeze check: unchanged (19 files)",
+        "requests": "0 queued"
+      },
+      "startedAt": "2026-11-19T19:35:08Z",
+      "endedAt": "2026-11-19T19:35:08Z",
+      "verdict": "final: freeze check clean, 0 foundation requests to apply, no archetype re-gate needed; C-deliver closed"
+    }
+  }
+}

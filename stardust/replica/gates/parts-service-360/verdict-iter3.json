@@ -1,0 +1,30 @@
+{
+  "round": "iter3",
+  "width": 360,
+  "stage": "prototype",
+  "pixel": {
+    "rc": 0,
+    "diff": "stardust/replica/gates/parts-service-360/diff-iter3.png",
+    "json": "stardust/replica/gates/parts-service-360/pixel-iter3.json",
+    "pct": 5.45,
+    "alignedPct": 5.45,
+    "alignedUsed": false,
+    "totalShift": 0,
+    "steps": [],
+    "offsetBound": null,
+    "maskedRows": 0,
+    "noiseFloor": 0,
+    "reason": null
+  },
+  "reference": {
+    "origin": "frozen",
+    "capturedAt": "2026-11-19T17:27:36.358Z",
+    "primed": true,
+    "stable": true,
+    "maskArg": ""
+  },
+  "probes": {},
+  "structural": 0,
+  "nothingLost": 0,
+  "at": "2026-11-19T18:02:15.681Z"
+}

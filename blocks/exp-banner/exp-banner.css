@@ -1,0 +1,161 @@
+/* experience banner — lifted from stardust/prototypes/css/parts-service.css
+   (source section.exp-banner + .hero-caption). Slots carry the type (EW2). */
+.exp-banner {
+  padding-bottom: 40px;
+}
+
+.exp-banner .exp-banner-frame {
+  position: relative;
+}
+
+.exp-banner .exp-banner-media :is(p, picture) {
+  margin: 0;
+}
+
+.exp-banner .exp-banner-media img {
+  display: block;
+  width: 100%;
+}
+
+.exp-banner .exp-banner-media .media-desktop {
+  display: none;
+}
+
+.exp-banner .hero-caption {
+  position: relative;
+  margin-top: 0;
+  padding: 30px 15px 40px;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.exp-banner .hero-caption :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+.exp-banner .hero-caption-title {
+  margin-bottom: 20px;
+  font-family: var(--font-light);
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: normal;
+  font-weight: 300;
+  color: #fff;
+}
+
+.exp-banner .hero-caption-text {
+  margin-bottom: 20px;
+  font-family: var(--font-light);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-weight: 300;
+}
+
+.exp-banner .hero-caption-ctas {
+  display: flex;
+  align-items: center;
+}
+
+.exp-banner .hero-caption-ctas p {
+  display: contents;
+}
+
+.exp-banner .hero-caption-ctas a {
+  letter-spacing: 0.2px;
+  white-space: normal;
+}
+
+.exp-banner .hero-caption-ctas a.button {
+  margin-right: 20px;
+}
+
+@media (width >= 769px) {
+  .exp-banner .exp-banner-media .media-desktop {
+    display: block;
+  }
+
+  .exp-banner .exp-banner-media .media-mobile {
+    display: none;
+  }
+
+  .exp-banner .exp-banner-frame,
+  .exp-banner .exp-banner-media img {
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .exp-banner .exp-banner-media img {
+    height: 400px;
+  }
+
+  .exp-banner .hero-caption {
+    position: absolute;
+    top: 51%;
+    left: 15px;
+    max-width: 400px;
+    width: 400px;
+    margin: 0;
+    padding: 21px 15px;
+    transform: translateY(-50%);
+  }
+
+  .exp-banner .hero-caption-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media (width >= 1024px) {
+  .exp-banner {
+    padding-bottom: 60px;
+  }
+}
+
+@media (width >= 1280px) {
+  .exp-banner .hero-caption {
+    left: 5%;
+    transform: translate(-3%, -50%);
+  }
+}
+
+@media (width >= 1366px) {
+  .exp-banner .hero-caption {
+    left: 10%;
+    transform: translate(-10%, -50%);
+  }
+}
+
+@media (width >= 1472px) {
+  .exp-banner .exp-banner-frame,
+  .exp-banner .exp-banner-media img {
+    min-height: 600px;
+    max-height: 600px;
+  }
+
+  .exp-banner .exp-banner-media img {
+    height: 600px;
+  }
+
+  .exp-banner .hero-caption {
+    left: 14%;
+    transform: translate(-8%, -50%);
+  }
+
+  .exp-banner .hero-caption-title {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media (width >= 1920px) {
+  .exp-banner .hero-caption {
+    left: 22%;
+    transform: translate(-10%, -51%);
+  }
+}

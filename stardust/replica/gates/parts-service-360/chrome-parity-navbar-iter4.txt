@@ -1,0 +1,37 @@
+chrome-parity @ 360px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service (live side from cache stardust/.labs/chrome-live-navbar-360.json, probed 2026-11-19T17:51:21.798Z — delete the file to re-probe)
+  build: http://localhost:8791/prototypes/parts-service-proposed.html
+
+■ footer: ✓ parity — 25 paired of 25/25 texts, 6/6 icons
+
+■ header: 28 delta(s) — 25 paired of 25/25 texts, 5/5 icons
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  PAIR         "Service & Maintenance"  paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -81px (105→24); Δw +122px (190→312); Δh +40px (24→64)
+  PAIR         "Shop"  color rgb(0, 0, 0) → rgb(52, 52, 52); paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -89px (178→89); Δw +269px (43→312); Δh +40px (24→64)
+  PAIR         "Coupons & Offers"  color rgb(0, 0, 0) → rgb(52, 52, 52); paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -97px (251→154); Δw -4px (316→312); Δh +40px (24→64)
+  PAIR         "Owners"  color rgb(0, 0, 0) → rgb(52, 52, 52); paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -105px (324→219); Δw +248px (64→312); Δh +40px (24→64)
+  PAIR         "Enter Your Location"  Δx +360px (15→375); Δy -65px (674→609)
+  PAIR         "To find the best offers and nearby servi"  Δx +360px (15→375); Δy -65px (719→654)
+  PAIR         "Use My Current Location"  Δx +360px (105→465); Δy -70px (872→802); <a> box 330×21 → 194×21
+  PAIR         "( )"  fontFamily nissanbrand-light → nissanbrand-bold; fontSize 18px → 16px; lineHeight 32px → 24px; Δx +360px (15→375); Δy -92px (939→847); Δw -6px (154→148); Δh -3px (25→22)
+  PAIR         "Filters Applied"  fontFamily nissanbrand-light → nissanbrand-bold; fontSize 18px → 16px; lineHeight 32px → 24px; Δx +360px (15→375); Δy -92px (939→847); Δw -6px (127→121); Δh -3px (25→22); <a> box 154×25 → 148×22
+  PAIR         "0"  fontFamily nissanbrand-light → nissanbrand-bold; fontSize 18px → 16px; lineHeight 32px → 24px; Δx +354px (152→506); Δy -92px (939→847); Δh -3px (25→22); <a> box 154×25 → 148×22
+  PAIR         "Radius"  fontSize 20px → 16px; lineHeight 28px → 24px; letterSpacing normal → 0.32px; Δx +348px (27→375); Δy -122px (992→870); Δw +44px (286→330); Δh -4px (28→24)
+  PAIR         "Services Available"  fontSize 20px → 16px; fontWeight 400 → 300; lineHeight 28px → 24px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +360px (15→375); Δy -174px (1120→946); Δh -4px (28→24)
+  PAIR         "Mobile Service"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -187px (1169→982); Δw -14px (110→96); Δh -2px (22→20)
+  PAIR         "Online Tire Store"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -168px (1213→1045); Δw -16px (127→111); Δh -2px (22→20)
+  PAIR         "Online Service Scheduling"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -183px (1258→1075); Δw -25px (199→174)
+  PAIR         "Express Service Dealer"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -197px (1302→1105); Δw -21px (173→152)
+  PAIR         "Nissan Rental Car Dealer"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -210px (1345→1135); Δw -24px (190→166); Δh -2px (22→20)
+  PAIR         "MyNISSAN Rewards"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -224px (1389→1165); Δw -18px (149→131); Δh -2px (22→20)
+  PAIR         "Online Parts & Accessories Store"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -239px (1434→1195); Δw -32px (250→218)
+  PAIR         "Certifications"  fontSize 20px → 16px; fontWeight 400 → 300; lineHeight 28px → 24px; color rgb(238, 238, 238) → rgb(255, 255, 255); paddingTop 20px → 0px; Δx +360px (15→375); Δy -245px (1480→1235); Δh -24px (48→24)
+  PAIR         "Nissan EV Certified Dealer"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -278px (1549→1271); Δw -25px (198→173); Δh -2px (22→20)
+  PAIR         "Business Certified (NCV)"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -292px (1593→1301); Δw -23px (184→161); Δh -2px (22→20)
+  PAIR         "Nissan GT-R® Dealer"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -306px (1637→1331); Δw -20px (155→135); Δh -2px (22→20)
+  PAIR         "Collision Repair"  fontSize 16px → 14px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -320px (1681→1361); Δw -14px (117→103); Δh -2px (22→20)
+  PAIR         "Clear Filters"  lineHeight 20px → 24px; letterSpacing normal → 0.32px; Δx +274px (142→416); Δy -338px (1739→1401); Δw +9px (85→94); Δh +12px (21→33); <a> box 342×44 → 135×33; <a> paddingTop 12px → 0px; <a> paddingLeft 30px → 0px
+  ICON         "Mobile Service info"  icon #3 near "Mobile Service info": Δw +17px (16→33); Δh +17px (16→33)
+  ICON         "Clear Filters"  icon #4 near "Clear Filters": Δw +20px (13→33); Δh +17px (16→33)
+
+✗ 28 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

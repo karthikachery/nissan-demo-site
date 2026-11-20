@@ -1,0 +1,2381 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-11-19T17:20:12.148Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "userAgent": "browser-default",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "https://staging.niss-parts-service.epsilonrms.com/parts-service": {
+      "360": {
+        "title": "Nissan Service, Maintenance & Repair Dealerships - Nissan USA Service & Maintenance",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 1086,
+          "visible": 389
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "Enter Your Location",
+            "selector": "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(1) > div > h3",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "30px",
+            "fontWeight": "300",
+            "lineHeight": "45px",
+            "letterSpacing": "0.6px",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h3",
+            "text": "Current Offers",
+            "selector": "main > div > div:nth-of-type(3) > div:nth-of-type(1) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "24px",
+            "fontWeight": "300",
+            "lineHeight": "32px",
+            "letterSpacing": "0.9px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Buy 4, Get 1 FREE Oil & Filter Changes*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "0.8px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Buy 3 Tires, Get the 4th for $1*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "0.8px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Complimentary Multi-Point Inspection*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Nissan Tire Price Match + 5% Credit*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Complimentary Battery Inspection*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(5) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "What Makes your Nissan Experience Uniqu…",
+            "selector": "main > div > section:nth-of-type(1) > div > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "30px",
+            "fontWeight": "300",
+            "lineHeight": "40px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h2",
+            "text": "Service on Your Schedule",
+            "selector": "main > div > section:nth-of-type(2) > div > div > div:nth-of-type(1) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "40px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "A Change for the Best",
+            "selector": "main > div > section:nth-of-type(3) > div > div > div:nth-of-type(2) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "40px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "Give Your Vehicle Everything it Deserves",
+            "selector": "main > div > section:nth-of-type(4) > div > div > div:nth-of-type(1) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "40px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "Nissan Tire Price Match + 5% Credit*",
+            "selector": "div > section:nth-of-type(5) > div > div > div > div:nth-of-type(2) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "40px",
+            "letterSpacing": "2.56px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "li",
+            "text": "Built to last Maintained to perform Hel…",
+            "selector": "#splide-carousel-slide01",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px",
+            "fontWeight": "300",
+            "lineHeight": "20px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(52, 52, 52)"
+          },
+          {
+            "tag": "p",
+            "text": "Offer valid through January 4, 2027",
+            "selector": "div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "12px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.2px",
+            "textTransform": "none",
+            "color": "rgb(52, 52, 52)"
+          },
+          {
+            "tag": "p",
+            "text": "Offer valid November 16-30, 2026",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "12px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.2px",
+            "textTransform": "none",
+            "color": "rgb(52, 52, 52)"
+          },
+          {
+            "tag": "p",
+            "text": "Because every aspect, from convenient s…",
+            "selector": "main > div > section:nth-of-type(1) > div > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "We know your time is important, which i…",
+            "selector": "main > div > section:nth-of-type(2) > div > div > div:nth-of-type(1) > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.28px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "From advanced diagnostics to state-of-t…",
+            "selector": "main > div > section:nth-of-type(3) > div > div > div:nth-of-type(2) > div > p:nth-of-type(2)",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.28px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Bring in an eligible competitor quote a…",
+            "selector": "div > section:nth-of-type(5) > div > div > div > div:nth-of-type(2) > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.32px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Find Nissan Safety Recall & Service Cam…",
+            "selector": "main > div > section:nth-of-type(6) > div > div > div:nth-of-type(1) > p",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Purchase Today",
+            "selector": "#home_slide_sales_event_btn",
+            "count": 2,
+            "backgroundColor": "rgb(195, 0, 47)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "7.5px 50px 8px 20px",
+            "border": "1px solid rgb(195, 0, 47)",
+            "borderColor": "rgb(195, 0, 47)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "0.2px",
+            "hover": {
+              "backgroundColor": "rgb(195, 0, 47)",
+              "color": "rgb(255, 255, 255)",
+              "borderColor": "rgb(195, 0, 47)",
+              "boxShadow": "none",
+              "changed": false
+            }
+          },
+          {
+            "text": "*Offer Details",
+            "selector": "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)",
+            "count": 1,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "8px 20px",
+            "border": "1px solid rgb(255, 255, 255)",
+            "borderColor": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "0.2px",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(255, 255, 255)",
+              "borderColor": "rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "changed": false
+            }
+          },
+          {
+            "text": "Shop for Tires",
+            "selector": "#home_banner_shopfortires",
+            "count": 2,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "borderColor": "rgb(0, 0, 0)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "0.2px",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(54, 54, 54)",
+              "borderColor": "rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Schedule Service",
+            "selector": "#home-promo-schedule-service",
+            "count": 7,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "borderColor": "rgb(0, 0, 0)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(54, 54, 54)",
+              "borderColor": "rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Learn More",
+            "selector": "#home-exp-banner-learn-more",
+            "count": 1,
+            "backgroundColor": "rgb(195, 0, 47)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(195, 0, 47)",
+            "borderColor": "rgb(195, 0, 47)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          },
+          {
+            "text": "Recall Information",
+            "selector": "#footer-link-recall-info",
+            "count": 1,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(239, 239, 239)",
+            "borderRadius": "40px",
+            "padding": "4px 10px",
+            "border": "1px solid rgb(255, 255, 255)",
+            "borderColor": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "textTransform": "uppercase",
+            "letterSpacing": "2.6px",
+            "hover": null
+          },
+          {
+            "text": "Cookie Settings",
+            "selector": "#onetrust-pc-btn-handler",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(92, 92, 92)",
+            "borderRadius": "2px",
+            "padding": "12px 10px",
+            "border": "1px solid rgb(92, 92, 92)",
+            "borderColor": "rgb(92, 92, 92)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "13.008px",
+            "fontWeight": "600",
+            "textTransform": "none",
+            "letterSpacing": "0.13008px",
+            "hover": null
+          }
+        ],
+        "links": [
+          {
+            "text": "Learn More",
+            "selector": "#home-exp-service-panel-learn-cta",
+            "count": 2,
+            "color": "rgb(0, 0, 0)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(54, 54, 54)",
+              "borderColor": "rgb(229, 231, 235)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "#site-nav",
+            "rect": {
+              "x": 0,
+              "y": 80,
+              "w": 360,
+              "h": 900
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "absolute",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 16,
+              "y": 6260,
+              "w": 328,
+              "h": 286
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 0,
+              "y": 148,
+              "w": 360,
+              "h": 5630
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 5778,
+              "w": 360,
+              "h": 808
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div",
+            "rect": {
+              "x": 0,
+              "y": 148,
+              "w": 360,
+              "h": 5630
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "40px",
+            "count": 14,
+            "area": 112328,
+            "sources": [
+              "#home_slide_sales_event_btn",
+              "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)",
+              "#home_offer_cye_purchase"
+            ]
+          },
+          {
+            "value": "9999px",
+            "count": 4,
+            "area": 576,
+            "sources": [
+              "#splide-carousel > ul > li:nth-of-type(1) > button",
+              "#splide-carousel > ul > li:nth-of-type(2) > button",
+              "#splide-carousel > ul > li:nth-of-type(3) > button"
+            ]
+          },
+          {
+            "value": "30px 0px 0px 30px",
+            "count": 2,
+            "area": 23585,
+            "sources": [
+              "#nav-mobile-search-input",
+              "#SearchText"
+            ]
+          },
+          {
+            "value": "2px",
+            "count": 2,
+            "area": 15251,
+            "sources": [
+              "#onetrust-pc-btn-handler",
+              "#onetrust-close-btn-container > button"
+            ]
+          },
+          {
+            "value": "0px 30px 30px 0px",
+            "count": 2,
+            "area": 4590,
+            "sources": [
+              "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(2)",
+              "#dealer-search-btn"
+            ]
+          },
+          {
+            "value": "30px",
+            "count": 1,
+            "area": 12240,
+            "sources": [
+              "#Distance"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "count": 5,
+            "sources": [
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > div",
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2) > div",
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(3) > div"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.2) 0px 0px 18px 0px",
+            "count": 1,
+            "sources": [
+              "#onetrust-banner-sdk"
+            ]
+          }
+        ],
+        "gradients": [],
+        "bgColors": [
+          {
+            "value": "rgb(30, 30, 30)",
+            "count": 6,
+            "area": 725040,
+            "sources": [
+              "#site-nav > div",
+              "#dealer-search-accordian",
+              "#search-container"
+            ]
+          },
+          {
+            "value": "rgb(241, 241, 241)",
+            "count": 5,
+            "area": 40415,
+            "sources": [
+              "#nav-mobile-search-input",
+              "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(2)",
+              "#Distance"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4,
+            "area": 456360,
+            "sources": [
+              "#site-nav",
+              "#splide-carousel > ul > li:nth-of-type(1) > button",
+              "#onetrust-banner-sdk"
+            ]
+          },
+          {
+            "value": "rgb(195, 0, 47)",
+            "count": 3,
+            "area": 25699,
+            "sources": [
+              "#home_slide_sales_event_btn",
+              "#home_offer_cye_purchase",
+              "#home-exp-banner-learn-more"
+            ]
+          },
+          {
+            "value": "rgb(153, 153, 153)",
+            "count": 3,
+            "area": 432,
+            "sources": [
+              "#splide-carousel > ul > li:nth-of-type(2) > button",
+              "#splide-carousel > ul > li:nth-of-type(3) > button",
+              "#splide-carousel > ul > li:nth-of-type(4) > button"
+            ]
+          },
+          {
+            "value": "rgb(239, 239, 239)",
+            "count": 1,
+            "area": 260094,
+            "sources": [
+              "main > div > section:nth-of-type(5) > div"
+            ]
+          },
+          {
+            "value": "rgb(210, 210, 210)",
+            "count": 1,
+            "area": 64800,
+            "sources": [
+              "main > div > section:nth-of-type(6)"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 43,
+            "sources": [
+              "#header_shop_menu",
+              "#header_coupons_menu",
+              "#header_owners_menu"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 22,
+            "sources": [
+              "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(1) > div > h3",
+              "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(1) > div > p",
+              "#site-nav > div > form > div:nth-of-type(1) > a > span"
+            ]
+          },
+          {
+            "value": "rgb(239, 239, 239)",
+            "count": 20,
+            "sources": [
+              "#footer-link-build-your-nissan",
+              "#footer-link-build-view-offer",
+              "#footer-link-build-link-parts"
+            ]
+          },
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 13,
+            "sources": [
+              "#dropdown-menu > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > p",
+              "div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > label > span",
+              "div > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > label > span"
+            ]
+          },
+          {
+            "value": "rgb(52, 52, 52)",
+            "count": 3,
+            "sources": [
+              "#header_service_menu",
+              "div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > div > p",
+              "div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > p"
+            ]
+          },
+          {
+            "value": "rgb(92, 92, 92)",
+            "count": 2,
+            "sources": [
+              "#onetrust-policy-text",
+              "#onetrust-pc-btn-handler"
+            ]
+          },
+          {
+            "value": "rgb(118, 118, 118)",
+            "count": 1,
+            "sources": [
+              "nav > p"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 9,
+            "sources": [
+              "#home_banner_shopfortires",
+              "#home-promo-schedule-service",
+              "#home-promo-tireprice-shoptires"
+            ]
+          },
+          {
+            "value": "rgb(195, 0, 47)",
+            "count": 4,
+            "sources": [
+              "#home_slide_sales_event_btn",
+              "#home_offer_cye_purchase",
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(2) > div"
+            ]
+          },
+          {
+            "value": "rgb(210, 210, 210)",
+            "count": 4,
+            "sources": [
+              "#site-nav > ul > li:nth-of-type(1)",
+              "#site-nav > ul > li:nth-of-type(2)",
+              "#site-nav > ul > li:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(52, 52, 52)",
+            "count": 4,
+            "sources": [
+              "footer > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p",
+              "footer > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(2) > p",
+              "footer > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > p"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3,
+            "sources": [
+              "#site-nav > div > form > div:nth-of-type(1)",
+              "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)",
+              "#footer-link-recall-info"
+            ]
+          },
+          {
+            "value": "rgb(193, 193, 193)",
+            "count": 1,
+            "sources": [
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(217, 217, 217)",
+            "count": 1,
+            "sources": [
+              "#site-nav"
+            ]
+          },
+          {
+            "value": "rgb(92, 92, 92)",
+            "count": 1,
+            "sources": [
+              "#onetrust-pc-btn-handler"
+            ]
+          }
+        ],
+        "customProps": {},
+        "fonts": [
+          {
+            "family": "NissanBrand-Regular",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "NissanBrand-Bold",
+            "weight": "700",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "NissanBrand-light",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "NissanBrand-light",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [
+          {
+            "tag": "img",
+            "selector": "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(1) > img",
+            "src": "https://staging.niss-parts-service.epsilonrms.com/parts-service/images/nissan/icons/location-icon.svg",
+            "inlineSvg": false,
+            "alt": "use my current location icon",
+            "ariaLabel": null,
+            "class": "image is-inline-block w-[33px] !h-[33px]",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 164,
+              "y": 631,
+              "w": 33,
+              "h": 33
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "#site-nav > div > form > div:nth-of-type(1) > a > img",
+            "src": "https://staging.niss-parts-service.epsilonrms.com/parts-service/images/nissan/icons/curr-loc-pin.svg",
+            "inlineSvg": false,
+            "alt": "use my current location icon",
+            "ariaLabel": null,
+            "class": "image is-inline-block w-[12.16px] !h-[19.36px]",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 83,
+              "y": 872,
+              "w": 12,
+              "h": 19
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > span > img",
+            "src": "https://staging.niss-parts-service.epsilonrms.com/parts-service/images/nissan/mobile-service/info-icon.svg",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": null,
+            "class": "",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 314,
+              "y": 1172,
+              "w": 16,
+              "h": 16
+            }
+          },
+          {
+            "tag": "img",
+            "selector": "div > div > div:nth-of-type(3) > div > div > a > span:nth-of-type(1) > img",
+            "src": "https://staging.niss-parts-service.epsilonrms.com/parts-service/images/nissan//refresh-icon.svg",
+            "inlineSvg": false,
+            "alt": "",
+            "ariaLabel": null,
+            "class": "inline-block mr-1",
+            "id": null,
+            "href": null,
+            "inHomeLink": false,
+            "rect": {
+              "x": 121,
+              "y": 1743,
+              "w": 13,
+              "h": 16
+            }
+          }
+        ],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+      },
+      "1440": {
+        "title": "Nissan Service, Maintenance & Repair Dealerships - Nissan USA Service & Maintenance",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 1096,
+          "visible": 296
+        },
+        "occluders": [
+          {
+            "tag": "div",
+            "id": "yie-overlay-196b3555-ca62-5746-8489-f59fa4983ef4",
+            "class": "yie-outer-element",
+            "coverage": 1,
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+          }
+        ],
+        "headings": [
+          {
+            "tag": "h3",
+            "text": "Current Offers",
+            "selector": "main > div > div:nth-of-type(3) > div:nth-of-type(1) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "32px",
+            "fontWeight": "300",
+            "lineHeight": "40px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Buy 4, Get 1 FREE Oil & Filter Changes*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Buy 3 Tires, Get the 4th for $1*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Complimentary Multi-Point Inspection*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Nissan Tire Price Match + 5% Credit*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(4) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h3",
+            "text": "Complimentary Battery Inspection*",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(5) > div > div > div > div:nth-of-type(2) > div > h3",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "20px",
+            "fontWeight": "400",
+            "lineHeight": "32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "What Makes your Nissan Experience Uniqu…",
+            "selector": "main > div > section:nth-of-type(1) > div > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "30px",
+            "fontWeight": "300",
+            "lineHeight": "36px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "h2",
+            "text": "Service on Your Schedule",
+            "selector": "main > div > section:nth-of-type(2) > div > div > div:nth-of-type(1) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "40px",
+            "fontWeight": "300",
+            "lineHeight": "48px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "A Change for the Best",
+            "selector": "main > div > section:nth-of-type(3) > div > div > div:nth-of-type(2) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "40px",
+            "fontWeight": "300",
+            "lineHeight": "48px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "Give Your Vehicle Everything it Deserves",
+            "selector": "main > div > section:nth-of-type(4) > div > div > div:nth-of-type(1) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "40px",
+            "fontWeight": "300",
+            "lineHeight": "48px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "h2",
+            "text": "Nissan Tire Price Match + 5% Credit*",
+            "selector": "div > section:nth-of-type(5) > div > div > div > div:nth-of-type(2) > div > h2",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "28px",
+            "fontWeight": "300",
+            "lineHeight": "28px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "li",
+            "text": "Built to last Maintained to perform Hel…",
+            "selector": "#splide-carousel-slide01",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px",
+            "fontWeight": "300",
+            "lineHeight": "20px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(52, 52, 52)"
+          },
+          {
+            "tag": "p",
+            "text": "Offer valid through January 4, 2027",
+            "selector": "div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "12px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.2px",
+            "textTransform": "none",
+            "color": "rgb(52, 52, 52)"
+          },
+          {
+            "tag": "p",
+            "text": "Offer valid November 16-30, 2026",
+            "selector": "div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "12px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.2px",
+            "textTransform": "none",
+            "color": "rgb(52, 52, 52)"
+          },
+          {
+            "tag": "p",
+            "text": "Because every aspect, from convenient s…",
+            "selector": "main > div > section:nth-of-type(1) > div > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)"
+          },
+          {
+            "tag": "p",
+            "text": "We know your time is important, which i…",
+            "selector": "main > div > section:nth-of-type(2) > div > div > div:nth-of-type(1) > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.28px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "From advanced diagnostics to state-of-t…",
+            "selector": "main > div > section:nth-of-type(3) > div > div > div:nth-of-type(2) > div > p:nth-of-type(2)",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.28px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Bring in an eligible competitor quote a…",
+            "selector": "div > section:nth-of-type(5) > div > div > div > div:nth-of-type(2) > div > p",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "0.32px",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Find Nissan Safety Recall & Service Cam…",
+            "selector": "main > div > section:nth-of-type(6) > div > div > div:nth-of-type(1) > p",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Dealer Locator",
+            "selector": "#menu-dealer-locator-btn",
+            "count": 1,
+            "backgroundColor": "rgb(195, 0, 47)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(195, 0, 47)",
+            "borderColor": "rgb(195, 0, 47)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "16px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          },
+          {
+            "text": "Purchase Today",
+            "selector": "#home_slide_sales_event_btn",
+            "count": 2,
+            "backgroundColor": "rgb(195, 0, 47)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "6.5px 50px 8px 20px",
+            "border": "1px solid rgb(195, 0, 47)",
+            "borderColor": "rgb(195, 0, 47)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "0.2px",
+            "hover": null
+          },
+          {
+            "text": "*Offer Details",
+            "selector": "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)",
+            "count": 1,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "8px 20px",
+            "border": "1px solid rgb(255, 255, 255)",
+            "borderColor": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "0.2px",
+            "hover": null
+          },
+          {
+            "text": "Shop for Tires",
+            "selector": "#home_banner_shopfortires",
+            "count": 2,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "borderColor": "rgb(0, 0, 0)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "textTransform": "none",
+            "letterSpacing": "0.2px",
+            "hover": null
+          },
+          {
+            "text": "Schedule Service",
+            "selector": "#home-promo-schedule-service",
+            "count": 7,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(0, 0, 0)",
+            "borderColor": "rgb(0, 0, 0)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          },
+          {
+            "text": "Learn More",
+            "selector": "#home-exp-banner-learn-more",
+            "count": 1,
+            "backgroundColor": "rgb(195, 0, 47)",
+            "color": "rgb(255, 255, 255)",
+            "borderRadius": "40px",
+            "padding": "8px 50px 8px 20px",
+            "border": "1px solid rgb(195, 0, 47)",
+            "borderColor": "rgb(195, 0, 47)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "14px",
+            "fontWeight": "300",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": null
+          },
+          {
+            "text": "Recall Information",
+            "selector": "#footer-link-recall-info",
+            "count": 1,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(239, 239, 239)",
+            "borderRadius": "40px",
+            "padding": "4px 10px",
+            "border": "1px solid rgb(255, 255, 255)",
+            "borderColor": "rgb(255, 255, 255)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-Regular",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "textTransform": "uppercase",
+            "letterSpacing": "2.6px",
+            "hover": null
+          },
+          {
+            "text": "Cookie Settings",
+            "selector": "#onetrust-pc-btn-handler",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(92, 92, 92)",
+            "borderRadius": "2px",
+            "padding": "12px 10px",
+            "border": "1px solid rgb(92, 92, 92)",
+            "borderColor": "rgb(92, 92, 92)",
+            "boxShadow": "none",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "13.008px",
+            "fontWeight": "600",
+            "textTransform": "none",
+            "letterSpacing": "0.13008px",
+            "hover": null
+          }
+        ],
+        "links": [
+          {
+            "text": "Learn More",
+            "selector": "#home-exp-service-panel-learn-cta",
+            "count": 2,
+            "color": "rgb(0, 0, 0)",
+            "textDecoration": "none",
+            "fontWeight": "300",
+            "hover": null
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "#site-nav",
+            "rect": {
+              "x": 633,
+              "y": 48,
+              "w": 807,
+              "h": 82
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "absolute",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 135,
+              "y": 5150,
+              "w": 1170,
+              "h": 74
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "main",
+            "selector": "main",
+            "rect": {
+              "x": 0,
+              "y": 147,
+              "w": 1440,
+              "h": 4300
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 4447,
+              "w": 1440,
+              "h": 816
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "main > div",
+            "rect": {
+              "x": 0,
+              "y": 147,
+              "w": 1440,
+              "h": 4300
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(52, 52, 52)",
+            "padding": "0px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "NissanBrand-light",
+            "fontSize": "15px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "40px",
+            "count": 15,
+            "area": 109269,
+            "sources": [
+              "#menu-dealer-locator-btn",
+              "#home_slide_sales_event_btn",
+              "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "9999px",
+            "count": 4,
+            "area": 576,
+            "sources": [
+              "#splide-carousel > ul > li:nth-of-type(1) > button",
+              "#splide-carousel > ul > li:nth-of-type(2) > button",
+              "#splide-carousel > ul > li:nth-of-type(3) > button"
+            ]
+          },
+          {
+            "value": "2px",
+            "count": 2,
+            "area": 7137,
+            "sources": [
+              "#onetrust-pc-btn-handler",
+              "#onetrust-close-btn-container > button"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+            "count": 5,
+            "sources": [
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > div",
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2) > div",
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(3) > div"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.2) 0px 0px 18px 0px",
+            "count": 1,
+            "sources": [
+              "#onetrust-banner-sdk"
+            ]
+          }
+        ],
+        "gradients": [],
+        "bgColors": [
+          {
+            "value": "rgb(195, 0, 47)",
+            "count": 4,
+            "area": 29196,
+            "sources": [
+              "#menu-dealer-locator-btn",
+              "#home_slide_sales_event_btn",
+              "#home_offer_cye_purchase"
+            ]
+          },
+          {
+            "value": "rgb(30, 30, 30)",
+            "count": 3,
+            "area": 1445676,
+            "sources": [
+              "#splide-carousel-slide01 > div > div",
+              "main > div > section:nth-of-type(1) > div > div",
+              "footer > div"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3,
+            "area": 189058,
+            "sources": [
+              "#splide-carousel > ul > li:nth-of-type(1) > button",
+              "#onetrust-banner-sdk",
+              "#onetrust-pc-btn-handler"
+            ]
+          },
+          {
+            "value": "rgb(153, 153, 153)",
+            "count": 3,
+            "area": 432,
+            "sources": [
+              "#splide-carousel > ul > li:nth-of-type(2) > button",
+              "#splide-carousel > ul > li:nth-of-type(3) > button",
+              "#splide-carousel > ul > li:nth-of-type(4) > button"
+            ]
+          },
+          {
+            "value": "rgb(239, 239, 239)",
+            "count": 1,
+            "area": 523035,
+            "sources": [
+              "main > div > section:nth-of-type(5) > div"
+            ]
+          },
+          {
+            "value": "rgb(210, 210, 210)",
+            "count": 1,
+            "area": 89280,
+            "sources": [
+              "main > div > section:nth-of-type(6)"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 44,
+            "sources": [
+              "#header_service_menu",
+              "#header_shop_menu",
+              "#header_coupons_menu"
+            ]
+          },
+          {
+            "value": "rgb(239, 239, 239)",
+            "count": 20,
+            "sources": [
+              "#footer-link-build-your-nissan",
+              "#footer-link-build-view-offer",
+              "#footer-link-build-link-parts"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 15,
+            "sources": [
+              "#menu-dealer-locator-btn",
+              "#splide-carousel-slide01 > div > div > p",
+              "#splide-carousel-slide01 > div > div > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(52, 52, 52)",
+            "count": 2,
+            "sources": [
+              "div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > div > p",
+              "div:nth-of-type(1) > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > p"
+            ]
+          },
+          {
+            "value": "rgb(92, 92, 92)",
+            "count": 2,
+            "sources": [
+              "#onetrust-policy-text",
+              "#onetrust-pc-btn-handler"
+            ]
+          },
+          {
+            "value": "rgb(118, 118, 118)",
+            "count": 1,
+            "sources": [
+              "nav > p"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 9,
+            "sources": [
+              "#home_banner_shopfortires",
+              "#home-promo-schedule-service",
+              "#home-promo-tireprice-shoptires"
+            ]
+          },
+          {
+            "value": "rgb(195, 0, 47)",
+            "count": 5,
+            "sources": [
+              "#menu-dealer-locator-btn",
+              "#home_slide_sales_event_btn",
+              "#home_offer_cye_purchase"
+            ]
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2,
+            "sources": [
+              "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)",
+              "#footer-link-recall-info"
+            ]
+          },
+          {
+            "value": "rgb(193, 193, 193)",
+            "count": 1,
+            "sources": [
+              "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(92, 92, 92)",
+            "count": 1,
+            "sources": [
+              "#onetrust-pc-btn-handler"
+            ]
+          }
+        ],
+        "customProps": {},
+        "fonts": [
+          {
+            "family": "NissanBrand-Regular",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "NissanBrand-Bold",
+            "weight": "700",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "NissanBrand-light",
+            "weight": "300",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "NissanBrand-light",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "custom-font-3zmxi",
+            "weight": "normal",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "custom-font-guooc",
+            "weight": "normal",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "custom-font-muzlt",
+            "weight": "normal",
+            "style": "normal",
+            "status": "loaded"
+          }
+        ],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 1,
+      "widths": [
+        360,
+        1440
+      ],
+      "measurements": 2
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "values": [
+          "rgb(0, 0, 0)"
+        ],
+        "weight": 165,
+        "by": {
+          "text": 87,
+          "border": 18,
+          "button-border": 18,
+          "button-text": 18,
+          "link": 4,
+          "heading": 20
+        },
+        "roles": [
+          "text",
+          "border",
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#header_service_menu",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#header_shop_menu",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home_banner_shopfortires",
+            "prop": "border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home-promo-schedule-service",
+            "prop": "button-border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home-promo-schedule-service",
+            "prop": "button-text"
+          }
+        ]
+      },
+      {
+        "hex": "#ffffff",
+        "values": [
+          "rgb(255, 255, 255)"
+        ],
+        "weight": 67,
+        "bgArea": 645418,
+        "by": {
+          "text": 37,
+          "background": 7,
+          "border": 5,
+          "button-text": 9,
+          "button-background": 2,
+          "button-border": 4,
+          "heading": 3
+        },
+        "roles": [
+          "secondary"
+        ],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(1) > div > h3",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#menu-dealer-locator-btn",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#site-nav",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#splide-carousel > ul > li:nth-of-type(1) > button",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#site-nav > div > form > div:nth-of-type(1)",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#efefef",
+        "values": [
+          "rgb(239, 239, 239)",
+          "rgb(238, 238, 238)",
+          "rgb(241, 241, 241)"
+        ],
+        "weight": 62,
+        "bgArea": 823544,
+        "by": {
+          "text": 53,
+          "background": 7,
+          "button-text": 2
+        },
+        "roles": [
+          "surface"
+        ],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#footer-link-build-your-nissan",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#dropdown-menu > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > p",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#nav-mobile-search-input",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "main > div > section:nth-of-type(5) > div",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#footer-link-recall-info",
+            "prop": "button-text"
+          }
+        ]
+      },
+      {
+        "hex": "#c3002f",
+        "values": [
+          "rgb(195, 0, 47)"
+        ],
+        "weight": 30,
+        "bgArea": 54895,
+        "by": {
+          "border": 9,
+          "background": 7,
+          "button-background": 7,
+          "button-border": 7
+        },
+        "roles": [
+          "primary"
+        ],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#menu-dealer-locator-btn",
+            "prop": "border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#menu-dealer-locator-btn",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home_slide_sales_event_btn",
+            "prop": "border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home_slide_sales_event_btn",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home_slide_sales_event_btn",
+            "prop": "button-background"
+          }
+        ]
+      },
+      {
+        "hex": "#5c5c5c",
+        "values": [
+          "rgb(92, 92, 92)"
+        ],
+        "weight": 10,
+        "by": {
+          "text": 4,
+          "border": 2,
+          "button-border": 2,
+          "button-text": 2
+        },
+        "roles": [
+          "accent"
+        ],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#onetrust-policy-text",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#onetrust-pc-btn-handler",
+            "prop": "border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#onetrust-pc-btn-handler",
+            "prop": "button-border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#onetrust-pc-btn-handler",
+            "prop": "button-text"
+          }
+        ]
+      },
+      {
+        "hex": "#1e1e1e",
+        "values": [
+          "rgb(30, 30, 30)"
+        ],
+        "weight": 9,
+        "bgArea": 2170716,
+        "by": {
+          "background": 9
+        },
+        "roles": [
+          "background"
+        ],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#site-nav > div",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#splide-carousel-slide01 > div > div",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#343434",
+        "values": [
+          "rgb(52, 52, 52)"
+        ],
+        "weight": 9,
+        "by": {
+          "border": 4,
+          "text": 5
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "footer > div > div > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > p",
+            "prop": "border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#header_service_menu",
+            "prop": "text"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div > div > p",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#d2d2d2",
+        "values": [
+          "rgb(210, 210, 210)",
+          "rgb(217, 217, 217)"
+        ],
+        "weight": 7,
+        "bgArea": 154080,
+        "by": {
+          "border": 5,
+          "background": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#site-nav > ul > li:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "main > div > section:nth-of-type(6)",
+            "prop": "background"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#site-nav",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#999999",
+        "values": [
+          "rgb(153, 153, 153)"
+        ],
+        "weight": 6,
+        "bgArea": 864,
+        "by": {
+          "background": 6
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#splide-carousel > ul > li:nth-of-type(2) > button",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#767676",
+        "values": [
+          "rgb(118, 118, 118)"
+        ],
+        "weight": 2,
+        "by": {
+          "text": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "nav > p",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#c1c1c1",
+        "values": [
+          "rgb(193, 193, 193)"
+        ],
+        "weight": 2,
+        "by": {
+          "border": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(2)",
+            "prop": "border"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "NissanBrand-Regular",
+          "count": 43,
+          "headings": 12,
+          "text": 2,
+          "buttons": 29
+        },
+        {
+          "family": "NissanBrand-light",
+          "count": 27,
+          "headings": 11,
+          "text": 14,
+          "buttons": 2
+        }
+      ],
+      "headingFamily": "NissanBrand-Regular",
+      "bodyFamily": "NissanBrand-light",
+      "sizes": [
+        {
+          "px": 40,
+          "count": 3,
+          "headings": 3,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 32,
+          "count": 5,
+          "headings": 5,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 30,
+          "count": 3,
+          "headings": 3,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 28,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 24,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 20,
+          "count": 10,
+          "headings": 10,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 16,
+          "count": 7,
+          "headings": 0,
+          "text": 6,
+          "buttons": 1
+        },
+        {
+          "px": 15,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "px": 14,
+          "count": 30,
+          "headings": 0,
+          "text": 4,
+          "buttons": 26
+        },
+        {
+          "px": 13.01,
+          "count": 2,
+          "headings": 0,
+          "text": 0,
+          "buttons": 2
+        },
+        {
+          "px": 13,
+          "count": 2,
+          "headings": 0,
+          "text": 0,
+          "buttons": 2
+        },
+        {
+          "px": 12,
+          "count": 4,
+          "headings": 0,
+          "text": 4,
+          "buttons": 0
+        }
+      ],
+      "weights": [
+        {
+          "weight": "300",
+          "count": 46,
+          "headings": 13,
+          "text": 16,
+          "buttons": 17
+        },
+        {
+          "weight": "400",
+          "count": 22,
+          "headings": 10,
+          "text": 0,
+          "buttons": 12
+        },
+        {
+          "weight": "600",
+          "count": 2,
+          "headings": 0,
+          "text": 0,
+          "buttons": 2
+        }
+      ],
+      "levels": {
+        "h2": {
+          "fontSize": 40,
+          "fontWeight": "300",
+          "count": 3,
+          "score": 51.96
+        },
+        "h3": {
+          "fontSize": 20,
+          "fontWeight": "400",
+          "count": 10,
+          "score": 63.25
+        }
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": "40px",
+        "areaMode": "40px",
+        "pill": "9999px",
+        "values": [
+          {
+            "value": "40px",
+            "count": 29,
+            "area": 221597,
+            "sources": [
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#home_slide_sales_event_btn"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#splide-carousel-slide01 > div > div > div:nth-of-type(3) > a:nth-of-type(2)"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#home_offer_cye_purchase"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#menu-dealer-locator-btn"
+              }
+            ]
+          },
+          {
+            "value": "9999px",
+            "count": 8,
+            "area": 1152,
+            "sources": [
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#splide-carousel > ul > li:nth-of-type(1) > button"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#splide-carousel > ul > li:nth-of-type(2) > button"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#splide-carousel > ul > li:nth-of-type(3) > button"
+              }
+            ]
+          },
+          {
+            "value": "2px",
+            "count": 4,
+            "area": 22388,
+            "sources": [
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#onetrust-pc-btn-handler"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#onetrust-close-btn-container > button"
+              }
+            ]
+          },
+          {
+            "value": "0px 30px 30px 0px",
+            "count": 2,
+            "area": 4590,
+            "sources": [
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#site-nav > div > form > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(2)"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#dealer-search-btn"
+              }
+            ]
+          },
+          {
+            "value": "30px 0px 0px 30px",
+            "count": 2,
+            "area": 23585,
+            "sources": [
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#nav-mobile-search-input"
+              },
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#SearchText"
+              }
+            ]
+          },
+          {
+            "value": "30px",
+            "count": 1,
+            "area": 12240,
+            "sources": [
+              {
+                "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+                "selector": "#Distance"
+              }
+            ]
+          }
+        ]
+      },
+      "shadows": [
+        {
+          "value": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+          "count": 10,
+          "sources": [
+            {
+              "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+              "selector": "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) > div"
+            },
+            {
+              "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+              "selector": "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(2) > div"
+            },
+            {
+              "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+              "selector": "main > div > div:nth-of-type(3) > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(3) > div"
+            }
+          ]
+        },
+        {
+          "value": "rgba(0, 0, 0, 0.2) 0px 0px 18px 0px",
+          "count": 2,
+          "sources": [
+            {
+              "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+              "selector": "#onetrust-banner-sdk"
+            }
+          ]
+        }
+      ],
+      "gradients": []
+    },
+    "hover": [
+      {
+        "kind": "button",
+        "from": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "to": {
+          "color": "rgb(54, 54, 54)"
+        },
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home_banner_shopfortires"
+          },
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home-promo-schedule-service"
+          }
+        ]
+      },
+      {
+        "kind": "link",
+        "from": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "to": {
+          "color": "rgb(54, 54, 54)"
+        },
+        "count": 1,
+        "sources": [
+          {
+            "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+            "selector": "#home-exp-service-panel-learn-cta"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": null
+  }
+}

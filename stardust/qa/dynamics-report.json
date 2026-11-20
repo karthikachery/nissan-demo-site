@@ -1,0 +1,130 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-11-19T19:39:38.864Z",
+  "origin": "https://main--83d9e7fd--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "hero carousel, 4 slides incl. autoplay muted loop mp4",
+   "id": "hero-carousel",
+   "class": "M/V",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "4 × .hero-carousel .hero-carousel-dot (min 4)",
+   "thirdParty": "",
+   "ms": 2649,
+   "environmentLimit": null
+  },
+  {
+   "feature": "hero carousel, 4 slides incl. autoplay muted loop mp4",
+   "id": "hero-carousel",
+   "class": "M/V",
+   "status": "done",
+   "type": "video-plays",
+   "pass": true,
+   "detail": "iframe/video: false · video playing (Δt 0.80s)",
+   "thirdParty": "",
+   "ms": 23573,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Current Offers card rail",
+   "id": "l-listing-candidate-splide-list-8-cards",
+   "class": "L",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "5 × .offers .offer-card (min 5)",
+   "thirdParty": "",
+   "ms": 17059,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Current Offers card rail",
+   "id": "l-listing-candidate-splide-list-8-cards",
+   "class": "L",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "2 × .offers .offers-btn (min 2)",
+   "thirdParty": "",
+   "ms": 17323,
+   "environmentLimit": null
+  },
+  {
+   "feature": "*Offer Details / disclaimer modals (12 dialogs)",
+   "id": "m-modal-trigger-popup-link-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "12 × dialog.offer-dialog (min 12)",
+   "thirdParty": "",
+   "ms": 17162,
+   "environmentLimit": null
+  },
+  {
+   "feature": "*Offer Details / disclaimer modals (12 dialogs)",
+   "id": "m-modal-trigger-popup-link-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "click-dialog",
+   "pass": true,
+   "detail": "dialog 600px · heading \"Buy 4, Get 1 FREE Oil & Filter Changes*\" · 0 fields · Escape closes: true",
+   "thirdParty": "",
+   "ms": 4300,
+   "environmentLimit": null
+  },
+  {
+   "feature": "inline [*] disclaimer popovers in the hero",
+   "id": "disclaimer-popper",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × .hero-carousel .disclaimer-invoker (min 1)",
+   "thirdParty": "",
+   "ms": 2218,
+   "environmentLimit": null
+  },
+  {
+   "feature": "header mega-menus (Service / Owners / Shop)",
+   "id": "m-modal-trigger-aria-haspopup-chrome-only",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "5 × header [aria-expanded] (min 3)",
+   "thirdParty": "",
+   "ms": 17187,
+   "environmentLimit": null
+  },
+  {
+   "feature": "header dealer search",
+   "id": "s-site-search-form",
+   "class": "S",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "6 × header [action*='dealer/Search'], header a[href*='dealer/Search'] (min 1)",
+   "thirdParty": "",
+   "ms": 17017,
+   "environmentLimit": null
+  },
+  {
+   "feature": "no uncaught exceptions",
+   "id": "page-errors",
+   "class": "-",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 2 page(s)",
+   "thirdParty": "",
+   "ms": 19469,
+   "environmentLimit": null
+  }
+ ]
+}

@@ -1,0 +1,4126 @@
+{
+ "_provenance": {
+  "writtenBy": "content-presence.mjs",
+  "at": "2026-11-19T19:34:38.774Z",
+  "width": 360,
+  "variable": [
+   "#splide-carousel"
+  ],
+  "tier": "chrome"
+ },
+ "origin": {
+  "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+  "at": "2026-11-19T19:34:00.296Z",
+  "status": 200,
+  "settlePasses": 2,
+  "docH": 6586,
+  "root": "main",
+  "items": [
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.container > div#navbar > a#nissan_logo_header",
+    "x": 15,
+    "y": 32,
+    "w": 119,
+    "h": 17,
+    "text": "nissan north america - service now",
+    "href": "/parts-service"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div#navbar > a#nissan_logo_header > img.is-hidden-desktop",
+    "x": 15,
+    "y": 32,
+    "w": 119,
+    "h": 17,
+    "text": "nissan north america - service now",
+    "file": "nissan_logo_mobile"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "ul.lg:flex.lg:justify-end > li.menu-list-item > button#header_service_menu",
+    "x": 22,
+    "y": 105,
+    "w": 190,
+    "h": 24,
+    "text": "service & maintenance"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "ul.lg:flex.lg:justify-end > li.menu-list-item > button#header_shop_menu",
+    "x": 22,
+    "y": 178,
+    "w": 43,
+    "h": 24,
+    "text": "shop"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "ul.lg:flex.lg:justify-end > li.menu-list-item > a#header_coupons_menu",
+    "x": 22,
+    "y": 251,
+    "w": 316,
+    "h": 24,
+    "text": "coupons & offers",
+    "href": "/parts-service/en/service-maintenance/coupons-offers"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "ul.lg:flex.lg:justify-end > li.menu-list-item > button#header_owners_menu",
+    "x": 22,
+    "y": 324,
+    "w": 64,
+    "h": 24,
+    "text": "owners"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.py-[30px].p-[15px] > div.text-center > img.image.is-inline-block",
+    "x": 164,
+    "y": 631,
+    "w": 33,
+    "h": 33,
+    "text": "use my current location icon",
+    "file": "location-icon"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.text-center > div > h3.text-white.mt-2.5",
+    "x": 15,
+    "y": 674,
+    "w": 330,
+    "h": 45,
+    "level": 3,
+    "text": "enter your location"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.text-center > div > p.text-white.text-base",
+    "x": 15,
+    "y": 719,
+    "w": 330,
+    "h": 48,
+    "text": "To find the best offers and nearby service, we need to find your location."
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.flex.w-full > div.search-btn-holder.bg-gray-25 > button#nav-mobile-search-button",
+    "x": 291,
+    "y": 797,
+    "w": 54,
+    "h": 45,
+    "text": ""
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.py-[30px].p-[15px] > a.current-loc.inline-block > span.text-sm.tracking-[0.02em]",
+    "x": 105,
+    "y": 872,
+    "w": 172,
+    "h": 21,
+    "text": "Use My Current Location"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.column.is-paddingless > p#dealer-search-accordian > a#filter-btn",
+    "x": 15,
+    "y": 939,
+    "w": 154,
+    "h": 25,
+    "text": "filters applied ( 0 )",
+    "href": "void(0)"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div.column.is-paddingless > div.column.is-paddingless > button#dealer-search-btn",
+    "x": 290,
+    "y": 92,
+    "w": 54,
+    "h": 40,
+    "text": ""
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > picture > img",
+    "x": 0,
+    "y": 147,
+    "w": 360,
+    "h": 307,
+    "text": "winter ready",
+    "file": "NNA-Carousel-1-mobile"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > div.hero-caption.leading-none > h2.text-white.font-light",
+    "x": 15,
+    "y": 483,
+    "w": 330,
+    "h": 40,
+    "level": 2,
+    "text": "winter ready"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption.leading-none > h2.text-white.font-light > span.mobile:!text-[32px].md:text-[40px]",
+    "x": 15,
+    "y": 481,
+    "w": 237,
+    "h": 44,
+    "text": "Winter Ready"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > div.hero-caption.leading-none > div.legal-text.text-white",
+    "x": 15,
+    "y": 543,
+    "w": 330,
+    "h": 72,
+    "text": "Get your Nissan ready to get the best of winter by scheduling a multi-point insp"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption.leading-none > div.flex.items-center > a#home-slide-2-find-dealer-btn",
+    "x": 15,
+    "y": 635,
+    "w": 163,
+    "h": 42,
+    "text": "find a dealer",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "ul.splide__pagination.splide__pagination--ltr > li > button.splide__pagination__page",
+    "x": 132,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 1"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "ul.splide__pagination.splide__pagination--ltr > li > button.splide__pagination__page",
+    "x": 160,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 2"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "ul.splide__pagination.splide__pagination--ltr > li > button.splide__pagination__page.is-active",
+    "x": 188,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 3"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "ul.splide__pagination.splide__pagination--ltr > li > button.splide__pagination__page",
+    "x": 216,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 4"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.columns.column-custom-container > div.column.md:!pl-0 > h3.offers-txt.text-[24px]",
+    "x": 12,
+    "y": 865,
+    "w": 336,
+    "h": 32,
+    "level": 3,
+    "text": "current offers"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.columns.is-vcentered > div.column.is-paddingless > img.block.lg:hidden",
+    "x": 15,
+    "y": 940,
+    "w": 296,
+    "h": 296,
+    "text": "buy 4, get 1 free oil and filter changes",
+    "file": "NNA-Current-Offer-Oil-Mobile"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.columns.is-vcentered > div.column.promo-content > h3.mobile:mb-[10px].mb-5",
+    "x": 15,
+    "y": 1252,
+    "w": 296,
+    "h": 64,
+    "level": 3,
+    "text": "buy 4, get 1 free oil & filter changes*"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.column.promo-content > div.promo-content-child > p.legal-text.!text-[12px]",
+    "x": 15,
+    "y": 1326,
+    "w": 205,
+    "h": 24,
+    "text": "Offer valid through January 4, 2027"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.promo-content-child > div.flex.flex-col > a#home_offer_cye_purchase",
+    "x": 15,
+    "y": 1424,
+    "w": 183,
+    "h": 42,
+    "text": "purchase today",
+    "href": "/Buy4Get1Promo/c2dc2d1a26111815"
+   },
+   {
+    "kind": "image",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.columns.is-vcentered > div.column.is-paddingless > img.block.lg:hidden",
+    "x": 325,
+    "y": 940,
+    "w": 296,
+    "h": 296,
+    "text": "enjoy $100 off an eligible set of tires.",
+    "file": "NNA-Current-Offer-Tire-Offer-Mobile"
+   },
+   {
+    "kind": "heading",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.columns.is-vcentered > div.column.promo-content > h3.mobile:mb-[10px].mb-5",
+    "x": 325,
+    "y": 1252,
+    "w": 296,
+    "h": 64,
+    "level": 3,
+    "text": "buy 3 tires, get the 4th for $1*"
+   },
+   {
+    "kind": "text",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.columns.is-vcentered > div.column.promo-content > p.legal-text.!text-[12px]",
+    "x": 325,
+    "y": 1332,
+    "w": 296,
+    "h": 24,
+    "text": "Offer valid November 16-30, 2026"
+   },
+   {
+    "kind": "link",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.promo-content-child > div.flex.flex-col > a#home_banner_shopfortires",
+    "x": 325,
+    "y": 1424,
+    "w": 169,
+    "h": 42,
+    "text": "shop for tires",
+    "href": "/"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.vertical-slider-parent-container > div.flex.my-8 > button#previous",
+    "x": 257,
+    "y": 1528,
+    "w": 40,
+    "h": 40,
+    "text": ""
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.vertical-slider-parent-container > div.flex.my-8 > button#next",
+    "x": 305,
+    "y": 1528,
+    "w": 40,
+    "h": 40,
+    "text": ""
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > picture > img",
+    "x": 0,
+    "y": 1600,
+    "w": 360,
+    "h": 307,
+    "text": "maintained to perform. buy 4, get 1 free oil and filter chan",
+    "file": "Carousel_1-mobile"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > div.hero-caption.leading-none > h2.text-white.font-light",
+    "x": 15,
+    "y": 1937,
+    "w": 330,
+    "h": 120,
+    "level": 2,
+    "text": "what makes your nissan experience unique?"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > div.hero-caption.leading-none > p.text-white.text-base",
+    "x": 15,
+    "y": 2077,
+    "w": 330,
+    "h": 72,
+    "text": "Because every aspect, from convenient scheduling options to personal service con"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.banner-container > div.hero-caption.leading-none > a#home-exp-banner-learn-more",
+    "x": 15,
+    "y": 2169,
+    "w": 149,
+    "h": 42,
+    "text": "learn more",
+    "href": "/parts-service/en/service-maintenance/why-nissan"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex > div > div.sub-title",
+    "x": 15,
+    "y": 2714,
+    "w": 330,
+    "h": 24,
+    "text": "EXPRESS SERVICE"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex > div > h2.text-[32px].leading-10",
+    "x": 15,
+    "y": 2754,
+    "w": 330,
+    "h": 80,
+    "level": 2,
+    "text": "service on your schedule"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex > div > p.description.mb-9",
+    "x": 15,
+    "y": 2866,
+    "w": 330,
+    "h": 144,
+    "text": "We know your time is important, which is why we developed Nissan Express Service"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div > div.flex > a#home-exp-service-panel-dealer-cta",
+    "x": 15,
+    "y": 3046,
+    "w": 162,
+    "h": 44,
+    "text": "find a dealer",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div > div.flex > a#home-exp-service-panel-learn-cta",
+    "x": 207,
+    "y": 3046,
+    "w": 127,
+    "h": 44,
+    "text": "learn more",
+    "href": "/parts-service/en/service-maintenance/express-service"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-image.mobile:mb-12 > figure > img.md:hidden",
+    "x": 15,
+    "y": 2291,
+    "w": 330,
+    "h": 375,
+    "text": "service on your schedule",
+    "file": "M-ExpressService"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-image.mobile:mb-12 > figure > img.md:hidden",
+    "x": 15,
+    "y": 3154,
+    "w": 330,
+    "h": 375,
+    "text": "oil change panel title",
+    "file": "M-OilBottle"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex-[2] > div > p.sub-title",
+    "x": 15,
+    "y": 3577,
+    "w": 330,
+    "h": 24,
+    "text": "NISSAN OIL CHANGE"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex-[2] > div > h2.text-[32px].leading-10",
+    "x": 15,
+    "y": 3617,
+    "w": 330,
+    "h": 80,
+    "level": 2,
+    "text": "a change for the best"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex-[2] > div > p.description.mb-9",
+    "x": 15,
+    "y": 3729,
+    "w": 330,
+    "h": 120,
+    "text": "From advanced diagnostics to state-of-the-industry tools and tech specifically d"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div > div.flex > a#home-oil-change-panel-schedule-service-cta",
+    "x": 15,
+    "y": 3885,
+    "w": 179,
+    "h": 66,
+    "text": "schedule service",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div > div.flex > a#home-oil-change-panel-learn-cta",
+    "x": 224,
+    "y": 3885,
+    "w": 121,
+    "h": 66,
+    "text": "learn more",
+    "href": "/parts-service/en/service-maintenance/oil-change"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex > div > div.sub-title.mobile:!mb-2",
+    "x": 15,
+    "y": 4438,
+    "w": 330,
+    "h": 24,
+    "text": "PARTS & ACCESSORIES"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex > div > h2.text-[32px].leading-10",
+    "x": 15,
+    "y": 4470,
+    "w": 330,
+    "h": 120,
+    "level": 2,
+    "text": "give your vehicle everything it deserves"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-content.flex > div > div.description.mb-[30px]",
+    "x": 15,
+    "y": 4620,
+    "w": 330,
+    "h": 120,
+    "text": "Shop a variety of Genuine Nissan Parts and Accessories. Enjoy the convenience of"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div > div.flex > a#home-parts-panel-shop-parts-cta",
+    "x": 15,
+    "y": 4770,
+    "w": 244,
+    "h": 42,
+    "text": "shop parts & accessories",
+    "href": "/"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.grid-tile-image.mobile:mb-12 > figure > img.md:hidden",
+    "x": 15,
+    "y": 4015,
+    "w": 330,
+    "h": 375,
+    "text": "parts panel title",
+    "file": "Parts-Accessories-Module-Mobile"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.mobile:w-auto.w-[31.75%] > div.mobile:pt-[2.75rem].tablet:pt-4 > img",
+    "x": 15,
+    "y": 4920,
+    "w": 330,
+    "h": 276,
+    "text": "tire price match title",
+    "file": "NIS-tires"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.mobile:w-auto.w-[68.25%] > div.tire-price-content > h2.mobile:text-[32px].mobile:leading-10",
+    "x": 15,
+    "y": 5224,
+    "w": 330,
+    "h": 120,
+    "level": 2,
+    "text": "nissan tire price match + 5% credit*"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.mobile:w-auto.w-[68.25%] > div.tire-price-content > p.mb-[30px].text-base",
+    "x": 15,
+    "y": 5374,
+    "w": 330,
+    "h": 96,
+    "text": "Bring in an eligible competitor quote and we will match the price and provide an"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tire-price-content > div.md:flex.flex-row > a#tires_banner_learnmore",
+    "x": 15,
+    "y": 5500,
+    "w": 161,
+    "h": 42,
+    "text": "find a dealer",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.lg:flex.place-content-center > div.self-center.mb-[2em] > p.font-regular.text-black",
+    "x": 15,
+    "y": 5628,
+    "w": 330,
+    "h": 48,
+    "text": "Find Nissan Safety Recall & Service Campaign Information Here"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.lg:flex.place-content-center > div > a#explore-cta",
+    "x": 119,
+    "y": 5706,
+    "w": 122,
+    "h": 42,
+    "text": "explore",
+    "href": "/recalls-vin.html"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.columns.is-marginless > div.is-paddingless-mobille.md:basis-[270px] > p.bd-footer-link-title.is-uppercase",
+    "x": 15,
+    "y": 5846,
+    "w": 330,
+    "h": 89,
+    "text": "Shop"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.columns.is-marginless > div.is-paddingless-mobille.xl:!p-0 > p.bd-footer-link-title.is-uppercase",
+    "x": 15,
+    "y": 5935,
+    "w": 330,
+    "h": 89,
+    "text": "For Owners"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.columns.is-marginless > div.is-paddingless-mobille.xl:!p-0 > p.bd-footer-link-title.is-uppercase",
+    "x": 15,
+    "y": 6024,
+    "w": 330,
+    "h": 89,
+    "text": "About"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.column.is-paddingless-mobille > p.bd-footer-link.social-icons > a#footer-link-tiktok",
+    "x": 15,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "tiktok",
+    "href": "/@nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "p.bd-footer-link.social-icons > a#footer-link-tiktok > img.inline-block.mobile:align-baseline",
+    "x": 15,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "tiktok",
+    "file": "tiktok-icon"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.column.is-paddingless-mobille > p.bd-footer-link.social-icons > a#footer-link-youtube",
+    "x": 76,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "you tube",
+    "href": "/user/nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "p.bd-footer-link.social-icons > a#footer-link-youtube > img.inline-block.mobile:align-baseline",
+    "x": 76,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "you tube",
+    "file": "youtube-icon"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.column.is-paddingless-mobille > p.bd-footer-link.social-icons > a#footer-link-instagram",
+    "x": 137,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "instagram",
+    "href": "/nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "p.bd-footer-link.social-icons > a#footer-link-instagram > img.inline-block.mobile:align-baseline",
+    "x": 137,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "instagram",
+    "file": "instagram-icon"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.column.is-paddingless-mobille > p.bd-footer-link.social-icons > a#footer-link-twitter",
+    "x": 197,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "twitter",
+    "href": "/NissanUSA"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "p.bd-footer-link.social-icons > a#footer-link-twitter > img.inline-block.mobile:align-baseline",
+    "x": 197,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "twitter",
+    "file": "twitter-icon"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.column.is-paddingless-mobille > p.bd-footer-link.social-icons > a#footer-link-facebook",
+    "x": 258,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "footer icon facebook alt",
+    "href": "/nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "p.bd-footer-link.social-icons > a#footer-link-facebook > img.inline-block.mobile:align-baseline",
+    "x": 258,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "footer icon facebook alt",
+    "file": "facebook-icon"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.column.is-paddingless-mobille > p.bd-footer-link.social-icons > a#footer-link-pinterest",
+    "x": 319,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "pinterest",
+    "href": "/nissanusa/"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "p.bd-footer-link.social-icons > a#footer-link-pinterest > img.inline-block.mobile:align-baseline",
+    "x": 319,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "pinterest",
+    "file": "pinterest-icon"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "nav.footer-legal-links > div.footer-legal-links__list > a#footer-link-contact-us",
+    "x": 16,
+    "y": 6260,
+    "w": 108,
+    "h": 24,
+    "text": "contact us",
+    "href": "/contact-us.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-legal-links__list > span.footer-legal-links__item > a#footer-link-personal-info",
+    "x": 16,
+    "y": 6300,
+    "w": 328,
+    "h": 38,
+    "text": "do not sell or share my personal information",
+    "href": "/data-privacy.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-legal-links__list > span.footer-legal-links__item > a#footer-link-terms-of-use",
+    "x": 16,
+    "y": 6357,
+    "w": 124,
+    "h": 18,
+    "text": "terms of use",
+    "href": "/legal-terms.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-legal-links__list > span.footer-legal-links__item > a#footer-link-privacy-notice",
+    "x": 16,
+    "y": 6396,
+    "w": 141,
+    "h": 18,
+    "text": "privacy notice",
+    "href": "/privacy.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-legal-links__list > span.footer-legal-links__item > a#footer-link-recall-info",
+    "x": 16,
+    "y": 6432,
+    "w": 210,
+    "h": 34,
+    "text": "recall information",
+    "href": "/owners/recalls-vin.html"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.copyright-container.mobile:px-[1em] > nav.footer-legal-links > p.footer-legal-links__copyright",
+    "x": 16,
+    "y": 6498,
+    "w": 328,
+    "h": 48,
+    "text": "©2026 Nissan North America, Inc. All rights reserved."
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div#onetrust-group-container > div#onetrust-policy > div#onetrust-policy-text",
+    "x": 20,
+    "y": 618,
+    "w": 320,
+    "h": 215,
+    "text": "This website uses various technologies, including third-party cookies and codes,"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div#onetrust-policy > div#onetrust-policy-text > a.ot-cookie-policy-link",
+    "x": 54,
+    "y": 813,
+    "w": 82,
+    "h": 18,
+    "text": "terms of use",
+    "href": "/legal-terms.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div#onetrust-policy > div#onetrust-policy-text > a.ot-imprint-link",
+    "x": 141,
+    "y": 813,
+    "w": 88,
+    "h": 18,
+    "text": "privacy notice",
+    "href": "/privacy.html"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div#onetrust-button-group-parent > div#onetrust-button-group > button#onetrust-pc-btn-handler",
+    "x": 20,
+    "y": 842,
+    "w": 320,
+    "h": 42,
+    "text": "cookie settings"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": false,
+    "path": "div > div#onetrust-close-btn-container > button.onetrust-close-btn-handler.onetrust-close-btn-ui",
+    "x": 314,
+    "y": 576,
+    "w": 44,
+    "h": 44,
+    "text": "close"
+   }
+  ],
+  "clip": {
+   "counts": {
+    "textClipped": 0,
+    "textHidden": 0,
+    "controlHidden": 0,
+    "controlClipped": 0,
+    "clamped": 0,
+    "collapsed": 0,
+    "scrollHidden": 0,
+    "horizontal": 5,
+    "offPage": 58,
+    "textNodes": 143,
+    "controls": 66,
+    "total": 0
+   },
+   "groups": [
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.vertical-slider-parent-container",
+     "path": "div.promo-tile-container.three-promo-tile-container > div.columns.is-vcentered > div.column.promo-content > h3.mobile:mb-[10px].mb-5",
+     "text": "buy 3 tires, get the 4th for $1*",
+     "cutMin": 244,
+     "cutMax": 244
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.vertical-slider-parent-container",
+     "path": "div.promo-tile-container.three-promo-tile-container > div.columns.is-vcentered > div.column.promo-content > p.legal-text.!text-[12px]",
+     "text": "offer valid november 16-30, 2026",
+     "cutMin": 159,
+     "cutMax": 159
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.vertical-slider-parent-container",
+     "path": "div.column.promo-content > div.promo-content-child > div.flex.flex-col > a#home_offer_details_pop_up_4th_for_1",
+     "text": "*offer details",
+     "cutMin": 54,
+     "cutMax": 54
+    },
+    {
+     "kind": "CONTROL X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.vertical-slider-parent-container",
+     "path": "div.column.promo-content > div.promo-content-child > div.flex.flex-col > a#home_banner_shopfortires",
+     "text": "shop for tires",
+     "cutMin": 134,
+     "cutMax": 134
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.vertical-slider-parent-container",
+     "path": "div.column.promo-content > div.promo-content-child > div.flex.flex-col > a#home_banner_shopfortires",
+     "text": "shop for tires",
+     "cutMin": 83,
+     "cutMax": 83
+    }
+   ]
+  }
+ },
+ "eds": {
+  "url": "https://main--83d9e7fd--aemcoder.aem.page/parts-service",
+  "at": "2026-11-19T19:34:38.621Z",
+  "status": 200,
+  "settlePasses": 2,
+  "docH": 6586,
+  "root": "main",
+  "items": [
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.navbar-logo > p > a#nissan_logo_header",
+    "x": 15,
+    "y": 32,
+    "w": 119,
+    "h": 17,
+    "text": "nissan north america - service now",
+    "href": "/parts-service"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "span.navbar-logo-mobile > picture > img",
+    "x": 15,
+    "y": 32,
+    "w": 119,
+    "h": 17,
+    "text": "nissan north america - service now",
+    "file": "media_1f961c35d67331cdd4e9b78221e71bb31a"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.site-header > div#navbar > button#navbar-Burger",
+    "x": 319,
+    "y": 33,
+    "w": 26,
+    "h": 16,
+    "text": "menu"
+   },
+   {
+    "kind": "control",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.site-header > div#navbar > button#navbar-Burger",
+    "x": 319,
+    "y": 33,
+    "w": 26,
+    "h": 16,
+    "label": "menu",
+    "value": "menu",
+    "via": "trigger"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "form#search-container > div.dealer-search-row > button#dealer-search-btn",
+    "x": 290,
+    "y": 92,
+    "w": 54,
+    "h": 40,
+    "text": "search"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption.text-wide > div.hero-caption-title > p",
+    "x": 15,
+    "y": 307,
+    "w": 330,
+    "h": 120,
+    "text": "Don't Let Your Battery Catch a Winter Cold"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption.text-wide > div.hero-caption-text > p",
+    "x": 15,
+    "y": 447,
+    "w": 330,
+    "h": 144,
+    "text": "When cold weather hits, your battery may lose its charge. Visit your local parti"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > span.disclaimer > span.disclaimer-invoker",
+    "x": 226,
+    "y": 520,
+    "w": 16,
+    "h": 22,
+    "text": "[*]"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > span.disclaimer > span.disclaimer-invoker",
+    "x": 69,
+    "y": 568,
+    "w": 16,
+    "h": 22,
+    "text": "[*]"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.primary",
+    "x": 15,
+    "y": 611,
+    "w": 163,
+    "h": 42,
+    "text": "find a dealer",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-carousel.block > div.hero-carousel-dots > button.hero-carousel-dot",
+    "x": 132,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 1"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-carousel.block > div.hero-carousel-dots > button.hero-carousel-dot",
+    "x": 160,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 2"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-carousel.block > div.hero-carousel-dots > button.hero-carousel-dot",
+    "x": 188,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 3"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": true,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-carousel.block > div.hero-carousel-dots > button.hero-carousel-dot.is-active",
+    "x": 216,
+    "y": 421,
+    "w": 12,
+    "h": 12,
+    "text": "go to slide 4"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offers-head.container > div.offers-title > h3#current-offers",
+    "x": 12,
+    "y": 865,
+    "w": 336,
+    "h": 32,
+    "level": 3,
+    "text": "current offers"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > picture > img",
+    "x": 15,
+    "y": 940,
+    "w": 296,
+    "h": 296,
+    "text": "buy 4, get 1 free oil and filter changes",
+    "file": "media_11d53fc05758e62bd014c81d5f2add1a4a"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offer-card-body > div.offer-card-title > h3#buy-4-get-1-free-oil--filter-changes",
+    "x": 15,
+    "y": 1252,
+    "w": 296,
+    "h": 64,
+    "level": 3,
+    "text": "buy 4, get 1 free oil & filter changes*"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offer-card-foot > div.offer-card-validity > p",
+    "x": 15,
+    "y": 1326,
+    "w": 205,
+    "h": 24,
+    "text": "Offer valid through January 4, 2027"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p > a.link-btn",
+    "x": 15,
+    "y": 1380,
+    "w": 89,
+    "h": 24,
+    "text": "*offer details",
+    "href": "/parts-service"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.primary",
+    "x": 15,
+    "y": 1424,
+    "w": 183,
+    "h": 42,
+    "text": "purchase today",
+    "href": "/Buy4Get1Promo/c2dc2d1a26111815"
+   },
+   {
+    "kind": "image",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > picture > img",
+    "x": 325,
+    "y": 940,
+    "w": 296,
+    "h": 296,
+    "text": "enjoy $100 off an eligible set of tires.",
+    "file": "media_1d414daf9230847dc21a7dc30becd98400"
+   },
+   {
+    "kind": "heading",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offer-card-body > div.offer-card-title > h3#buy-3-tires-get-the-4th-for-1-1",
+    "x": 325,
+    "y": 1252,
+    "w": 296,
+    "h": 64,
+    "level": 3,
+    "text": "buy 3 tires, get the 4th for $1*"
+   },
+   {
+    "kind": "text",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offer-card-body > div.offer-card-validity > p",
+    "x": 325,
+    "y": 1332,
+    "w": 296,
+    "h": 24,
+    "text": "Offer valid November 16-30, 2026"
+   },
+   {
+    "kind": "link",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p > a.link-btn",
+    "x": 325,
+    "y": 1380,
+    "w": 89,
+    "h": 24,
+    "text": "*offer details",
+    "href": "/parts-service"
+   },
+   {
+    "kind": "link",
+    "state": "hidden",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.secondary",
+    "x": 325,
+    "y": 1424,
+    "w": 169,
+    "h": 42,
+    "text": "shop for tires",
+    "href": "/"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offers-rail > div.offers-nav > button.offers-btn.offers-btn-prev",
+    "x": 257,
+    "y": 1528,
+    "w": 40,
+    "h": 40,
+    "text": "previous offers"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.offers-rail > div.offers-nav > button.offers-btn.offers-btn-next",
+    "x": 305,
+    "y": 1528,
+    "w": 40,
+    "h": 40,
+    "text": "next offers"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > picture > img",
+    "x": 0,
+    "y": 1600,
+    "w": 360,
+    "h": 307,
+    "text": "maintained to perform. buy 4, get 1 free oil and filter chan",
+    "file": "media_1538b89213225c7b88bf206e6118169be5"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption > div.hero-caption-title > h2#what-makes-your-nissan-experience-unique",
+    "x": 15,
+    "y": 1937,
+    "w": 330,
+    "h": 120,
+    "level": 2,
+    "text": "what makes your nissan experience unique?"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption > div.hero-caption-text > p",
+    "x": 15,
+    "y": 2077,
+    "w": 330,
+    "h": 72,
+    "text": "Because every aspect, from convenient scheduling options to personal service con"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.hero-caption-ctas > p.button-wrapper > a.button.primary",
+    "x": 15,
+    "y": 2169,
+    "w": 151,
+    "h": 42,
+    "text": "learn more",
+    "href": "/parts-service/en/service-maintenance/why-nissan"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-eyebrow > p",
+    "x": 15,
+    "y": 2714,
+    "w": 330,
+    "h": 24,
+    "text": "EXPRESS SERVICE"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > span.disclaimer > span.disclaimer-invoker",
+    "x": 165,
+    "y": 2717,
+    "w": 20,
+    "h": 18,
+    "text": "[*]"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-title > h2#service-on-your-schedule",
+    "x": 15,
+    "y": 2754,
+    "w": 330,
+    "h": 80,
+    "level": 2,
+    "text": "service on your schedule"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-text > p",
+    "x": 15,
+    "y": 2866,
+    "w": 330,
+    "h": 144,
+    "text": "We know your time is important, which is why we developed Nissan Express Service"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.secondary",
+    "x": 15,
+    "y": 3046,
+    "w": 162,
+    "h": 44,
+    "text": "find a dealer",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p > a.btn.btn-tertiary",
+    "x": 207,
+    "y": 3046,
+    "w": 127,
+    "h": 44,
+    "text": "learn more",
+    "href": "/parts-service/en/service-maintenance/express-service"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > picture > img",
+    "x": 15,
+    "y": 2291,
+    "w": 330,
+    "h": 375,
+    "text": "service on your schedule",
+    "file": "media_1510e58e6f82d6ce09db71a1f640119716"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > picture > img",
+    "x": 15,
+    "y": 3154,
+    "w": 330,
+    "h": 375,
+    "text": "oil change panel title",
+    "file": "media_1d8ee17e1fa94b57ab7d90d8530608ab10"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-eyebrow > p",
+    "x": 15,
+    "y": 3577,
+    "w": 330,
+    "h": 24,
+    "text": "NISSAN OIL CHANGE"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-title > h2#a-change-for-the-best",
+    "x": 15,
+    "y": 3617,
+    "w": 330,
+    "h": 80,
+    "level": 2,
+    "text": "a change for the best"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-text > p",
+    "x": 15,
+    "y": 3729,
+    "w": 330,
+    "h": 120,
+    "text": "From advanced diagnostics to state-of-the-industry tools and tech specifically d"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.secondary",
+    "x": 15,
+    "y": 3885,
+    "w": 179,
+    "h": 66,
+    "text": "schedule service",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p > a.btn.btn-tertiary",
+    "x": 224,
+    "y": 3885,
+    "w": 121,
+    "h": 66,
+    "text": "learn more",
+    "href": "/parts-service/en/service-maintenance/oil-change"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-eyebrow > p",
+    "x": 15,
+    "y": 4438,
+    "w": 330,
+    "h": 24,
+    "text": "PARTS & ACCESSORIES"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-title > h2#give-your-vehicle-everything-it-deserves",
+    "x": 15,
+    "y": 4470,
+    "w": 330,
+    "h": 120,
+    "level": 2,
+    "text": "give your vehicle everything it deserves"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tile-column > div.tile-text > p",
+    "x": 15,
+    "y": 4620,
+    "w": 330,
+    "h": 120,
+    "text": "Shop a variety of Genuine Nissan Parts and Accessories. Enjoy the convenience of"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > span.disclaimer > span.disclaimer-invoker",
+    "x": 278,
+    "y": 4718,
+    "w": 14,
+    "h": 19,
+    "text": "[*]"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.secondary",
+    "x": 15,
+    "y": 4770,
+    "w": 244,
+    "h": 42,
+    "text": "shop parts & accessories",
+    "href": "/"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "p > picture > img",
+    "x": 15,
+    "y": 4015,
+    "w": 330,
+    "h": 375,
+    "text": "parts panel title",
+    "file": "media_15f4092b8dd687bbf9e72c6d44af951f86"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tire-price-media > picture > img",
+    "x": 15,
+    "y": 4920,
+    "w": 330,
+    "h": 276,
+    "text": "tire price match title",
+    "file": "media_1adcd18925d22b6c25376b81d634a6296f"
+   },
+   {
+    "kind": "heading",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tire-price-content > div.tire-price-title > h2#nissan-tire-price-match--5-credit-1",
+    "x": 15,
+    "y": 5224,
+    "w": 330,
+    "h": 120,
+    "level": 2,
+    "text": "nissan tire price match + 5% credit*"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.tire-price-content > div.tire-price-text > p",
+    "x": 15,
+    "y": 5374,
+    "w": 330,
+    "h": 96,
+    "text": "Bring in an eligible competitor quote and we will match the price and provide an"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p.button-wrapper > a.button.secondary",
+    "x": 15,
+    "y": 5500,
+    "w": 161,
+    "h": 42,
+    "text": "find a dealer",
+    "href": "/parts-service/en/dealer/Search"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.cta > p > a.link-btn",
+    "x": 206,
+    "y": 5509,
+    "w": 89,
+    "h": 24,
+    "text": "*offer details",
+    "href": "/parts-service"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.recall-strip-inner > div.recall-strip-text > p",
+    "x": 15,
+    "y": 5628,
+    "w": 330,
+    "h": 48,
+    "text": "Find Nissan Safety Recall & Service Campaign Information Here"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": true,
+    "inChrome": false,
+    "path": "div.recall-strip-cta > p.button-wrapper > a.button.secondary",
+    "x": 119,
+    "y": 5706,
+    "w": 122,
+    "h": 42,
+    "text": "explore",
+    "href": "/recalls-vin.html"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-lang > div.lang-select > div.lang-select-trigger",
+    "x": 15,
+    "y": 5802,
+    "w": 68,
+    "h": 20,
+    "text": "english"
+   },
+   {
+    "kind": "control",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-lang > div.lang-select > div.lang-select-trigger",
+    "x": 15,
+    "y": 5802,
+    "w": 68,
+    "h": 20,
+    "label": "trigger",
+    "value": "english",
+    "via": "trigger"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-links-cols > div.footer-links-col > div.footer-links-title",
+    "x": 15,
+    "y": 5846,
+    "w": 330,
+    "h": 89,
+    "text": "shop"
+   },
+   {
+    "kind": "control",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-links-cols > div.footer-links-col > div.footer-links-title",
+    "x": 15,
+    "y": 5846,
+    "w": 330,
+    "h": 89,
+    "label": "trigger",
+    "value": "shop",
+    "via": "trigger"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-links-cols > div.footer-links-col > div.footer-links-title",
+    "x": 15,
+    "y": 5935,
+    "w": 330,
+    "h": 89,
+    "text": "for owners"
+   },
+   {
+    "kind": "control",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-links-cols > div.footer-links-col > div.footer-links-title",
+    "x": 15,
+    "y": 5935,
+    "w": 330,
+    "h": 89,
+    "label": "trigger",
+    "value": "for owners",
+    "via": "trigger"
+   },
+   {
+    "kind": "button",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-links-cols > div.footer-links-col > div.footer-links-title",
+    "x": 15,
+    "y": 6024,
+    "w": 330,
+    "h": 89,
+    "text": "about"
+   },
+   {
+    "kind": "control",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-links-cols > div.footer-links-col > div.footer-links-title",
+    "x": 15,
+    "y": 6024,
+    "w": 330,
+    "h": 89,
+    "label": "trigger",
+    "value": "about",
+    "via": "trigger"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-social > p > a",
+    "x": 15,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "tiktok",
+    "href": "/@nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "a > picture > img",
+    "x": 15,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "tiktok",
+    "file": "media_1d5892ce7ad89b511875853f9660ff6a03"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-social > p > a",
+    "x": 71,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "you tube",
+    "href": "/user/nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "a > picture > img",
+    "x": 71,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "you tube",
+    "file": "media_1f4f74d8c31ad1db882938aeeee08886a6"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-social > p > a",
+    "x": 127,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "instagram",
+    "href": "/nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "a > picture > img",
+    "x": 127,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "instagram",
+    "file": "media_1086f7dcdaeda2a43495036aa41d827437"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-social > p > a",
+    "x": 183,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "twitter",
+    "href": "/NissanUSA"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "a > picture > img",
+    "x": 183,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "twitter",
+    "file": "media_1a794b5221f63f899d176aa540d76e470a"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-social > p > a",
+    "x": 239,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "footer icon facebook alt",
+    "href": "/nissanusa"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "a > picture > img",
+    "x": 239,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "footer icon facebook alt",
+    "file": "media_1be526a80d9c4b8b8eeeacabd03a688ea7"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-social > p > a",
+    "x": 295,
+    "y": 6147,
+    "w": 26,
+    "h": 33,
+    "text": "pinterest",
+    "href": "/nissanusa/"
+   },
+   {
+    "kind": "image",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "a > picture > img",
+    "x": 295,
+    "y": 6147,
+    "w": 26,
+    "h": 26,
+    "text": "pinterest",
+    "file": "media_189238c4b5b1f198f25518cf8ad2c6fb9b"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "ul > li > a",
+    "x": 16,
+    "y": 6263,
+    "w": 108,
+    "h": 18,
+    "text": "contact us",
+    "href": "/contact-us.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "ul > li > a",
+    "x": 16,
+    "y": 6300,
+    "w": 328,
+    "h": 38,
+    "text": "do not sell or share my personal information",
+    "href": "/data-privacy.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "ul > li > a",
+    "x": 16,
+    "y": 6357,
+    "w": 124,
+    "h": 18,
+    "text": "terms of use",
+    "href": "/legal-terms.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "ul > li > a",
+    "x": 16,
+    "y": 6396,
+    "w": 141,
+    "h": 18,
+    "text": "privacy notice",
+    "href": "/privacy.html"
+   },
+   {
+    "kind": "link",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "ul > li > a",
+    "x": 16,
+    "y": 6432,
+    "w": 210,
+    "h": 34,
+    "text": "recall information",
+    "href": "/owners/recalls-vin.html"
+   },
+   {
+    "kind": "text",
+    "state": "visible",
+    "variable": false,
+    "inRoot": false,
+    "inChrome": true,
+    "path": "div.footer-legal > div.footer-legal-copy > p",
+    "x": 16,
+    "y": 6498,
+    "w": 328,
+    "h": 48,
+    "text": "©2026 Nissan North America, Inc. All rights reserved."
+   }
+  ],
+  "clip": {
+   "counts": {
+    "textClipped": 0,
+    "textHidden": 0,
+    "controlHidden": 0,
+    "controlClipped": 0,
+    "clamped": 0,
+    "collapsed": 0,
+    "scrollHidden": 0,
+    "horizontal": 6,
+    "offPage": 55,
+    "textNodes": 126,
+    "controls": 82,
+    "total": 0
+   },
+   "groups": [
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.offers-rail",
+     "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-title > h3#buy-3-tires-get-the-4th-for-1-1",
+     "text": "buy 3 tires, get the 4th for $1*",
+     "cutMin": 244,
+     "cutMax": 244
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.offers-rail",
+     "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-validity > p",
+     "text": "offer valid november 16-30, 2026",
+     "cutMin": 159,
+     "cutMax": 159
+    },
+    {
+     "kind": "CONTROL X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.offers-rail",
+     "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+     "text": "*offer details",
+     "cutMin": 54,
+     "cutMax": 54
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.offers-rail",
+     "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+     "text": "*offer details",
+     "cutMin": 54,
+     "cutMax": 54
+    },
+    {
+     "kind": "CONTROL X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.offers-rail",
+     "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+     "text": "shop for tires",
+     "cutMin": 134,
+     "cutMax": 134
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "n": 1,
+     "clipper": "div.offers-rail",
+     "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+     "text": "shop for tires",
+     "cutMin": 83,
+     "cutMax": 83
+    }
+   ],
+   "findings": [
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "cut": 244,
+     "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-title > h3#buy-3-tires-get-the-4th-for-1-1",
+     "text": "buy 3 tires, get the 4th for $1*",
+     "clipper": "div.offers-rail",
+     "rect": {
+      "l": 325,
+      "t": 1254,
+      "r": 604,
+      "b": 1281,
+      "w": 279,
+      "h": 27
+     },
+     "clip": {
+      "l": 0,
+      "t": 929,
+      "r": 360,
+      "b": 1600,
+      "w": 360,
+      "h": 671
+     },
+     "lines": 2
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "cut": 159,
+     "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-validity > p",
+     "text": "offer valid november 16-30, 2026",
+     "clipper": "div.offers-rail",
+     "rect": {
+      "l": 325,
+      "t": 1335,
+      "r": 519,
+      "b": 1352,
+      "w": 194,
+      "h": 17
+     },
+     "clip": {
+      "l": 0,
+      "t": 929,
+      "r": 360,
+      "b": 1600,
+      "w": 360,
+      "h": 671
+     },
+     "lines": 1
+    },
+    {
+     "kind": "CONTROL X-CUT",
+     "advisory": true,
+     "cut": 54,
+     "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+     "text": "*offer details",
+     "clipper": "div.offers-rail",
+     "rect": {
+      "l": 325,
+      "t": 1380,
+      "r": 414,
+      "b": 1404,
+      "w": 89,
+      "h": 24
+     },
+     "clip": {
+      "l": 0,
+      "t": 929,
+      "r": 360,
+      "b": 1600,
+      "w": 360,
+      "h": 671
+     }
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "cut": 54,
+     "path": "div.offer-card-ctas > div.cta > p > a.link-btn",
+     "text": "*offer details",
+     "clipper": "div.offers-rail",
+     "rect": {
+      "l": 325,
+      "t": 1382,
+      "r": 414,
+      "b": 1401,
+      "w": 89,
+      "h": 19
+     },
+     "clip": {
+      "l": 0,
+      "t": 929,
+      "r": 360,
+      "b": 1600,
+      "w": 360,
+      "h": 671
+     },
+     "lines": 1
+    },
+    {
+     "kind": "CONTROL X-CUT",
+     "advisory": true,
+     "cut": 134,
+     "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+     "text": "shop for tires",
+     "clipper": "div.offers-rail",
+     "rect": {
+      "l": 325,
+      "t": 1424,
+      "r": 494,
+      "b": 1466,
+      "w": 169,
+      "h": 42
+     },
+     "clip": {
+      "l": 0,
+      "t": 929,
+      "r": 360,
+      "b": 1600,
+      "w": 360,
+      "h": 671
+     }
+    },
+    {
+     "kind": "TEXT X-CUT",
+     "advisory": true,
+     "cut": 83,
+     "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+     "text": "shop for tires",
+     "clipper": "div.offers-rail",
+     "rect": {
+      "l": 346,
+      "t": 1435,
+      "r": 443,
+      "b": 1454,
+      "w": 97,
+      "h": 19
+     },
+     "clip": {
+      "l": 0,
+      "t": 929,
+      "r": 360,
+      "b": 1600,
+      "w": 360,
+      "h": 671
+     },
+     "lines": 1
+    }
+   ]
+  }
+ },
+ "bands": [
+  {
+   "index": 0,
+   "heading": "(top)",
+   "variable": true,
+   "origin": {
+    "link": 1,
+    "button": 4,
+    "text": 2,
+    "image": 1
+   },
+   "eds": {
+    "link": 1,
+    "linkHidden": 0,
+    "button": 6,
+    "buttonHidden": 0,
+    "text": 2,
+    "textHidden": 0,
+    "image": 0,
+    "imageHidden": 0
+   },
+   "findings": [
+    "MISSING HEADING",
+    "EXTRA LINK"
+   ]
+  },
+  {
+   "index": 1,
+   "heading": "current offers",
+   "variable": false,
+   "origin": {
+    "link": 0,
+    "button": 0,
+    "text": 0,
+    "image": 1
+   },
+   "eds": {
+    "link": 0,
+    "linkHidden": 0,
+    "button": 0,
+    "buttonHidden": 0,
+    "text": 0,
+    "textHidden": 0,
+    "image": 1,
+    "imageHidden": 1
+   },
+   "findings": []
+  },
+  {
+   "index": 2,
+   "heading": "buy 4, get 1 free oil & filter changes*",
+   "variable": false,
+   "origin": {
+    "link": 1,
+    "button": 2,
+    "text": 1,
+    "image": 1
+   },
+   "eds": {
+    "link": 2,
+    "linkHidden": 2,
+    "button": 2,
+    "buttonHidden": 0,
+    "text": 1,
+    "textHidden": 1,
+    "image": 1,
+    "imageHidden": 0
+   },
+   "findings": [
+    "EXTRA LINK",
+    "EXTRA LINK",
+    "EXTRA LINK"
+   ]
+  },
+  {
+   "index": 3,
+   "heading": "what makes your nissan experience unique?",
+   "variable": false,
+   "origin": {
+    "link": 1,
+    "button": 0,
+    "text": 2,
+    "image": 1
+   },
+   "eds": {
+    "link": 1,
+    "linkHidden": 0,
+    "button": 1,
+    "buttonHidden": 0,
+    "text": 2,
+    "textHidden": 0,
+    "image": 1,
+    "imageHidden": 0
+   },
+   "findings": [
+    "EXTRA LINK"
+   ]
+  },
+  {
+   "index": 4,
+   "heading": "service on your schedule",
+   "variable": false,
+   "origin": {
+    "link": 2,
+    "button": 0,
+    "text": 2,
+    "image": 1
+   },
+   "eds": {
+    "link": 2,
+    "linkHidden": 0,
+    "button": 0,
+    "buttonHidden": 0,
+    "text": 2,
+    "textHidden": 0,
+    "image": 1,
+    "imageHidden": 0
+   },
+   "findings": []
+  },
+  {
+   "index": 5,
+   "heading": "a change for the best",
+   "variable": false,
+   "origin": {
+    "link": 2,
+    "button": 0,
+    "text": 2,
+    "image": 1
+   },
+   "eds": {
+    "link": 2,
+    "linkHidden": 0,
+    "button": 0,
+    "buttonHidden": 0,
+    "text": 2,
+    "textHidden": 0,
+    "image": 1,
+    "imageHidden": 0
+   },
+   "findings": []
+  },
+  {
+   "index": 6,
+   "heading": "give your vehicle everything it deserves",
+   "variable": false,
+   "origin": {
+    "link": 1,
+    "button": 0,
+    "text": 1,
+    "image": 1
+   },
+   "eds": {
+    "link": 1,
+    "linkHidden": 0,
+    "button": 1,
+    "buttonHidden": 0,
+    "text": 1,
+    "textHidden": 0,
+    "image": 1,
+    "imageHidden": 0
+   },
+   "findings": [
+    "EXTRA LINK"
+   ]
+  },
+  {
+   "index": 7,
+   "heading": "nissan tire price match + 5% credit*",
+   "variable": false,
+   "origin": {
+    "link": 2,
+    "button": 0,
+    "text": 2,
+    "image": 0
+   },
+   "eds": {
+    "link": 3,
+    "linkHidden": 0,
+    "button": 0,
+    "buttonHidden": 0,
+    "text": 2,
+    "textHidden": 0,
+    "image": 0,
+    "imageHidden": 0
+   },
+   "findings": [
+    "EXTRA LINK"
+   ]
+  }
+ ],
+ "findings": [
+  {
+   "sev": "🔴",
+   "kind": "MISSING HEADING",
+   "msg": "h2 \"winter ready\" (origin y 483) has no served heading",
+   "band": 0,
+   "text": "winter ready"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "×2 \"[*]\" served in band \"(top)\", no origin link or button",
+   "band": 0,
+   "n": 2,
+   "text": "[*]"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "\"*offer details\" served in band \"buy 4, get 1 free oil & filter changes*\", no origin link or button",
+   "band": 2,
+   "n": 1,
+   "text": "*offer details"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "\"previous offers\" served in band \"buy 4, get 1 free oil & filter changes*\", no origin link or button",
+   "band": 2,
+   "n": 1,
+   "text": "previous offers"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "\"next offers\" served in band \"buy 4, get 1 free oil & filter changes*\", no origin link or button",
+   "band": 2,
+   "n": 1,
+   "text": "next offers"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "\"[*]\" served in band \"what makes your nissan experience unique?\", no origin link or button",
+   "band": 3,
+   "n": 1,
+   "text": "[*]"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "\"[*]\" served in band \"give your vehicle everything it deserves\", no origin link or button",
+   "band": 6,
+   "n": 1,
+   "text": "[*]"
+  },
+  {
+   "sev": "🟡",
+   "kind": "EXTRA LINK",
+   "msg": "\"*offer details\" served in band \"nissan tire price match + 5% credit*\", no origin link or button",
+   "band": 7,
+   "n": 1,
+   "text": "*offer details"
+  }
+ ],
+ "totals": {
+  "missingHeadings": 1,
+  "hiddenHeadings": 0,
+  "extraHeadings": 0,
+  "missingLinks": 0,
+  "hiddenLinks": 0,
+  "movedLinks": 0,
+  "extraLinks": 8,
+  "missingButtons": 0,
+  "hiddenButtons": 0,
+  "controlState": 0,
+  "countDeltas": 0,
+  "findings": 8,
+  "structural": 1,
+  "missing": 1,
+  "hidden": 0
+ },
+ "textBoxes": {
+  "origin": [
+   {
+    "x": 22,
+    "y": 106,
+    "w": 190,
+    "h": 22
+   },
+   {
+    "x": 22,
+    "y": 179,
+    "w": 43,
+    "h": 22
+   },
+   {
+    "x": 22,
+    "y": 252,
+    "w": 147,
+    "h": 22
+   },
+   {
+    "x": 22,
+    "y": 325,
+    "w": 64,
+    "h": 22
+   },
+   {
+    "x": 33,
+    "y": 675,
+    "w": 294,
+    "h": 42
+   },
+   {
+    "x": 45,
+    "y": 720,
+    "w": 270,
+    "h": 22
+   },
+   {
+    "x": 30,
+    "y": 744,
+    "w": 300,
+    "h": 22
+   },
+   {
+    "x": 105,
+    "y": 873,
+    "w": 172,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 939,
+    "w": 127,
+    "h": 25
+   },
+   {
+    "x": 142,
+    "y": 939,
+    "w": 10,
+    "h": 25
+   },
+   {
+    "x": 152,
+    "y": 939,
+    "w": 11,
+    "h": 25
+   },
+   {
+    "x": 164,
+    "y": 939,
+    "w": 5,
+    "h": 25
+   },
+   {
+    "x": 15,
+    "y": 481,
+    "w": 237,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 544,
+    "w": 301,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 568,
+    "w": 299,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 592,
+    "w": 85,
+    "h": 22
+   },
+   {
+    "x": 100,
+    "y": 592,
+    "w": 16,
+    "h": 22
+   },
+   {
+    "x": 121,
+    "y": 592,
+    "w": 158,
+    "h": 22
+   },
+   {
+    "x": 36,
+    "y": 646,
+    "w": 91,
+    "h": 19
+   },
+   {
+    "x": 12,
+    "y": 864,
+    "w": 179,
+    "h": 33
+   },
+   {
+    "x": 15,
+    "y": 1254,
+    "w": 291,
+    "h": 27
+   },
+   {
+    "x": 15,
+    "y": 1286,
+    "w": 101,
+    "h": 27
+   },
+   {
+    "x": 15,
+    "y": 1329,
+    "w": 205,
+    "h": 17
+   },
+   {
+    "x": 15,
+    "y": 1382,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 1435,
+    "w": 111,
+    "h": 19
+   },
+   {
+    "x": 325,
+    "y": 1254,
+    "w": 279,
+    "h": 27
+   },
+   {
+    "x": 325,
+    "y": 1286,
+    "w": 30,
+    "h": 27
+   },
+   {
+    "x": 325,
+    "y": 1335,
+    "w": 194,
+    "h": 17
+   },
+   {
+    "x": 325,
+    "y": 1382,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 346,
+    "y": 1435,
+    "w": 97,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 1936,
+    "w": 247,
+    "h": 42
+   },
+   {
+    "x": 15,
+    "y": 1976,
+    "w": 264,
+    "h": 42
+   },
+   {
+    "x": 15,
+    "y": 2016,
+    "w": 118,
+    "h": 42
+   },
+   {
+    "x": 15,
+    "y": 2078,
+    "w": 303,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 2102,
+    "w": 298,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 2126,
+    "w": 320,
+    "h": 22
+   },
+   {
+    "x": 36,
+    "y": 2180,
+    "w": 77,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2717,
+    "w": 150,
+    "h": 18
+   },
+   {
+    "x": 165,
+    "y": 2717,
+    "w": 20,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 2752,
+    "w": 237,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 2792,
+    "w": 143,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 2868,
+    "w": 319,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2892,
+    "w": 302,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2916,
+    "w": 305,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2940,
+    "w": 296,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2964,
+    "w": 313,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2988,
+    "w": 197,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 3057,
+    "w": 90,
+    "h": 19
+   },
+   {
+    "x": 207,
+    "y": 3058,
+    "w": 77,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3580,
+    "w": 170,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 3615,
+    "w": 260,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 3655,
+    "w": 69,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 3731,
+    "w": 309,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3755,
+    "w": 311,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3779,
+    "w": 301,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3803,
+    "w": 284,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3827,
+    "w": 301,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 3896,
+    "w": 63,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 3920,
+    "w": 49,
+    "h": 19
+   },
+   {
+    "x": 224,
+    "y": 3897,
+    "w": 39,
+    "h": 19
+   },
+   {
+    "x": 224,
+    "y": 3917,
+    "w": 35,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4441,
+    "w": 192,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 4468,
+    "w": 259,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 4508,
+    "w": 191,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 4548,
+    "w": 143,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 4622,
+    "w": 307,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4646,
+    "w": 269,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4670,
+    "w": 316,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4694,
+    "w": 280,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4718,
+    "w": 263,
+    "h": 19
+   },
+   {
+    "x": 278,
+    "y": 4718,
+    "w": 14,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 4781,
+    "w": 172,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 5222,
+    "w": 296,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 5262,
+    "w": 200,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 5302,
+    "w": 123,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 5375,
+    "w": 328,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 5399,
+    "w": 310,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 5423,
+    "w": 296,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 5447,
+    "w": 42,
+    "h": 22
+   },
+   {
+    "x": 57,
+    "y": 5447,
+    "w": 262,
+    "h": 22
+   },
+   {
+    "x": 36,
+    "y": 5511,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 209,
+    "y": 5511,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 46,
+    "y": 5629,
+    "w": 268,
+    "h": 22
+   },
+   {
+    "x": 71,
+    "y": 5653,
+    "w": 217,
+    "h": 22
+   },
+   {
+    "x": 140,
+    "y": 5717,
+    "w": 50,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 5802,
+    "w": 49,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 5882,
+    "w": 46,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 5971,
+    "w": 111,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 6060,
+    "w": 58,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6263,
+    "w": 108,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6300,
+    "w": 328,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6320,
+    "w": 118,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6357,
+    "w": 124,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6396,
+    "w": 141,
+    "h": 18
+   },
+   {
+    "x": 27,
+    "y": 6440,
+    "w": 188,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6501,
+    "w": 269,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6525,
+    "w": 58,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 618,
+    "w": 307,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 637,
+    "w": 258,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 657,
+    "w": 302,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 676,
+    "w": 283,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 696,
+    "w": 308,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 715,
+    "w": 310,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 735,
+    "w": 296,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 754,
+    "w": 315,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 774,
+    "w": 304,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 793,
+    "w": 285,
+    "h": 18
+   },
+   {
+    "x": 20,
+    "y": 813,
+    "w": 29,
+    "h": 18
+   },
+   {
+    "x": 54,
+    "y": 813,
+    "w": 82,
+    "h": 18
+   },
+   {
+    "x": 141,
+    "y": 813,
+    "w": 88,
+    "h": 18
+   },
+   {
+    "x": 130,
+    "y": 853,
+    "w": 100,
+    "h": 18
+   }
+  ],
+  "eds": [
+   {
+    "x": 15,
+    "y": 305,
+    "w": 232,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 345,
+    "w": 259,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 385,
+    "w": 190,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 448,
+    "w": 293,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 472,
+    "w": 278,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 496,
+    "w": 256,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 520,
+    "w": 211,
+    "h": 22
+   },
+   {
+    "x": 226,
+    "y": 520,
+    "w": 16,
+    "h": 22
+   },
+   {
+    "x": 242,
+    "y": 520,
+    "w": 94,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 544,
+    "w": 320,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 568,
+    "w": 54,
+    "h": 22
+   },
+   {
+    "x": 69,
+    "y": 568,
+    "w": 16,
+    "h": 22
+   },
+   {
+    "x": 36,
+    "y": 622,
+    "w": 91,
+    "h": 19
+   },
+   {
+    "x": 12,
+    "y": 864,
+    "w": 179,
+    "h": 33
+   },
+   {
+    "x": 15,
+    "y": 1254,
+    "w": 291,
+    "h": 27
+   },
+   {
+    "x": 15,
+    "y": 1286,
+    "w": 101,
+    "h": 27
+   },
+   {
+    "x": 15,
+    "y": 1329,
+    "w": 205,
+    "h": 17
+   },
+   {
+    "x": 15,
+    "y": 1382,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 1435,
+    "w": 111,
+    "h": 19
+   },
+   {
+    "x": 325,
+    "y": 1254,
+    "w": 279,
+    "h": 27
+   },
+   {
+    "x": 325,
+    "y": 1286,
+    "w": 30,
+    "h": 27
+   },
+   {
+    "x": 325,
+    "y": 1335,
+    "w": 194,
+    "h": 17
+   },
+   {
+    "x": 325,
+    "y": 1382,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 346,
+    "y": 1435,
+    "w": 97,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 1936,
+    "w": 247,
+    "h": 42
+   },
+   {
+    "x": 15,
+    "y": 1976,
+    "w": 264,
+    "h": 42
+   },
+   {
+    "x": 15,
+    "y": 2016,
+    "w": 118,
+    "h": 42
+   },
+   {
+    "x": 15,
+    "y": 2078,
+    "w": 303,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 2102,
+    "w": 298,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 2126,
+    "w": 320,
+    "h": 22
+   },
+   {
+    "x": 36,
+    "y": 2180,
+    "w": 79,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2717,
+    "w": 150,
+    "h": 18
+   },
+   {
+    "x": 165,
+    "y": 2717,
+    "w": 20,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 2752,
+    "w": 237,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 2792,
+    "w": 143,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 2868,
+    "w": 319,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2892,
+    "w": 302,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2916,
+    "w": 305,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2940,
+    "w": 296,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2964,
+    "w": 313,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 2988,
+    "w": 197,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 3057,
+    "w": 90,
+    "h": 19
+   },
+   {
+    "x": 207,
+    "y": 3058,
+    "w": 77,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3580,
+    "w": 170,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 3615,
+    "w": 260,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 3655,
+    "w": 69,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 3731,
+    "w": 309,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3755,
+    "w": 311,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3779,
+    "w": 301,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3803,
+    "w": 284,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 3827,
+    "w": 301,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 3896,
+    "w": 63,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 3920,
+    "w": 49,
+    "h": 19
+   },
+   {
+    "x": 224,
+    "y": 3897,
+    "w": 39,
+    "h": 19
+   },
+   {
+    "x": 224,
+    "y": 3917,
+    "w": 35,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4441,
+    "w": 192,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 4468,
+    "w": 259,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 4508,
+    "w": 191,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 4548,
+    "w": 143,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 4622,
+    "w": 307,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4646,
+    "w": 269,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4670,
+    "w": 316,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4694,
+    "w": 280,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 4718,
+    "w": 263,
+    "h": 19
+   },
+   {
+    "x": 278,
+    "y": 4718,
+    "w": 14,
+    "h": 19
+   },
+   {
+    "x": 36,
+    "y": 4781,
+    "w": 172,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 5222,
+    "w": 296,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 5262,
+    "w": 200,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 5302,
+    "w": 123,
+    "h": 44
+   },
+   {
+    "x": 15,
+    "y": 5375,
+    "w": 328,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 5399,
+    "w": 310,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 5423,
+    "w": 296,
+    "h": 22
+   },
+   {
+    "x": 15,
+    "y": 5447,
+    "w": 42,
+    "h": 22
+   },
+   {
+    "x": 57,
+    "y": 5447,
+    "w": 262,
+    "h": 22
+   },
+   {
+    "x": 36,
+    "y": 5511,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 206,
+    "y": 5511,
+    "w": 89,
+    "h": 19
+   },
+   {
+    "x": 46,
+    "y": 5629,
+    "w": 268,
+    "h": 22
+   },
+   {
+    "x": 71,
+    "y": 5653,
+    "w": 217,
+    "h": 22
+   },
+   {
+    "x": 140,
+    "y": 5717,
+    "w": 50,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 5802,
+    "w": 49,
+    "h": 19
+   },
+   {
+    "x": 15,
+    "y": 5882,
+    "w": 46,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 5971,
+    "w": 111,
+    "h": 18
+   },
+   {
+    "x": 15,
+    "y": 6060,
+    "w": 58,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6263,
+    "w": 108,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6300,
+    "w": 328,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6320,
+    "w": 118,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6357,
+    "w": 124,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6396,
+    "w": 141,
+    "h": 18
+   },
+   {
+    "x": 27,
+    "y": 6440,
+    "w": 188,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6501,
+    "w": 269,
+    "h": 18
+   },
+   {
+    "x": 16,
+    "y": 6525,
+    "w": 58,
+    "h": 18
+   }
+  ]
+ }
+}

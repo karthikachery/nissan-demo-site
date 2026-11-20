@@ -1,0 +1,1389 @@
+[live-session] waiting to pace live navigations to staging.niss-parts-service.epsilonrms.com (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 100 ms
+
+Visual diff @ 1440px (profile "generic") — screenshots in stardust/replica/gates/parts-service-1440/vdiff-iter1/
+
+build red flags (advisory): 
+  • SURFACE/GROUND MISMATCH: heading "Buy 3 Tires, Get the 4th for $1*" is rgb(255, 255, 255) in build vs rgb(0, 0, 0) in source (luminance 255 vs 0). A matched heading renders on a different ground (dark vs light) — check the section background.
+  • HEADING FACE ×13: "NissanBrand-light" → "Liberation Sans" on every differing heading (source → build). A matched heading at another size or family — match the source; a deliberate font substitution is one ×N line, justify it once.
+  • HEADING FACE: <h3> "Buy 3 Tires, Get the 4th for $1*" is 20px Liberation Sans in build vs 40px NissanBrand-light in source. A matched heading at another size or family — match the source; a deliberate font substitution is one ×N line, justify it once.
+  • FLUSH-LEFT TEXT: <p> "Built to last" sits at left -2761px (no padding). Left-anchored text at the viewport edge — likely a dropped max-width / centering container.
+  • FLUSH-LEFT TEXT: <p> "Maintained to perform" sits at left -2761px (no padding). Left-anchored text at the viewport edge — likely a dropped max-width / centering container.
+  • FLUSH-LEFT TEXT: <p> "Help keep your Nissan ready " sits at left -2761px (no padding). Left-anchored text at the viewport edge — likely a dropped max-width / centering container.
+  • FLUSH-LEFT TEXT: <h1> "Buy 3 Tires, Get the 4th for" sits at left -1310px (no padding). Left-anchored text at the viewport edge — likely a dropped max-width / centering container.
+  • FLUSH-LEFT TEXT: <p> "Savings on eligible Hankook " sits at left -1310px (no padding). Left-anchored text at the viewport edge — likely a dropped max-width / centering container.
+  • FLUSH-LEFT TEXT: <p> "Offer valid November 16-30, " sits at left -1310px (no padding). Left-anchored text at the viewport edge — likely a dropped max-width / centering container.
+
+Full metrics JSON (compare source vs build: heading colors, eyebrow colors, image dims, full-bleed):
+{
+ "source": {
+  "viewport": 1440,
+  "blankRender": false,
+  "mainHeight": 4300,
+  "textLen": 3231,
+  "images": [
+   {
+    "src": "nissan_logo_desktop.svg",
+    "natural": "116x97",
+    "rendered": "116x97",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan_logo_mobile.svg",
+    "natural": "119x17",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan_logo_white.svg",
+    "natural": "116x97",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "19x18",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "location-icon.svg",
+    "natural": "55x57",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "curr-loc-pin.svg",
+    "natural": "13x20",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "info-icon.svg",
+    "natural": "20x20",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "refresh-icon.svg",
+    "natural": "13x16",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_GenuineNissanService.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_GenuineNissanService-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_Mainenance.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_Mainenance-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_EV.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_EV-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerServices.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerServices-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerResources.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerResources-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_TireAdvantage.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_TireAdvantage-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_PartsAccessories.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_PartsAccessories-mob.webp",
+    "natural": "975x345",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x525",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x500",
+    "fit": "fill",
+    "stretched": true,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x500",
+    "fit": "fill",
+    "stretched": true,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x525",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x500",
+    "fit": "fill",
+    "stretched": true,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x500",
+    "fit": "fill",
+    "stretched": true,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Oil-Desktop.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Oil-Mobile.webp",
+    "natural": "888x888",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Tire-Offer-Desktop.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Tire-Offer-Mobile.webp",
+    "natural": "888x888",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "comp-module-en-rebrand.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "TPM_Tile_rebrand_En.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Current-Offer-Battery.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Carousel_1.webp",
+    "natural": "3840x1201",
+    "rendered": "1440x400",
+    "fit": "fill",
+    "stretched": true,
+    "failedToLoad": false
+   },
+   {
+    "src": "service-schedule.webp",
+    "natural": "1200x1200",
+    "rendered": "600x600",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "M-ExpressService.webp",
+    "natural": "1035x1176",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan-oilchange.webp",
+    "natural": "1200x1200",
+    "rendered": "600x600",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "M-OilBottle.webp",
+    "natural": "1035x1176",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "Parts-Accessories-Module-Desktop.webp",
+    "natural": "1200x1200",
+    "rendered": "600x600",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Parts-Accessories-Module-Mobile.webp",
+    "natural": "1035x1176",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NIS-tires.webp",
+    "natural": "1110x930",
+    "rendered": "371x311",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tiktok-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "youtube-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "instagram-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "twitter-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "facebook-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "pinterest-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-red.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Icon_Oil.svg",
+    "natural": "50x50",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-red.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "battery-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "ICON_Brake.svg",
+    "natural": "150x150",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Icon_Oil.svg",
+    "natural": "50x50",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "mpi-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan_logo_test.jpg",
+    "natural": "480x321",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "powered_by_logo.svg",
+    "natural": "568x53",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   }
+  ],
+  "headings": [
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Current Offers",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 4, Get 1 FREE Oil & Filter C",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Multi-Point Inspec",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Battery Inspection",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "NissanBrand-Regular",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "What Makes your Nissan Experienc",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "30px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Service on Your Schedule",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "A Change for the Best",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Give Your Vehicle Everything it ",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "40px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "NissanBrand-light",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [
+   {
+    "text": "[*]",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "NISSAN OIL CHANGE",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "PARTS & ACCESSORIES",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "Shop",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "For Owners",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "About",
+    "color": "rgb(255, 255, 255)"
+   },
+   {
+    "text": "|",
+    "color": "rgb(92, 92, 92)"
+   },
+   {
+    "text": "|",
+    "color": "rgb(92, 92, 92)"
+   }
+  ],
+  "flushText": [
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "left": -2761
+   }
+  ],
+  "contentBoxes": [
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": -2880
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": -1440
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 0
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 1440
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 2880
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 4320
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 5760
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 7200
+   },
+   {
+    "sel": "column",
+    "width": 1170,
+    "left": 135
+   },
+   {
+    "sel": "vertical-slider-container",
+    "width": 1305,
+    "left": 135
+   },
+   {
+    "sel": "banner-container",
+    "width": 1440,
+    "left": 0
+   },
+   {
+    "sel": "flex",
+    "width": 1170,
+    "left": 135
+   }
+  ]
+ },
+ "build": {
+  "viewport": 1440,
+  "blankRender": false,
+  "mainHeight": 4300,
+  "textLen": 2526,
+  "images": [
+   {
+    "src": "nissan_logo_desktop.svg",
+    "natural": "116x97",
+    "rendered": "116x97",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "location-icon.svg",
+    "natural": "55x57",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "curr-loc-pin.svg",
+    "natural": "13x20",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_GenuineNissanService.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_Mainenance.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_EV.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_TireAdvantage.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_PartsAccessories.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-back-icon.svg",
+    "natural": "9x15",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "menu-close-icon.svg",
+    "natural": "19x18",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerServices.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "nav_OwnerResources.webp",
+    "natural": "476x270",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": 0,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x525",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x525",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Carousel-1.webp",
+    "natural": "3840x1400",
+    "rendered": "1440x525",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Oil-Desktop.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NNA-Current-Offer-Tire-Offer-Desktop.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "comp-module-en-rebrand.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "TPM_Tile_rebrand_En.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Current-Offer-Battery.webp",
+    "natural": "800x800",
+    "rendered": "400x400",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Carousel_1.webp",
+    "natural": "3840x1201",
+    "rendered": "1440x400",
+    "fit": "fill",
+    "stretched": true,
+    "failedToLoad": false
+   },
+   {
+    "src": "service-schedule.webp",
+    "natural": "1200x1200",
+    "rendered": "600x600",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "nissan-oilchange.webp",
+    "natural": "1200x1200",
+    "rendered": "600x600",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Parts-Accessories-Module-Desktop.webp",
+    "natural": "1200x1200",
+    "rendered": "600x600",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "NIS-tires.webp",
+    "natural": "1110x930",
+    "rendered": "371x311",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tiktok-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "youtube-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "instagram-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "twitter-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "facebook-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "pinterest-icon.svg",
+    "natural": "26x26",
+    "rendered": "26x26",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-red.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Icon_Oil.svg",
+    "natural": "50x50",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-red.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "tires-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "battery-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "ICON_Brake.svg",
+    "natural": "150x150",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "Icon_Oil.svg",
+    "natural": "50x50",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   },
+   {
+    "src": "mpi-offer-icon.svg",
+    "natural": "50x51",
+    "rendered": "0x0",
+    "fit": "fill",
+    "stretched": false,
+    "failedToLoad": false
+   }
+  ],
+  "headings": [
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "40px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Winter Ready",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "40px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Current Offers",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "32px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 4, Get 1 FREE Oil & Filter C",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Buy 3 Tires, Get the 4th for $1*",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Multi-Point Inspec",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h3",
+    "text": "Complimentary Battery Inspection",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "20px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "What Makes your Nissan Experienc",
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "30px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Service on Your Schedule",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "40px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "A Change for the Best",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "40px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Give Your Vehicle Everything it ",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "40px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   },
+   {
+    "tag": "h2",
+    "text": "Nissan Tire Price Match + 5% Cre",
+    "color": "rgb(0, 0, 0)",
+    "fontSize": "28px",
+    "family": "Liberation Sans",
+    "fontLoaded": true
+   }
+  ],
+  "eyebrows": [
+   {
+    "text": "NISSAN OIL CHANGE",
+    "color": "rgb(0, 0, 0)"
+   },
+   {
+    "text": "PARTS & ACCESSORIES",
+    "color": "rgb(0, 0, 0)"
+   }
+  ],
+  "flushText": [
+   {
+    "tag": "p",
+    "text": "Built to last",
+    "left": -2761
+   },
+   {
+    "tag": "p",
+    "text": "Maintained to perform",
+    "left": -2761
+   },
+   {
+    "tag": "p",
+    "text": "Help keep your Nissan ready ",
+    "left": -2761
+   },
+   {
+    "tag": "h1",
+    "text": "Buy 3 Tires, Get the 4th for",
+    "left": -1310
+   },
+   {
+    "tag": "p",
+    "text": "Savings on eligible Hankook ",
+    "left": -1310
+   },
+   {
+    "tag": "p",
+    "text": "Offer valid November 16-30, ",
+    "left": -1310
+   }
+  ],
+  "contentBoxes": [
+   {
+    "sel": "hero-slide",
+    "width": 1440,
+    "left": -2880
+   },
+   {
+    "sel": "hero-slide",
+    "width": 1440,
+    "left": -1440
+   },
+   {
+    "sel": "hero-slide",
+    "width": 1440,
+    "left": 0
+   },
+   {
+    "sel": "hero-slide",
+    "width": 1440,
+    "left": 1440
+   },
+   {
+    "sel": "container",
+    "width": 1170,
+    "left": 135
+   },
+   {
+    "sel": "offers__track",
+    "width": 1305,
+    "left": 135
+   },
+   {
+    "sel": "exp-banner__frame",
+    "width": 1440,
+    "left": 0
+   },
+   {
+    "sel": "tile__inner",
+    "width": 1170,
+    "left": 135
+   },
+   {
+    "sel": "tile__inner",
+    "width": 1170,
+    "left": 135
+   },
+   {
+    "sel": "tile__inner",
+    "width": 1170,
+    "left": 135
+   },
+   {
+    "sel": "tire-price__inner",
+    "width": 1170,
+    "left": 135
+   },
+   {
+    "sel": "recall-strip__inner",
+    "width": 1170,
+    "left": 135
+   }
+  ]
+ }
+}

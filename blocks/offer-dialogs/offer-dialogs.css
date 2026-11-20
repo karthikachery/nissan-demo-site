@@ -1,0 +1,35 @@
+/* offer dialogs — the foundation styles .offer-dialog (styles/styles.css); the block adds the
+   slot wrappers that carry the authored heading and icon (EW2). */
+.offer-dialogs .offer-dialog-key {
+  display: none;
+}
+
+.offer-dialogs .offer-dialog-icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.offer-dialogs .offer-dialog-icon p {
+  margin: 0;
+}
+
+.offer-dialogs .offer-dialog-title {
+  font-family: var(--font-light);
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.offer-dialogs .offer-dialog-title :is(h1, h2, h3, h4) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.offer-dialogs .offer-dialog-cta p {
+  margin: 0;
+  text-align: center;
+}

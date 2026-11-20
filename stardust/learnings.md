@@ -1,0 +1,6 @@
+# Learnings
+
+- **Extensionless source URLs vs migrate's folder-index default** (2026-11-19): migrate writes `/parts-service` as `parts-service/index.html` (`outputPathDefault: trailing-slash`), rollout's `publicUrl` then expects `/parts-service/`, while deploy delivered `/parts-service`. verify and done-check (HEAD, redirect: manual) failed on a correctly delivered page. Fix used: flatten the migrated file to `parts-service.html` (re-base relative refs one level), record an `output-path` decision in the sidecar, re-run inventory. A migrate re-render re-derives the folder form.
+- **Variable regions do not exempt headings** in content-presence: an autoplay hero frozen on slide 3 on the live side reads MISSING HEADING whenever the build's carousel is elsewhere at probe time; a `presence.json` pass is timing luck. Use a documented `overrides.json` waiving `content` only.
+- **At-rest pixel gates cannot see open-state chrome**: the desktop mega-menu kept the mobile drawer bar and typography through every pixel gate; only chrome-explore's open-state crop exposed it. Run the live-host header contract before C-final.
+- **aem.live code cache**: a pushed CSS change reached .aem.page in seconds but .aem.live kept the old file for its max-age (7200 s) despite admin cache purges — schedule live-host chrome checks after code changes accordingly.
