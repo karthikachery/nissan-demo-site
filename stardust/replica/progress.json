@@ -1,0 +1,136 @@
+{
+  "types": {
+    "landing": {
+      "archetype": "parts-service",
+      "prototype": "stardust/prototypes/parts-service-proposed.html",
+      "css": [
+        "stardust/prototypes/css/canon.css",
+        "stardust/prototypes/css/parts-service.css"
+      ],
+      "js": "stardust/prototypes/js/parts-service.js",
+      "served": "python3 -m http.server 8791 --directory stardust (PROTO http://localhost:8791/prototypes/parts-service-proposed.html; assets referenced as ../current/assets/…)",
+      "iterations": {
+        "360": {
+          "rounds": [
+            "iter1 map (full)",
+            "iter2 pixel",
+            "iter3 pixel",
+            "iter4 confirm (full, hero masked)"
+          ],
+          "counted": 3,
+          "decision": "accept-residual (chrome-parity header region artifact)"
+        },
+        "1440": {
+          "rounds": [
+            "iter1 map (full)",
+            "iter2 pixel",
+            "iter3 pixel",
+            "iter4 confirm (full, hero masked)"
+          ],
+          "counted": 3,
+          "decision": "accept-residual (chrome-parity header region artifact)"
+        }
+      },
+      "gates": {
+        "360": {
+          "pixel": "0.19% (hero rows 148:666 masked; unmasked 5.45%; static slide-3 composition gated unmasked at iter2: aligned 0.32%)",
+          "heightDelta": 0,
+          "contentDiff": "0 🔴 · 0 nothing-lost · 17 accepted (loop-clone duplicates) · 20 advisory",
+          "visualDiff": "3 advisory, justified (same as 1440)",
+          "clipped": 0,
+          "overflow": "scrollWidth 360 = viewport",
+          "chromeCrop": {
+            "header": "99.53%",
+            "footer": "99.40%"
+          },
+          "chromeParity": "header region artifact; with --region #navbar 28 deltas, all inside the hidden off-canvas mobile menu",
+          "gateAllRow": "PASS 5.45% unmasked, Δh 0",
+          "verdict": "PASS (pass bar); gate.sh exit 2 from chrome-parity only — residual accepted"
+        },
+        "1440": {
+          "pixel": "0.04% (hero rows 147:525 masked; unmasked 7.45% = autoplay slide timing; static slide-3 composition gated unmasked at iter2: 0.05%)",
+          "heightDelta": 0,
+          "contentDiff": "0 🔴 · 0 nothing-lost · 17 accepted (loop-clone duplicates) · 20 advisory",
+          "visualDiff": "3 advisory, justified (HEADING FACE probe artifact; duplicate-text pairing hero h1 vs card h3)",
+          "clipped": 0,
+          "overflow": "scrollWidth 1440 = viewport",
+          "chromeCrop": {
+            "header": "99.89%",
+            "footer": "99.99%"
+          },
+          "chromeParity": "header region auto-detect artifact (live <header> empty); --region #navbar: parity",
+          "gateAllRow": "PASS 7.45% unmasked, Δh 0",
+          "verdict": "PASS (pass bar); gate.sh exit 2 from chrome-parity only — residual accepted"
+        }
+      },
+      "capProbe": "PASS (2560: wrapper 1920 = 1920, 8/8 module caps)",
+      "accepted": "stardust/replica/accepted.json — 14 entries: Splide loop-clone duplicates (clones carry no text per recreation-procedure § Carousels); hands-off, policy-derived — owner to confirm",
+      "residuals": [
+        "chrome-parity (gate.sh --full) header: live <header> is empty and #navbar sits outside it; auto-detect cannot pair — header contract to be gated with chrome-compare/migrate-header at deploy",
+        "360 hidden off-canvas mobile menu: positions/type of the closed panel (incl. dealer-search filters accordion) differ from live; visual open-state never captured",
+        "mega-menu open-state panel layout not pixel-verified (mechanism parity only: .side-nav width 1s, overlay, highlightNav, white logo, close button)",
+        "visual-diff HEADING FACE ×13 reports Liberation Sans whenever it is in the stack (build-vs-build test proved it; faces load, pixel 0.04%) — justified",
+        "visual-diff SURFACE/GROUND + HEADING FACE <h3> \"Buy 3 Tires…\": pairing of duplicate text (hero h1 white vs card h3 black) — justified",
+        "content-diff advisory: 16 MISSING BODY + EDITABLE COUNT = loop-clone duplicates; EXTRA aria-label on rail arrows (a11y names, intended)",
+        "offers rail: mobile drag/swipe (source drag-mobile) not implemented — never observed",
+        "[*] disclaimer popovers implemented (native popover) though the sampler recorded no class change (popper toggles attributes) — implemented-unobserved",
+        "offer dialogs: native <dialog> styling approximated (not pixel-verified)",
+        "header landmark: navbar not wrapped in <header> (mirrors source structure); EDS header block restores the landmark",
+        "tablet rendition sep-oct-2026/NNA-Carousel-1-tablet.webp answers an HTML page on the source (broken there too) — referenced, not harvested"
+      ],
+      "motion": {
+        "observed": [
+          "hero Splide autoplay (unpoked is-prev/is-active/is-next rotation; interval 10000 ms, speed 2000 ms from splide-carousel.js)",
+          "hero dot click (track transform 2s, dot opacity .3s)",
+          "offers rail #next/#previous (container + indicator transform 1s, disable-carousel-btn)",
+          "sticky dealer search bar (.sticky when pageYOffset > offsetTop)",
+          "Service & Maintenance mega-menu (sidenav width/height 1s, overlay-active, side-menu-active, highlightNav, white logo, close button, main-navigation)",
+          "*Offer Details modal (is-active)",
+          "Dealer Locator hover (bg → transparent, color → #c3002f)",
+          "nav link hover (#000 → #363636)",
+          "hero video autoplay muted loop (paused off-slide)"
+        ],
+        "implemented": [
+          "hero autoplay from slide 1 (10 s / 2 s, forward loop wrap, paused under prefers-reduced-motion like Splide default)",
+          "hero dots",
+          "offers rail transform paging + indicator (vertical-slider.js page model)",
+          "sticky search bar (same threshold)",
+          "mega-menus (same class-state machine)",
+          "offer dialogs (native dialog)",
+          "primary-button + nav-link hovers",
+          "video play/pause on slide activation",
+          "footer accordion (mobile), language dropdown, [*] popovers, mobile burger"
+        ],
+        "dead": [
+          "header scroll-morph",
+          "hover on secondary/tertiary/ext buttons, #next, footer links",
+          "[*] popup (no class mutation sampled)"
+        ],
+        "compare": "motion-compare: 18 parity / 4 missing — auto-advance (build window shorter than one 10 s interval; verified advancing at 10 s directly), video#2 (live clone), coupons hover (verified directly #000→#363636), menu-dealer hover (parity in hover-only run)"
+      },
+      "captureState": [
+        {
+          "item": "hero carousel",
+          "state": "frozen gate reference shows slide 3 (Winter Ready) at both widths — Splide rAF autoplay advanced twice before the freeze",
+          "gate": "hero rows masked in pixel rounds (147:525 @1440, 148:666 @360); slide-3 composition gated unmasked at iter2",
+          "restoreAtDelivery": "Splide loop autoplay from slide 1, rotates every 10 s, 2 s slide speed"
+        },
+        {
+          "item": "hero video (slide 4)",
+          "state": "capture seeks to t=0 / paused",
+          "restoreAtDelivery": "autoplay muted loop while slide 4 is active"
+        },
+        {
+          "item": "dealer search bar @360",
+          "state": "turns position:fixed once scrolled past its offsetTop (document shrinks 67 px mid-capture on both sides)",
+          "restoreAtDelivery": "same sticky behaviour"
+        },
+        {
+          "item": "consent / marketing overlays",
+          "state": "OneTrust banner has no accept button — closed via --consent .onetrust-close-btn-handler; Yieldify overlay did not appear in any gate capture",
+          "restoreAtDelivery": "not recreated (D-02/D-03)"
+        }
+      ]
+    }
+  }
+}

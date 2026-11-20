@@ -1,0 +1,179 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-11-19T19:29:16Z",
+    "stardustVersion": "0.41.0"
+  },
+  "site": {
+    "originUrl": "https://staging.niss-parts-service.epsilonrms.com",
+    "deployUrl": null,
+    "extractedAt": "2026-11-19T17:19:34.615Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-11-19T17:19:34.615Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "parts-service",
+      "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+      "title": "Nissan Service, Maintenance & Repair Dealerships - Nissan USA Service & Maintenance",
+      "type": "landing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-11-19T17:19:34.615Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-19T18:14:26Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-11-19T18:17:52Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-11-19T19:29:16Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/parts-service.json",
+      "prototypePath": "stardust/prototypes/parts-service-proposed.html",
+      "migratedPath": "content/parts-service.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-11-19T18:20:12Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/parts-service",
+        "outputPath": "parts-service.html",
+        "slug": "parts-service",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 85,
+    "bundledAssets": [
+      "css/canon.css",
+      "css/parts-service.css",
+      "favicon.png",
+      "fonts/NissanBrand-Bold.woff",
+      "fonts/NissanBrand-Bold.woff2",
+      "fonts/NissanBrand-Regular.woff",
+      "fonts/NissanBrand-Regular.woff2",
+      "fonts/NissanBrand-light.woff",
+      "fonts/NissanBrand-light.woff2",
+      "js/parts-service.js",
+      "media/eps/Home/TPM_Tile_rebrand_En.webp",
+      "media/eps/Home/comp-module-en-rebrand.webp",
+      "media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1-mobile.webp",
+      "media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1-tablet.webp",
+      "media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1.webp",
+      "media/eps/Home/dev-4/cye-sales-event/NNA-Current-Offer-Oil-Desktop.webp",
+      "media/eps/Home/dev-4/cye-sales-event/NNA-Current-Offer-Oil-Mobile.webp",
+      "media/eps/Home/dev-4/part-2/NNA-Carousel-1-mobile.webp",
+      "media/eps/Home/dev-4/part-2/NNA-Carousel-1-tablet.webp",
+      "media/eps/Home/dev-4/part-2/NNA-Carousel-1.webp",
+      "media/eps/Home/dev-4/part-2/NNA-Current-Offer-Tire-Offer-Desktop.webp",
+      "media/eps/Home/dev-4/part-2/NNA-Current-Offer-Tire-Offer-Mobile.webp",
+      "media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-mobile.webp",
+      "media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1.webp",
+      "media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-2.mp4",
+      "media/site/Home/rebrand/Carousel_1-mobile.webp",
+      "media/site/Home/rebrand/Carousel_1-tablet.webp",
+      "media/site/Home/rebrand/Carousel_1.webp",
+      "media/site/Home/rebrand/M-ExpressService.webp",
+      "media/site/Home/rebrand/M-OilBottle.webp",
+      "media/site/Home/rebrand/Parts-Accessories-Module-Desktop.webp",
+      "media/site/Home/rebrand/Parts-Accessories-Module-Mobile.webp",
+      "media/site/Home/rebrand/nissan-oilchange.webp",
+      "media/site/Home/rebrand/service-schedule.webp",
+      "media/site/coupons-offers/rebrand/ICON_Brake.svg",
+      "media/site/coupons-offers/rebrand/Icon_Oil.svg",
+      "media/site/facebook-icon.svg",
+      "media/site/header/nav_EV-mob.webp",
+      "media/site/header/nav_EV.webp",
+      "media/site/header/nav_GenuineNissanService-mob.webp",
+      "media/site/header/nav_GenuineNissanService.webp",
+      "media/site/header/nav_Mainenance-mob.webp",
+      "media/site/header/nav_Mainenance.webp",
+      "media/site/header/nav_OwnerResources-mob.webp",
+      "media/site/header/nav_OwnerResources.webp",
+      "media/site/header/nav_OwnerServices-mob.webp",
+      "media/site/header/nav_OwnerServices.webp",
+      "media/site/header/nav_PartsAccessories-mob.webp",
+      "media/site/header/nav_PartsAccessories.webp",
+      "media/site/header/nav_TireAdvantage-mob.webp",
+      "media/site/header/nav_TireAdvantage.webp",
+      "media/site/header/nissan_logo_desktop.svg",
+      "media/site/header/nissan_logo_mobile.svg",
+      "media/site/header/nissan_logo_white.svg",
+      "media/site/home/rebrand/Current-Offer-Battery.webp",
+      "media/site/icons/acc-open-icon.svg",
+      "media/site/icons/acc-plus-icon.svg",
+      "media/site/icons/curr-loc-pin.svg",
+      "media/site/icons/location-icon.svg",
+      "media/site/icons/menu-back-icon.svg",
+      "media/site/icons/menu-close-icon.svg",
+      "media/site/icons/mob-menu.svg",
+      "media/site/icons/offers/battery-offer-icon.svg",
+      "media/site/icons/offers/mpi-offer-icon.svg",
+      "media/site/icons/offers/tires-offer-icon.svg",
+      "media/site/icons/pinterest-icon.svg",
+      "media/site/icons/popup-close.svg",
+      "media/site/icons/right-arrow-black.svg",
+      "media/site/icons/right-arrow-red.svg",
+      "media/site/icons/right-arrow-up.svg",
+      "media/site/icons/right-arrow.svg",
+      "media/site/icons/search-icon.svg",
+      "media/site/icons/slide-next-disabled.svg",
+      "media/site/icons/slide-next.svg",
+      "media/site/icons/tiktok-icon.svg",
+      "media/site/icons/up-arrow-black.svg",
+      "media/site/icons/up-arrow-red.svg",
+      "media/site/icons/up-arrow.svg",
+      "media/site/instagram-icon.svg",
+      "media/site/mobile-service/info-icon.svg",
+      "media/site/offers/tires-red.svg",
+      "media/site/refresh-icon.svg",
+      "media/site/tires/NIS-tires.webp",
+      "media/site/twitter-icon.svg",
+      "media/site/youtube-icon.svg"
+    ],
+    "pages": [
+      {
+        "slug": "parts-service",
+        "file": "stardust/migrated/parts-service.html",
+        "assetsBundled": 85
+      }
+    ],
+    "missingAssets": [
+      {
+        "subpath": "media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-tablet.webp",
+        "referencedBy": [
+          "parts-service"
+        ]
+      }
+    ],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-11-19T18:20:12Z",
+      "rendered": [
+        "parts-service"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

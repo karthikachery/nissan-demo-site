@@ -1,0 +1,276 @@
+/* Current Offers rail — lifted from stardust/prototypes/css/parts-service.css
+   (source .home-offers .vertical-slider). Slots carry the type (EW2). */
+.offers {
+  padding-top: 40px;
+}
+
+.offers :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+.offers .offers-head {
+  margin-top: -1px;
+  padding: 12px;
+}
+
+.offers .offers-title {
+  margin-bottom: 20px;
+  font-family: var(--font-regular);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.9px;
+  font-weight: 300;
+  color: #000;
+}
+
+.offers .offers-rail {
+  position: relative;
+  overflow: hidden;
+}
+
+.offers .offers-track {
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  padding: 0 15px;
+  list-style: none;
+  transition: transform 1s;
+}
+
+.offers .offer-card {
+  flex: 0 0 296px;
+  padding: 11.25px 0;
+}
+
+.offers .offer-card-tile {
+  position: relative;
+  max-width: 296px;
+}
+
+.offers .offer-card-media img {
+  display: block;
+  width: 100%;
+}
+
+.offers .offer-card-media .media-desktop {
+  display: none;
+}
+
+.offers .offer-card-body {
+  position: relative;
+  height: 245px;
+  padding: 16px 0;
+}
+
+.offers .offer-card-title {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  font-family: var(--font-regular);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+.offers .has-validity .offer-card-title {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.offers .offer-card-validity {
+  margin: 16px 0 30px;
+  font-family: var(--font-light);
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--color-body);
+}
+
+.offers .offer-card-foot {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+
+.offers .offer-card-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.offers .offer-card-ctas .cta,
+.offers .offer-card-ctas p {
+  display: contents;
+}
+
+.offers .offer-card-ctas a.link-btn {
+  margin-bottom: 20px;
+}
+
+.offers .offer-card-ctas a.button {
+  margin-right: 20px;
+}
+
+.offers .offer-card-ctas a.btn-ext {
+  letter-spacing: 0.2px;
+}
+
+.offers .offers-progress {
+  height: 3px;
+  margin: 0 15px;
+  border-bottom: 1px solid #c1c1c1;
+  overflow: hidden;
+}
+
+.offers .offers-progress-bar {
+  display: block;
+  width: 20%;
+  height: 2px;
+  border: 1px solid var(--color-primary);
+  transition: transform 1s;
+}
+
+.offers .offers-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 32px 15px 32px 0;
+}
+
+.offers .offers-btn {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  line-height: 28px;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  background: url("/icons/slide-next.svg") no-repeat;
+}
+
+.offers .offers-btn-prev {
+  margin-right: 8px;
+  transform: rotate(180deg);
+}
+
+.offers .offers-btn:disabled {
+  cursor: not-allowed;
+  background-image: url("/icons/slide-next-disabled.svg");
+}
+
+@media (width >= 768px) {
+  .offers .offers-head {
+    padding-left: 0;
+  }
+
+  .offers .offers-title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: normal;
+  }
+
+  .offers .offer-card {
+    flex-basis: 400px;
+  }
+
+  .offers .offer-card-tile {
+    max-width: 400px;
+  }
+
+  .offers .offer-card.offset {
+    padding-top: 16px;
+  }
+
+  .offers .offers-nav {
+    margin-right: 32px;
+  }
+
+  .offers .offers-btn-next {
+    margin-right: 32px;
+  }
+}
+
+@media (width >= 1024px) {
+  .offers {
+    padding-top: 36px;
+  }
+
+  .offers .offer-card-media .media-desktop {
+    display: block;
+  }
+
+  .offers .offer-card-media .media-mobile {
+    display: none;
+  }
+
+  .offers .offers-head {
+    margin-bottom: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .offers .offers-title {
+    margin-bottom: 0;
+  }
+
+  .offers .offers-rail {
+    margin-left: max(0px, calc((100% - var(--container)) / 2));
+    padding-bottom: 10px;
+  }
+
+  .offers .offers-track {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .offers .offer-card {
+    padding: 18px 0 12px;
+  }
+
+  .offers .offer-card.offset {
+    padding-top: 22px;
+  }
+
+  .offers .offer-card-body {
+    height: 180px;
+    padding: 16px 3.75px 16px 0;
+  }
+
+  .offers .offer-card-title {
+    padding-bottom: 8px;
+    letter-spacing: normal;
+  }
+
+  .offers .has-validity .offer-card-title {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+
+  .offers .offer-card-validity {
+    margin: 0 0 20px;
+  }
+
+  .offers .offer-card-foot {
+    bottom: 30px;
+  }
+
+  .offers .offer-card-ctas {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .offers .offer-card-ctas a.link-btn {
+    margin-bottom: 0;
+  }
+
+  .offers .offers-progress {
+    margin: 16px 0 0;
+  }
+
+  .offers .offers-progress-bar {
+    width: 50%;
+  }
+}

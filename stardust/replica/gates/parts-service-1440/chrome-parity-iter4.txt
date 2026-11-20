@@ -1,0 +1,18 @@
+chrome-parity @ 1440px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service (live side from cache stardust/replica/gates/parts-service-1440/chrome-live.json, probed 2026-11-19T17:42:38.258Z — delete the file to re-probe)
+  build: http://localhost:8791/prototypes/parts-service-proposed.html
+
+■ header: 8 delta(s) — 0 paired of 0/5 texts, 0/1 icons
+  (build has no <header>: auto-detected div.site-header — pass --region header=<liveSel>|<buildSel> to override)
+  REGION BOX   Δh +147px (0→147)
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  EXTRA        "Service & Maintenance"  build <button> "Service & Maintenance" has no live source
+  EXTRA        "Shop"  build <button> "Shop" has no live source
+  EXTRA        "Coupons & Offers"  build <a> "Coupons & Offers" has no live source
+  EXTRA        "Owners"  build <button> "Owners" has no live source
+  EXTRA        "Dealer Locator"  build <a> "Dealer Locator" has no live source
+  ICONS        0 live vs 1 build (svg/img) — harvest the live vectors verbatim (recreation-procedure.md § Asset harvest), never approximate
+
+■ footer: ✓ parity — 29 paired of 29/29 texts, 6/6 icons
+
+✗ 8 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

@@ -1,0 +1,128 @@
+{
+ "tool": "chrome-compare",
+ "at": "2026-11-19T19:53:48.076Z",
+ "source": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+ "build": "https://main--83d9e7fd--aemcoder.aem.live/parts-service",
+ "profile": "replica",
+ "bar": 0.02,
+ "widths": [
+  390,
+  1440
+ ],
+ "counts": {
+  "error": 4,
+  "warn": 9,
+  "decided": 0
+ },
+ "findings": [
+  {
+   "key": "link-missing@390 link",
+   "width": 390,
+   "path": "link",
+   "id": "link-missing",
+   "severity": "warn",
+   "detail": "top-level link /parts-service not in the build header — not observed: the build record stopped at the request budget (run the build side with --max-requests 0)"
+  },
+  {
+   "key": "control-missing@390 Service & Maintenance",
+   "width": 390,
+   "path": "Service & Maintenance",
+   "id": "control-missing",
+   "severity": "warn",
+   "detail": "the source menu control opens on key; the build has no control named \"Service & Maintenance\" — not observed: the build record stopped at the request budget (run the build side with --max-requests 0)"
+  },
+  {
+   "key": "control-missing@390 Shop",
+   "width": 390,
+   "path": "Shop",
+   "id": "control-missing",
+   "severity": "warn",
+   "detail": "the source menu control opens on key; the build has no control named \"Shop\" — not observed: the build record stopped at the request budget (run the build side with --max-requests 0)"
+  },
+  {
+   "key": "scroll-state@390 (header) [top]",
+   "width": 390,
+   "path": "(header)",
+   "action": "top",
+   "id": "scroll-state",
+   "severity": "error",
+   "detail": "scrolled top: header 81px on the source, 148px on the build"
+  },
+  {
+   "key": "scroll-state@390 (header) [back]",
+   "width": 390,
+   "path": "(header)",
+   "action": "back",
+   "id": "scroll-state",
+   "severity": "error",
+   "detail": "scrolled back: header 81px on the source, 148px on the build"
+  },
+  {
+   "key": "budget-truncated@390 (source)",
+   "width": 390,
+   "path": "(source)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the source record stopped at request-budget: raise --max-states/--max-depth for full coverage"
+  },
+  {
+   "key": "budget-truncated@390 (build)",
+   "width": 390,
+   "path": "(build)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the build record stopped at request-budget: run the build side with --max-requests 0"
+  },
+  {
+   "key": "link-missing@1440 link",
+   "width": 1440,
+   "path": "link",
+   "id": "link-missing",
+   "severity": "warn",
+   "detail": "top-level link /parts-service not in the build header"
+  },
+  {
+   "key": "motion@1440 Service & Maintenance [click]",
+   "width": 1440,
+   "path": "Service & Maintenance",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates opacity; the build does not"
+  },
+  {
+   "key": "motion@1440 Service & Maintenance [click]",
+   "width": 1440,
+   "path": "Service & Maintenance",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates transform; the build does not"
+  },
+  {
+   "key": "control-missing@1440 Service & Maintenance > menu",
+   "width": 1440,
+   "path": "Service & Maintenance > menu",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on click; the build has no control named \"\""
+  },
+  {
+   "key": "budget-truncated@1440 (source)",
+   "width": 1440,
+   "path": "(source)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the source record stopped at request-budget: raise --max-states/--max-depth for full coverage"
+  },
+  {
+   "key": "panel-visual@1440 Service & Maintenance [click]",
+   "width": 1440,
+   "path": "Service & Maintenance",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 30.4% (bar 2%; source 1391×875, build 1440×900; texture 90% thick)"
+  }
+ ]
+}

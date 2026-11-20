@@ -1,0 +1,258 @@
+﻿@keyframes left0to-100 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes left-100to0 {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+.slidein {
+    animation-duration: 2s;
+    animation-name: left-100to0;
+}
+
+.slideout {
+    animation-duration: 2s;
+    animation-name: left0to-100;
+}
+
+.fast {
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+
+.slide {
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.slider {
+    min-height: 300px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+}
+
+.slider.ms-why-carousel {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.slider-parent {
+    position: relative;
+}
+/** Slider circles */
+@keyframes check {
+    50% {
+        background-color: #c3002f;
+    }
+
+    100% {
+        background-color: #c3002f;
+    }
+}
+
+.dots {
+    position: absolute;
+    text-align: center;
+    bottom: 8px;
+    z-index: 1;
+    width: 100%;
+}
+
+.dot-container {
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.75em;
+}
+
+.container .dot {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin: 1.2em 5px;
+    z-index: 1;
+}
+
+.dot[type="radio"]:checked::-ms-check {
+    border: 2px solid green;
+    color: green;
+    opacity: 1;
+}
+
+.dot:focus {
+    outline: none;
+}
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.75em;
+    width: 0.75em;
+    background-color: #eee;
+    border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.container:hover .dot ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.container .dot:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+/** Arrows - Start */
+.slider-next {
+    width: 1.9%;
+    top: 35%;
+    height: 30%;
+    background-color: #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    right: 0;
+}
+
+.slider-prev {
+    width: 1.9%;
+    top: 35%;
+    height: 30%;
+    background-color: #f0f0f0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    left: 0;
+}
+
+.slider-prev-next-control {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+    .slider-prev-next-control label {
+        display: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        opacity: 0.7;
+    }
+
+        .slider-prev-next-control label:hover {
+            opacity: 1;
+        }
+
+.arrows-back {
+    width: 44px;
+    height: 156px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: calc(50% - 75px);
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+    .arrows-back:hover {
+        opacity: initial;
+    }
+
+    .arrows-back .arrows {
+        width: 18px;
+        height: 18px;
+        border-color: #000;
+        position: absolute;
+        top: calc(50% - 9px);
+    }
+
+        .arrows-back .arrows.prev {
+            border-bottom: 4px solid;
+            border-left: 4px solid;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: 16px;
+        }
+
+        .arrows-back .arrows.next {
+            border-bottom: 4px solid;
+            border-left: 4px solid;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            right: 16px;
+        }
+
+    .arrows-back.prev {
+        left: 0px;
+    }
+
+    .arrows-back.next {
+        right: 0px;
+    }
+/** Arrows - End */
+@media screen and (max-width: 768px) {
+    .battery-features .slider {
+        height: 360px;
+    }
+
+    .battery-features .slider__nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #c4c4c4;
+    }
+
+        .battery-features .slider__nav:checked {
+            background-color: #000;
+        }
+
+    .battery-features .home_slider__nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #c4c4c4;
+    }
+
+        .battery-features .home_slider__nav:checked {
+            background-color: #000;
+        }
+
+    .battery-features .slider__contents {
+        text-align: left;
+        padding: 0;
+    }
+
+    .arrows-back {
+        display: none;
+    }
+
+    .benefits-panel .slider {
+        min-height: 190px;
+    }
+}

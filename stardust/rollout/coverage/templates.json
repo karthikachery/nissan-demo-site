@@ -1,0 +1,36 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-11-19T19:42:39.204Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-11-19T19:42:43.670Z",
+  "templates": [
+    {
+      "id": "parts-service",
+      "representativeSlug": "parts-service",
+      "pages": [
+        "parts-service"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "exp-banner",
+        "hero-carousel",
+        "offers",
+        "recall-strip",
+        "tile",
+        "tire-price"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    }
+  ]
+}

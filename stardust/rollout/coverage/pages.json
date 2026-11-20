@@ -1,0 +1,65 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-11-19T19:42:39.204Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-11-19T19:42:43.670Z",
+  "pages": [
+    {
+      "slug": "parts-service",
+      "path": "/parts-service",
+      "title": "Nissan Service, Maintenance &amp; Repair Dealerships - Nissan USA Service &amp; Maintenance",
+      "templateId": "parts-service",
+      "source": {
+        "migratedHtml": "stardust/migrated/parts-service.html",
+        "metaJson": "stardust/migrated/parts-service._meta.json",
+        "sourceHash": "sha256:9446215cbac03d0f6d9cead67dca576d0b2c20d9bd330d4f991ebcf21300c690",
+        "sourceUrl": "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+      },
+      "blocks": [
+        "hero-carousel",
+        "offers",
+        "exp-banner",
+        "tile",
+        "tire-price",
+        "recall-strip"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--83d9e7fd--aemcoder.aem.live/parts-service",
+        "deployedAt": "2026-11-19T19:42:43.229Z",
+        "verifiedAt": "2026-11-19T19:42:43.286Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.44,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 1,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 8,
+            "variable": [
+              "#splide-carousel=.hero-carousel"
+            ]
+          },
+          "reasons": [
+            "content MISSING 1 / HIDDEN 0"
+          ],
+          "override": "PASS",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-11-19T19:42:43.670Z"
+        }
+      }
+    }
+  ]
+}

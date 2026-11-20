@@ -1,0 +1,475 @@
+{
+ "source": "http://localhost:8791/prototypes/parts-service-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero-carousel",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "Built to last"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Maintained to perform"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Help keep your Nissan ready for the road ahead with expert service."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Plus, Buy 4, Get 1 FREE Oil & Filter Changes.*"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Purchase Today",
+     "href": "https://secure.everybyspp.com/Buy4Get1Promo/c2dc2d1a26111815"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "*Offer Details",
+     "href": "#modal-cye-buy-4-get-1-free-oil"
+    },
+    {
+     "role": "heading",
+     "order": 6,
+     "text": "Buy 3 Tires, Get the 4th for $1*"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Savings on eligible Hankook tires."
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Offer valid November 16-30, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Shop for Tires",
+     "href": "https://www.nissantireadvantage.com/"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "*Offer Details",
+     "href": "#modal-buy-3-eligible-tires-get-the-4th-for-1"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Winter Ready"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Get your Nissan ready to get the best of winter by scheduling a multi-point inspection"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "[*]"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details."
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "at your local dealer."
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Find a Dealer",
+     "href": "/parts-service/en/dealer/Search"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Don't Let Your Battery Catch a Winter Cold"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "When cold weather hits, your battery may lose its charge. Visit your local participating Nissan dealer for a complimentary inspection"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "[*]"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "*At participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details."
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "to see if it's ready to withstand the harsh conditions ahead."
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "[*]"
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "*Images shown for illustrative purposes only. For complete limited warranty details, see your Nissan dealer and read the product warranty information."
+    },
+    {
+     "role": "cta",
+     "order": 24,
+     "text": "Find a Dealer",
+     "href": "/parts-service/en/dealer/Search"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.hero-slide",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 2,
+      "imgs": 2,
+      "textRuns": 6
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "offers",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Current Offers"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Buy 4, Get 1 FREE Oil & Filter Changes*"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Offer valid through January 4, 2027"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "*Offer Details",
+     "href": "#modal-cye-buy-4-get-1-free-oil"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Purchase Today",
+     "href": "https://secure.everybyspp.com/Buy4Get1Promo/c2dc2d1a26111815"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Buy 3 Tires, Get the 4th for $1*"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Offer valid November 16-30, 2026"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "*Offer Details",
+     "href": "#modal-buy-3-eligible-tires-get-the-4th-for-1"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Shop for Tires",
+     "href": "https://www.nissantireadvantage.com/"
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Complimentary Multi-Point Inspection*"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "*Offer Details",
+     "href": "#modal-disclaimer-multipoint"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Schedule Service",
+     "href": "/parts-service/en/dealer/Search"
+    },
+    {
+     "role": "heading",
+     "order": 12,
+     "text": "Nissan Tire Price Match + 5% Credit*"
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "*Offer Details",
+     "href": "#modal-disclaimer-pricematch"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Shop for Tires",
+     "href": "https://www.nissantireadvantage.com/"
+    },
+    {
+     "role": "heading",
+     "order": 15,
+     "text": "Complimentary Battery Inspection*"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "*Offer Details",
+     "href": "#modal-disclaimer-battery"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "Schedule Service",
+     "href": "/parts-service/en/dealer/Search"
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.offer-card",
+     "count": 5,
+     "unit": {
+      "headings": 1,
+      "ctas": 2,
+      "imgs": 2,
+      "textRuns": 4
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "exp-banner",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "What Makes your Nissan Experience Unique?"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Because every aspect, from convenient scheduling options to personal service consultants, is designed with you in mind."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn More",
+     "href": "/parts-service/en/service-maintenance/why-nissan"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "tile",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "EXPRESS SERVICE"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "[*]"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details."
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Service on Your Schedule"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "We know your time is important, which is why we developed Nissan Express Service to be flexible enough to accommodate your busy schedule. No appointment necessary. Just show up, sit back and relax knowing you'll be back on the road in no time."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Find A Dealer",
+     "href": "/parts-service/en/dealer/Search"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Learn More",
+     "href": "/parts-service/en/service-maintenance/express-service"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "tile",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "NISSAN OIL CHANGE"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "A Change for the Best"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "From advanced diagnostics to state-of-the-industry tools and tech specifically designed for your Nissan vehicle, every step of the oil change process has been designed with efficiency, speed and performance in mind."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Schedule Service",
+     "href": "/parts-service/en/dealer/Search"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Learn More",
+     "href": "/parts-service/en/service-maintenance/oil-change"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "tile",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "PARTS & ACCESSORIES"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Give Your Vehicle Everything it Deserves"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Shop a variety of Genuine Nissan Parts and Accessories. Enjoy the convenience of ordering online, with the option to have your items shipped directly to you or to your nearest Nissan dealership for pickup."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "[*]"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "*Restrictions apply. Contact Nissan dealer for details."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Shop Parts & Accessories",
+     "href": "https://parts.nissanusa.com/?partner=3P_NSERV2&_gl=1*102t8py*_gcl_au*ODY5NzE4NjYzLjE3Mzc3NTgzNzA.*_ga*MTU0NTE3OTg4OC4xNzM3NzU4Mzcx*_ga_0MREVC1JTE*MTc0NDIxNDYxNi45Ny4xLjE3NDQyMTU3NTMuNTYuMC4xNDEyNjI4NDc1"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "tire-price",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Nissan Tire Price Match + 5% Credit*"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Bring in an eligible competitor quote and we will match the price and provide an additional 5% credit on select eligible tires."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "* Eligibility requirements apply."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Find a Dealer",
+     "href": "/parts-service/en/dealer/Search"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "*Offer Details",
+     "href": "#modal-disclaimer-pricematch"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "recall-strip",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Find Nissan Safety Recall & Service Campaign Information Here"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Explore",
+     "href": "https://www.nissanusa.com/recalls-vin.html#/#/Home"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  }
+ ]
+}

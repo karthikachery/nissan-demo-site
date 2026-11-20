@@ -1,273 +1,632 @@
-/* header and nav layout */
-header .nav-wrapper {
-  background-color: var(--background-color);
-  width: 100%;
-  z-index: 2;
-  position: fixed;
-}
+/* header — lifted from stardust/prototypes/css/canon.css (source #navbar, .sidenav,
+   #search-container); class names kebab-cased for the boilerplate lint */
 
-header nav {
-  box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
-  align-items: center;
-  gap: 0 24px;
-  margin: auto;
-  max-width: 1248px;
-  height: var(--nav-height);
-  padding: 0 24px;
-  font-family: var(--body-font-family);
-}
-
-header nav[aria-expanded='true'] {
-  grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
-  overflow-y: auto;
-  min-height: 100dvh;
-}
-
-@media (width >= 900px) {
-  header .nav-wrapper {
-    position: relative;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
-  }
-}
-
-header nav p {
-  margin: 0;
-  line-height: 1;
-}
-
-header nav a:any-link {
-  color: currentcolor;
-}
-
-/* hamburger */
-header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
-  display: flex;
-  align-items: center;
-}
-
-header nav .nav-hamburger button {
-  height: 22px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  color: inherit;
-  overflow: initial;
-  text-overflow: initial;
-  white-space: initial;
-}
-
-header nav .nav-hamburger-icon,
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  box-sizing: border-box;
-  display: block;
+header .header {
   position: relative;
-  width: 20px;
 }
 
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  content: '';
+header .visually-hidden,
+header .dealer-search-label {
   position: absolute;
-  background: currentcolor;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
-}
-
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-  top: -6px;
-}
-
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  top: 6px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
-}
-
-@media (width >= 900px) {
-  header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-/* brand */
-header .nav-brand {
-  grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
-}
-
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
-}
-
-/* sections */
-header nav .nav-sections {
-  grid-area: sections;
-  flex: 1 1 auto;
-  display: none;
-  visibility: hidden;
-}
-
-header nav[aria-expanded='true'] .nav-sections {
-  display: block;
-  visibility: visible;
-  align-self: start;
-}
-
-header nav .nav-sections ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
-}
-
-header nav .nav-sections ul > li {
-  font-weight: 500;
-}
-
-header nav .nav-sections .nav-drop > button {
-  all: unset;
-  display: inline-block;
+header .site-header {
   position: relative;
-  padding-right: 16px;
+  z-index: 40;
+}
+
+header .navbar {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 81px;
+  padding: 32px 15px;
+}
+
+/* logo: authored mobile + desktop logo pictures, decorative white logo while a menu is open */
+header .navbar-logo a {
+  display: block;
+}
+
+header .navbar-logo img {
+  width: 119px;
+  height: 17px;
+}
+
+header .navbar-logo-desktop {
+  display: none;
+}
+
+header .navbar-logo .navbar-logo-white {
+  display: none;
+}
+
+header .navbar-logo .navbar-logo-white.is-active {
+  display: block;
+  position: relative;
+  z-index: 99;
+  width: 116px;
+  height: 97px;
+}
+
+header .navbar-logo.logo-inverse :is(.navbar-logo-mobile, .navbar-logo-desktop) {
+  display: none;
+}
+
+header .menu-toggle {
+  display: block;
+  width: 26px;
+  height: 16px;
+  margin-top: 1px;
+  background: url("/icons/mob-menu.svg") no-repeat 50% 50% / contain;
+}
+
+/* nav: phone = full-screen panel */
+header .site-nav {
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+header .site-nav.is-open {
+  transform: none;
+}
+
+header .site-nav-list {
+  padding: 24px 24px 0;
+}
+
+header .site-nav-items li {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-rule);
+  text-align: left;
+  font-family: var(--font-regular);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.64px;
+  color: #343434;
   cursor: pointer;
 }
 
-header nav .nav-sections .nav-drop > button::after {
-  content: '';
-  position: absolute;
-  top: 0.5em;
-  right: 2px;
-  transform: rotate(135deg);
-  width: 6px;
-  height: 6px;
-  border: 2px solid currentcolor;
-  border-radius: 0 1px 0 0;
-  border-width: 2px 2px 0 0;
+header .site-nav-items li[aria-expanded="true"] {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  color: #000;
 }
 
-header nav .nav-sections .nav-drop > button[aria-expanded='true']::after {
-  top: unset;
-  bottom: 0.5em;
-  transform: rotate(315deg);
-}
-
-header nav .nav-sections .nav-drop > button:focus-visible {
-  outline: 2px solid currentcolor;
-  outline-offset: 2px;
-}
-
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
-}
-
-header nav .nav-sections ul > li > ul > li {
-  font-weight: 400;
-}
-
-header nav .nav-sections .nav-drop > button[aria-expanded='false'] + ul {
+header .site-nav-cta,
+header .site-nav-close-item {
   display: none;
 }
 
-@media (width >= 900px) {
-  header nav .nav-sections {
-    display: block;
-    visibility: visible;
-    white-space: nowrap;
+header .site-nav-close {
+  display: block;
+  width: 19px;
+  height: 18px;
+  background: url("/icons/menu-close-icon.svg") no-repeat center / 19px 18px;
+}
+
+/* phone nav: dealer search panel */
+header .site-nav-mobile-search {
+  margin-top: auto;
+  background: var(--color-ink);
+  color: #fff;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+header .site-nav-search-icon img {
+  margin: 0 auto;
+  width: 33px;
+  height: 33px;
+}
+
+header .site-nav-search-title h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+}
+
+header .site-nav-search-text p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+header .site-nav-search-row {
+  display: flex;
+  margin: 30px 0;
+}
+
+header .site-nav-search-row input {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  border: 0;
+  border-radius: 30px 0 0 30px;
+  padding: 0 24px;
+  font: 16px/20px var(--font-regular);
+  background: #f1f1f1;
+}
+
+header .site-nav-search-row button {
+  width: 54px;
+  height: 40px;
+  border-radius: 0 30px 30px 0;
+  background: #f1f1f1 url("/icons/search-icon.svg") no-repeat center;
+}
+
+header .site-nav-current-loc a {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+header .site-nav-current-loc a::before {
+  content: "";
+  flex: 0 0 12px;
+  height: 19px;
+  background: url("/icons/curr-loc-pin.svg") no-repeat center / contain;
+}
+
+header .site-nav-filters {
+  margin-top: 20px;
+  text-align: left;
+}
+
+header .site-nav-filters-head {
+  color: #fff;
+  font-family: var(--font-bold);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+header .site-nav-filters-head p {
+  display: inline;
+}
+
+header .site-nav-filters-body p,
+header .filter-check {
+  letter-spacing: 0.02em;
+}
+
+header .site-nav-filters-body {
+  max-height: 0;
+  overflow: hidden;
+}
+
+header .site-nav-filters-body.is-open {
+  max-height: none;
+  padding-top: 16px;
+}
+
+header .filter-group {
+  margin-bottom: 20px;
+}
+
+header .filter-group-title h4 {
+  margin-bottom: 12px;
+  font-family: var(--font-regular);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+header .filter-list li {
+  position: relative;
+}
+
+header .filter-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+header .filter-reset p {
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-flex;
+  gap: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header .filter-reset p::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("/icons/refresh-icon.svg") no-repeat center / contain;
+}
+
+/* mega menus (source .sidenav: width 0 -> .side-nav, transition 1s; .menu-overlay) */
+header .sidenav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 60;
+  height: 100%;
+  width: 0;
+  overflow-x: hidden;
+  background: #fff;
+  transition:
+    width 1s,
+    height 1s;
+}
+
+header .sidenav.side-nav {
+  width: 100%;
+  height: 100vh;
+  border-right: 1px solid #efefef;
+  overflow-y: auto;
+}
+
+header .sidenav > .mega-menu {
+  padding: 15px 24px 100px;
+}
+
+header .sidenav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 70%);
+}
+
+header .sidenav-overlay.overlay-active {
+  display: block;
+  z-index: 10;
+}
+
+body.side-menu-active {
+  overflow: hidden;
+}
+
+header .mega-menu[hidden] {
+  display: none;
+}
+
+header .mega-menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -24px 32px;
+  padding: 32px 24px;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+header .mega-menu-back {
+  width: 9px;
+  height: 21px;
+  background: url("/icons/menu-back-icon.svg") no-repeat center / 9px 15px;
+}
+
+header .mega-menu-close {
+  width: 19px;
+  height: 21px;
+  background: url("/icons/menu-close-icon.svg") no-repeat center / 19px 18px;
+}
+
+header .mega-menu-title h2 {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #343434;
+}
+
+header .mega-menu-heading h3 {
+  font-family: var(--font-regular);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+header .mega-menu-group {
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+header .mega-menu-group:last-child {
+  border-bottom: 0;
+}
+
+header .mega-menu-media img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+header .mega-menu-img-desktop {
+  display: none;
+}
+
+header .mega-menu-links h4 {
+  display: none;
+}
+
+header .mega-menu-links p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+header .mega-menu-links a {
+  display: block;
+  padding: 8px 0;
+  font-family: var(--font-regular);
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+/* sticky dealer search bar (source #search-container + .sticky) */
+header .dealer-search {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 11px;
+  min-height: 67px;
+  margin: 0;
+  background: var(--color-ink);
+}
+
+header .dealer-search.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1500px;
+  z-index: 34;
+}
+
+/* the bar leaves the flow when it sticks: the reservation shrinks with it, like the source's
+   document (it loses 67 px once scrolled past the bar) */
+body > header:has(.dealer-search.sticky) {
+  height: calc(var(--nav-height) - 67px);
+}
+
+header .dealer-search-row {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin-left: -1px;
+}
+
+header .dealer-search-input {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  border: 0;
+  border-radius: 30px 0 0 30px;
+  padding: 18px 24px;
+  background: #f1f1f1;
+  color: #5c5c5c;
+  font-family: var(--font-regular);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.32px;
+  text-transform: capitalize;
+  margin: 0 -1px;
+  outline: none;
+  appearance: none;
+}
+
+header .dealer-search-input::placeholder {
+  color: #5c5c5c;
+  opacity: 1;
+}
+
+header .dealer-search-btn {
+  flex: 0 0 54px;
+  height: 40px;
+  border-radius: 0 30px 30px 0;
+  background: #f1f1f1 url("/icons/search-icon.svg") no-repeat center;
+}
+
+@media (width >= 768px) {
+  header .navbar-logo img {
+    width: 116px;
+    height: 97px;
   }
 
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
+  header .navbar-logo-mobile {
     display: none;
-    position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > button[aria-expanded='true'] + ul {
+  header .navbar-logo-desktop {
     display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
-    white-space: initial;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+  header .menu-toggle {
+    display: none;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
+  header .navbar {
+    position: relative;
+    height: 147px;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  header .navbar-logo {
+    margin: 25px;
+  }
+
+  header .site-nav {
+    position: absolute;
+    inset: 48px 24px auto auto;
+    width: auto;
+    transform: none;
+    visibility: visible;
+    overflow: visible;
+    background: transparent;
+    transition: none;
+  }
+
+  header .site-nav-list {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding: 0;
+  }
+
+  header .site-nav-items ul {
+    display: flex;
+    align-items: center;
+  }
+
+  header .site-nav-items li {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    margin-right: 30px;
+    border: 0;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  header .site-nav-items li:last-child {
+    margin-right: 25px;
+  }
+
+  header .site-nav-items li:hover {
+    color: #363636;
+  }
+
+  header .site-nav-cta {
+    display: block;
+  }
+
+  header .site-nav-cta a.button:any-link {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  header .site-nav-mobile-search {
+    display: none;
+  }
+
+  header .site-nav-close-item {
+    display: block;
+    margin-left: 24px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  header .site-nav-close-item.is-visible {
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  header .sidenav {
+    z-index: 20;
+  }
+
+  header .dealer-search {
+    display: none;
+  }
+
+  body > header:has(.dealer-search.sticky) {
+    height: var(--nav-height);
   }
 }
 
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
+@media (width >= 1024px) {
+  header .sidenav.side-nav {
+    width: 70%;
+  }
+
+  /* source #service-menu at lg: panel starts under the navbar, 1px #d9d9d9 top rule,
+     padding 35/100/100/60; the back / title / close bar is lg:hidden */
+  header .sidenav > .mega-menu {
+    margin-top: var(--nav-height);
+    padding: 35px 100px 100px 60px;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  header .mega-menu-bar {
+    display: none;
+  }
+
+  header .mega-menu-heading h3 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+
+  header .mega-menu-group {
+    display: flex;
+    gap: 20px;
+  }
+
+  header .mega-menu-bar + .mega-menu-heading + .mega-menu-group {
+    padding-bottom: 0;
+  }
+
+  /* source a.sub-menu-item: inline 18/32 light, chevron at calc(100% - 10px); li 32 + 28 */
+  header .mega-menu-links li {
+    margin-bottom: 28px;
+  }
+
+  header .mega-menu-links a {
+    display: inline;
+    padding: 0 32px 0 0;
+    font-family: var(--font-light);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.18px;
+    background: url("/icons/right-nav-icon.svg") no-repeat calc(100% - 10px) 50%;
+  }
+
+  header .mega-menu-links a[href^="http"]:not([href*="niss-parts-service"]) {
+    background-image: url("/icons/up-arrow-red-navigation.svg");
+  }
+
+  header .mega-menu-media {
+    flex: 0 0 238px;
+  }
+
+  header .mega-menu-img-mobile {
+    display: none;
+  }
+
+  header .mega-menu-img-desktop {
+    display: block;
+  }
+}
+
+@media (width >= 1281px) {
+  header .sidenav.side-nav {
+    width: 60%;
+  }
 }

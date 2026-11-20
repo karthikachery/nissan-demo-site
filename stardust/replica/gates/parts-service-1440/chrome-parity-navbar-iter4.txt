@@ -1,0 +1,9 @@
+chrome-parity @ 1440px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service (live side from cache stardust/.labs/chrome-live-navbar-1440.json, probed 2026-11-19T17:50:43.278Z — delete the file to re-probe)
+  build: http://localhost:8791/prototypes/parts-service-proposed.html
+
+■ footer: ✓ parity — 29 paired of 29/29 texts, 6/6 icons
+
+■ header: ✓ parity — 5 paired of 5/5 texts, 1/1 icons
+
+✓ chrome parity within tolerance — run crop-compare (pass bar item 5) to confirm in pixels.

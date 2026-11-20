@@ -1,0 +1,736 @@
+{
+ "url": "http://localhost:8791/prototypes/parts-service-proposed.html",
+ "at": "2026-11-19T17:42:53.070Z",
+ "width": 360,
+ "status": 200,
+ "settlePasses": 2,
+ "docH": 6555,
+ "pageW": 360,
+ "counts": {
+  "textClipped": 0,
+  "textHidden": 0,
+  "controlHidden": 0,
+  "controlClipped": 0,
+  "clamped": 0,
+  "collapsed": 0,
+  "scrollHidden": 0,
+  "horizontal": 6,
+  "offPage": 39,
+  "textNodes": 76,
+  "controls": 54,
+  "total": 0
+ },
+ "findings": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 244,
+   "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > h3.offer-card__title.offer-card__title--tight",
+   "text": "buy 3 tires, get the 4th for $1*",
+   "clipper": "ul#offers-track",
+   "rect": {
+    "l": 325,
+    "t": 1254,
+    "r": 604,
+    "b": 1281,
+    "w": 279,
+    "h": 27
+   },
+   "clip": {
+    "l": 0,
+    "t": 929,
+    "r": 360,
+    "b": 1493,
+    "w": 360,
+    "h": 564
+   },
+   "lines": 2
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 159,
+   "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > p.offer-card__validity",
+   "text": "offer valid november 16-30, 2026",
+   "clipper": "ul#offers-track",
+   "rect": {
+    "l": 325,
+    "t": 1335,
+    "r": 519,
+    "b": 1352,
+    "w": 194,
+    "h": 17
+   },
+   "clip": {
+    "l": 0,
+    "t": 929,
+    "r": 360,
+    "b": 1493,
+    "w": 360,
+    "h": 564
+   },
+   "lines": 1
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "cut": 54,
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > button#home_offer_details_pop_up_4th_for_1",
+   "text": "*offer details",
+   "clipper": "ul#offers-track",
+   "rect": {
+    "l": 325,
+    "t": 1380,
+    "r": 414,
+    "b": 1404,
+    "w": 89,
+    "h": 24
+   },
+   "clip": {
+    "l": 0,
+    "t": 929,
+    "r": 360,
+    "b": 1493,
+    "w": 360,
+    "h": 564
+   }
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 54,
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > button#home_offer_details_pop_up_4th_for_1",
+   "text": "*offer details",
+   "clipper": "ul#offers-track",
+   "rect": {
+    "l": 325,
+    "t": 1382,
+    "r": 414,
+    "b": 1401,
+    "w": 89,
+    "h": 19
+   },
+   "clip": {
+    "l": 0,
+    "t": 929,
+    "r": 360,
+    "b": 1493,
+    "w": 360,
+    "h": 564
+   },
+   "lines": 1
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "cut": 134,
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_banner_shopfortires",
+   "text": "shop for tires",
+   "clipper": "ul#offers-track",
+   "rect": {
+    "l": 325,
+    "t": 1424,
+    "r": 494,
+    "b": 1466,
+    "w": 169,
+    "h": 42
+   },
+   "clip": {
+    "l": 0,
+    "t": 929,
+    "r": 360,
+    "b": 1493,
+    "w": 360,
+    "h": 564
+   }
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "cut": 83,
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_banner_shopfortires",
+   "text": "shop for tires",
+   "clipper": "ul#offers-track",
+   "rect": {
+    "l": 346,
+    "t": 1435,
+    "r": 443,
+    "b": 1454,
+    "w": 97,
+    "h": 19
+   },
+   "clip": {
+    "l": 0,
+    "t": 929,
+    "r": 360,
+    "b": 1493,
+    "w": 360,
+    "h": 564
+   },
+   "lines": 1
+  }
+ ],
+ "textBoxes": [
+  {
+   "x": 15,
+   "y": 482,
+   "w": 237,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 545,
+   "w": 301,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 569,
+   "w": 299,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 593,
+   "w": 85,
+   "h": 22
+  },
+  {
+   "x": 100,
+   "y": 593,
+   "w": 16,
+   "h": 22
+  },
+  {
+   "x": 121,
+   "y": 593,
+   "w": 158,
+   "h": 22
+  },
+  {
+   "x": 36,
+   "y": 647,
+   "w": 91,
+   "h": 19
+  },
+  {
+   "x": 12,
+   "y": 864,
+   "w": 179,
+   "h": 33
+  },
+  {
+   "x": 15,
+   "y": 1254,
+   "w": 291,
+   "h": 27
+  },
+  {
+   "x": 15,
+   "y": 1286,
+   "w": 101,
+   "h": 27
+  },
+  {
+   "x": 15,
+   "y": 1329,
+   "w": 205,
+   "h": 17
+  },
+  {
+   "x": 15,
+   "y": 1382,
+   "w": 89,
+   "h": 19
+  },
+  {
+   "x": 36,
+   "y": 1435,
+   "w": 111,
+   "h": 19
+  },
+  {
+   "x": 325,
+   "y": 1254,
+   "w": 279,
+   "h": 27
+  },
+  {
+   "x": 325,
+   "y": 1286,
+   "w": 30,
+   "h": 27
+  },
+  {
+   "x": 325,
+   "y": 1335,
+   "w": 194,
+   "h": 17
+  },
+  {
+   "x": 325,
+   "y": 1382,
+   "w": 89,
+   "h": 19
+  },
+  {
+   "x": 346,
+   "y": 1435,
+   "w": 97,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 1934,
+   "w": 247,
+   "h": 42
+  },
+  {
+   "x": 15,
+   "y": 1974,
+   "w": 264,
+   "h": 42
+  },
+  {
+   "x": 15,
+   "y": 2014,
+   "w": 118,
+   "h": 42
+  },
+  {
+   "x": 15,
+   "y": 2076,
+   "w": 303,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 2100,
+   "w": 298,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 2124,
+   "w": 320,
+   "h": 22
+  },
+  {
+   "x": 36,
+   "y": 2178,
+   "w": 77,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 2715,
+   "w": 150,
+   "h": 18
+  },
+  {
+   "x": 165,
+   "y": 2715,
+   "w": 20,
+   "h": 18
+  },
+  {
+   "x": 15,
+   "y": 2750,
+   "w": 237,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 2790,
+   "w": 143,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 2866,
+   "w": 319,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 2890,
+   "w": 302,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 2914,
+   "w": 305,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 2938,
+   "w": 296,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 2962,
+   "w": 313,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 2986,
+   "w": 197,
+   "h": 19
+  },
+  {
+   "x": 36,
+   "y": 3055,
+   "w": 90,
+   "h": 19
+  },
+  {
+   "x": 207,
+   "y": 3056,
+   "w": 77,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 3578,
+   "w": 170,
+   "h": 18
+  },
+  {
+   "x": 15,
+   "y": 3613,
+   "w": 260,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 3653,
+   "w": 69,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 3729,
+   "w": 309,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 3753,
+   "w": 311,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 3777,
+   "w": 301,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 3801,
+   "w": 284,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 3825,
+   "w": 301,
+   "h": 19
+  },
+  {
+   "x": 36,
+   "y": 3894,
+   "w": 116,
+   "h": 19
+  },
+  {
+   "x": 233,
+   "y": 3895,
+   "w": 77,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 4417,
+   "w": 192,
+   "h": 18
+  },
+  {
+   "x": 15,
+   "y": 4444,
+   "w": 259,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 4484,
+   "w": 191,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 4524,
+   "w": 143,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 4598,
+   "w": 307,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 4622,
+   "w": 269,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 4646,
+   "w": 316,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 4670,
+   "w": 280,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 4694,
+   "w": 263,
+   "h": 19
+  },
+  {
+   "x": 278,
+   "y": 4694,
+   "w": 14,
+   "h": 19
+  },
+  {
+   "x": 36,
+   "y": 4757,
+   "w": 172,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 5199,
+   "w": 296,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 5239,
+   "w": 200,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 5279,
+   "w": 123,
+   "h": 44
+  },
+  {
+   "x": 15,
+   "y": 5352,
+   "w": 328,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 5376,
+   "w": 310,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 5400,
+   "w": 296,
+   "h": 22
+  },
+  {
+   "x": 15,
+   "y": 5424,
+   "w": 42,
+   "h": 22
+  },
+  {
+   "x": 57,
+   "y": 5424,
+   "w": 262,
+   "h": 22
+  },
+  {
+   "x": 36,
+   "y": 5488,
+   "w": 89,
+   "h": 19
+  },
+  {
+   "x": 209,
+   "y": 5488,
+   "w": 89,
+   "h": 19
+  },
+  {
+   "x": 46,
+   "y": 5606,
+   "w": 268,
+   "h": 22
+  },
+  {
+   "x": 71,
+   "y": 5630,
+   "w": 217,
+   "h": 22
+  },
+  {
+   "x": 140,
+   "y": 5694,
+   "w": 50,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 5779,
+   "w": 49,
+   "h": 19
+  },
+  {
+   "x": 15,
+   "y": 5859,
+   "w": 46,
+   "h": 18
+  },
+  {
+   "x": 15,
+   "y": 5948,
+   "w": 111,
+   "h": 18
+  },
+  {
+   "x": 15,
+   "y": 6037,
+   "w": 58,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6240,
+   "w": 108,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6277,
+   "w": 328,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6297,
+   "w": 118,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6332,
+   "w": 124,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6367,
+   "w": 141,
+   "h": 18
+  },
+  {
+   "x": 27,
+   "y": 6409,
+   "w": 188,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6470,
+   "w": 269,
+   "h": 18
+  },
+  {
+   "x": 16,
+   "y": 6494,
+   "w": 58,
+   "h": 18
+  }
+ ],
+ "groups": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "ul#offers-track",
+   "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > h3.offer-card__title.offer-card__title--tight",
+   "text": "buy 3 tires, get the 4th for $1*",
+   "cutMin": 244,
+   "cutMax": 244
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "ul#offers-track",
+   "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > p.offer-card__validity",
+   "text": "offer valid november 16-30, 2026",
+   "cutMin": 159,
+   "cutMax": 159
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "ul#offers-track",
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > button#home_offer_details_pop_up_4th_for_1",
+   "text": "*offer details",
+   "cutMin": 54,
+   "cutMax": 54
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "ul#offers-track",
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > button#home_offer_details_pop_up_4th_for_1",
+   "text": "*offer details",
+   "cutMin": 54,
+   "cutMax": 54
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "ul#offers-track",
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_banner_shopfortires",
+   "text": "shop for tires",
+   "cutMin": 134,
+   "cutMax": 134
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "ul#offers-track",
+   "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_banner_shopfortires",
+   "text": "shop for tires",
+   "cutMin": 83,
+   "cutMax": 83
+  }
+ ],
+ "tier": "chrome"
+}

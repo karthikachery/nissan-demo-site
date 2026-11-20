@@ -1,0 +1,385 @@
+{
+  "discovery": {
+    "fetchTechnique": "chrome",
+    "count": 1,
+    "concurrency": 1
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service/images/nissan/favicon.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": [],
+    "degraded": [],
+    "pageTimeoutMs": 60000
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/consent/{uuid}-test/{uuid}-test.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/consent/df9990f0-aa7e-4394-907c-8b9a45ba42df-test/df9990f0-aa7e-4394-907c-8b9a45ba42df-test.json",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "geolocation.onetrust.com",
+        "path": "/cookieconsentpub/v1/geo/location",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/consent/{uuid}-test/{uuid}/en.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/consent/df9990f0-aa7e-4394-907c-8b9a45ba42df-test/8f89f541-1749-4b1f-98dc-a49a9c2d4d0a/en.json",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/scripttemplates/202501.2.0/assets/otCommonStyles.css",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/css",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/scripttemplates/202501.2.0/assets/otCommonStyles.css",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/scripttemplates/202501.2.0/assets/v2/otPcCenter.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/scripttemplates/202501.2.0/assets/v2/otPcCenter.json",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/scripttemplates/202501.2.0/assets/otFlat.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/scripttemplates/202501.2.0/assets/otFlat.json",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/ccm/collect",
+        "query": [
+          "_gsid",
+          "ae",
+          "apvc",
+          "auid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "ep.ads_data_redaction",
+          "fmt",
+          "frm",
+          "gcd",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/ccm/collect",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "cdn.cookielaw.org",
+        "path": "/logos/static/ot_guard_logo.svg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "js.web-2-tel.com",
+        "path": "/v3/{n}/org-jsSdk",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "sameSite": false,
+        "example": "https://js.web-2-tel.com/v3/4994/org-jsSdk",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "analytics.google.com",
+        "path": "/g/collect",
+        "query": [
+          "_eu",
+          "_p",
+          "_s",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "ec_mode",
+          "ecid",
+          "en",
+          "frm",
+          "gaf",
+          "gcd",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://analytics.google.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "td.yieldify.com",
+        "path": "/0.0.1/tag/1.509.2/main-web-worker.js",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/javascript",
+        "sameSite": false,
+        "example": "https://td.yieldify.com/0.0.1/tag/1.509.2/main-web-worker.js",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "gateway.yieldify-production.com",
+        "path": "/full-user-profile/rpc",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://gateway.yieldify-production.com/full-user-profile/rpc",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "v2.dc.yieldify.com",
+        "path": "/i",
+        "query": [
+          "aid",
+          "bid",
+          "dtm",
+          "e",
+          "ec",
+          "hcc",
+          "sc",
+          "trv",
+          "tuuid",
+          "tv",
+          "ue_px",
+          "url",
+          "yuid"
+        ],
+        "resourceType": "fetch",
+        "contentType": "image/gif",
+        "sameSite": false,
+        "example": "https://v2.dc.yieldify.com/i",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "td.yieldify.com",
+        "path": "/0.0.1/campaign_overlays/{n}/1.509.2/overlay_{uuid}.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://td.yieldify.com/0.0.1/campaign_overlays/274434/1.509.2/overlay_53842d1d-a567-59c4-afc5-8f577e5dcff1.json",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "connect.facebook.net",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "cdn.jsdelivr.net",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "cdn.cookielaw.org",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "js.web-2-tel.com",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "www.nissanusa.com",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "login-ds.dotomi.com",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "td.yieldify.com",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      },
+      {
+        "host": "custom.yieldify.com",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "parts-service"
+        ]
+      }
+    ],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "parts-service",
+      "verdict": "ok",
+      "notes": "page fully rendered (hero, offers carousel, 4 feature rows, tire price match, recall strip, footer). A timed marketing modal (\"Receive $10 Off Your Next Synthetic Oil & Filter Change\" signup form) overlays the hero in the capture; content record is unaffected; gates must dismiss it."
+    }
+  ],
+  "siblingCandidates": []
+}

@@ -1,0 +1,347 @@
+/*
+ * parts-service.css — archetype layer (landing) for /parts-service.
+ * Sections: hero carousel, Current Offers rail, experience banner, two-column tiles,
+ * tire price match band, recall strip. Lifted values: nissan.css (.home-carousel,
+ * .exp-banner, .hero-caption steps 769/1280/1366/1472/1920), live computed styles.
+ */
+
+/* ---------- hero carousel (source .home-carousel splide) ---------- */
+.hero-carousel { position: relative; }
+.hero-carousel__viewport { overflow: hidden; }
+.hero-carousel__track {
+  display: flex;
+  transform: translateX(calc(var(--active, 0) * -100%));
+  transition: transform 2s cubic-bezier(.25, 1, .5, 1);
+}
+.hero-carousel__track.is-jumping { transition: none; }
+.hero-slide { position: relative; flex: 0 0 100%; min-width: 0; }
+.hero-slide__nudge { margin-top: -1px; }
+@media (min-width: 768px) {
+  .hero-slide__nudge { margin-top: 0; }
+}
+.hero-slide__media img { width: 100%; }
+.hero-slide__video { display: block; width: 100%; height: auto; aspect-ratio: 1920 / 700; object-fit: cover; }
+
+.hero-caption {
+  position: relative;
+  margin-top: -1px;
+  padding: 30px 15px 40px;
+  background: var(--color-ink);
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+}
+.hero-caption__eyebrow {
+  margin-bottom: 8px;
+  font-family: var(--font-light);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.hero-caption__eyebrow:empty { height: 0; }
+.hero-caption__title {
+  margin-bottom: 20px;
+  font-family: var(--font-light);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  color: #fff;
+}
+.hero-caption__title--spaced { letter-spacing: 3px; }
+.hero-caption__eyebrow:empty + .hero-caption__title { margin-top: 8px; }
+.hero-caption__text {
+  margin-bottom: 20px;
+  font-family: var(--font-light);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .32px;
+  font-weight: 300;
+}
+.hero-caption__text--regular { font-family: var(--font-regular); font-weight: 400; padding-right: 16px; }
+.hero-caption__text--tight { letter-spacing: .2px; }
+.hero-caption__text--wide { letter-spacing: .3px; }
+.hero-caption__validity { margin-bottom: 20px; font-size: 12px; line-height: 24px; letter-spacing: .2px; }
+.hero-caption__ctas { display: flex; align-items: center; }
+.hero-caption__ctas .btn { letter-spacing: .2px; white-space: normal; }
+.hero-caption__ctas .btn--primary { margin-right: 20px; }
+.hero-caption__ctas .btn--ext, .hero-caption__ctas .btn--ext-up { padding-top: 7.5px; }
+.hero-caption__ctas .btn--ghost-white { white-space: normal; }
+
+.hero-carousel__dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100vw * 960 / 1125 - 37px);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 15px 10px;
+  z-index: 1;
+}
+.hero-carousel__dot {
+  transition: opacity .3s;
+  width: 12px;
+  height: 12px;
+  margin: 3px;
+  border-radius: 9999px;
+  background: var(--color-muted);
+  opacity: .7;
+}
+.hero-carousel__dot[aria-selected="true"] { background: #fff; opacity: 1; }
+
+@media (min-width: 640px) {
+  .hero-carousel__dots { top: auto; bottom: 17px; padding-bottom: 0; gap: 8px; }
+}
+@media (min-width: 769px) {
+  .hero-slide__video { position: absolute; inset: -1px 0 auto; width: 101.2%; height: 101.2%; aspect-ratio: auto; }
+  .hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    max-width: 444px;
+    width: 444px;
+    margin: 0;
+    padding: 22.4px 19.2px;
+    transform: translateY(-50%);
+  }
+  .hero-caption--compact { padding: 30px; }
+  .hero-caption__title { font-size: 40px; line-height: 48px; letter-spacing: normal; }
+  .hero-caption__title--display { font-size: 56px; line-height: 64px; }
+  .hero-caption__eyebrow--lg { font-size: 18px; line-height: 32px; letter-spacing: 3.6px; }
+  .hero-caption--compact .hero-caption__eyebrow { margin: -9.6px 0 0; }
+  .hero-caption--compact .hero-caption__eyebrow:empty + .hero-caption__title { margin-top: 0; }
+  .hero-caption__text--regular { padding-right: 0; }
+  .hero-caption__ctas .btn--ext, .hero-caption__ctas .btn--ext-up { padding-top: 6.5px; }
+  .hero-caption__ctas .btn--ext { padding-bottom: 9.6px; }
+}
+@media (min-width: 1280px) {
+  .hero-caption { left: 5%; transform: translate(-3%, -50%); }
+}
+@media (min-width: 1366px) {
+  .hero-caption { left: 10%; transform: translate(-10%, -50%); }
+}
+@media (min-width: 1472px) {
+  .hero-caption { left: 14%; transform: translate(-8%, -50%); }
+}
+@media (min-width: 1920px) {
+  .hero-caption { left: 22%; transform: translate(-10%, -51%); }
+}
+
+/* ---------- Current Offers rail (source .home-offers .vertical-slider) ---------- */
+.offers { padding-top: 40px; }
+.offers__head { margin-top: -1px; padding: 12px; }
+.offers__title {
+  margin-bottom: 20px;
+  font-family: var(--font-regular);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: .9px;
+  font-weight: 300;
+  color: #000;
+}
+.offers__rail { position: relative; overflow: hidden; }
+.offers__track {
+  display: flex;
+  gap: 14px;
+  padding: 0 15px;
+  transition: transform 1s;
+}
+.offer-card { flex: 0 0 296px; padding: 11.25px 0; }
+.offer-card__tile { position: relative; max-width: 296px; }
+.offer-card__img { width: 100%; }
+.offer-card__body { position: relative; height: 245px; padding: 16px 0; }
+.offer-card__title {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  font-family: var(--font-regular);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: .8px;
+  color: #000;
+}
+.offer-card__title--tight { margin-bottom: 10px; padding-bottom: 0; }
+.offer-card__validity {
+  margin: 16px 0 30px;
+  font-family: var(--font-light);
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: var(--color-body);
+}
+.offer-card__foot { position: absolute; left: 0; bottom: 15px; }
+.offer-card__ctas { display: flex; flex-direction: column; align-items: flex-start; }
+.offer-card__ctas .link-btn { margin-bottom: 20px; }
+.offer-card__ctas .btn { margin-right: 20px; }
+.offer-card__ctas .btn--track { letter-spacing: .2px; }
+
+.offers__progress { height: 3px; margin: 0 15px; border-bottom: 1px solid #c1c1c1; overflow: hidden; }
+.offers__progress-bar { display: block; width: 20%; height: 2px; border: 1px solid var(--color-primary); transition: transform 1s; }
+.offers__nav { display: flex; justify-content: flex-end; margin: 32px 15px 32px 0; }
+.offers__btn {
+  font-family: var(--font-regular);
+  font-size: 18px;
+  line-height: 28px;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  background: url("../../current/assets/media/site/icons/slide-next.svg") no-repeat;
+}
+.offers__btn--prev { margin-right: 8px; transform: rotate(180deg); }
+.offers__btn:disabled { cursor: not-allowed; background-image: url("../../current/assets/media/site/icons/slide-next-disabled.svg"); }
+
+@media (min-width: 768px) {
+  .offers__head { padding-left: 0; }
+  .offers__title { font-size: 32px; line-height: 40px; letter-spacing: normal; }
+  .offer-card { flex-basis: 400px; }
+  .offer-card__tile { max-width: 400px; }
+  .offer-card--offset { padding-top: 16px; }
+  .offers__nav { margin-right: 32px; }
+  .offers__btn--next { margin-right: 32px; }
+}
+@media (min-width: 1024px) {
+  .offers { padding-top: 36px; }
+  .offers__head { margin-bottom: 4px; padding-top: 12px; padding-bottom: 12px; }
+  .offers__title { margin-bottom: 0; }
+  .offers__rail { margin-left: max(0px, calc((100% - var(--container)) / 2)); padding-bottom: 10px; }
+  .offers__track { gap: 24px; padding: 0; }
+  .offer-card { padding: 18px 0 12px; }
+  .offer-card--offset { padding-top: 22px; }
+  .offer-card__body { height: 180px; padding: 16px 3.75px 16px 0; }
+  .offer-card__title { padding-bottom: 8px; letter-spacing: normal; }
+  .offer-card__title--tight { margin-bottom: 20px; padding-bottom: 0; }
+  .offer-card__validity { margin: 0 0 20px; }
+  .offer-card__foot { bottom: 30px; }
+  .offer-card__ctas { flex-direction: row-reverse; align-items: center; justify-content: flex-end; }
+  .offer-card__ctas .link-btn { margin-bottom: 0; }
+  .offers__progress { margin: 16px 0 0; }
+  .offers__progress-bar { width: 50%; }
+}
+
+/* ---------- experience banner (source section.exp-banner) ---------- */
+.exp-banner { padding-bottom: 40px; }
+.exp-banner__frame { position: relative; }
+.exp-banner__img { width: 100%; }
+.exp-banner .hero-caption__title { font-size: 30px; line-height: 40px; letter-spacing: normal; }
+.exp-banner .hero-caption__text { letter-spacing: normal; }
+@media (min-width: 769px) {
+  .exp-banner__frame, .exp-banner__img { min-height: 400px; max-height: 400px; }
+  .exp-banner__img { height: 400px; }
+  .exp-banner .hero-caption { max-width: 400px; width: 400px; padding: 21px 15px; top: 51%; }
+  .exp-banner .hero-caption__title { font-size: 30px; line-height: 36px; }
+}
+@media (min-width: 1024px) {
+  .exp-banner { padding-bottom: 60px; }
+}
+@media (min-width: 1472px) {
+  .exp-banner__frame, .exp-banner__img { min-height: 600px; max-height: 600px; }
+  .exp-banner__img { height: 600px; }
+  .exp-banner .hero-caption__title { font-size: 38px; line-height: 48px; }
+}
+
+/* ---------- two-column tiles (source section.two-column-tile) ---------- */
+.tile { margin-bottom: 64px; padding: 0 15px; }
+.tile__inner { display: flex; flex-direction: column; color: #000; }
+.tile--media-right .tile__inner { flex-direction: column-reverse; }
+.tile__media { margin-bottom: 48px; }
+.tile__media img { width: 100%; }
+.tile__content { display: flex; flex-direction: column; justify-content: center; }
+.tile__eyebrow {
+  margin-bottom: 16px;
+  font-family: var(--font-regular);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000;
+}
+.tile__eyebrow--tight { margin-bottom: 8px; }
+.tile__title {
+  margin-bottom: 32px;
+  font-family: var(--font-light);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #000;
+}
+.tile__title--tight { margin-bottom: 30px; }
+.tile__text {
+  margin-bottom: 36px;
+  font-family: var(--font-light);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .28px;
+  color: #000;
+}
+.tile__text--wide { letter-spacing: .4px; margin-bottom: 30px; }
+.tile__ctas { display: flex; }
+.tile__ctas .btn--secondary { margin-right: 30px; }
+.tile__ctas .btn--cap { text-transform: capitalize; }
+
+@media (min-width: 768px) {
+  .tile { padding: 0; margin-bottom: 80px; }
+  .tile__inner, .tile--media-right .tile__inner { flex-direction: row; }
+  .tile__media { margin-bottom: 0; flex: 0 0 auto; }
+  .tile__media img { width: 600px; }
+  .tile__content { flex: 2 1 0; }
+  .tile--media-right .tile__content { margin-right: 70px; }
+  .tile--media-left .tile__content { margin-left: 70px; }
+  .tile__eyebrow { margin-bottom: 8px; }
+  .tile__ctas .btn--secondary { margin-right: 24px; }
+}
+@media (min-width: 1024px) {
+  .tile__title { font-size: 40px; line-height: 48px; }
+  .tile__title--tight { margin-bottom: 32px; }
+}
+@media (min-width: 1280px) {
+  .tile__text--wide { margin-bottom: 36px; }
+}
+
+/* ---------- tire price match band (source .tire-price-container) ---------- */
+.tire-price { background: var(--color-surface); }
+.tire-price__inner { padding: 0 15px 32px; }
+.tire-price__media { margin-bottom: 28px; padding-top: 44px; }
+.tire-price__media img { width: 100%; }
+.tire-price__title {
+  margin-bottom: 30px;
+  font-family: var(--font-light);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 2.56px;
+  font-weight: 300;
+  color: #000;
+}
+.tire-price__text { margin-bottom: 30px; font-size: 16px; line-height: 24px; letter-spacing: .32px; color: #000; }
+.tire-price__ctas .btn { margin: 0 30px 24px 0; }
+.tire-price__ctas .link-btn { display: inline-block; font-weight: 300; }
+
+@media (min-width: 768px) {
+  .tire-price__inner { display: flex; flex-direction: row-reverse; padding: 26px 0; }
+  .tire-price__media { flex: 0 0 31.75%; align-self: flex-end; margin: 0; padding-top: 0; }
+  .tire-price__content { flex: 0 0 68.25%; display: flex; flex-direction: column; justify-content: center; }
+  .tire-price__title { font-size: 28px; line-height: 28px; letter-spacing: normal; padding-right: 80px; }
+  .tire-price__ctas { display: flex; flex-direction: row; }
+  .tire-price__ctas .btn { margin: 0 24px 0 0; }
+  .tire-price__ctas .link-btn { align-self: center; }
+}
+
+/* ---------- recall strip (source section.bg-gray-20) ---------- */
+.recall-strip { padding: 30px 0; background: var(--color-rule); }
+.recall-strip__inner { padding: 0 15px; text-align: center; }
+.recall-strip__text { margin: 0 auto 30px; font-family: var(--font-regular); font-size: 16px; line-height: 24px; color: #000; }
+@media (min-width: 1024px) {
+  .recall-strip { padding: 10px 0; }
+  .recall-strip__inner { display: flex; justify-content: center; padding: 0; }
+  .recall-strip__text { align-self: center; margin: 0 32px 0 0; }
+}
+
+.hero-caption__title--spaced-sm { letter-spacing: 3px; }
+@media (min-width: 769px) {
+  .hero-caption__title--spaced-sm { letter-spacing: normal; }
+}
+
+.exp-banner .hero-caption { margin-top: 0; }

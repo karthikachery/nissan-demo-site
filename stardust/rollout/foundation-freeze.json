@@ -1,0 +1,33 @@
+{
+  "frozenAt": "2026-11-19T19:30:26.908Z",
+  "root": ".",
+  "paths": [
+    "styles/",
+    "fonts/",
+    "blocks/header/",
+    "blocks/footer/",
+    "head.html",
+    "scripts/"
+  ],
+  "files": {
+    "blocks/footer/footer.css": "4d9639a2c172bdee40f9c151a2f0db83af66dfdf61bdf96dd06398b6f7aa73d4",
+    "blocks/footer/footer.js": "b2379f534365a72269c5081900c7c962cf5bf760969871fc1a6030d116b443aa",
+    "blocks/header/header.css": "a5b068a2b89a49ad47552f25904e82f4d58edee5d6eeeb3c02e26012db9e0a03",
+    "blocks/header/header.js": "6fce5edba7e568deb56dffec27615e64088ab5e9cf28ea5094f198d166b80237",
+    "fonts/LICENSING.md": "0c381621b053bf8e9ec2dea4d774166978c0df9a8994530931d0e1ea64105e8f",
+    "fonts/NissanBrand-Bold.woff": "304f0b6c0a48b6fdee841adb6d9e4f8218bd53bbf4297433861df85950ece51d",
+    "fonts/NissanBrand-Bold.woff2": "4123376fd40af1e7424ef8de279b7f3f9cf7bdb77422e96906096f3dbdbb8945",
+    "fonts/NissanBrand-Regular.woff": "13ba6bbf4322781b9363f1da3ec3dc297a3818698522263979042f64c5f5ffe9",
+    "fonts/NissanBrand-Regular.woff2": "17e966fb0201594caaf19c0f00d7a2ef151df9e87c6125aada33d884bc64e0a5",
+    "fonts/NissanBrand-light.woff": "58b17f02df76da9e58ee02d56129ec82831adc1e41acc7f59788e135283e8cf5",
+    "fonts/NissanBrand-light.woff2": "c65bf85a3820141331d6bfbe53ec1ea0caeebb3368e8e839bbff8b04069333af",
+    "head.html": "0f963b6378ffa7c27479f25b3c4ddbe93c448e71e4d35b4e464eed7eb00f57c2",
+    "scripts/aem.js": "786e8019b14b4c0bee9df38a3162f129c04310d9d00e7a6dd326c7e5830c84ae",
+    "scripts/consent-check.js": "ac21f825288cfc82c52a6acd9c57bbb76a2017ee1b06319d493244f32751249a",
+    "scripts/consented.js": "8a0ec7239cfab36c9bbfd8e7cde178c6c9061f68da8539879411ee9fa09b18ab",
+    "scripts/scripts.js": "4f8cec7cde8ec98bc036e183af76642efadbdb6cfb8c302b89fc93230974321a",
+    "styles/fonts.css": "78936a4c714e366f7c0912905652633e9a895f24c53ad8062c91a4fc91f88c4b",
+    "styles/lazy-styles.css": "391d6721991eb169fa04d7c71d9b597361d76c24ab8a3d5f1dcb47457d8ca2d6",
+    "styles/styles.css": "b303a212ffce7d6f2ccc48971b8c7df4c66fee592bfce9817119c316bb9a611d"
+  }
+}

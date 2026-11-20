@@ -1,0 +1,39 @@
+chrome-parity @ 360px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service (live side from cache stardust/replica/gates/parts-service-360/chrome-live.json, probed 2026-11-19T17:42:34.449Z — delete the file to re-probe)
+  build: http://localhost:8791/prototypes/parts-service-proposed.html
+
+■ header: 29 delta(s) — 0 paired of 0/25 texts, 0/5 icons
+  (build has no <header>: auto-detected div.site-header — pass --region header=<liveSel>|<buildSel> to override)
+  REGION BOX   Δh +81px (0→81)
+  REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  EXTRA        "Service & Maintenance"  build <button> "Service & Maintenance" has no live source
+  EXTRA        "Shop"  build <button> "Shop" has no live source
+  EXTRA        "Coupons & Offers"  build <a> "Coupons & Offers" has no live source
+  EXTRA        "Owners"  build <button> "Owners" has no live source
+  EXTRA        "Enter Your Location"  build <h3> "Enter Your Location" has no live source
+  EXTRA        "To find the best offers and nearby servi"  build <p> "To find the best offers and nearby service, we n" has no live source
+  EXTRA        "Use My Current Location"  build <span> "Use My Current Location" has no live source
+  EXTRA        "( )"  build <a> "( )" has no live source
+  EXTRA        "Filters Applied"  build <span> "Filters Applied" has no live source
+  EXTRA        "0"  build <span> "0" has no live source
+  EXTRA        "Radius"  build <p> "Radius" has no live source
+  EXTRA        "Services Available"  build <p> "Services Available" has no live source
+  EXTRA        "Mobile Service"  build <span> "Mobile Service" has no live source
+  EXTRA        "Online Tire Store"  build <span> "Online Tire Store" has no live source
+  EXTRA        "Online Service Scheduling"  build <span> "Online Service Scheduling" has no live source
+  EXTRA        "Express Service Dealer"  build <span> "Express Service Dealer" has no live source
+  EXTRA        "Nissan Rental Car Dealer"  build <span> "Nissan Rental Car Dealer" has no live source
+  EXTRA        "MyNISSAN Rewards"  build <span> "MyNISSAN Rewards" has no live source
+  EXTRA        "Online Parts & Accessories Store"  build <span> "Online Parts & Accessories Store" has no live source
+  EXTRA        "Certifications"  build <p> "Certifications" has no live source
+  EXTRA        "Nissan EV Certified Dealer"  build <span> "Nissan EV Certified Dealer" has no live source
+  EXTRA        "Business Certified (NCV)"  build <span> "Business Certified (NCV)" has no live source
+  EXTRA        "Nissan GT-R® Dealer"  build <span> "Nissan GT-R® Dealer" has no live source
+  EXTRA        "Collision Repair"  build <span> "Collision Repair" has no live source
+  EXTRA        "Clear Filters"  build <span> "Clear Filters" has no live source
+  ICONS        0 live vs 5 build (svg/img) — harvest the live vectors verbatim (recreation-procedure.md § Asset harvest), never approximate
+
+■ footer: ✓ parity — 25 paired of 25/25 texts, 6/6 icons
+
+✗ 29 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

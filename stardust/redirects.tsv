@@ -1,0 +1,4 @@
+# Source	Destination
+/	/parts-service
+/index.html	/parts-service
+/parts-service/	/parts-service

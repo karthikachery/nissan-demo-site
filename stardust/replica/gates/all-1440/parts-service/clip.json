@@ -1,0 +1,67 @@
+{
+ "url": "https://main--83d9e7fd--aemcoder.aem.page/parts-service",
+ "at": "2026-11-19T19:32:18.117Z",
+ "source": "content-presence",
+ "counts": {
+  "textClipped": 0,
+  "textHidden": 0,
+  "controlHidden": 0,
+  "controlClipped": 0,
+  "clamped": 0,
+  "collapsed": 0,
+  "scrollHidden": 0,
+  "horizontal": 3,
+  "offPage": 31,
+  "textNodes": 97,
+  "controls": 73,
+  "total": 0
+ },
+ "groups": [
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-tile > div.offer-card-body > div.offer-card-title > h3#nissan-tire-price-match--5-credit",
+   "text": "nissan tire price match + 5% credit*",
+   "cutMin": 314,
+   "cutMax": 314
+  },
+  {
+   "kind": "CONTROL X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+   "text": "shop for tires",
+   "cutMin": 136,
+   "cutMax": 136
+  },
+  {
+   "kind": "TEXT X-CUT",
+   "advisory": true,
+   "n": 1,
+   "clipper": "div.offers-rail",
+   "path": "div.offer-card-ctas > div.cta > p.button-wrapper > a.button.secondary",
+   "text": "shop for tires",
+   "cutMin": 85,
+   "cutMax": 85
+  }
+ ],
+ "origin": {
+  "counts": {
+   "textClipped": 0,
+   "textHidden": 0,
+   "controlHidden": 0,
+   "controlClipped": 0,
+   "clamped": 0,
+   "collapsed": 0,
+   "scrollHidden": 0,
+   "horizontal": 3,
+   "offPage": 51,
+   "textNodes": 126,
+   "controls": 63,
+   "total": 0
+  }
+ }
+}

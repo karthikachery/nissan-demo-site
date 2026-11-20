@@ -1,0 +1,39 @@
+chrome-parity @ 360px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service
+  build: http://localhost:8791/prototypes/parts-service-proposed.html
+
+■ header: 4 delta(s) — 0 paired of 0/0 texts, 0/1 icons
+  REGION BOX   Δh +81px (0→81)
+  REGION STYLE backgroundColor rgba(0, 0, 0, 0) → rgb(255, 255, 255)
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  ICONS        0 live vs 1 build (svg/img) — harvest the live vectors verbatim (recreation-procedure.md § Asset harvest), never approximate
+
+■ footer: 26 delta(s) — 10 paired of 25/10 texts, 6/6 icons
+  REGION BOX   Δy -23px (5778→5755), Δh -8px (808→800)
+  PAIR         "English"  tag <a> → <button>; Δy -23px (5802→5779)
+  PAIR         "Shop"  tag <p> → <button>; Δy -23px (5846→5823)
+  PAIR         "For Owners"  tag <p> → <button>; Δy -23px (5935→5912)
+  PAIR         "About"  tag <p> → <button>; Δy -23px (6024→6001)
+  PAIR         "Contact Us"  Δy -23px (6260→6237)
+  PAIR         "Do Not Sell Or Share My Personal Informa"  Δy -23px (6300→6277)
+  PAIR         "Terms Of Use"  lineHeight 24px → 16px; Δy -25px (6357→6332)
+  PAIR         "Privacy Notice"  lineHeight 24px → 16px; Δy -29px (6396→6367)
+  PAIR         "Recall Information"  Δy -31px (6432→6401)
+  PAIR         "©2026 Nissan North America, Inc. All rig"  Δy -31px (6498→6467)
+  MISSING      "Build Your Nissan"  live <a> "Build Your Nissan" has no build element with the same text
+  MISSING      "View Offers"  live <a> "View Offers" has no build element with the same text
+  MISSING      "Parts and Accessories Online Store"  live <a> "Parts and Accessories Online Store" has no build element with the same text
+  MISSING      "Tire Store"  live <a> "Tire Store" has no build element with the same text
+  MISSING      "Nissan Rental Car Program"  live <a> "Nissan Rental Car Program" has no build element with the same text
+  MISSING      "Accessibility"  live <a> "Accessibility" has no build element with the same text
+  MISSING      "Maintenance Schedules"  live <a> "Maintenance Schedules" has no build element with the same text
+  MISSING      "Manuals & Guides"  live <a> "Manuals & Guides" has no build element with the same text
+  MISSING      "Owner Portal"  live <a> "Owner Portal" has no build element with the same text
+  MISSING      "MyNissan Rewards"  live <a> "MyNissan Rewards" has no build element with the same text
+  MISSING      "Collision Assistance"  live <a> "Collision Assistance" has no build element with the same text
+  MISSING      "Extended Protection Plans"  live <a> "Extended Protection Plans" has no build element with the same text
+  MISSING      "Locations"  live <a> "Locations" has no build element with the same text
+  MISSING      "Cookie Settings"  live <a> "Cookie Settings" has no build element with the same text
+  MISSING      "FAQs"  live <a> "FAQs" has no build element with the same text
+
+✗ 30 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

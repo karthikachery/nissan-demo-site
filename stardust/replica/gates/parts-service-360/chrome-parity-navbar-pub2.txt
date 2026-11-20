@@ -1,0 +1,55 @@
+chrome-parity @ 360px, tolerance 1px
+  live:  https://staging.niss-parts-service.epsilonrms.com/parts-service
+  build: https://main--83d9e7fd--aemcoder.aem.page/parts-service
+
+■ footer: 12 delta(s) — 25 paired of 25/25 texts, 6/6 icons
+  REGION STYLE position static → relative (fixed/sticky chrome must stay fixed/sticky — seam symmetry)
+  PAIR         "English"  tag <a> → <p>; paddingRight 19.6px → 0px; Δw -19px (68→49)
+  PAIR         "Shop"  paddingTop 32px → 0px; paddingRight 12px → 0px; paddingBottom 32px → 0px; Δy +33px (5846→5879); Δw -12px (330→318); Δh -65px (89→24)
+  PAIR         "For Owners"  paddingTop 32px → 0px; paddingRight 12px → 0px; paddingBottom 32px → 0px; Δy +33px (5935→5968); Δw -12px (330→318); Δh -65px (89→24)
+  PAIR         "About"  paddingTop 32px → 0px; paddingRight 12px → 0px; paddingBottom 32px → 0px; Δy +33px (6024→6057); Δw -12px (330→318); Δh -65px (89→24)
+  PAIR         "Contact Us"  Δy +3px (6260→6263); Δh -6px (24→18)
+  ICON         icon #0: signature "tiktok-icon.svg" → "media_1d5892ce7ad89b511875853f9660ff6a03"
+  ICON         icon #1: signature "youtube-icon.svg" → "media_1f4f74d8c31ad1db882938aeeee08886a6"
+  ICON         icon #2: signature "instagram-icon.svg" → "media_1086f7dcdaeda2a43495036aa41d827437"
+  ICON         icon #3: signature "twitter-icon.svg" → "media_1a794b5221f63f899d176aa540d76e470a"
+  ICON         icon #4: signature "facebook-icon.svg" → "media_1be526a80d9c4b8b8eeeacabd03a688ea7"
+  ICON         icon #5: signature "pinterest-icon.svg" → "media_189238c4b5b1f198f25518cf8ad2c6fb9b"
+
+■ header: 34 delta(s) — 25 paired of 25/31 texts, 5/3 icons
+  PAIR         "Service & Maintenance"  tag <button> → <li>; paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -81px (105→24); Δw +122px (190→312); Δh +41px (24→65)
+  PAIR         "Shop"  tag <button> → <li>; color rgb(0, 0, 0) → rgb(52, 52, 52); paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -89px (178→89); Δw +269px (43→312); Δh +41px (24→65)
+  PAIR         "Coupons & Offers"  color rgb(0, 0, 0) → rgb(52, 52, 52); Δx +362px (22→384); Δy -76px (251→175); Δw -169px (316→147); Δh -2px (24→22)
+  PAIR         "Owners"  tag <button> → <li>; color rgb(0, 0, 0) → rgb(52, 52, 52); paddingTop 0px → 20px; paddingBottom 0px → 20px; Δx +362px (22→384); Δy -105px (324→219); Δw +248px (64→312); Δh +41px (24→65)
+  PAIR         "Enter Your Location"  Δx +360px (15→375); Δy -65px (674→609)
+  PAIR         "To find the best offers and nearby servi"  Δx +360px (15→375); Δy -65px (719→654)
+  PAIR         "Use My Current Location"  tag <span> → <a>; Δx +338px (105→443); Δy -70px (872→802); Δw +22px (172→194); <a> box 330×21 → 194×21
+  PAIR         "( )"  tag <a> → <span>; fontFamily nissanbrand-light → nissanbrand-bold; fontSize 18px → 16px; lineHeight 32px → 24px; Δx +481px (15→496); Δy -92px (939→847); Δw -127px (154→27); Δh -3px (25→22)
+  PAIR         "Filters Applied"  tag <span> → <p>; fontFamily nissanbrand-light → nissanbrand-bold; fontSize 18px → 16px; lineHeight 32px → 24px; Δx +360px (15→375); Δy -92px (939→847); Δw -6px (127→121); Δh -3px (25→22); <a> box 154×25 → 121×22
+  PAIR         "0"  fontFamily nissanbrand-light → nissanbrand-bold; fontSize 18px → 16px; lineHeight 32px → 24px; Δx +354px (152→506); Δy -92px (939→847); Δh -3px (25→22); <a> box 154×25 → 11×22
+  PAIR         "Radius"  tag <p> → <h4>; Δx +348px (27→375); Δy -122px (992→870); Δw +44px (286→330)
+  PAIR         "Services Available"  tag <p> → <h4>; fontWeight 400 → 300; letterSpacing 0.4px → normal; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +360px (15→375); Δy -165px (1120→955)
+  PAIR         "Mobile Service"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -174px (1169→995); Δw -10px (110→100); Δh -2px (22→20)
+  PAIR         "Online Tire Store"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -168px (1213→1045); Δw -11px (127→116); Δh -2px (22→20)
+  PAIR         "Online Service Scheduling"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -183px (1258→1075); Δw -18px (199→181)
+  PAIR         "Express Service Dealer"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -197px (1302→1105); Δw -15px (173→158)
+  PAIR         "Nissan Rental Car Dealer"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -210px (1345→1135); Δw -17px (190→173); Δh -2px (22→20)
+  PAIR         "MyNISSAN Rewards"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -224px (1389→1165); Δw -14px (149→135); Δh -2px (22→20)
+  PAIR         "Online Parts & Accessories Store"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -239px (1434→1195); Δw -23px (250→227)
+  PAIR         "Certifications"  tag <p> → <h4>; fontWeight 400 → 300; letterSpacing 0.4px → normal; color rgb(238, 238, 238) → rgb(255, 255, 255); paddingTop 20px → 0px; Δx +360px (15→375); Δy -245px (1480→1235); Δh -20px (48→28)
+  PAIR         "Nissan EV Certified Dealer"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -274px (1549→1275); Δw -17px (198→181); Δh -2px (22→20)
+  PAIR         "Business Certified (NCV)"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -288px (1593→1305); Δw -16px (184→168); Δh -2px (22→20)
+  PAIR         "Nissan GT-R® Dealer"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -302px (1637→1335); Δw -14px (155→141); Δh -2px (22→20)
+  PAIR         "Collision Repair"  fontSize 16px → 14px; letterSpacing normal → 0.28px; textTransform capitalize → none; color rgb(238, 238, 238) → rgb(255, 255, 255); Δx +358px (45→403); Δy -316px (1681→1365); Δw -10px (117→107); Δh -2px (22→20)
+  PAIR         "Clear Filters"  tag <span> → <p>; lineHeight 20px → 24px; letterSpacing normal → 0.32px; Δx +233px (142→375); Δy -334px (1739→1405); Δw +33px (85→118); Δh +3px (21→24); <a> box 342×44 → 118×24
+  EXTRA        "Find A Dealer"  build <a> "Find A Dealer" has no live source
+  EXTRA        "5 Miles"  build <li> "5 Miles" has no live source
+  EXTRA        "10 Miles"  build <li> "10 Miles" has no live source
+  EXTRA        "15 Miles"  build <li> "15 Miles" has no live source
+  EXTRA        "25 Miles"  build <li> "25 Miles" has no live source
+  EXTRA        "50 Miles"  build <li> "50 Miles" has no live source
+  ICONS        5 live vs 3 build (svg/img) — harvest the live vectors verbatim (recreation-procedure.md § Asset harvest), never approximate
+  ICON         icon #1: signature "location-icon.svg" → "media_1035d32cc6b1c5160cef53b96f700ee995"
+  ICON         "Use My Current Location"  icon #2 near "Use My Current Location": Δw +8px (12→20); signature "curr-loc-pin.svg" → "media_1784f58c02e918371f94e40c7135e61182"
+
+✗ 46 delta(s) — fix these before any pixel iteration on chrome; re-run until quiet, then crop-compare confirms.

@@ -1,0 +1,216 @@
+{
+  "slug": "parts-service",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "hero-carousel",
+    "offers",
+    "exp-banner",
+    "tile",
+    "tire-price",
+    "recall-strip"
+  ],
+  "widgets": [],
+  "slotsFilled": [
+    "hero-carousel",
+    "offers",
+    "exp-banner",
+    "tile",
+    "tile",
+    "tile",
+    "tire-price",
+    "recall-strip"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": "1a530e89f8f3",
+    "css": "9b3375cab09e"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "asset-missing",
+      "ref": "../current/assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-tablet.webp",
+      "subpath": "media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-tablet.webp",
+      "_driver": true
+    },
+    {
+      "kind": "output-path",
+      "at": "2026-11-19T19:42:39.141Z",
+      "from": "parts-service/index.html (URL-literal trailing-slash default)",
+      "to": "parts-service.html",
+      "reason": "source URL /parts-service has no trailing slash; the page is delivered, gated and published at /parts-service; the folder-index shape made rollout expect /parts-service/ (404 on HEAD). Tree flattened, relative refs re-based one level, content unchanged. migrate.mjs re-derives the folder form on a re-render: re-apply this decision after any re-render."
+    }
+  ],
+  "metadata": {
+    "title": "Nissan Service, Maintenance &amp; Repair Dealerships - Nissan USA Service &amp; Maintenance",
+    "description": "When your Nissan is due for service, maintenance, or repairs, trust the certified technicians at your local Nissan dealership. Find a Nissan service center near you, schedule an appointment, and explore current service offers and coupons. Nissan USA Service &amp; Maintenance.",
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Nissan Service, Maintenance &amp; Repair Dealerships - Nissan USA Service &amp; Maintenance",
+    "description": "When your Nissan is due for service, maintenance, or repairs, trust the certified technicians at your local Nissan dealership. Find a Nissan service center near you, schedule an appointment, and explore current service offers and coupons. Nissan USA Service &amp; Maintenance.",
+    "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service"
+  },
+  "migratedAt": "2026-11-19T18:20:12Z",
+  "designMdSha": "c4f6dc654cda",
+  "designJsonSha": "9592b4379e8e",
+  "sourceCurrentSha": "8b9003596c24",
+  "sourceProposedSha": "9b2e127beefc",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 85,
+  "missingAssets": [
+    {
+      "ref": "../current/assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-tablet.webp",
+      "subpath": "media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-tablet.webp"
+    }
+  ],
+  "brokenInternalLinks": [
+    {
+      "href": "/parts-service/en/service-maintenance/coupons-offers",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/why-nissan",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/brakes",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/tires",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/oil-change",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/batteries",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/express-service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/mobile-service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/maintenance-schedules",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/dashboard-warning-lights",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/multipoint-inspection",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/electric-vehicles",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/owners",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/dashboard-warning-lights",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/why-nissan",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/express-service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/oil-change",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/sp",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/maintenance-schedules",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/service-maintenance/faqs",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/parts-service/en/dealer/Search",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "parts-service.html",
+  "outputPathDefault": null,
+  "sidecar": "parts-service._meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,20 @@
+cap-probe  base 1440 → probe 2560 (from stardust/current/DESIGN.json)
+live   https://staging.niss-parts-service.epsilonrms.com/parts-service
+  shell     1920px  max-width #Nissan > div.container  (tier -1, holds 100% of the text)
+  modules  8 sections: capped 1170 ×6, 444 ×1, 400 ×1 · full-bleed ×0
+  contentMaxWidth 1920px (shell) · shellMaxWidth 1920px · root #Nissan > div.container > main
+build  http://localhost:8791/prototypes/parts-service-proposed.html
+  shell     1920px  max-width #Nissan > div.page-shell  (tier -1, holds 100% of the text)
+  modules  8 sections: capped 1170 ×6, 444 ×1, 400 ×1 · full-bleed ×0
+  contentMaxWidth 1920px (shell) · shellMaxWidth 1920px · root #Nissan > div.page-shell > main.parts-service
+rows
+  ✓ wrapper cap: live 1920px = build 1920px (±20)
+  ✓ module 1/8: 444px = 444px
+  ✓ module 2/8: 1170px = 1170px
+  ✓ module 3/8: 400px = 400px
+  ✓ module 4/8: 1170px = 1170px
+  ✓ module 5/8: 1170px = 1170px
+  ✓ module 6/8: 1170px = 1170px
+  ✓ module 7/8: 1170px = 1170px
+  ✓ module 8/8: 1170px = 1170px
+cap-probe: PASS at 2560 — 0 of 9 rows failed (evidence stardust/replica/gates/parts-service-2560/cap-iter.json)

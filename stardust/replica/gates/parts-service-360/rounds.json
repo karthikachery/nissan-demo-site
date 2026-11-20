@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "stages": {
+    "prototype": {
+      "rounds": [
+        {
+          "label": "iter1",
+          "at": "2026-11-19T17:43:00.725Z",
+          "verdict": "fail",
+          "kind": "first"
+        },
+        {
+          "label": "iter2",
+          "at": "2026-11-19T17:53:07.940Z",
+          "verdict": "pass",
+          "kind": "fix"
+        },
+        {
+          "label": "iter3",
+          "at": "2026-11-19T18:02:15.791Z",
+          "verdict": "pass",
+          "kind": "confirm"
+        },
+        {
+          "label": "iter4",
+          "at": "2026-11-19T18:12:43.305Z",
+          "verdict": "fail",
+          "kind": "fix"
+        }
+      ],
+      "decisions": [
+        {
+          "decision": "accept-residual",
+          "reason": "Pass-bar criteria all met at iter4 (content-diff 0🔴/0 nothing-lost, pixel masked 0.04%/0.19% Δh 0, clip 0, overflow ok, chrome crop bands >=99.4%, cap-probe PASS). gate.sh exit 2 comes only from chrome-parity's header region: live <header> is an empty element and the navbar (#navbar) sits outside it, so auto-detect compares 0px vs the build's navbar; with --region header=#navbar|#navbar the 1440 header+footer are at parity (chrome-parity-navbar-iter4.txt) and the 360 deltas are all inside the hidden off-canvas mobile menu. Residual logged for the header contract at deploy (migrate-header).",
+          "at": "2026-11-19T18:17:10.273Z",
+          "counted": 3
+        }
+      ]
+    },
+    "published": {
+      "rounds": [
+        {
+          "label": "pub1",
+          "at": "2026-11-19T19:07:54.638Z",
+          "verdict": "fail",
+          "kind": "first"
+        },
+        {
+          "label": "pub2",
+          "at": "2026-11-19T19:11:25.688Z",
+          "verdict": "fail",
+          "kind": "fix"
+        }
+      ],
+      "decisions": []
+    },
+    "all-pages": {
+      "rounds": [
+        {
+          "label": "all-2026-11-19T19-24-21-863Z",
+          "at": "2026-11-19T19:24:21.864Z",
+          "verdict": "fail",
+          "kind": "first"
+        },
+        {
+          "label": "all-2026-11-19T19-26-29-678Z",
+          "at": "2026-11-19T19:26:29.679Z",
+          "verdict": "pass",
+          "kind": "fix"
+        }
+      ],
+      "decisions": []
+    }
+  }
+}

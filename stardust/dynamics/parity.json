@@ -1,0 +1,34 @@
+{
+  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-11-19T19:37:19Z" },
+  "method": "self-reproducible features rebuilt in blocks (hero-carousel, offers, offer-dialogs, header); replayed against the published aem.live origin; D-01/D-02/D-03 owner decisions listed without checks",
+  "features": [
+    { "id": "hero-carousel", "feature": "hero carousel, 4 slides incl. autoplay muted loop mp4", "class": "M/V", "pages": 1, "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "4 slides + 4 dots; slide 4 video plays muted loop (currentTime advancing); unpoked autoplay 10 s",
+      "checks": [
+        { "type": "dom-count", "path": "/parts-service", "selector": ".hero-carousel .hero-carousel-dot", "min": 4 },
+        { "type": "video-plays", "path": "/parts-service", "trigger": ".hero-carousel .hero-carousel-dot[aria-label='Go to slide 4']", "videoSelector": ".hero-carousel video" } ] },
+    { "id": "l-listing-candidate-splide-list-8-cards", "feature": "Current Offers card rail", "class": "L", "pages": 1, "disposition": "static authored rows + carousel JS", "reproducibility": "self", "status": "done",
+      "verifiedBy": "offer cards rendered with prev/next rail buttons",
+      "checks": [ { "type": "dom-count", "path": "/parts-service", "selector": ".offers .offer-card", "min": 5 }, { "type": "dom-count", "path": "/parts-service", "selector": ".offers .offers-btn", "min": 2 } ] },
+    { "id": "m-modal-trigger-popup-link-a-content", "feature": "*Offer Details / disclaimer modals (12 dialogs)", "class": "M", "pages": 1, "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "12 dialog.offer-dialog; '#modal-…' link opens it; Escape closes",
+      "checks": [ { "type": "dom-count", "path": "/parts-service", "selector": "dialog.offer-dialog", "min": 12 },
+                  { "type": "click-dialog", "path": "/parts-service", "trigger": "a[href='#modal-cye-buy-4-get-1-free-oil']" } ] },
+    { "id": "disclaimer-popper", "feature": "inline [*] disclaimer popovers in the hero", "class": "M", "pages": 1, "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "disclaimer invokers rendered in the hero captions",
+      "checks": [ { "type": "dom-count", "path": "/parts-service", "selector": ".hero-carousel .disclaimer-invoker", "min": 1 } ] },
+    { "id": "m-modal-trigger-aria-haspopup-chrome-only", "feature": "header mega-menus (Service / Owners / Shop)", "class": "M", "pages": 1, "disposition": "rebuild-native (header block)", "reproducibility": "self", "status": "done",
+      "verifiedBy": "5 aria-expanded toggles in the header",
+      "checks": [ { "type": "dom-count", "path": "/parts-service", "selector": "header [aria-expanded]", "min": 3 } ] },
+    { "id": "s-site-search-form", "feature": "header dealer search", "class": "S", "pages": 1, "disposition": "link-out to the source dealer locator", "reproducibility": "needs-business-decision", "status": "interim",
+      "owner": "D-01: keep linking out to the source dealer locator, or build a native dealer search",
+      "verifiedBy": "header dealer-search targets https://staging.niss-parts-service.epsilonrms.com/parts-service/en/dealer/Search",
+      "checks": [ { "type": "dom-count", "path": "/parts-service", "selector": "header [action*='dealer/Search'], header a[href*='dealer/Search']", "min": 1 } ] },
+    { "id": "t-tags", "feature": "tags, consent, analytics, ad pixels, dataLayer", "class": "T/A", "pages": 1, "disposition": "embed-passthrough scaffolded off", "reproducibility": "needs-business-decision", "status": "scaffolded-awaiting-owner",
+      "owner": "D-02: which tag manager / consent / analytics containers to carry, with production IDs", "checks": [] },
+    { "id": "yieldify-overlay", "feature": "Yieldify timed marketing overlay (email signup)", "class": "T/F", "pages": 1, "disposition": "not rebuilt", "reproducibility": "needs-business-decision", "status": "scaffolded-awaiting-owner",
+      "owner": "D-03: re-enable the Yieldify overlay (collects personal data) or drop it", "checks": [] },
+    { "id": "page-errors", "feature": "no uncaught exceptions", "class": "-", "pages": 1, "disposition": "-", "reproducibility": "self", "status": "done", "verifiedBy": "replay",
+      "checks": [ { "type": "no-page-errors", "paths": ["/parts-service", "/"] } ] }
+  ]
+}

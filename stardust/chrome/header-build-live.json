@@ -1,0 +1,2105 @@
+{
+ "tool": "chrome-explore",
+ "url": "https://main--83d9e7fd--aemcoder.aem.live/parts-service",
+ "at": "2026-11-19T19:45:21.205Z",
+ "shots": "stardust/.work/chrome/header-build-live",
+ "widths": {
+  "390": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#nissan_logo_header",
+     "href": "https://main--83d9e7fd--aemcoder.aem.live/parts-service",
+     "expanded": null,
+     "rect": [
+      15,
+      32,
+      119,
+      17
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Menu",
+     "key": "menu",
+     "role": "toggle",
+     "kind": "drawer",
+     "sel": "#navbar-Burger",
+     "expanded": "false",
+     "rect": [
+      349,
+      33,
+      26,
+      16
+     ],
+     "actions": {
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Coupons & Offers",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers"
+         },
+         {
+          "text": "Use My Current Location",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/dealer/Search"
+         }
+        ],
+        "headings": [
+         "Enter Your Location"
+        ],
+        "images": 1,
+        "inputs": [
+         "search"
+        ],
+        "buttons": [
+         "Service & Maintenance",
+         "Shop",
+         "Owners",
+         "Search",
+         "Filters Applied"
+        ],
+        "options": 0,
+        "rect": [
+         15,
+         24,
+         360,
+         790
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "nav.site-nav"
+        }
+       ],
+       "shot": "390-001-Menu-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Coupons & Offers",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers"
+         },
+         {
+          "text": "Use My Current Location",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/dealer/Search"
+         }
+        ],
+        "headings": [
+         "Enter Your Location"
+        ],
+        "images": 1,
+        "inputs": [
+         "search"
+        ],
+        "buttons": [
+         "Service & Maintenance",
+         "Shop",
+         "Owners",
+         "Search",
+         "Filters Applied"
+        ],
+        "options": 0,
+        "rect": [
+         15,
+         24,
+         360,
+         790
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "nav.site-nav"
+        }
+       ],
+       "shot": "390-002-Menu-key.png",
+       "tabReachesPanel": false
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": null,
+      "toggle": false
+     },
+     "children": [
+      {
+       "name": "Service & Maintenance",
+       "key": "service maintenance",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#header_service_menu",
+       "expanded": "false",
+       "rect": [
+        24,
+        24,
+        342,
+        65
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Why Nissan Service",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+           },
+           {
+            "text": "Brakes",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+           },
+           {
+            "text": "Tires",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+           },
+           {
+            "text": "Oil Change",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+           },
+           {
+            "text": "Batteries",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+           },
+           {
+            "text": "Express Service",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+           },
+           {
+            "text": "Mobile Service",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+           },
+           {
+            "text": "Maintenance Schedules",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/maintenance-schedules"
+           }
+          ],
+          "headings": [
+           "Service & Maintenance",
+           "Nissan Service",
+           "Maintaining Your Nissan"
+          ],
+          "images": 3,
+          "inputs": [],
+          "buttons": [
+           "Back",
+           "Close"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           844
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "390-003-Service-Maintenance-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Why Nissan Service",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+           },
+           {
+            "text": "Brakes",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+           },
+           {
+            "text": "Tires",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+           },
+           {
+            "text": "Oil Change",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+           },
+           {
+            "text": "Batteries",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+           },
+           {
+            "text": "Express Service",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+           },
+           {
+            "text": "Mobile Service",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+           },
+           {
+            "text": "Maintenance Schedules",
+            "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/maintenance-schedules"
+           }
+          ],
+          "headings": [
+           "Service & Maintenance",
+           "Nissan Service",
+           "Maintaining Your Nissan"
+          ],
+          "images": 3,
+          "inputs": [],
+          "buttons": [
+           "Back",
+           "Close"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           844
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "390-004-Service-Maintenance-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": true,
+        "focusReturn": true,
+        "outside": null,
+        "toggle": false
+       },
+       "children": [
+        {
+         "name": "Back",
+         "key": "back",
+         "role": "toggle",
+         "kind": "menu",
+         "sel": "#service-maintenance-menu>div:nth-of-type(1)>button:nth-of-type(1)",
+         "expanded": null,
+         "rect": [
+          24,
+          47,
+          9,
+          21
+         ],
+         "actions": {
+          "click": {
+           "opened": true,
+           "hidden": 16,
+           "panel": {
+            "links": [],
+            "headings": [],
+            "images": 1,
+            "inputs": [],
+            "buttons": [],
+            "options": 0,
+            "rect": [
+             0,
+             0,
+             390,
+             81
+            ]
+           },
+           "expanded": null,
+           "focus": "trigger",
+           "scrollLock": false,
+           "motion": [
+            {
+             "kind": "transition",
+             "prop": "width",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            },
+            {
+             "kind": "transition",
+             "prop": "height",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            }
+           ],
+           "shot": "390-005-Back-click.png"
+          },
+          "key": {
+           "opened": true,
+           "hidden": 16,
+           "panel": {
+            "links": [],
+            "headings": [],
+            "images": 1,
+            "inputs": [],
+            "buttons": [],
+            "options": 0,
+            "rect": [
+             0,
+             0,
+             390,
+             81
+            ]
+           },
+           "expanded": null,
+           "focus": "trigger",
+           "scrollLock": false,
+           "motion": [
+            {
+             "kind": "transition",
+             "prop": "width",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            },
+            {
+             "kind": "transition",
+             "prop": "height",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            }
+           ],
+           "shot": "390-006-Back-key.png",
+           "tabReachesPanel": false
+          }
+         },
+         "close": {
+          "escape": false,
+          "focusReturn": false,
+          "outside": null,
+          "toggle": false
+         },
+         "children": []
+        },
+        {
+         "name": "Close",
+         "key": "close",
+         "role": "toggle",
+         "kind": "menu",
+         "sel": "#service-maintenance-menu>div:nth-of-type(1)>button:nth-of-type(2)",
+         "expanded": null,
+         "rect": [
+          346,
+          47,
+          19,
+          21
+         ],
+         "actions": {
+          "click": {
+           "opened": true,
+           "hidden": 26,
+           "panel": {
+            "links": [],
+            "headings": [],
+            "images": 1,
+            "inputs": [],
+            "buttons": [],
+            "options": 0,
+            "rect": [
+             0,
+             0,
+             390,
+             81
+            ]
+           },
+           "expanded": null,
+           "focus": "trigger",
+           "scrollLock": false,
+           "motion": [
+            {
+             "kind": "transition",
+             "prop": "transform",
+             "ms": 300,
+             "delay": 0,
+             "easing": "ease",
+             "target": "nav.site-nav"
+            },
+            {
+             "kind": "transition",
+             "prop": "width",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            },
+            {
+             "kind": "transition",
+             "prop": "height",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            }
+           ],
+           "shot": "390-007-Close-click.png"
+          },
+          "key": {
+           "opened": true,
+           "hidden": 26,
+           "panel": {
+            "links": [],
+            "headings": [],
+            "images": 1,
+            "inputs": [],
+            "buttons": [],
+            "options": 0,
+            "rect": [
+             0,
+             0,
+             390,
+             81
+            ]
+           },
+           "expanded": null,
+           "focus": "trigger",
+           "scrollLock": false,
+           "motion": [
+            {
+             "kind": "transition",
+             "prop": "transform",
+             "ms": 300,
+             "delay": 0,
+             "easing": "ease",
+             "target": "nav.site-nav"
+            },
+            {
+             "kind": "transition",
+             "prop": "width",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            },
+            {
+             "kind": "transition",
+             "prop": "height",
+             "ms": 1000,
+             "delay": 0,
+             "easing": "ease",
+             "target": "div.sidenav"
+            }
+           ],
+           "shot": "390-008-Close-key.png",
+           "tabReachesPanel": false
+          }
+         },
+         "close": {
+          "escape": false,
+          "focusReturn": false,
+          "outside": false,
+          "toggle": false
+         },
+         "children": []
+        }
+       ]
+      },
+      {
+       "name": "Shop",
+       "key": "shop",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#header_shop_menu",
+       "expanded": "false",
+       "rect": [
+        24,
+        89,
+        342,
+        65
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Nissan Tire Store",
+            "href": "https://www.nissantireadvantage.com/"
+           },
+           {
+            "text": "Shop Nissan Parts & Accessories Online",
+            "href": "https://parts.nissanusa.com/"
+           }
+          ],
+          "headings": [
+           "Shop",
+           "Nissan Tire Advantage",
+           "Parts & Accessories Store"
+          ],
+          "images": 3,
+          "inputs": [],
+          "buttons": [
+           "Back",
+           "Close"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           760
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "390-009-Shop-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Nissan Tire Store",
+            "href": "https://www.nissantireadvantage.com/"
+           },
+           {
+            "text": "Shop Nissan Parts & Accessories Online",
+            "href": "https://parts.nissanusa.com/"
+           }
+          ],
+          "headings": [
+           "Shop",
+           "Nissan Tire Advantage",
+           "Parts & Accessories Store"
+          ],
+          "images": 3,
+          "inputs": [],
+          "buttons": [
+           "Back",
+           "Close"
+          ],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           390,
+           807
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": true,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "390-010-Shop-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": true,
+        "focusReturn": true,
+        "outside": null,
+        "toggle": false
+       }
+      }
+     ]
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 0,
+     "height": 148,
+     "position": "relative",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": -1000,
+     "height": 81,
+     "position": "relative",
+     "inView": false
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": -700,
+     "height": 81,
+     "position": "relative",
+     "inView": false
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 0,
+     "height": 148,
+     "position": "relative",
+     "inView": true
+    }
+   ],
+   "states": 10,
+   "truncated": "request-budget",
+   "loads": 11,
+   "requests": 708,
+   "maxRequests": 600,
+   "inputsSkipped": 0
+  },
+  "1440": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#nissan_logo_header",
+     "href": "https://main--83d9e7fd--aemcoder.aem.live/parts-service",
+     "expanded": null,
+     "rect": [
+      25,
+      25,
+      116,
+      97
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Service & Maintenance",
+     "key": "service maintenance",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header_service_menu",
+     "expanded": "false",
+     "rect": [
+      657,
+      57,
+      177,
+      24
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "Why Nissan Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+         },
+         {
+          "text": "Brakes",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+         },
+         {
+          "text": "Tires",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+         },
+         {
+          "text": "Oil Change",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+         },
+         {
+          "text": "Batteries",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+         },
+         {
+          "text": "Express Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+         },
+         {
+          "text": "Mobile Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+         },
+         {
+          "text": "Maintenance Schedules",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/maintenance-schedules"
+         },
+         {
+          "text": "Dashboard Indicator Lights",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/dashboard-warning-lights"
+         },
+         {
+          "text": "Multi-Point Inspection",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/multipoint-inspection"
+         },
+         {
+          "text": "Electric Vehicle Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/electric-vehicles"
+         },
+         {
+          "text": "Locate Charging Stations",
+          "href": "https://www.plugshare.com/"
+         }
+        ],
+        "headings": [
+         "Service & Maintenance",
+         "Nissan Service",
+         "Maintaining Your Nissan",
+         "Electric Vehicle Service"
+        ],
+        "images": 4,
+        "inputs": [],
+        "buttons": [
+         "Close",
+         "Back",
+         "Close"
+        ],
+        "options": 0,
+        "rect": [
+         0,
+         0,
+         1440,
+         900
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-001-Service-Maintenance-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "Why Nissan Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/why-nissan"
+         },
+         {
+          "text": "Brakes",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/brakes"
+         },
+         {
+          "text": "Tires",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/tires"
+         },
+         {
+          "text": "Oil Change",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/oil-change"
+         },
+         {
+          "text": "Batteries",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/batteries"
+         },
+         {
+          "text": "Express Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/express-service"
+         },
+         {
+          "text": "Mobile Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/mobile-service"
+         },
+         {
+          "text": "Maintenance Schedules",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/maintenance-schedules"
+         },
+         {
+          "text": "Dashboard Indicator Lights",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/dashboard-warning-lights"
+         },
+         {
+          "text": "Multi-Point Inspection",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/multipoint-inspection"
+         },
+         {
+          "text": "Electric Vehicle Service",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/electric-vehicles"
+         },
+         {
+          "text": "Locate Charging Stations",
+          "href": "https://www.plugshare.com/"
+         }
+        ],
+        "headings": [
+         "Service & Maintenance",
+         "Nissan Service",
+         "Maintaining Your Nissan",
+         "Electric Vehicle Service"
+        ],
+        "images": 4,
+        "inputs": [],
+        "buttons": [
+         "Close",
+         "Back",
+         "Close"
+        ],
+        "options": 0,
+        "rect": [
+         0,
+         0,
+         1440,
+         900
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-002-Service-Maintenance-key.png",
+       "tabReachesPanel": false
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": null,
+      "toggle": true
+     },
+     "children": [
+      {
+       "name": "Close",
+       "key": "close",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#main_menu_close",
+       "expanded": null,
+       "rect": [
+        1397,
+        60,
+        19,
+        18
+       ],
+       "actions": {
+        "hover": null,
+        "click": {
+         "opened": true,
+         "hidden": 23,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "opacity",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "button.hero-carousel-dot"
+          },
+          {
+           "kind": "transition",
+           "prop": "transform",
+           "ms": 2000,
+           "delay": 0,
+           "easing": "cubic-bezier(0.25, 1, 0.5, 1)",
+           "target": "ul.hero-carousel-track"
+          }
+         ],
+         "shot": "1440-003-Close-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 23,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-004-Close-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false,
+        "toggle": false
+       },
+       "children": []
+      },
+      {
+       "name": "Back",
+       "key": "back",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#service-maintenance-menu>div:nth-of-type(1)>button:nth-of-type(1)",
+       "expanded": null,
+       "rect": [
+        624,
+        47,
+        9,
+        21
+       ],
+       "actions": {
+        "hover": null,
+        "click": null,
+        "key": {
+         "opened": true,
+         "hidden": 23,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           1440,
+           147
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-005-Back-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false
+       },
+       "children": []
+      },
+      {
+       "name": "Close",
+       "key": "close",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#service-maintenance-menu>div:nth-of-type(1)>button:nth-of-type(2)",
+       "expanded": null,
+       "rect": [
+        1396,
+        47,
+        19,
+        21
+       ],
+       "actions": {
+        "hover": null,
+        "click": null,
+        "key": {
+         "opened": true,
+         "hidden": 23,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           1440,
+           147
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-006-Close-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "Shop",
+     "key": "shop",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header_shop_menu",
+     "expanded": "false",
+     "rect": [
+      864,
+      57,
+      41,
+      24
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "Nissan Tire Store",
+          "href": "https://www.nissantireadvantage.com/"
+         },
+         {
+          "text": "Shop Nissan Parts & Accessories Online",
+          "href": "https://parts.nissanusa.com/"
+         }
+        ],
+        "headings": [
+         "Shop",
+         "Nissan Tire Advantage",
+         "Parts & Accessories Store"
+        ],
+        "images": 3,
+        "inputs": [],
+        "buttons": [
+         "Close",
+         "Back",
+         "Close"
+        ],
+        "options": 0,
+        "rect": [
+         0,
+         0,
+         1440,
+         548
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-007-Shop-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "Nissan Tire Store",
+          "href": "https://www.nissantireadvantage.com/"
+         },
+         {
+          "text": "Shop Nissan Parts & Accessories Online",
+          "href": "https://parts.nissanusa.com/"
+         }
+        ],
+        "headings": [
+         "Shop",
+         "Nissan Tire Advantage",
+         "Parts & Accessories Store"
+        ],
+        "images": 3,
+        "inputs": [],
+        "buttons": [
+         "Close",
+         "Back",
+         "Close"
+        ],
+        "options": 0,
+        "rect": [
+         0,
+         0,
+         1440,
+         548
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-008-Shop-key.png",
+       "tabReachesPanel": false
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": null,
+      "toggle": true
+     },
+     "children": [
+      {
+       "name": "Close",
+       "key": "close",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#main_menu_close",
+       "expanded": null,
+       "rect": [
+        1397,
+        60,
+        19,
+        18
+       ],
+       "actions": {
+        "hover": null,
+        "click": {
+         "opened": true,
+         "hidden": 11,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-009-Close-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 11,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "opacity",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "button.hero-carousel-dot"
+          },
+          {
+           "kind": "transition",
+           "prop": "transform",
+           "ms": 2000,
+           "delay": 0,
+           "easing": "cubic-bezier(0.25, 1, 0.5, 1)",
+           "target": "ul.hero-carousel-track"
+          }
+         ],
+         "shot": "1440-010-Close-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false,
+        "toggle": false
+       },
+       "children": []
+      },
+      {
+       "name": "Back",
+       "key": "back",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#shop-menu>div:nth-of-type(1)>button:nth-of-type(1)",
+       "expanded": null,
+       "rect": [
+        624,
+        47,
+        9,
+        21
+       ],
+       "actions": {
+        "hover": null,
+        "click": null,
+        "key": {
+         "opened": true,
+         "hidden": 11,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           1440,
+           147
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-011-Back-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false
+       },
+       "children": []
+      },
+      {
+       "name": "Close",
+       "key": "close",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#shop-menu>div:nth-of-type(1)>button:nth-of-type(2)",
+       "expanded": null,
+       "rect": [
+        1396,
+        47,
+        19,
+        21
+       ],
+       "actions": {
+        "hover": null,
+        "click": null,
+        "key": {
+         "opened": true,
+         "hidden": 11,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           1440,
+           147
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-012-Close-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "Coupons & Offers",
+     "key": "coupons offers",
+     "role": "link",
+     "kind": "link",
+     "sel": "#site-nav>div>div:nth-of-type(1)>ul>li:nth-of-type(3)>a",
+     "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/coupons-offers",
+     "expanded": null,
+     "rect": [
+      934,
+      58,
+      137,
+      22
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Owners",
+     "key": "owners",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header_owners_menu",
+     "expanded": "false",
+     "rect": [
+      1101,
+      57,
+      61,
+      24
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "For Nissan Owners",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/owners"
+         },
+         {
+          "text": "Dashboard Indicator Lights",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/dashboard-warning-lights"
+         },
+         {
+          "text": "About MyNISSAN",
+          "href": "https://www.nissanusa.com/owners.html"
+         },
+         {
+          "text": "NissanConnect® Services",
+          "href": "https://www.nissanusa.com/connect.html"
+         },
+         {
+          "text": "Recall Information",
+          "href": "https://www.nissanusa.com/recalls-vin.html#/#/Home"
+         },
+         {
+          "text": "Nissan Security Plus®",
+          "href": "https://nissan-securityplus.com/"
+         }
+        ],
+        "headings": [
+         "Owners",
+         "Owner Services",
+         "Nissan Owner Resources"
+        ],
+        "images": 3,
+        "inputs": [],
+        "buttons": [
+         "Close",
+         "Back",
+         "Close"
+        ],
+        "options": 0,
+        "rect": [
+         0,
+         0,
+         1440,
+         613
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-013-Owners-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [
+         {
+          "text": "For Nissan Owners",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/owners"
+         },
+         {
+          "text": "Dashboard Indicator Lights",
+          "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/service-maintenance/dashboard-warning-lights"
+         },
+         {
+          "text": "About MyNISSAN",
+          "href": "https://www.nissanusa.com/owners.html"
+         },
+         {
+          "text": "NissanConnect® Services",
+          "href": "https://www.nissanusa.com/connect.html"
+         },
+         {
+          "text": "Recall Information",
+          "href": "https://www.nissanusa.com/recalls-vin.html#/#/Home"
+         },
+         {
+          "text": "Nissan Security Plus®",
+          "href": "https://nissan-securityplus.com/"
+         }
+        ],
+        "headings": [
+         "Owners",
+         "Owner Services",
+         "Nissan Owner Resources"
+        ],
+        "images": 3,
+        "inputs": [],
+        "buttons": [
+         "Close",
+         "Back",
+         "Close"
+        ],
+        "options": 0,
+        "rect": [
+         0,
+         0,
+         1440,
+         613
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": true,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "width",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        },
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.sidenav"
+        }
+       ],
+       "shot": "1440-014-Owners-key.png",
+       "tabReachesPanel": false
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": null,
+      "toggle": true
+     },
+     "children": [
+      {
+       "name": "Close",
+       "key": "close",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#main_menu_close",
+       "expanded": null,
+       "rect": [
+        1397,
+        60,
+        19,
+        18
+       ],
+       "actions": {
+        "hover": null,
+        "click": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-015-Close-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           25,
+           25,
+           116,
+           97
+          ]
+         },
+         "expanded": null,
+         "focus": "body",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-016-Close-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false,
+        "toggle": false
+       },
+       "children": []
+      },
+      {
+       "name": "Back",
+       "key": "back",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#owners-menu>div:nth-of-type(1)>button:nth-of-type(1)",
+       "expanded": null,
+       "rect": [
+        624,
+        47,
+        9,
+        21
+       ],
+       "actions": {
+        "hover": null,
+        "click": null,
+        "key": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           1440,
+           147
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-017-Back-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false
+       },
+       "children": []
+      },
+      {
+       "name": "Close",
+       "key": "close",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#owners-menu>div:nth-of-type(1)>button:nth-of-type(2)",
+       "expanded": null,
+       "rect": [
+        1396,
+        47,
+        19,
+        21
+       ],
+       "actions": {
+        "hover": null,
+        "click": null,
+        "key": {
+         "opened": true,
+         "hidden": 15,
+         "panel": {
+          "links": [],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           0,
+           0,
+           1440,
+           147
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "width",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          },
+          {
+           "kind": "transition",
+           "prop": "height",
+           "ms": 1000,
+           "delay": 0,
+           "easing": "ease",
+           "target": "div.sidenav"
+          }
+         ],
+         "shot": "1440-018-Close-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": false
+       },
+       "children": []
+      }
+     ]
+    },
+    {
+     "name": "Dealer Locator",
+     "key": "dealer locator",
+     "role": "link",
+     "kind": "link",
+     "sel": "#menu-dealer-locator-btn",
+     "href": "https://staging.niss-parts-service.epsilonrms.com/parts-service/en/dealer/Search",
+     "expanded": null,
+     "rect": [
+      1187,
+      48,
+      186,
+      42
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 0,
+     "height": 147,
+     "position": "relative",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": -1000,
+     "height": 147,
+     "position": "relative",
+     "inView": false
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": -700,
+     "height": 147,
+     "position": "relative",
+     "inView": false
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 0,
+     "height": 147,
+     "position": "relative",
+     "inView": true
+    }
+   ],
+   "states": 18,
+   "truncated": null,
+   "loads": 1,
+   "requests": 73,
+   "maxRequests": 600,
+   "inputsSkipped": 0
+  }
+ },
+ "probe": null
+}

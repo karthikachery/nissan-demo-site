@@ -1,0 +1,18 @@
+{
+  "key": {
+    "url": "https://staging.niss-parts-service.epsilonrms.com/parts-service",
+    "width": 360,
+    "main": "main"
+  },
+  "probedAt": "2026-11-19T17:45:07.339Z",
+  "data": {
+    "doc": 6586,
+    "rootMissing": false,
+    "rootWrapsChrome": false,
+    "sections": [],
+    "footer": [
+      5778,
+      808
+    ]
+  }
+}

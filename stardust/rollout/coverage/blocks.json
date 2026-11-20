@@ -1,0 +1,133 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-11-19T18:20:26.422Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-11-19T18:20:26.422Z",
+  "blocks": [
+    {
+      "id": "exp-banner",
+      "label": "exp-banner",
+      "kind": "module",
+      "signature": "module:exp-banner",
+      "source": null,
+      "usedByTemplates": [
+        "parts-service"
+      ],
+      "usedByPages": [
+        "parts-service"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "exp-banner",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-carousel",
+      "label": "hero-carousel",
+      "kind": "module",
+      "signature": "module:hero-carousel",
+      "source": null,
+      "usedByTemplates": [
+        "parts-service"
+      ],
+      "usedByPages": [
+        "parts-service"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "hero-carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "offers",
+      "label": "offers",
+      "kind": "module",
+      "signature": "module:offers",
+      "source": null,
+      "usedByTemplates": [
+        "parts-service"
+      ],
+      "usedByPages": [
+        "parts-service"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "offers",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "recall-strip",
+      "label": "recall-strip",
+      "kind": "module",
+      "signature": "module:recall-strip",
+      "source": null,
+      "usedByTemplates": [
+        "parts-service"
+      ],
+      "usedByPages": [
+        "parts-service"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "recall-strip",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tile",
+      "label": "tile",
+      "kind": "module",
+      "signature": "module:tile",
+      "source": null,
+      "usedByTemplates": [
+        "parts-service"
+      ],
+      "usedByPages": [
+        "parts-service"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "tile",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tire-price",
+      "label": "tire-price",
+      "kind": "module",
+      "signature": "module:tire-price",
+      "source": null,
+      "usedByTemplates": [
+        "parts-service"
+      ],
+      "usedByPages": [
+        "parts-service"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "tire-price",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

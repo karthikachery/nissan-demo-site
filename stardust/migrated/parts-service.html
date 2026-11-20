@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-19T18:20:12Z
+  page:             Nissan Service, Maintenance & Repair Dealerships - Nissan USA Service & Maintenance
+  slug:             parts-service
+  pagePath:         migrated/parts-service/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/parts-service-proposed.html
+  sourceCurrent:    stardust/current/pages/parts-service.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: c4f6dc654cda)
+  designJson:       DESIGN.json (sha: 9592b4379e8e)
+  canonShas:        header:null footer:1a530e89f8f3 css:9b3375cab09e
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 33
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --font-light: NissanBrand-light, "Liberation Sans", Arimo, Arial, sans-serif;
+  --font-regular: NissanBrand-Regular, "Liberation Sans", Arimo, Arial, sans-serif;
+  --font-bold: NissanBrand-Bold, "Liberation Sans", Arimo, Arial, sans-serif;
+
+  --color-text: #000;
+  --color-body: #343434;
+  --color-bg: #fff;
+  --color-primary: #c3002f;
+  --color-surface: #efefef;
+  --color-rule: #d2d2d2;
+  --color-ink: #1e1e1e;
+  --color-muted: #999;
+  --color-footer-link: #efefef;
+  --color-footer-sep: #5c5c5c;
+  --color-footer-copy: #767676;
+
+  --container: 1170px;
+  --radius-pill: 40px;
+
+  --icon-arrow-white: url("../current/assets/media/site/icons/right-arrow.svg");
+  --icon-arrow-black: url("../current/assets/media/site/icons/right-arrow-black.svg");
+  --icon-arrow-red: url("../current/assets/media/site/icons/right-arrow-red.svg");
+  --icon-ext-white: url("../current/assets/media/site/icons/up-arrow.svg");
+  --icon-ext-black: url("../current/assets/media/site/icons/up-arrow-black.svg");
+  --icon-ext-red: url("../current/assets/media/site/icons/up-arrow-red.svg");
+  --icon-ext-up-white: url("../current/assets/media/site/icons/right-arrow-up.svg");
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Nissan Service, Maintenance &amp; Repair Dealerships - Nissan USA Service &amp; Maintenance","description":"When your Nissan is due for service, maintenance, or repairs, trust the certified technicians at your local Nissan dealership. Find a Nissan service center near you, schedule an appointment, and explore current service offers and coupons. Nissan USA Service &amp; Maintenance.","url":"https://staging.niss-parts-service.epsilonrms.com/parts-service"}</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nissan Service, Maintenance &amp; Repair Dealerships - Nissan USA Service &amp; Maintenance</title>
+<meta name="description" content="When your Nissan is due for service, maintenance, or repairs, trust the certified technicians at your local Nissan dealership. Find a Nissan service center near you, schedule an appointment, and explore current service offers and coupons. Nissan USA Service &amp; Maintenance.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preload" href="assets/fonts/NissanBrand-light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/NissanBrand-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/canon.css">
+<link rel="stylesheet" href="assets/css/parts-service.css">
+</head>
+<body id="Nissan">
+<div class="page-shell">
+<div class="site-header">
+  <div class="navbar" id="navbar">
+    <a class="navbar__logo" href="parts-service/index.html" id="nissan_logo_header">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/media/site/header/nissan_logo_desktop.svg">
+        <img src="assets/media/site/header/nissan_logo_mobile.svg" alt="Nissan North America - Service Now">
+      </picture>
+      <img class="navbar__logo-white" src="assets/media/site/header/nissan_logo_white.svg" alt="" aria-hidden="true">
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li><button class="site-nav__link" id="header_service_menu" aria-controls="service-menu" aria-expanded="false">Service &amp; Maintenance</button></li>
+        <li><button class="site-nav__link" id="header_shop_menu" aria-controls="shop-menu" aria-expanded="false">Shop</button></li>
+        <li><a class="site-nav__link" href="parts-service/en/service-maintenance/coupons-offers/index.html" id="header_coupons_menu" data-broken-link="true">Coupons &amp; Offers</a></li>
+        <li><button class="site-nav__link site-nav__link--last" id="header_owners_menu" aria-controls="owners-menu" aria-expanded="false">Owners</button></li>
+        <li class="site-nav__cta"><a class="btn btn--primary" href="parts-service/en/dealer/Search/index.html" id="menu-dealer-locator-btn" data-broken-link="true">Dealer Locator</a></li>
+        <li class="site-nav__close-item" id="menu-close-btn-container"><button class="site-nav__close" id="main_menu_close"><img src="assets/media/site/icons/menu-close-icon.svg" alt="Close"></button></li>
+      </ul>
+      <form class="site-nav__mobile-search" action="/parts-service/en/dealer/Search" method="get" role="search">
+        <img src="assets/media/site/icons/location-icon.svg" alt="use my current location icon">
+        <h3>Enter Your Location</h3>
+        <p>To find the best offers and nearby service, we need to find your location.</p>
+        <div class="site-nav__search-row">
+          <input type="search" id="nav-mobile-search-input" name="SearchText" placeholder="Find A Dealer" aria-label="Find A Dealer">
+          <button type="submit" id="nav-mobile-search-button" aria-label="Search"></button>
+        </div>
+        <a class="site-nav__current-loc" href="parts-service/en/dealer/Search/index.html" data-broken-link="true"><img src="assets/media/site/icons/curr-loc-pin.svg" alt="use my current location icon"><span>Use My Current Location</span></a>
+        <div class="site-nav__filters">
+          <p class="site-nav__filters-head" id="dealer-search-accordian"><a href="#dropdown-menu" id="filter-btn" role="button" aria-expanded="false" aria-controls="dropdown-menu"><span>Filters Applied</span> (<span id="no-of-filters">0</span>)</a></p>
+          <div class="site-nav__filters-body" id="dropdown-menu">
+            <div class="filter-group"><p class="filter-group__title">Radius</p>
+              <select id="Distance" name="Distance" aria-label="Radius"><option>5 Miles</option><option>10 Miles</option><option>15 Miles</option><option>25 Miles</option><option selected>50 Miles</option></select></div>
+            <div class="filter-group"><p class="filter-group__title">Services Available</p>
+              <label class="filter-check" for="mobileservice-checkbox"><input type="checkbox" id="mobileservice-checkbox" name="Amenities"> <span>Mobile Service</span></label><div class="disclaimer"><span class="disclaimer__invoker" id="ms-filter-disclaimer-invoker" role="button" tabindex="0" aria-controls="ms-filter-disclaimer" aria-label="Mobile Service info"><img src="assets/media/site/mobile-service/info-icon.svg" alt=""></span><div class="disclaimer__body" popover id="ms-filter-disclaimer"><button type="button" class="disclaimer__close" popovertarget="ms-filter-disclaimer" popovertargetaction="hide" aria-label="close"></button><span>*Call your local dealer to schedule Mobile Service and confirm that you are within their radius of travel. Mobile Service online scheduling is currently limited. Distance limits and other restrictions may apply. Valid at participating dealers. See dealer for details.</span></div></div>
+              <label class="filter-check" for="onlinetirestore-checkbox"><input type="checkbox" id="onlinetirestore-checkbox" name="Amenities"> <span>Online Tire Store</span></label>
+              <label class="filter-check" for="onlineservice-checkbox"><input type="checkbox" id="onlineservice-checkbox" name="Amenities"> <span>Online Service Scheduling</span></label>
+              <label class="filter-check" for="expressservice-checkbox"><input type="checkbox" id="expressservice-checkbox" name="Amenities"> <span>Express Service Dealer</span></label>
+              <label class="filter-check" for="rentalcar-checkbox"><input type="checkbox" id="rentalcar-checkbox" name="Amenities"> <span>Nissan Rental Car Dealer</span></label>
+              <label class="filter-check" for="rewardsprogram-checkbox"><input type="checkbox" id="rewardsprogram-checkbox" name="Amenities"> <span>MyNISSAN Rewards</span></label>
+              <label class="filter-check" for="onlineparts-checkbox"><input type="checkbox" id="onlineparts-checkbox" name="Amenities"> <span>Online Parts &amp; Accessories Store</span></label>
+            </div>
+            <div class="filter-group"><p class="filter-group__title">Certifications</p>
+              <label class="filter-check" for="leafdealer-checkbox"><input type="checkbox" id="leafdealer-checkbox" name="Amenities"> <span>Nissan EV Certified Dealer</span></label>
+              <label class="filter-check" for="businesscertified-checkbox"><input type="checkbox" id="businesscertified-checkbox" name="Amenities"> <span>Business Certified (NCV)</span></label>
+              <label class="filter-check" for="gtrdealer-checkbox"><input type="checkbox" id="gtrdealer-checkbox" name="Amenities"> <span>Nissan GT-R® Dealer</span></label>
+              <label class="filter-check" for="collisionrepair-checkbox"><input type="checkbox" id="collisionrepair-checkbox" name="Amenities"> <span>Collision Repair</span></label>
+            </div>
+            <p class="filter-reset"><a href="#dropdown-menu" id="clear-filters"><span><img src="assets/media/site/refresh-icon.svg" alt=""></span><span>Clear Filters</span></a></p>
+          </div>
+        </div>
+      </form>
+    </nav>
+    <button class="menu-toggle" id="navbar-Burger" aria-label="Menu" aria-controls="site-nav" aria-expanded="false"></button>
+  </div>
+</div>
+
+  <div class="sidenav-overlay" id="overlay"></div>
+  <div class="sidenav" id="mySidenav">
+<div class="mega-menu" id="service-menu" hidden>
+  <div class="mega-menu__bar"><button class="mega-menu__back" id="service_menu_back"><img src="assets/media/site/icons/menu-back-icon.svg" alt="Back"></button><span>Service &amp; Maintenance</span><button class="mega-menu__close" id="service_menu_close"><img src="assets/media/site/icons/menu-close-icon.svg" alt="Close"></button></div>
+  <h3 class="mega-menu__heading">Nissan Service</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_GenuineNissanService.webp"><img src="assets/media/site/header/nav_GenuineNissanService-mob.webp" alt="Nissan Service"></picture>
+    <div class="mega-menu__links">
+      <ul><li><a href="parts-service/en/service-maintenance/why-nissan/index.html" id="header_whynissan_submenu" data-broken-link="true">Why Nissan Service</a></li><li><a href="parts-service/en/service-maintenance/brakes/index.html" id="header_brakes_submenu" data-broken-link="true">Brakes</a></li><li><a href="parts-service/en/service-maintenance/tires/index.html" id="header_tires_submenu" data-broken-link="true">Tires</a></li><li><a href="parts-service/en/service-maintenance/oil-change/index.html" id="header_oilchange_submenu" data-broken-link="true">Oil Change</a></li><li><a href="parts-service/en/service-maintenance/batteries/index.html" id="header_battery_submenu" data-broken-link="true">Batteries</a></li><li><a href="parts-service/en/service-maintenance/express-service/index.html" id="header_expservice_submenu" data-broken-link="true">Express Service</a></li><li><a href="parts-service/en/service-maintenance/mobile-service/index.html" id="header_mobservice_submenu" data-broken-link="true">Mobile Service</a></li></ul>
+    </div>
+  </div>
+  <h3 class="mega-menu__heading">Maintaining Your Nissan</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_Mainenance.webp"><img src="assets/media/site/header/nav_Mainenance-mob.webp" alt="Maintaining Your Nissan"></picture>
+    <div class="mega-menu__links">
+      <ul><li><a href="parts-service/en/service-maintenance/maintenance-schedules/index.html" id="header_schedules_submenu" data-broken-link="true">Maintenance Schedules</a></li><li><a href="parts-service/en/service-maintenance/dashboard-warning-lights/index.html" id="header_dashboard_submenu" data-broken-link="true">Dashboard Indicator Lights</a></li><li><a href="parts-service/en/service-maintenance/multipoint-inspection/index.html" id="header_mpi_submenu" data-broken-link="true">Multi-Point Inspection</a></li></ul>
+    </div>
+  </div>
+  <h3 class="mega-menu__heading">Electric Vehicle Service</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_EV.webp"><img src="assets/media/site/header/nav_EV-mob.webp" alt="Electric Vehicle Service"></picture>
+    <div class="mega-menu__links">
+      <ul><li><a href="parts-service/en/service-maintenance/electric-vehicles/index.html" id="header_ev_submenu" data-broken-link="true">Electric Vehicle Service</a></li><li><a href="https://www.plugshare.com/" id="header_chargestation_submenu">Locate Charging Stations</a></li></ul>
+    </div>
+  </div>
+</div>
+<div class="mega-menu" id="shop-menu" hidden>
+  <div class="mega-menu__bar"><button class="mega-menu__back" id="shop_menu_back"><img src="assets/media/site/icons/menu-back-icon.svg" alt="Back"></button><span>Shop</span><button class="mega-menu__close" id="shop_menu_close"><img src="assets/media/site/icons/menu-close-icon.svg" alt="Close"></button></div>
+  <h3 class="mega-menu__heading">Nissan Tire Advantage</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_TireAdvantage.webp"><img src="assets/media/site/header/nav_TireAdvantage-mob.webp" alt="Nissan Tire Advantage"></picture>
+    <div class="mega-menu__links">
+      <h4>Nissan Tire Advantage</h4>
+      <p>Shop from a great selection of tire brands recommended to meet the high-quality standards of your Nissan vehicle and provide you with superb performance, comfort and handling.</p>
+      <ul><li><a href="https://www.nissantireadvantage.com/" id="header_tire_store_submenu">Nissan Tire Store</a></li></ul>
+    </div>
+  </div>
+  <h3 class="mega-menu__heading">Parts &amp; Accessories Store</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_PartsAccessories.webp"><img src="assets/media/site/header/nav_PartsAccessories-mob.webp" alt="Parts &amp; Accessories Store"></picture>
+    <div class="mega-menu__links">
+      <h4>Parts &amp; Accessories Store</h4>
+      <p>Maintain your Nissan with Genuine Nissan Parts from Nissan Parts &amp; Accessories Online to help ensure your ride is ready for the road ahead.</p>
+      <ul><li><a href="https://parts.nissanusa.com/" id="header_accessories_online_submenu">Shop Nissan Parts &amp; Accessories Online</a></li></ul>
+    </div>
+  </div>
+</div>
+<div class="mega-menu" id="owners-menu" hidden>
+  <div class="mega-menu__bar"><button class="mega-menu__back" id="owners_menu_back"><img src="assets/media/site/icons/menu-back-icon.svg" alt="Back"></button><span>Owners</span><button class="mega-menu__close" id="owners_menu_close"><img src="assets/media/site/icons/menu-close-icon.svg" alt="Close"></button></div>
+  <h3 class="mega-menu__heading">Owner Services</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_OwnerServices.webp"><img src="assets/media/site/header/nav_OwnerServices-mob.webp" alt="Owner Services"></picture>
+    <div class="mega-menu__links">
+      <h4>Owner Services</h4>
+      <p>Enhance your ownership experience with MyNISSAN - your vehicle's online home to information on your Nissan model.</p>
+      <ul><li><a href="parts-service/en/service-maintenance/owners/index.html" id="header_owner_submenu" data-broken-link="true">For Nissan Owners</a></li></ul>
+    </div>
+  </div>
+  <h3 class="mega-menu__heading">Nissan Owner Resources</h3>
+  <div class="mega-menu__group">
+    <picture><source media="(min-width: 1024px)" srcset="assets/media/site/header/nav_OwnerResources.webp"><img src="assets/media/site/header/nav_OwnerResources-mob.webp" alt="Nissan Owner Resources"></picture>
+    <div class="mega-menu__links">
+      <h4>Nissan Owner Resources</h4>
+      <ul><li><a href="parts-service/en/service-maintenance/dashboard-warning-lights/index.html" id="header_owner_dashboard_submenu" data-broken-link="true">Dashboard Indicator Lights</a></li><li><a href="https://www.nissanusa.com/owners.html" id="header_about_mynissan_submenu">About MyNISSAN</a></li><li><a href="https://www.nissanusa.com/connect.html" id="header_nissan_connect_submenu">NissanConnect® Services</a></li><li><a href="https://www.nissanusa.com/recalls-vin.html#/#/Home" id="header_recall_submenu">Recall Information</a></li><li><a href="https://nissan-securityplus.com/" id="header_security_info_submenu">Nissan Security Plus®</a></li></ul>
+    </div>
+  </div>
+</div>
+  </div>
+
+<form class="dealer-search" id="search-container" action="/parts-service/en/dealer/Search" method="get" role="search">
+  <div class="dealer-search__row">
+    <label class="dealer-search__label" for="SearchText">Dealer Locator</label>
+    <input class="dealer-search__input" type="search" id="SearchText" name="SearchText" placeholder="Find a Dealer">
+    <button class="dealer-search__btn" type="submit" id="dealer-search-btn" aria-label="Search"></button>
+  </div>
+</form>
+
+<main class="parts-service" role="main" data-template="parts-service">
+
+  <!-- Hero carousel: initial state = slide 1 as served; autoplay (10 s interval, 2 s speed) runs from js -->
+  <section class="hero-carousel" id="splide-carousel" data-section="1">
+    <div class="hero-carousel__viewport">
+      <ul class="hero-carousel__track" style="--active: 0">
+        <li class="hero-slide is-active is-visible" id="splide-carousel-slide01" aria-roledescription="slide" aria-label="1 of 4">
+          <picture class="hero-slide__media">
+            <source media="(min-width: 769px)" srcset="assets/media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1.webp">
+            <source media="(min-width: 640px)" srcset="assets/media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1-tablet.webp">
+            <source media="(min-width: 320px)" srcset="assets/media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1-mobile.webp">
+            <img src="assets/media/eps/Home/dev-4/cye-sales-event/NNA-Carousel-1.webp" alt="Maintained to perform. Buy 4, Get 1 FREE Oil and Filter Changes.">
+          </picture>
+          <div class="hero-caption">
+            <p class="hero-caption__eyebrow hero-caption__eyebrow--lg">Built to last</p>
+            <p class="hero-caption__title hero-caption__title--display">Maintained to perform</p>
+            <p class="hero-caption__text">Help keep your Nissan ready for the road ahead with expert service. <strong>Plus, Buy 4, Get 1 FREE Oil &amp; Filter Changes.*</strong></p>
+            <div class="hero-caption__ctas">
+              <a class="btn btn--primary btn--ext-up" href="https://secure.everybyspp.com/Buy4Get1Promo/c2dc2d1a26111815" id="home_slide_sales_event_btn">Purchase Today</a>
+              <a class="btn btn--ghost-white" href="#modal-cye-buy-4-get-1-free-oil" id="home-slide-sales-event-offer-details-popup" data-dialog="modal-cye-buy-4-get-1-free-oil">*Offer Details</a>
+            </div>
+          </div>
+        </li>
+        <li class="hero-slide" id="splide-carousel-slide02" aria-roledescription="slide" aria-label="2 of 4">
+          <picture class="hero-slide__media">
+            <source media="(min-width: 769px)" srcset="assets/media/eps/Home/dev-4/part-2/NNA-Carousel-1.webp">
+            <source media="(min-width: 640px)" srcset="assets/media/eps/Home/dev-4/part-2/NNA-Carousel-1-tablet.webp">
+            <source media="(min-width: 320px)" srcset="assets/media/eps/Home/dev-4/part-2/NNA-Carousel-1-mobile.webp">
+            <img src="assets/media/eps/Home/dev-4/part-2/NNA-Carousel-1.webp" alt="Buy 3 Eligible Tires, Get the 4th for $1*">
+          </picture>
+          <div class="hero-caption hero-caption--compact">
+            <p class="hero-caption__eyebrow"></p>
+            <h1 class="hero-caption__title">Buy 3 Tires, Get the 4th for $1*</h1>
+            <p class="hero-caption__text hero-caption__text--tight">Savings on eligible Hankook tires.</p>
+            <p class="hero-caption__validity">Offer valid November 16-30, 2026</p>
+            <div class="hero-caption__ctas">
+              <a class="btn btn--primary btn--ext" href="https://www.nissantireadvantage.com/" id="home_slide_shop_tires_btn">Shop for Tires</a>
+              <a class="btn btn--ghost-white" href="#modal-buy-3-eligible-tires-get-the-4th-for-1" id="home-slide-1-offer-details-popup" data-dialog="modal-buy-3-eligible-tires-get-the-4th-for-1">*Offer Details</a>
+            </div>
+          </div>
+        </li>
+        <li class="hero-slide" id="splide-carousel-slide03" aria-roledescription="slide" aria-label="3 of 4">
+          <div class="hero-slide__nudge">
+          <picture class="hero-slide__media">
+            <source media="(min-width: 769px)" srcset="assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1.webp">
+            <source media="(min-width: 640px)" srcset="current/assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-tablet.webp">
+            <source media="(min-width: 320px)" srcset="assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1-mobile.webp">
+            <img src="assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-1.webp" alt="Winter Ready">
+          </picture>
+          <div class="hero-caption">
+            <h2 class="hero-caption__title"><span class="hero-caption__title--spaced-sm">Winter Ready</span></h2>
+            <div class="hero-caption__text hero-caption__text--regular">Get your Nissan ready to get the best of winter by scheduling a multi-point inspection<div class="disclaimer"><span class="disclaimer__invoker" id="home-c-2-1-hero-popup-invoker" role="button" tabindex="0" aria-controls="home-c-2-1-hero-popup">[*]</span><div class="disclaimer__body" popover id="home-c-2-1-hero-popup"><button type="button" class="disclaimer__close" popovertarget="home-c-2-1-hero-popup" popovertargetaction="hide" aria-label="close"></button><span>*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details.</span></div></div> <span>at your local dealer.</span></div>
+            <div class="hero-caption__ctas">
+              <a class="btn btn--primary" href="parts-service/en/dealer/Search/index.html" id="home-slide-2-find-dealer-btn" data-broken-link="true">Find a Dealer</a>
+            </div>
+          </div>
+          </div>
+        </li>
+        <li class="hero-slide" id="splide-carousel-slide04" aria-roledescription="slide" aria-label="4 of 4">
+          <div class="hero-slide__nudge">
+          <video class="hero-slide__video" title="Home banner" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/media/eps/Home/dev-4/sep-oct-2026/NNA-Carousel-2.mp4" type="video/mp4">
+          </video>
+          <div class="hero-caption">
+            <p class="hero-caption__title">Don't Let Your Battery Catch a Winter Cold</p>
+            <div class="hero-caption__text hero-caption__text--wide">When cold weather hits, your battery may lose its charge. Visit your local participating Nissan dealer for a complimentary inspection<div class="disclaimer"><span class="disclaimer__invoker" id="home-c-3-1-hero-popup-invoker" role="button" tabindex="0" aria-controls="home-c-3-1-hero-popup">[*]</span><div class="disclaimer__body" popover id="home-c-3-1-hero-popup"><button type="button" class="disclaimer__close" popovertarget="home-c-3-1-hero-popup" popovertargetaction="hide" aria-label="close"></button><span>*At participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details.</span></div></div> <span>to see if it's ready to withstand the harsh conditions ahead.</span><div class="disclaimer"><span class="disclaimer__invoker" id="home-c-3-2-hero-popup-invoker" role="button" tabindex="0" aria-controls="home-c-3-2-hero-popup">[*]</span><div class="disclaimer__body" popover id="home-c-3-2-hero-popup"><button type="button" class="disclaimer__close" popovertarget="home-c-3-2-hero-popup" popovertargetaction="hide" aria-label="close"></button><span>*Images shown for illustrative purposes only. For complete limited warranty details, see your Nissan dealer and read the product warranty information.</span></div></div></div>
+            <div class="hero-caption__ctas">
+              <a class="btn btn--primary" href="parts-service/en/dealer/Search/index.html" id="home-slide3-find-dealer-btn" data-broken-link="true">Find a Dealer</a>
+            </div>
+          </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="hero-carousel__dots" role="tablist" aria-label="Select a slide to show">
+      <button class="hero-carousel__dot is-active" role="tab" aria-selected="true" aria-controls="splide-carousel-slide01" aria-label="Go to slide 1"></button>
+      <button class="hero-carousel__dot" role="tab" aria-selected="false" aria-controls="splide-carousel-slide02" aria-label="Go to slide 2"></button>
+      <button class="hero-carousel__dot" role="tab" aria-selected="false" aria-controls="splide-carousel-slide03" aria-label="Go to slide 3"></button>
+      <button class="hero-carousel__dot" role="tab" aria-selected="false" aria-controls="splide-carousel-slide04" aria-label="Go to slide 4"></button>
+    </div>
+  </section>
+
+  <!-- Current Offers -->
+  <section class="offers" aria-labelledby="offers-title" data-section="2">
+    <div class="container offers__head">
+      <h3 class="offers__title" id="offers-title">Current Offers</h3>
+    </div>
+    <div class="offers__rail">
+      <ul class="offers__track" id="offers-track">
+        <li class="offer-card">
+          <div class="offer-card__tile">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/media/eps/Home/dev-4/cye-sales-event/NNA-Current-Offer-Oil-Desktop.webp">
+              <img class="offer-card__img" src="assets/media/eps/Home/dev-4/cye-sales-event/NNA-Current-Offer-Oil-Mobile.webp" alt="Buy 4, Get 1 FREE Oil and Filter Changes">
+            </picture>
+            <div class="offer-card__body">
+              <h3 class="offer-card__title offer-card__title--tight">Buy 4, Get 1 FREE Oil &amp; Filter Changes*</h3>
+              <div class="offer-card__foot">
+                <p class="offer-card__validity">Offer valid through January 4, 2027</p>
+                <div class="offer-card__ctas">
+                  <a class="link-btn" href="#modal-cye-buy-4-get-1-free-oil" id="home_offer_details_cye_oil" data-dialog="modal-cye-buy-4-get-1-free-oil">*Offer Details</a>
+                  <a class="btn btn--primary btn--ext btn--track" href="https://secure.everybyspp.com/Buy4Get1Promo/c2dc2d1a26111815" id="home_offer_cye_purchase">Purchase Today</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="offer-card">
+          <div class="offer-card__tile">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/media/eps/Home/dev-4/part-2/NNA-Current-Offer-Tire-Offer-Desktop.webp">
+              <img class="offer-card__img" src="assets/media/eps/Home/dev-4/part-2/NNA-Current-Offer-Tire-Offer-Mobile.webp" alt="Enjoy $100 off an eligible set of tires.">
+            </picture>
+            <div class="offer-card__body">
+              <h3 class="offer-card__title offer-card__title--tight">Buy 3 Tires, Get the 4th for $1*</h3>
+              <p class="offer-card__validity">Offer valid November 16-30, 2026</p>
+              <div class="offer-card__foot">
+                <div class="offer-card__ctas">
+                  <a class="link-btn" href="#modal-buy-3-eligible-tires-get-the-4th-for-1" id="home_offer_details_pop_up_4th_for_1" data-dialog="modal-buy-3-eligible-tires-get-the-4th-for-1">*Offer Details</a>
+                  <a class="btn btn--secondary btn--ext btn--track" href="https://www.nissantireadvantage.com/" id="home_banner_shopfortires">Shop for Tires</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="offer-card">
+          <div class="offer-card__tile">
+            <img class="offer-card__img" src="assets/media/eps/Home/comp-module-en-rebrand.webp" alt="Complimentary Multi-Point Inspection*">
+            <div class="offer-card__body">
+              <h3 class="offer-card__title">Complimentary Multi-Point Inspection*</h3>
+              <div class="offer-card__foot">
+                <div class="offer-card__ctas">
+                  <a class="link-btn" href="#modal-disclaimer-multipoint" id="home-promo-complimentary-offer-popup" data-dialog="modal-disclaimer-multipoint">*Offer Details</a>
+                  <a class="btn btn--secondary" href="parts-service/en/dealer/Search/index.html" id="home-promo-schedule-service" data-broken-link="true">Schedule Service</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="offer-card">
+          <div class="offer-card__tile">
+            <img class="offer-card__img" src="assets/media/eps/Home/TPM_Tile_rebrand_En.webp" alt="NISSAN TIRE PRICE MATCH*">
+            <div class="offer-card__body">
+              <h3 class="offer-card__title">Nissan Tire Price Match + 5% Credit*</h3>
+              <div class="offer-card__foot">
+                <div class="offer-card__ctas">
+                  <a class="link-btn" href="#modal-disclaimer-pricematch" id="home-promo-pricematch-offer-popup" data-dialog="modal-disclaimer-pricematch">*Offer Details</a>
+                  <a class="btn btn--secondary btn--ext" href="https://www.nissantireadvantage.com/" id="home-promo-tireprice-shoptires">Shop for Tires</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="offer-card offer-card--offset">
+          <div class="offer-card__tile">
+            <img class="offer-card__img" src="assets/media/site/home/rebrand/Current-Offer-Battery.webp" alt="Complimentary Battery Inspection*">
+            <div class="offer-card__body">
+              <h3 class="offer-card__title">Complimentary Battery Inspection*</h3>
+              <div class="offer-card__foot">
+                <div class="offer-card__ctas">
+                  <a class="link-btn" href="#modal-disclaimer-battery" id="home-promo-complimentary-battery-offer-popup" data-dialog="modal-disclaimer-battery">*Offer Details</a>
+                  <a class="btn btn--secondary" href="parts-service/en/dealer/Search/index.html" id="offer-scheduleservice" data-broken-link="true">Schedule Service</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="offers__progress"><span class="offers__progress-bar" id="offers-progress"></span></div>
+      <div class="offers__nav">
+        <button type="button" class="offers__btn offers__btn--prev" id="previous" aria-label="Previous offers" aria-controls="offers-track" disabled></button>
+        <button type="button" class="offers__btn offers__btn--next" id="next" aria-label="Next offers" aria-controls="offers-track"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience banner -->
+  <section class="exp-banner" data-section="3">
+    <div class="exp-banner__frame">
+      <picture>
+        <source media="(min-width: 769px)" srcset="assets/media/site/Home/rebrand/Carousel_1.webp">
+        <source media="(min-width: 640px)" srcset="assets/media/site/Home/rebrand/Carousel_1-tablet.webp">
+        <source media="(min-width: 320px)" srcset="assets/media/site/Home/rebrand/Carousel_1-mobile.webp">
+        <img class="exp-banner__img" src="assets/media/site/Home/rebrand/Carousel_1.webp" alt="Maintained to perform. Buy 4, Get 1 FREE Oil and Filter Changes.">
+      </picture>
+      <div class="hero-caption">
+        <h2 class="hero-caption__title">What Makes your Nissan Experience Unique?</h2>
+        <p class="hero-caption__text">Because every aspect, from convenient scheduling options to personal service consultants, is designed with you in mind.</p>
+        <a class="btn btn--primary" href="parts-service/en/service-maintenance/why-nissan/index.html" id="home-exp-banner-learn-more" data-broken-link="true">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two-column tiles -->
+  <section class="tile tile--media-right" data-section="4">
+    <div class="container">
+      <div class="tile__inner">
+        <div class="tile__content">
+          <div>
+            <div class="tile__eyebrow">EXPRESS SERVICE<div class="disclaimer"><span class="disclaimer__invoker" id="participating-dealers-tc-popup-invoker" role="button" tabindex="0" aria-controls="participating-dealers-tc-popup">[*]</span><div class="disclaimer__body" popover id="participating-dealers-tc-popup"><button type="button" class="disclaimer__close" popovertarget="participating-dealers-tc-popup" popovertargetaction="hide" aria-label="close"></button><span>*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details.</span></div></div></div>
+            <h2 class="tile__title">Service on Your Schedule</h2>
+            <p class="tile__text">We know your time is important, which is why we developed Nissan Express Service to be flexible enough to accommodate your busy schedule. No appointment necessary. Just show up, sit back and relax knowing you'll be back on the road in no time.</p>
+            <div class="tile__ctas">
+              <a class="btn btn--secondary btn--cap" href="parts-service/en/dealer/Search/index.html" id="home-exp-service-panel-dealer-cta" data-broken-link="true">Find A Dealer</a>
+              <a class="btn btn--tertiary" href="parts-service/en/service-maintenance/express-service/index.html" id="home-exp-service-panel-learn-cta" data-broken-link="true">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <figure class="tile__media">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/media/site/Home/rebrand/service-schedule.webp">
+            <img src="assets/media/site/Home/rebrand/M-ExpressService.webp" alt="Service on Your Schedule">
+          </picture>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="tile tile--media-left" data-section="5">
+    <div class="container">
+      <div class="tile__inner">
+        <figure class="tile__media">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/media/site/Home/rebrand/nissan-oilchange.webp">
+            <img src="assets/media/site/Home/rebrand/M-OilBottle.webp" alt="oil change panel title">
+          </picture>
+        </figure>
+        <div class="tile__content">
+          <div>
+            <p class="tile__eyebrow">NISSAN OIL CHANGE</p>
+            <h2 class="tile__title">A Change for the Best</h2>
+            <p class="tile__text">From advanced diagnostics to state-of-the-industry tools and tech specifically designed for your Nissan vehicle, every step of the oil change process has been designed with efficiency, speed and performance in mind.</p>
+            <div class="tile__ctas">
+              <a class="btn btn--secondary" href="parts-service/en/dealer/Search/index.html" id="home-oil-change-panel-schedule-service-cta" data-broken-link="true">Schedule Service</a>
+              <a class="btn btn--tertiary" href="parts-service/en/service-maintenance/oil-change/index.html" id="home-oil-change-panel-learn-cta" data-broken-link="true">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tile tile--media-right" data-section="6">
+    <div class="container">
+      <div class="tile__inner">
+        <div class="tile__content">
+          <div>
+            <p class="tile__eyebrow tile__eyebrow--tight">PARTS &amp; ACCESSORIES</p>
+            <h2 class="tile__title tile__title--tight">Give Your Vehicle Everything it Deserves</h2>
+            <div class="tile__text tile__text--wide">Shop a variety of Genuine Nissan Parts and Accessories. Enjoy the convenience of ordering online, with the option to have your items shipped directly to you or to your nearest Nissan dealership for pickup.<div class="disclaimer"><span class="disclaimer__invoker" id="shop-parts-tc-popup-invoker" role="button" tabindex="0" aria-controls="shop-parts-tc-popup">[*]</span><div class="disclaimer__body" popover id="shop-parts-tc-popup"><button type="button" class="disclaimer__close" popovertarget="shop-parts-tc-popup" popovertargetaction="hide" aria-label="close"></button><span>*Restrictions apply. Contact Nissan dealer for details.</span></div></div></div>
+            <div class="tile__ctas">
+              <a class="btn btn--secondary btn--ext" href="https://parts.nissanusa.com/?partner=3P_NSERV2&amp;_gl=1*102t8py*_gcl_au*ODY5NzE4NjYzLjE3Mzc3NTgzNzA.*_ga*MTU0NTE3OTg4OC4xNzM3NzU4Mzcx*_ga_0MREVC1JTE*MTc0NDIxNDYxNi45Ny4xLjE3NDQyMTU3NTMuNTYuMC4xNDEyNjI4NDc1" id="home-parts-panel-shop-parts-cta" title="Btn shop parts accessories">Shop Parts &amp; Accessories</a>
+            </div>
+          </div>
+        </div>
+        <figure class="tile__media">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/media/site/Home/rebrand/Parts-Accessories-Module-Desktop.webp">
+            <img src="assets/media/site/Home/rebrand/Parts-Accessories-Module-Mobile.webp" alt="parts panel title">
+          </picture>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tire price match -->
+  <section class="tire-price" data-section="7">
+    <div class="container">
+      <div class="tire-price__inner">
+        <div class="tire-price__media">
+          <img src="assets/media/site/tires/NIS-tires.webp" alt=" tire price match title">
+        </div>
+        <div class="tire-price__content">
+          <h2 class="tire-price__title">Nissan Tire Price Match + 5% Credit*</h2>
+          <p class="tire-price__text">Bring in an eligible competitor quote and we will match the price and provide an additional 5% credit on select eligible tires. <strong>* Eligibility requirements apply.</strong></p>
+          <div class="tire-price__ctas">
+            <a class="btn btn--secondary" href="parts-service/en/dealer/Search/index.html" id="tires_banner_learnmore" data-broken-link="true">Find a Dealer</a>
+            <a class="link-btn" href="#modal-disclaimer-pricematch" id="disclaimer-pricematch" data-dialog="modal-disclaimer-pricematch">*Offer Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recall strip -->
+  <section class="recall-strip" data-section="8">
+    <div class="container">
+      <div class="recall-strip__inner">
+        <p class="recall-strip__text">Find Nissan Safety Recall &amp; Service Campaign Information Here</p>
+        <div><a class="btn btn--secondary btn--ext" href="https://www.nissanusa.com/recalls-vin.html#/#/Home" id="explore-cta">Explore</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-lang">
+      <div class="lang-select">
+        <a class="lang-select__trigger" href="#langDropdown" role="button" aria-expanded="false" aria-controls="langDropdown">English</a>
+        <div class="lang-select__menu" id="langDropdown" hidden><a href="parts-service/sp/index.html" data-broken-link="true">Spanish</a></div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-links__cols">
+        <div class="footer-links__col">
+          <p class="footer-links__title" role="button" tabindex="0" aria-expanded="false" aria-controls="footer-shop">Shop</p>
+          <div class="footer-links__body" id="footer-shop">
+            <p class="footer-links__item"><a href="https://www.nissanusa.com/buildyournissan" id="footer-link-build-your-nissan">Build Your Nissan</a></p>
+            <p class="footer-links__item"><a href="https://www.nissanusa.com/shopping-tools/deals-incentives-offers.html" id="footer-link-build-view-offer">View Offers</a></p>
+            <p class="footer-links__item"><a href="https://parts.nissanusa.com/" id="footer-link-build-link-parts">Parts and Accessories Online Store</a></p>
+            <p class="footer-links__item"><a href="https://www.nissantireadvantage.com/" id="footer-link-build-link-tire">Tire Store</a></p>
+            <p class="footer-links__item"><a href="https://www.nissanusa.com/rental-cars.html" id="footer-link-build-link-rental-program">Nissan Rental Car Program</a></p>
+            <p class="footer-links__item"><a href="https://www.nissanusa.com/accessibility.html" id="footer-link-build-link-accessibility">Accessibility</a></p>
+          </div>
+        </div>
+        <div class="footer-links__col">
+          <p class="footer-links__title" role="button" tabindex="0" aria-expanded="false" aria-controls="footer-owners">For Owners</p>
+          <div class="footer-links__body" id="footer-owners">
+            <p class="footer-links__item"><a href="parts-service/en/service-maintenance/maintenance-schedules/index.html" id="footer-link-maintenance-schedules" data-broken-link="true">Maintenance Schedules</a></p>
+            <p class="footer-links__item"><a href="https://www.nissanusa.com/owners/manuals-guides.html" id="footer-link-manual-guide">Manuals &amp; Guides</a></p>
+            <p class="footer-links__item"><a href="https://owners.nissanusa.com/nowners/" id="footer-link-owner-portal">Owner Portal</a></p>
+            <p class="footer-links__item"><a href="https://www.nissanusa.com/rewards" id="footer-link-rewards">MyNissan Rewards</a></p>
+            <p class="footer-links__item"><a href="https://collision.nissanusa.com/" id="footer-link-collision-assistance">Collision Assistance</a></p>
+            <p class="footer-links__item"><a href="https://owners.nissanusa.com/nowners/navigation/extendedServiceContent" id="footer-link-extended-plan">Extended Protection Plans</a></p>
+          </div>
+        </div>
+        <div class="footer-links__col">
+          <p class="footer-links__title" role="button" tabindex="0" aria-expanded="false" aria-controls="footer-about">About</p>
+          <div class="footer-links__body" id="footer-about">
+            <p class="footer-links__item"><a href="parts-service/en/dealer/Search/index.html" id="footer-link-location" data-broken-link="true">Locations</a></p>
+            <p class="footer-links__item"><a href="#" id="ot-sdk-btn">Cookie Settings</a></p>
+            <p class="footer-links__item"><a href="parts-service/en/service-maintenance/faqs/index.html" id="footer-link-faq" data-broken-link="true">FAQs</a></p>
+          </div>
+        </div>
+      </div>
+      <p class="footer-social">
+        <a href="https://www.tiktok.com/@nissanusa?lang=en" id="footer-link-tiktok"><img src="assets/media/site/icons/tiktok-icon.svg" alt="TikTok"></a>
+        <a href="https://www.youtube.com/user/nissanusa" id="footer-link-youtube"><img src="assets/media/site/youtube-icon.svg" alt="You Tube"></a>
+        <a href="https://www.instagram.com/nissanusa" id="footer-link-instagram"><img src="assets/media/site/instagram-icon.svg" alt="Instagram"></a>
+        <a href="https://x.com/NissanUSA" id="footer-link-twitter"><img src="assets/media/site/twitter-icon.svg" alt="Twitter"></a>
+        <a href="https://www.facebook.com/nissanusa" id="footer-link-facebook"><img src="assets/media/site/facebook-icon.svg" alt=" footer icon facebook alt"></a>
+        <a href="https://www.pinterest.com/nissanusa/" id="footer-link-pinterest"><img src="assets/media/site/icons/pinterest-icon.svg" alt="Pinterest"></a>
+      </p>
+    </div>
+    <div class="footer-legal">
+      <nav class="footer-legal__list" aria-label="Legal and privacy links">
+        <a class="footer-legal__link" href="https://www.nissanusa.com/contact-us.html" id="footer-link-contact-us">Contact Us</a>
+        <span class="footer-legal__sep" aria-hidden="true">|</span>
+        <span class="footer-legal__item"><a class="footer-legal__link footer-legal__link--privacy" href="https://www.nissanusa.com/data-privacy.html" id="footer-link-personal-info">Do Not Sell Or Share My Personal Information</a></span>
+        <span class="footer-legal__sep" aria-hidden="true">|</span>
+        <span class="footer-legal__item"><a class="footer-legal__link" href="https://www.nissanusa.com/legal-terms.html" id="footer-link-terms-of-use">Terms Of Use</a></span>
+        <span class="footer-legal__sep" aria-hidden="true">|</span>
+        <span class="footer-legal__item"><a class="footer-legal__link" href="https://www.nissanusa.com/privacy.html" id="footer-link-privacy-notice">Privacy Notice</a></span>
+        <span class="footer-legal__sep" aria-hidden="true">|</span>
+        <span class="footer-legal__item"><a class="footer-legal__link footer-legal__recall" href="https://www.nissanusa.com/owners/recalls-vin.html#/#/Home" id="footer-link-recall-info">Recall Information</a></span>
+      </nav>
+      <p class="footer-legal__copy">©2026 Nissan North America, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- Offer detail dialogs (verbatim copy from the source's .modal blocks) -->
+<dialog class="offer-dialog" id="modal-save-100-tires" aria-labelledby="modal-save-100-tires-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/offers/tires-red.svg" alt="Buy 3 Tires, Get the 4th for $1*">
+      <h2 class="offer-dialog__title" id="modal-save-100-tires-title">Buy 3 Tires, Get the 4th for $1*</h2>
+      <p>Offer valid November 16-30, 2026</p>
+      <p>*Buy 3 eligible Hankook tires, get the 4th for $1. Hankook OEM, OEA, WIN tires only. Must be installed by participating Nissan dealer by 12/07/2026. Taxes, installation, and other fees extra. Price and offer availability may vary by model. No cash value. May not be combined with other offers. Void where prohibited. Other restrictions apply. See participating dealer for full details. Ends 11/30/2026. <br></p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://www.nissantireadvantage.com/" id="home_promo_modal_shop_tires_01">Shop for Tires</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-enjoy-100-off-tires" aria-labelledby="modal-enjoy-100-off-tires-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/icons/offers/tires-offer-icon.svg" alt="Buy 3 Tires, Get the 4th for $1*">
+      <h2 class="offer-dialog__title" id="modal-enjoy-100-off-tires-title">Buy 3 Tires, Get the 4th for $1*</h2>
+      <p>Offer valid November 16-30, 2026</p>
+      <p>*Buy 3 eligible Hankook tires, get the 4th for $1. Hankook OEM, OEA, WIN tires only. Must be installed by participating Nissan dealer by 12/07/2026. Taxes, installation, and other fees extra. Price and offer availability may vary by model. No cash value. May not be combined with other offers. Void where prohibited. Other restrictions apply. See participating dealer for full details. Ends 11/30/2026.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://www.nissantireadvantage.com/" id="natl_offer_tire_popup_shoptire">Shop for Tires</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-buy-3-eligible-tires-get-the-4th-for-1" aria-labelledby="modal-buy-3-eligible-tires-get-the-4th-for-1-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/icons/offers/tires-offer-icon.svg" alt="Buy 3 Tires, Get the 4th for $1*">
+      <h2 class="offer-dialog__title" id="modal-buy-3-eligible-tires-get-the-4th-for-1-title">Buy 3 Tires, Get the 4th for $1*</h2>
+      <p>Offer valid November 16-30, 2026</p>
+      <p>*Buy 3 eligible Hankook tires, get the 4th for $1. Hankook OEM, OEA, WIN tires only. Must be installed by participating Nissan dealer by 12/07/2026. Taxes, installation, and other fees extra. Price and offer availability may vary by model. No cash value. May not be combined with other offers. Void where prohibited. Other restrictions apply. See participating dealer for full details. Ends 11/30/2026.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://www.nissantireadvantage.com/" id="natl_offer_tire_popup_shoptire_4th_for_1">Shop for Tires</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-cye-buy-4-get-1-free-oil" aria-labelledby="modal-cye-buy-4-get-1-free-oil-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/coupons-offers/rebrand/Icon_Oil.svg" alt="Buy 4, Get 1 FREE Oil &amp; Filter Changes*">
+      <h2 class="offer-dialog__title" id="modal-cye-buy-4-get-1-free-oil-title">Buy 4, Get 1 FREE Oil &amp; Filter Changes*</h2>
+      <p>Offer valid through January 4, 2027. Restrictions apply. See <a href="https://nissan-securityplus.com/buy-4-get-1-free/#disclaimer" id="cye-buy-4-get-1-oil-modal-terms-conditions">terms &amp; conditions</a>.</p>
+      <p><strong>*Buy 4, Get 1 Free Offer</strong>. Purchase a 5-Pack Prepaid Maintenance Agreement (PMA) and receive the fifth oil and filter replacement at no additional charge. Coverage expires after 30 months or 25,000 miles, whichever occurs first. No cash value. Taxes and dealer fees not included. Pricing subject to change based on market conditions. Nissan vehicles only. Other restrictions apply. <strong>READ THE 5-PACK PMA at <a href="https://nissan-securityplus.com/buy-4-get-1-free/" id="nissan-securityplus-buy-4-get-1-oil-modal-terms-conditions">https://nissan-securityplus.com/buy-4-get-1-free/</a> OR AT YOUR DEALER, AS ITS TERMS, CONDITIONS, EXCLUSIONS, AND LIMITATIONS CONTROL.</strong> In Florida (License #60128), Missouri, North Dakota, Oregon and Vermont, Security+Plus is backed by Nissan Extended Services North America, Inc., P.O. Box 685004, Franklin, TN 37068-5004. Security+Plus® is a trademark of Nissan North America, Inc. Ends 01/04/2027.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://secure.everybyspp.com/Buy4Get1Promo/c2dc2d1a26111815" id="home_cye_popup_purchase">Purchase Today</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-save-100-tires-promo" aria-labelledby="modal-save-100-tires-promo-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/offers/tires-red.svg" alt="Buy 3 Tires, Get the 4th for $1*">
+      <h2 class="offer-dialog__title" id="modal-save-100-tires-promo-title">Buy 3 Tires, Get the 4th for $1*</h2>
+      <p>Offer valid November 16-30, 2026</p>
+      <p>*Buy 3 eligible Hankook tires, get the 4th for $1. Hankook OEM, OEA, WIN tires only. Must be installed by participating Nissan dealer by 12/07/2026. Taxes, installation, and other fees extra. Price and offer availability may vary by model. No cash value. May not be combined with other offers. Void where prohibited. Other restrictions apply. See participating dealer for full details. Ends 11/30/2026. <br></p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://www.nissantireadvantage.com/" id="home_promo_modal_finddealer100">Shop for Tires</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-disclaimer-buy" aria-labelledby="modal-disclaimer-buy-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/icons/offers/tires-offer-icon.svg" alt="Tires">
+      <h2 class="offer-dialog__title" id="modal-disclaimer-buy-title">Buy 3 Eligible Tires, Get the 4th for $1*</h2>
+      <p>Offer valid February 1 - April 30, 2025</p>
+      <p>*Offer available for a limited time. Eligible on select OEM, OEA, and WIN tires only when purchased from and installed by a participating Nissan dealer. Other restrictions apply. See dealer for details. Price and offer availability may vary by model. Taxes and fees additional. No cash value. May not be combined with any other offers. Void where prohibited. Offer ends April 30, 2025.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://www.nissantireadvantage.com/" id="home_promo_cbrakesi_buy3_shoptire">Shop for Tires</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-disclaimer-pricematch" aria-labelledby="modal-disclaimer-pricematch-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/icons/offers/tires-offer-icon.svg" alt="Nissan Tire Price Match + 5% Credit*">
+      <h2 class="offer-dialog__title" id="modal-disclaimer-pricematch-title">Nissan Tire Price Match + 5% Credit*</h2>
+      <p>Bring in an eligible competitor quote and we will match the price and provide an additional 5% credit on select eligible tires.<strong>* Proof of eligibility required.</strong></p>
+      <p>*Eligible tires only. Customer must present a printed or digital lower-priced quote on an identical tire dated within 30 days of purchase from a tire retailer and installer within 100 miles of dealership. Internet quotes are only valid for competitors with a physical retail sales and installation location within the 100-mile radius. Bonus, bundled, free, or special offers; coupons, rebates, or promotions; clearance or closeout prices; used tires; ancillary parts; labor or other charges; typographical errors; competitor prices that result from a price match; quotes from other automotive dealerships; quotes located with Nissan dealer assistance; and internal repair orders are not eligible. Void where prohibited by law. Additional terms and restrictions may apply. See your dealer for full program details. Offer is subject to change at any time and/or is subject to termination without notice.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://www.nissantireadvantage.com/" id="tire_popup_shoptire">Shop for Tires</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-disclaimer-battery" aria-labelledby="modal-disclaimer-battery-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/icons/offers/battery-offer-icon.svg" alt="Complimentary Battery Inspection*">
+      <h2 class="offer-dialog__title" id="modal-disclaimer-battery-title">Complimentary Battery Inspection*</h2>
+      <p>With this complimentary service, our highly trained technicians will:</p>
+      <ul><li>Perform a thorough evaluation of your battery’s health using the latest testing equipment</li><li>Visually assess your cable connections</li><li>Recommend the exact fit for your Nissan if you need a new one</li></ul>
+      <p>*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="parts-service/en/dealer/Search/index.html" id="battery_popup_finddealer" data-broken-link="true">Schedule Service</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-disclaimer-brake" aria-labelledby="modal-disclaimer-brake-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/coupons-offers/rebrand/ICON_Brake.svg" alt="Complimentary Brake Inspection*">
+      <h2 class="offer-dialog__title" id="modal-disclaimer-brake-title">Complimentary Brake Inspection*</h2>
+      <p>With this special offer, the technicians at your local dealer will:</p>
+      <ul><li>Check brake fluid levels, color and signs of leaks</li><li>Evaluate rotors and brake drums</li><li>Inspect brake pad thickness and hardware</li></ul>
+      <p>*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="parts-service/en/dealer/Search/index.html" id="brake_popup_finddealer" data-broken-link="true">Find a Dealer</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-disclaimer-fivepack" aria-labelledby="modal-disclaimer-fivepack-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/coupons-offers/rebrand/Icon_Oil.svg" alt="5 Oil &amp; Filter Changes, Under $55 Each*">
+      <h2 class="offer-dialog__title" id="modal-disclaimer-fivepack-title">5 Oil &amp; Filter Changes, Under $55 Each*</h2>
+      <p>Ask your Service Advisor for details</p>
+      <p>*Restrictions apply. Oil &amp; Filter Change covers replacement of engine oil and oil filter. Replacement of covered parts/fluids will be made with Genuine Nissan or Nissan-approved replacement parts. Coverage begins on the date of purchase with the mileage on the vehicle's odometer on that date. In all cases, the Prepaid Maintenance Agreement (PMA) expires at the PMA Expiration Mileage or PMA Expiration Date. Administered by Nissan Extended Services North America (NESNA) P.O. Box 685004 Franklin, TN 37068-5004. NESNA reserves the right to reject any Application/Declaration for any reason at its discretion upon return of the full amount paid. READ A SAMPLE SECURITY+PLUS PREPAID MAINTENANCE AGREEMENT AT YOUR DEALER, BECAUSE ITS TERMS, CONDITIONS, EXCLUSIONS, AND LIMITATIONS CONTROL.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="https://nissan-securityplus.com/5-pack-promo/" id="fivepack_popup_claimnow">Claim Now</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-disclaimer-multipoint" aria-labelledby="modal-disclaimer-multipoint-title">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <img class="offer-dialog__icon" src="assets/media/site/icons/offers/mpi-offer-icon.svg" alt="Complimentary">
+      <h2 class="offer-dialog__title" id="modal-disclaimer-multipoint-title">Complimentary Multi-Point Inspection*</h2>
+      <p>*Available at participating Nissan dealers. Each dealer is independently operated. Availability of services or amenities may vary by dealer. Restrictions apply. Contact dealer for details.</p>
+  </section>
+    <p class="offer-dialog__cta"><a class="btn btn--primary btn--arrow" href="parts-service/en/dealer/Search/index.html" id="mpi_popup_finddealer" data-broken-link="true">Schedule Service</a></p>
+</dialog>
+<dialog class="offer-dialog" id="modal-generic-legal">
+  <form method="dialog" class="offer-dialog__close-row"><button class="offer-dialog__close" aria-label="close"></button></form>
+  <section class="offer-dialog__body">
+      <p>*Cargo and load capacity limited by weight and distribution. Always secure cargo. Heavy loading of the vehicle with cargo, especially on the roof, will affect the handling and stability of the vehicle.</p>
+  </section>
+</dialog>
+<script src="assets/js/parts-service.js" defer></script>
+</body>
+</html>

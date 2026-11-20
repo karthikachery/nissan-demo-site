@@ -1,0 +1,27 @@
+[live-session] waiting to pace live navigations to staging.niss-parts-service.epsilonrms.com (1000 ms apart, 2 max parallel; STARDUST_LIVE_PACE_MS / STARDUST_LIVE_MAX_PARALLEL; 0 disables either) — first wait 100 ms
+content-presence @ 1440px (chrome) — origin https://staging.niss-parts-service.epsilonrms.com/parts-service (docH 5264, 96 items, HTTP 200) vs served https://main--83d9e7fd--aemcoder.aem.page/parts-service (docH 5264, 111 items, HTTP 200)
+scope: main vs main (header/footer left to the chrome crop gate; --chrome to include)
+| band | heading | links O/E (+hidden) | buttons O/E (+hidden) | text O/E | images O/E | findings |
+|---|---|---|---|---|---|---|
+| 0 | (top) | 0/0 | 0/0 | 1/0 | 1/1 | - |
+| 1 | winter ready | 1/1 | 4/5 | 1/1 | 0/0 | EXTRA LINK |
+| 2 | current offers | 0/0 | 0/0 | 0/0 | 3/3 | - |
+| 3 | buy 4, get 1 free oil & filter changes* | 0/0 | 0/0 | 0/0 | 0/0 | - |
+| 4 | buy 3 tires, get the 4th for $1* | 0/0 | 0/0 | 0/0 | 0/0 | - |
+| 5 | complimentary multi-point inspection* | 3/6 (+1) | 2/2 | 2/2 | 1/1 | EXTRA LINK |
+| 6 | what makes your nissan experience unique | 1/1 | 0/1 | 2/2 | 1/1 | EXTRA LINK |
+| 7 | service on your schedule | 2/2 | 0/0 | 2/2 | 1/1 | - |
+| 8 | a change for the best | 2/2 | 0/0 | 2/2 | 1/1 | - |
+| 9 | give your vehicle everything it deserves | 1/1 | 0/1 | 1/1 | 1/1 | EXTRA LINK |
+| 10 | nissan tire price match + 5% credit* | 2/3 | 0/0 | 2/2 | 0/0 | EXTRA LINK |
+  🟡 EXTRA LINK: "[*]" served in band "winter ready", no origin link or button
+  🟡 EXTRA LINK: ×3 "*offer details" served in band "complimentary multi-point inspection*", no origin link or button
+  🟡 EXTRA LINK: "previous offers" served in band "complimentary multi-point inspection*", no origin link or button
+  🟡 EXTRA LINK: "next offers" served in band "complimentary multi-point inspection*", no origin link or button
+  🟡 EXTRA LINK: "[*]" served in band "what makes your nissan experience unique?", no origin link or button
+  🟡 EXTRA LINK: "[*]" served in band "give your vehicle everything it deserves", no origin link or button
+  🟡 EXTRA LINK: "*offer details" served in band "nissan tire price match + 5% credit*", no origin link or button
+Content: MISSING 0 (headings 0, links 0) / HIDDEN 0 (headings 0, links 0) / control-state 0 / buttons missing 0 hidden 0 / moved 0 extra 9 / count deltas 0
+Findings: 7 (0 structural 🔴)
+Clipped (served side): 0 — origin side 0
+json → stardust/replica/gates/parts-service-1440/content-presence-pub1.json

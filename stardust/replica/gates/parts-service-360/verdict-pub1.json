@@ -1,0 +1,57 @@
+{
+  "round": "pub1",
+  "width": 360,
+  "stage": "published",
+  "pixel": {
+    "rc": 2,
+    "diff": "stardust/replica/gates/parts-service-360/diff-pub1.png",
+    "json": "stardust/replica/gates/parts-service-360/pixel-pub1.json",
+    "pct": 30.27,
+    "alignedPct": 1.59,
+    "alignedUsed": true,
+    "totalShift": 67,
+    "steps": [
+      {
+        "y": 900,
+        "shift": 67,
+        "cumulative": 67
+      }
+    ],
+    "offsetBound": 65,
+    "maskedRows": 666,
+    "noiseFloor": 0,
+    "reason": "offsets: 1 step(s), 67px total — +67px at y=900 (bound 65px)"
+  },
+  "reference": {
+    "origin": "frozen",
+    "capturedAt": "2026-11-19T17:27:36.358Z",
+    "primed": true,
+    "stable": true,
+    "maskArg": ""
+  },
+  "probes": {
+    "content-diff": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/content-diff-pub1.txt"
+    },
+    "visual-diff": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/visual-diff-pub1.txt"
+    },
+    "chrome-parity": {
+      "rc": 2,
+      "evidence": "stardust/replica/gates/parts-service-360/chrome-parity-pub1.txt"
+    },
+    "clip-probe": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/clip-pub1.txt"
+    },
+    "content-presence": {
+      "rc": 0,
+      "evidence": "stardust/replica/gates/parts-service-360/content-presence-pub1.txt"
+    }
+  },
+  "structural": 12,
+  "nothingLost": 0,
+  "at": "2026-11-19T19:07:54.595Z"
+}

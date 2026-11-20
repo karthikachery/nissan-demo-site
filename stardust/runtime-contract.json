@@ -1,0 +1,18 @@
+{
+  "runtime": "vanilla-eds",
+  "probedAt": "2026-11-19",
+  "probedFrom": ["scripts/scripts.js", "scripts/aem.js"],
+  "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper > div.<name>.block[data-block-name]; section gains .<name>-container",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "wrapTextNodes": true,
+  "decorateIcons": "span.icon.icon-<name> -> /icons/<name>.svg, alt ''",
+  "fonts": "styles/fonts.css via loadFonts(); fallbacks in styles/styles.css",
+  "chrome": "header/footer blocks load /nav and /footer via blocks/fragment/fragment.js loadFragment",
+  "headerNote": "stock header.js referenced .button-container (older vintage); replaced by the template-slotted header",
+  "projectClassConvention": "kebab-case (stylelint-config-standard selector-class-pattern); prototype BEM __/-- names map to single hyphens (.navbar__logo -> .navbar-logo, .btn--primary -> .btn-primary)",
+  "lint": "npm run lint = eslint + stylelint + breakpoint-lint (mobile-first, no target set)"
+}

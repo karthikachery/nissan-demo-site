@@ -1,0 +1,41 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-11-19T19:42:39.204Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://staging.niss-parts-service.epsilonrms.com",
+    "da": {
+      "org": "aemcoder",
+      "site": "83d9e7fd",
+      "ref": "main"
+    },
+    "liveHost": "main--83d9e7fd--aemcoder.aem.live"
+  },
+  "scope": {
+    "pages": 1,
+    "discovered": 1,
+    "capped": false,
+    "pageCap": 1
+  },
+  "lastRun": {
+    "at": "2026-11-19T19:42:43.670Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 6,
+      "converted": 0,
+      "pending": 6
+    },
+    "verifyFailures": 0
+  }
+}

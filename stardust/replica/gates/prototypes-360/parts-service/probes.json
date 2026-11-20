@@ -1,0 +1,84 @@
+{
+ "writtenBy": "gate-all.mjs",
+ "at": "2026-11-19T18:16:36.947Z",
+ "clip": {
+  "counts": {
+   "textClipped": 0,
+   "textHidden": 0,
+   "controlHidden": 0,
+   "controlClipped": 0,
+   "clamped": 0,
+   "collapsed": 0,
+   "scrollHidden": 0,
+   "horizontal": 6,
+   "offPage": 55,
+   "textNodes": 117,
+   "controls": 79,
+   "total": 0
+  },
+  "groups": [
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > h3.offer-card__title.offer-card__title--tight",
+    "text": "buy 3 tires, get the 4th for $1*",
+    "cutMin": 244,
+    "cutMax": 244
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "li.offer-card > div.offer-card__tile > div.offer-card__body > p.offer-card__validity",
+    "text": "offer valid november 16-30, 2026",
+    "cutMin": 159,
+    "cutMax": 159
+   },
+   {
+    "kind": "CONTROL X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_offer_details_pop_up_4th_for_1",
+    "text": "*offer details",
+    "cutMin": 54,
+    "cutMax": 54
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_offer_details_pop_up_4th_for_1",
+    "text": "*offer details",
+    "cutMin": 54,
+    "cutMax": 54
+   },
+   {
+    "kind": "CONTROL X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_banner_shopfortires",
+    "text": "shop for tires",
+    "cutMin": 134,
+    "cutMax": 134
+   },
+   {
+    "kind": "TEXT X-CUT",
+    "advisory": true,
+    "n": 1,
+    "clipper": "div.offers__rail",
+    "path": "div.offer-card__body > div.offer-card__foot > div.offer-card__ctas > a#home_banner_shopfortires",
+    "text": "shop for tires",
+    "cutMin": 83,
+    "cutMax": 83
+   }
+  ],
+  "source": "clip-probe",
+  "tier": "chrome"
+ }
+}

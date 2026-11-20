@@ -1,0 +1,51 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-11-19T18:20:26.507Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-11-19T18:20:26.507Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "parts-service"
+  ],
+  "steps": [
+    {
+      "slug": "parts-service",
+      "path": "/parts-service",
+      "templateId": "parts-service",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero-carousel",
+          "edsBlockName": "hero-carousel"
+        },
+        {
+          "id": "offers",
+          "edsBlockName": "offers"
+        },
+        {
+          "id": "exp-banner",
+          "edsBlockName": "exp-banner"
+        },
+        {
+          "id": "tile",
+          "edsBlockName": "tile"
+        },
+        {
+          "id": "tire-price",
+          "edsBlockName": "tire-price"
+        },
+        {
+          "id": "recall-strip",
+          "edsBlockName": "recall-strip"
+        }
+      ],
+      "reuse": []
+    }
+  ]
+}

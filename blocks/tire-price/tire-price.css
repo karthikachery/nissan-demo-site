@@ -1,0 +1,105 @@
+/* tire price match band — lifted from stardust/prototypes/css/parts-service.css
+   (source .tire-price-container). Slots carry the type (EW2). */
+.tire-price {
+  background: var(--color-surface);
+}
+
+.tire-price :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+.tire-price .tire-price-inner {
+  padding: 0 15px 32px;
+}
+
+.tire-price .tire-price-media {
+  margin-bottom: 28px;
+  padding-top: 44px;
+}
+
+.tire-price .tire-price-media img {
+  display: block;
+  width: 100%;
+}
+
+.tire-price .tire-price-title {
+  margin-bottom: 30px;
+  font-family: var(--font-light);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 2.56px;
+  font-weight: 300;
+  color: #000;
+}
+
+.tire-price .tire-price-text {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #000;
+}
+
+.tire-price .tire-price-text strong {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+.tire-price .tire-price-ctas .cta,
+.tire-price .tire-price-ctas p {
+  display: contents;
+}
+
+.tire-price .tire-price-ctas a.button {
+  margin: 0 30px 24px 0;
+}
+
+.tire-price .tire-price-ctas a.link-btn {
+  display: inline-block;
+  font-weight: 300;
+}
+
+@media (width >= 768px) {
+  .tire-price .tire-price-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 26px 0;
+  }
+
+  .tire-price .tire-price-media {
+    flex: 0 0 31.75%;
+    align-self: flex-end;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .tire-price .tire-price-content {
+    flex: 0 0 68.25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tire-price .tire-price-title {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: normal;
+    padding-right: 80px;
+  }
+
+  .tire-price .tire-price-ctas {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tire-price .tire-price-ctas a.button {
+    margin: 0 24px 0 0;
+  }
+
+  .tire-price .tire-price-ctas a.link-btn {
+    align-self: center;
+  }
+}
